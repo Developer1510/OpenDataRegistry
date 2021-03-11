@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{> header isDetail=true}}
+
+    <h1>{{Name}}</h1>
+    <p>{{#each Tags}}
+      {{#isEqual . 'aws-pds'}}{{else}}<span class="label label-info{{#isEqual . 'sustainability'}}-sustainability{{else}}{{/isEqual}} tag link-tag">{{.}}</span>{{/isEqual}}
+  {{/each}}
+    </p>
+    <div class="row">
+      <div class="col-md-6">
+      <h3>Description</h3>
+      <p>{{{md Description}}}</p>
+
+      <h4>Update Frequency</h4>
+      <p>{{UpdateFrequency}}</p>
+
+      <h4>License</h4>
+      <p>{{{md License}}}</p>
+
+      <h4>Documentation</h4>
+      <p>{{{md Documentation}}}</p>
+
+      {{#if ManagedBy}}
+      <h4>Managed By</h4>
+      <p>{{{managedByRenderer ManagedBy}}}</p>
+      <p>See all datasets managed by <a href="{{managedByLink}}">{{managedByName}}</a>.</p>
+      {{/if}}
+
+      <h4>Contact</h4>
+      <p>{{{md Contact}}}</p>
+
+      {{#if DataAtWork}}
+      <h4 name="usageexamples">Usage Examples</h4>
+        {{#if DataAtWork.Tutorials}}
+        <h5 class="dataatwork-category">Tutorials</h5>
+        <ul class="dataatwork-list">
+        {{#each DataAtWork.Tutorials}}
+          {{> detailList URL=URL Title=Title AuthorURL=AuthorURL AuthorName=AuthorName Services=Services}}
+        {{/each}}
+        </ul>
+        {{/if}}
+        {{#if DataAtWork.Tools}}
+        <h5 class="dataatwork-category">Tools & Applications</h5>
+        <ul class="dataatwork-list">
+        {{#each DataAtWork.Tools}}
+          {{> detailList URL=URL Title=Title AuthorURL=AuthorURL AuthorName=AuthorName}}
+        {{/each}}
+        </ul>
+        {{/if}}
+        {{#if DataAtWork.Publications}}
+        <h5 class="dataatwork-category">Publications</h5>
+        <ul class="dataatwork-list">
+        {{#each DataAtWork.Publications}}
+          {{> detailList URL=URL Title=Title AuthorURL=AuthorURL AuthorName=AuthorName}}
+        {{/each}}
+        </ul>
+        {{/if}}
+      {{/if}}
+
+      {{#if Metadata}}
+      <h4>More Information</h4>
+      <table class="table table-condensed table-bordered table-hover">
+        {{#each Metadata as |value key|}}
+        <tr>
+          <th>{{key}}</th>
+          <td>{{value}}</td>
+        </tr>
+        {{/each}}
+      </table>
+      {{/if}}
+    </div>
+    <div class="col-md-5 col-md-offset-1">
+      <h3>Resources on AWS</h3>
+      <ul class="resource-list">
+        {{#each Resources}}
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description">{{{md Description}}}</dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type {{{toType Type}}}">{{Type}}{{#if RequesterPays}} <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html"><span class="label label-info tag link-tag">Requester Pays</span></a>{{/if}}{{#if ControlledAccess}} <a href="{{ControlledAccess}}"><span class="label label-info tag link-tag">Controlled Access</span></a>{{/if}}</dd>
+            {{#if ARN}}
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>{{ARN}}</code></dd>
+            {{/if}}
+            {{#if Host}}
+            <dt class="resource-host">Hostname</dt>
+            <dd><code>{{Host}}</code></dd>
+            {{/if}}
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>{{Region}}</code></dd>
+            {{#isEqual Type 'S3 Bucket'}}
+            {{#unless ControlledAccess}}
+            <dt class="resource-region"><a href="https://aws.amazon.com/cli/">AWS CLI</a> Access{{#unless RequesterPays}} (No AWS account required){{/unless}}</dt>
+            <dd><code>aws s3 ls s3://{{{arnToBucket ARN}}} {{#if RequesterPays}}--request-payer requester{{else}}--no-sign-request{{/if}}</code></dd>
+            {{/unless}}
+            {{/isEqual}}
+            {{#if Explore}}
+            <dt class="resource-explore">Explore</dt>
+            {{#each Explore}}
+            <dd>{{{md .}}}</dd>
+            {{/each}}
+            {{/if}}
+          </dl>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+  {{> footer isDetail=true}}
+
+  <script src="/js/tags.js"></script>
