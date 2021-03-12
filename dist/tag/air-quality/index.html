@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <div class="about col-md-5">
+      <div class="row aboutbox">
+            <h3>About</h3>
+            <p>This registry exists to help people discover and share datasets that are available via AWS resources. <a href="https://opendata.aws">Learn more about sharing data on AWS</a>.</p>
+    
+            <p>See <a href="/tag/air-quality/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>air quality</strong>.</p>
+    
+        <hr>
+    
+        <h4>Search datasets (currently <span id="count-matching">13</span> matching <span id="count-matching-text">datasets</span>)</h4>
+        <form>
+          <div class="form-group">
+            <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
+          </div>
+        </form>
+        <p>You are currently viewing a subset of data tagged with <strong>air quality</strong>.</p>
+    
+        <hr>
+    
+        <h4>Add to this registry</h4>
+        <p>If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the <a href="https://github.com/awslabs/open-data-registry/">Registry of Open Data on AWS GitHub repository</a>.</p>
+    
+        <p>Unless specifically stated in the applicable dataset documentation, datasets available through the Registry of Open Data on AWS are not provided and maintained by AWS. Datasets are provided and maintained by a variety of third parties under a variety of licenses. Please check dataset licenses and related documentation to determine if a dataset may be used for your application.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datasets">
+      <div class="row">
+        <div id="openaq" class="dataset">
+          <h3><a href="/openaq/">OpenAQ</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Global, aggregated physical air quality data from public data sources provided by government, research-grade and other sources. These awesome groups do the hard work of measuring these data and publicly sharing them, and our community makes them more universally-accessible to both humans and machines.</p>
+          <p><a href="/openaq/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://medium.com/@openaq/how-in-the-world-do-you-access-air-quality-data-older-than-90-days-on-the-openaq-platform-8562df519ecd" class="" target="_none">Using Athena to access the whole archive</a> by <a href="https://openaq.org" target="_none">OpenAQ</a></li></a>
+          </li>
+          <li>
+            <a href="https://arisense.io/" class="" target="_none">ARISense</a> by <a href="http://www.aerodyne.com/" target="_none">Aerodyne Research, Inc.</a></li></a>
+          </li>
+          <li>
+            <a href="https://kapilsreed.medium.com/how-to-analyze-global-air-quality-using-apache-spark-bigquery-7743fd54e634" class="" target="_none">Analyze Global Air Pollution Using Apache Spark &amp; BigQuery</a> by <a href="https://kapilsreed.medium.com/" target="_none">Kapil Sreedharan</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/ksree/world-air-quality" class="" target="_none">OpenAQ Aggregator</a> by <a href="https://github.com/ksree" target="_none">Kapil Sreedharan</a></li></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/smokeybot/" class="" target="_none">Smokey: Air Quality Bot</a> by <a href="https://twitter.com/amrit_sharma" target="_none">Amrit Sharma</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/openaq/#usageexamples">See 9 usage examples &rarr;</a></p>
+        </div>
+        <div id="omi-no2-nasa" class="dataset">
+          <h3><a href="/omi-no2-nasa/">Ozone Monitoring Instrument (OMI) / Aura NO2 Tropospheric Column Density</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">atmosphere</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>NO2 tropospheric column density, screened for CloudFraction &lt; 30% global daily
+ composite at 0.25 degree resolution for the temporal range of 2004 to May
+2020. Original archive data in HDF5 has been processed into a <a href="https://www.cogeo.org/">Cloud-Optimized
+GeoTiff (COG)</a> format. Quality Assurance - This data
+has been validated by the NASA Science Team at Goddard Space Flight Center.Cautionary Note: <a href="https://airquality.gsfc.nasa.gov/caution-interpretation">https://airquality.gsfc.nasa.gov/caution-interpretation</a>.</p>
+          <p><a href="/omi-no2-nasa/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/docs" class="" target="_none">COG Application Programming Interface (API)</a> by <a href="https://developmentseed.org/" target="_none">Development Seed</a></li></a>
+          </li>
+          <li>
+            <a href="https://rasterio.readthedocs.io/" class="" target="_none">Rasterio (Python Library) for access to geospatial raster data</a> by <a href="https://www.mapbox.com/" target="_none">Mapbox</a></li></a>
+          </li>
+          <li>
+            <a href="https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/v1/metadata?url&#x3D;https%3A%2F%2Fomi-no2-nasa.s3-us-west-2.amazonaws.com%2FOMI-Aura_L3-OMNO2d_2018m0101_v003-2019m1123t055315.tif&amp;pmin&#x3D;2&amp;pmax&#x3D;98&amp;max_size&#x3D;1024&amp;histogram_bins&#x3D;20" class="" target="_none">COG metadata example </a> by <a href="https://developmentseed.org/" target="_none">Development Seed</a></li></a>
+          </li>
+          <li>
+            <a href="https://cogeo.xyz/?url&#x3D;s3://omi-no2-nasa/OMI-Aura_L3-OMNO2d_2020m0101_v003-2020m0330t173100.tif" class="" target="_none">COG Viewer</a> by <a href="https://developmentseed.org/" target="_none">Development Seed</a></li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/devseed/cog-talk-part-1-whats-new-941facbcd3d1" class="" target="_none">Medium Post: COG Talk — Part 1: What’s new?</a> by <a href="https://medium.com/@_VincentS_" target="_none">Vincent Sarago</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/omi-no2-nasa/#usageexamples">See 5 usage examples &rarr;</a></p>
+        </div>
+        <div id="geoschem-input-data" class="dataset">
+          <h3><a href="/geoschem-input-data/">GEOS-Chem Input Data</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">climate</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">meteorological</span><span class="label label-info-sustainability tag link-tag">sustainability</span><span class="label label-info tag link-tag">weather</span></p>
+          <p>Input data for the GEOS-Chem Chemical Transport Model. Including the NASA/GMAO MERRA-2 and GEOS-FP <a href="http://wiki.seas.harvard.edu/geos-chem/index.php/Overview_of_GMAO_met_data_products">meteorological products</a>, the <a href="http://wiki.seas.harvard.edu/geos-chem/index.php/HEMCO_data_directories">HEMCO emission inventories</a>, and other small data such as <a href="http://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_basics#Restart_files">model initial conditions</a>.</p>
+          <p><a href="/geoschem-input-data/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="http://acmg.seas.harvard.edu/research.html#cloud" class="" target="_none">Overview of the GEOSChem-on-cloud project</a> by <a href="http://acmg.seas.harvard.edu/index.html" target="_none">Atmospheric Chemistry Modeling Group, Harvard University</a></li></a>
+          </li>
+          <li>
+            <a href="http://cloud-gc.readthedocs.io/en/stable/chapter02_beginner-tutorial/use-s3.html#access-geos-chem-input-data-repository-in-s3" class="" target="_none">Tutorial on accessing GEOS-Chem data bucket in S3</a> by <a href="https://github.com/JiaweiZhuang" target="_none">Jiawei Zhuang</a></li></a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1175/BAMS-D-18-0243.1" class="" target="_none">Enabling Immediate Access to Earth Science Models through Cloud Computing: Application to the GEOS-Chem Model</a> by Jiawei Zhuang, et al.</li></a>
+          </li>
+          <li>
+            <a href="http://acmg.seas.harvard.edu/presentations/IGC8/posters/Mon_Posters_Zhuang_Jiawei.pdf" class="" target="_none">Running GEOS-Chem on Cloud Computing Platforms, presented at the 8th International GEOS-Chem Meeting</a> by <a href="https://github.com/JiaweiZhuang" target="_none">Jiawei Zhuang, et al.</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/geoschem-input-data/#usageexamples">See 4 usage examples &rarr;</a></p>
+        </div>
+        <div id="sentinel5p" class="dataset">
+          <h3><a href="/sentinel5p/">Sentinel-5P Level 2</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">atmosphere</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>This data set consists of observations from the Sentinel-5 Precursor (Sentinel-5P) satellite of the European Commission’s Copernicus Earth Observation Programme. Sentinel-5P is a polar orbiting satellite that completes 14 orbits of the Earth a day. It carries the TROPOspheric Monitoring Instrument (TROPOMI) which is a spectrometer that senses ultraviolet (UV), visible (VIS), near (NIR) and short wave infrared (SWIR) to monitor ozone, methane, formaldehyde, aerosol, carbon monoxide, nitrogen dioxide and sulphur dioxide in the atmosphere. The satellite was launched in October 2017 and entered ro...</p>
+          <p><a href="/sentinel5p/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://atmospherictoolbox.org/" class="" target="_none">The Atmospheric Toolbox</a> by <a href="https://www.esa.int/" target="_none">European Space Agency</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/Sentinel-5P/data-on-s3/blob/master/notebooks/Sentinel5P_Tutorial.ipynb" class="" target="_none">Accessing Sentinel-5P Data on S3 by MEEO</a> by <a href="http://www.meeo.it/" target="_none">Meteorological Envionmental Earth Observation</a></li></a>
+          </li>
+          <li>
+            <a href="https://meeo-s5p.s3.amazonaws.com/index.html#/?t&#x3D;catalogs" class="" target="_none">Catalogue of data set</a> by <a href="https://www.meeo.it/" target="_none">Meteorological Envionmental Earth Observation</a></li></a>
+          </li>
+          <li>
+            <a href="https://sentinel.esa.int/web/sentinel/user-guides/sentinel-5p-tropomi/document-library" class="" target="_none">Sentinel-5P TROPOMI Document Library</a> by <a href="https://www.esa.int/" target="_none">European Space Agency</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/sentinel5p/#usageexamples">See 4 usage examples &rarr;</a></p>
+        </div>
+        <div id="silam" class="dataset">
+          <h3><a href="/silam/">SILAM Air Quality</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">climate</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">meteorological</span><span class="label label-info-sustainability tag link-tag">sustainability</span><span class="label label-info tag link-tag">weather</span></p>
+          <p>Air Quality is a global SILAM atmospheric composition and air quality forecast performed on a daily basis for &gt; 100 species and covering the troposphere and the stratosphere. The output produces 3D concentration fields and aerosol optical thickness. The data are unique: 20km resolution for global AQ models is unseen worldwide.</p>
+          <p><a href="/silam/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/fmidev/opendata-resources/tree/master/examples/python" class="" target="_none">Simple examples</a> by Roope Tervo</li></a>
+          </li>
+        </ul>
+        <p><a href="/silam/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+        <div id="safecast" class="dataset">
+          <h3><a href="/safecast/">Safecast</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">climate</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">radiation</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>An ongoing collection of radiation and air quality measurements taken by devices involved in the Safecast project.</p>
+          <p><a href="/safecast/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="http://safecast.org/tilemap/" class="" target="_none">Safecast Map</a> by <a href="https://github.com/frangible" target="_none">Nick Dolezal</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/safecast/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>  </body>
+  <script src="/js/index.js"></script>
+</html>

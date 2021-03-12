@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <div class="about col-md-5">
+      <div class="row aboutbox">
+            <h3>About</h3>
+            <p>This registry exists to help people discover and share datasets that are available via AWS resources. <a href="https://opendata.aws">Learn more about sharing data on AWS</a>.</p>
+    
+            <p>See <a href="/tag/cities/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>cities</strong>.</p>
+    
+        <hr>
+    
+        <h4>Search datasets (currently <span id="count-matching">13</span> matching <span id="count-matching-text">datasets</span>)</h4>
+        <form>
+          <div class="form-group">
+            <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
+          </div>
+        </form>
+        <p>You are currently viewing a subset of data tagged with <strong>cities</strong>.</p>
+    
+        <hr>
+    
+        <h4>Add to this registry</h4>
+        <p>If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the <a href="https://github.com/awslabs/open-data-registry/">Registry of Open Data on AWS GitHub repository</a>.</p>
+    
+        <p>Unless specifically stated in the applicable dataset documentation, datasets available through the Registry of Open Data on AWS are not provided and maintained by AWS. Datasets are provided and maintained by a variety of third parties under a variety of licenses. Please check dataset licenses and related documentation to determine if a dataset may be used for your application.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datasets">
+      <div class="row">
+        <div id="openaq" class="dataset">
+          <h3><a href="/openaq/">OpenAQ</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Global, aggregated physical air quality data from public data sources provided by government, research-grade and other sources. These awesome groups do the hard work of measuring these data and publicly sharing them, and our community makes them more universally-accessible to both humans and machines.</p>
+          <p><a href="/openaq/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://arisense.io/" class="" target="_none">ARISense</a> by <a href="http://www.aerodyne.com/" target="_none">Aerodyne Research, Inc.</a></li></a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/blogs/publicsector/enabling-rapid-covid-19-air-pollution-analysis-across-globe-openaq/" class="aws-link" target="_none">Enabling rapid COVID-19 and air pollution analysis across the globe with OpenAQ and AWS</a> by <a href="https://openaq.org" target="_none">Christa Hasenkopf</a></li></a>
+          </li>
+          <li>
+            <a href="http://www.hackair.eu/" class="" target="_none">hackAIR</a> by hackAir</li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@openaq/how-in-the-world-do-you-access-air-quality-data-older-than-90-days-on-the-openaq-platform-8562df519ecd" class="" target="_none">Using Athena to access the whole archive</a> by <a href="https://openaq.org" target="_none">OpenAQ</a></li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242" class="" target="_none">Access OpenAQ data via a filterable SNS topic</a> by <a href="https://openaq.org" target="_none">OpenAQ</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/openaq/#usageexamples">See 9 usage examples &rarr;</a></p>
+        </div>
+        <div id="nyc-tlc-trip-records-pds" class="dataset">
+          <h3><a href="/nyc-tlc-trip-records-pds/">New York City Taxi and Limousine Commission (TLC) Trip Record Data</a></h3>
+          <p><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">transportation</span><span class="label label-info tag link-tag">urban</span></p>
+          <p>Data of trips taken by taxis and for-hire vehicles in New York City.</p>
+          <p><a href="/nyc-tlc-trip-records-pds/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/aws-samples/aws-open-data-analytics-notebooks/tree/master/optimizing-data" class="aws-link" target="_none">Optimizing data for analysis with Amazon Athena and AWS Glue</a> by Manav Sehgal</li></a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/blogs/big-data/build-and-run-streaming-applications-with-apache-flink-and-amazon-kinesis-data-analytics-for-java-applications/" class="aws-link" target="_none">Build and run streaming applications with Apache Flink and Amazon Kinesis Data Analytics for Java Applications</a> by Steffen Hausmann</li></a>
+          </li>
+          <li>
+            <a href="https://github.com/aws-samples/aws-open-data-analytics-notebooks/tree/master/exploring-data" class="aws-link" target="_none">Exploring data with Python and Amazon S3 Select</a> by Manav Sehgal</li></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v&#x3D;MzTZp47Jy7E" class="" target="_none">Deep Dive on Flink &amp; Spark on Amazon EMR</a> by Keith Steward</li></a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/blogs/big-data/build-a-real-time-stream-processing-pipeline-with-apache-flink-on-aws/" class="aws-link" target="_none">Build a Real-time Stream Processing Pipeline with Apache Flink on AWS</a> by Steffen Hausmann</li></a>
+          </li>
+        </ul>
+        <p><a href="/nyc-tlc-trip-records-pds/#usageexamples">See 5 usage examples &rarr;</a></p>
+        </div>
+        <div id="pmsp-lidar" class="dataset">
+          <h3><a href="/pmsp-lidar/">Prefeitura Municipal de São Paulo (PMSP) LiDAR Point Cloud</a></h3>
+          <p><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">elevation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">land</span><span class="label label-info tag link-tag">lidar</span><span class="label label-info tag link-tag">mapping</span><span class="label label-info tag link-tag">urban</span></p>
+          <p>The objective of the Mapa 3D Digital da Cidade (M3DC) of the São Paulo City Hall is to publish LiDAR point cloud data. The initial data was acquired in 2017 by aerial surveying and future data will be added. This publicly accessible dataset is provided in the <a href="https://entwine.io/entwine-point-tile.html">Entwine Point Tiles</a> format as a lossless octree, full density, based on <a href="https://laszip.org">LASzip</a> (LAZ) encoding.</p>
+          <p><a href="/pmsp-lidar/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://rapidlasso.com/lastools/" class="" target="_none">LAStools</a> by <a href="https://rapidlasso.com" target="_none">rapidlasso GmbH, GERMANY</a></li></a>
+          </li>
+          <li>
+            <a href="http://forsys.sefs.uw.edu/fusion/fusionlatest.html" class="" target="_none">Fusion</a> by <a href="https://www.usda.gov/" target="_none">US Department of Agriculture - Forest Service</a></li></a>
+          </li>
+          <li>
+            <a href="https://entwine.io/" class="" target="_none">Entwine</a> by <a href="https://hobu.co/" target="_none">Hobu, Inc.</a></li></a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.5194/isprs-annals-IV-2-W5-437-2019" class="" target="_none">Describing the Vertical Structure of Informal Settlements on the Basis of LiDAR Data – A Case Study for Favelas (Slums) in Sao Paulo City</a> by S. C. L. Ribeiro, M. Jarzabek-Rychard, J. P. Cintra, H.-G. Maas</li></a>
+          </li>
+          <li>
+            <a href="https://pdal.io/" class="" target="_none">PDAL - Point Data Abstraction Library</a> by <a href="https://doi.org/10.5281/zenodo.2556738" target="_none">PDAL Contributors</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/pmsp-lidar/#usageexamples">See 5 usage examples &rarr;</a></p>
+        </div>
+        <div id="opencitymodel" class="dataset">
+          <h3><a href="/opencitymodel/">Open City Model (OCM)</a></h3>
+          <p><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">events</span><span class="label label-info tag link-tag">geospatial</span></p>
+          <p>Open City Model is an initiative to provide cityGML data for all the buildings in the United States.
+By using other open datasets in conjunction with our own code and algorithms it is our goal to provide 3D geometries for every US building.</p>
+          <p><a href="/opencitymodel/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/opencitymodel/opencitymodel/blob/master/examples/Query-OpenCityModel-using-AWS-Athena.md" class="" target="_none">Running queries on Open City Model using AWS Athena</a> by <a href="https://github.com/agilliland" target="_none">Allen Gilliland</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/opencitymodel/opencitymodel/blob/master/examples/3dCityDB-to-GoogleEarth.md" class="" target="_none">Using Open City Model with the 3dCityDB</a> by <a href="https://github.com/agilliland" target="_none">Allen Gilliland</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/opencitymodel/#usageexamples">See 2 usage examples &rarr;</a></p>
+        </div>
+        <div id="speedtest-global-performance" class="dataset">
+          <h3><a href="/speedtest-global-performance/">Speedtest by Ookla Global Fixed and Mobile Network Performance Maps</a></h3>
+          <p><span class="label label-info tag link-tag">analytics</span><span class="label label-info tag link-tag">broadband</span><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">civic</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">global</span><span class="label label-info tag link-tag">government spending</span><span class="label label-info tag link-tag">infrastructure</span><span class="label label-info tag link-tag">internet</span><span class="label label-info tag link-tag">mapping</span><span class="label label-info tag link-tag">network traffic</span><span class="label label-info tag link-tag">parquet</span><span class="label label-info tag link-tag">regulatory</span><span class="label label-info tag link-tag">telecommunications</span><span class="label label-info tag link-tag">tiles</span></p>
+          <p>Global fixed broadband and mobile (cellular) network performance, allocated to zoom level 16 web mercator tiles (approximately 610.8 meters by 610.8 meters at the equator). Data is provided in both Shapefile format as well as Apache Parquet with geometries represented in Well Known Text (WKT) projected in EPSG:4326. Download speed, upload speed, and latency are collected via the Speedtest by Ookla applications for Android and iOS and averaged for each tile. Measurements are filtered to results containing GPS-quality location accuracy.</p>
+          <p><a href="/speedtest-global-performance/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://www.speedtest.net/insights/blog/best-ookla-open-data-projects-2021/" class="" target="_none">New Year, Great Data: The Best Ookla Open Data Projects We’ve Seen So Far</a> by Katie Jolly</li></a>
+          </li>
+        </ul>
+        <p><a href="/speedtest-global-performance/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+        <div id="dc-lidar" class="dataset">
+          <h3><a href="/dc-lidar/">District of Columbia - Classified Point Cloud LiDAR</a></h3>
+          <p><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">us-dc</span></p>
+          <p>LiDAR point cloud data for Washington, DC is available for anyone to use on Amazon S3.
+This dataset, managed by the Office of the Chief Technology Officer (OCTO), through the
+direction of the District of Columbia GIS program, contains tiled point cloud data for
+the entire District along with associated metadata.</p>
+          <p><a href="/dc-lidar/">Details &rarr;</a></p>
+        </div>
+        <div id="ichangemycity" class="dataset">
+          <h3><a href="/ichangemycity/">IChangeMyCity Complaints Data from Janaagraha</a></h3>
+          <p><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">civic</span><span class="label label-info tag link-tag">complaints</span><span class="label label-info tag link-tag">machine learning</span></p>
+          <p>The <a href="https://www.ichangemycity.com">IChangeMyCity</a> project provides insight into the complaints raised by citizens from diffent cities of India related to the issues in their neighbourhoods and the resolution of the same by the civic bodies.</p>
+          <p><a href="/ichangemycity/">Details &rarr;</a></p>
+        </div>
+        <div id="schweizer-haltestellen-oev" class="dataset">
+          <h3><a href="/schweizer-haltestellen-oev/">Swiss Public Transport Stops</a></h3>
+          <p><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">infrastructure</span><span class="label label-info tag link-tag">mapping</span><span class="label label-info tag link-tag">traffic</span><span class="label label-info tag link-tag">transportation</span></p>
+          <p>The basic geo-data set for public transport stops comprises public transport stops in Switzerland and additional selected geo-referenced public transport locations that are of operational or structural importance (operating points).</p>
+          <p><a href="/schweizer-haltestellen-oev/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://map.geo.admin.ch/?layers&#x3D;ch.bav.haltestellen-oev" class="" target="_none">Map Viewer</a> by <a href="https://twitter.com/swiss_geoportal" target="_none">Swiss Geoportal</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/schweizer-haltestellen-oev/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>  </body>
+  <script src="/js/index.js"></script>
+</html>

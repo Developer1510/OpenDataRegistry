@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/allen-brain-observatory.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ocmr_data.yaml

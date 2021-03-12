@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/human-microbiome-project.yaml
+    - /datasets/awslabs-open-data-registry/datasets/qiime2.yaml

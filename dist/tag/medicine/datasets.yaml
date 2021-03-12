@@ -1,0 +1,6 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/aws-covid19-lake.yaml
+    - /datasets/awslabs-open-data-registry/datasets/msd.yaml
+    - /datasets/awslabs-open-data-registry/datasets/jhu-indexes.yaml
+    - /datasets/awslabs-open-data-registry/datasets/tabula-muris.yaml
+    - /datasets/awslabs-open-data-registry/datasets/tabula-muris-senis.yaml

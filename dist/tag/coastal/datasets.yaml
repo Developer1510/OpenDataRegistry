@@ -1,0 +1,6 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-ofs.yaml
+    - /datasets/awslabs-open-data-registry/datasets/wrf-alaska-snap.yaml
+    - /datasets/awslabs-open-data-registry/datasets/wrf-se-alaska-snap.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-gestofs.yaml

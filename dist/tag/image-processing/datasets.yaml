@@ -1,0 +1,14 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/allen-cell-imaging-collections.yaml
+    - /datasets/awslabs-open-data-registry/datasets/janelia-flylight.yaml
+    - /datasets/awslabs-open-data-registry/datasets/open-neurodata.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nyu-fastmri.yaml
+    - /datasets/awslabs-open-data-registry/datasets/allen-mouse-brain-atlas.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nrel-pds-porotomo.yaml
+    - /datasets/awslabs-open-data-registry/datasets/digitalcorpora.yaml
+    - /datasets/awslabs-open-data-registry/datasets/allen-brain-observatory.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ocmr_data.yaml
+    - /datasets/awslabs-open-data-registry/datasets/xiph-media.yaml
+    - /datasets/awslabs-open-data-registry/datasets/dataforgood-fb-hrsl.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nsd.yaml

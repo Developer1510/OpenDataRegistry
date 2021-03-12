@@ -1,0 +1,6 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/irs990.yaml
+    - /datasets/awslabs-open-data-registry/datasets/fsf-flood-risk.yaml
+    - /datasets/awslabs-open-data-registry/datasets/qiime2.yaml
+    - /datasets/awslabs-open-data-registry/datasets/census-dataworld-pums.yaml
+    - /datasets/awslabs-open-data-registry/datasets/990-spreadsheets.yaml

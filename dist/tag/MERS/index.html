@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <div class="about col-md-5">
+      <div class="row aboutbox">
+            <h3>About</h3>
+            <p>This registry exists to help people discover and share datasets that are available via AWS resources. <a href="https://opendata.aws">Learn more about sharing data on AWS</a>.</p>
+    
+            <p>See <a href="/tag/MERS/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>MERS</strong>.</p>
+    
+        <hr>
+    
+        <h4>Search datasets (currently <span id="count-matching">13</span> matching <span id="count-matching-text">datasets</span>)</h4>
+        <form>
+          <div class="form-group">
+            <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
+          </div>
+        </form>
+        <p>You are currently viewing a subset of data tagged with <strong>MERS</strong>.</p>
+    
+        <hr>
+    
+        <h4>Add to this registry</h4>
+        <p>If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the <a href="https://github.com/awslabs/open-data-registry/">Registry of Open Data on AWS GitHub repository</a>.</p>
+    
+        <p>Unless specifically stated in the applicable dataset documentation, datasets available through the Registry of Open Data on AWS are not provided and maintained by AWS. Datasets are provided and maintained by a variety of third parties under a variety of licenses. Please check dataset licenses and related documentation to determine if a dataset may be used for your application.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datasets">
+      <div class="row">
+        <div id="aws-covid19-lake" class="dataset">
+          <h3><a href="/aws-covid19-lake/">COVID-19 Data Lake</a></h3>
+          <p><span class="label label-info tag link-tag">bioinformatics</span><span class="label label-info tag link-tag">biology</span><span class="label label-info tag link-tag">coronavirus</span><span class="label label-info tag link-tag">COVID-19</span><span class="label label-info tag link-tag">health</span><span class="label label-info tag link-tag">life sciences</span><span class="label label-info tag link-tag">medicine</span><span class="label label-info tag link-tag">MERS</span><span class="label label-info tag link-tag">SARS</span></p>
+          <p>A centralized repository of up-to-date and curated datasets on or related to the spread and characteristics of the novel corona virus (SARS-CoV-2) and its associated illness, COVID-19. Globally, there are several efforts underway to gather this data, and we are working with partners to make this crucial data freely available and keep it up-to-date. Hosted on the AWS cloud, we have seeded our curated data lake with COVID-19 case tracking data from Johns Hopkins and The New York Times, hospital bed availability from Definitive Healthcare, and over 45,000 research articles about COVID-19 and rela...</p>
+          <p><a href="/aws-covid19-lake/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/aws-samples/query-data-in-s3-with-amazon-athena-and-aws-sdk-for-dotnet" class="aws-link" target="_none">How to use SQL to query data in S3 Bucket with Amazon Athena and AWS SDK for .NET</a> by <a href="https://github.com/orgs/aws-samples/teams/aws-proserve-us-west-applications" target="_none">AWS ProServe US West Applications Team</a></li></a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/blogs/big-data/exploring-the-public-aws-covid-19-data-lake/" class="aws-link" target="_none">Exploring the public AWS COVID-19 data lake</a> by <a href="https://aws.amazon.com/big-data/datalakes-and-analytics/" target="_none">AWS Data Lake Team</a></li></a>
+          </li>
+          <li>
+            <a href="https://us-east-2.console.aws.amazon.com/cloudformation/home?region&#x3D;us-east-2#/stacks/create/review?templateURL&#x3D;https://covid19-lake.s3.us-east-2.amazonaws.com/cfn/CovidLakeStack.template.json&amp;stackName&#x3D;CovidLakeStack" class="" target="_none">CloudFormation template for Glue Catalog table definitions</a> by <a href="https://aws.amazon.com/big-data/datalakes-and-analytics/" target="_none">AWS Data Lake Team</a></li></a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/" class="aws-link" target="_none">A public data lake for analysis of COVID-19 data</a> by <a href="https://aws.amazon.com/big-data/datalakes-and-analytics/" target="_none">AWS Data Lake Team</a></li></a>
+          </li>
+          <li>
+            <a href="https://go.aws/covid-19-data-lake" class="aws-link" target="_none">Explore the COVID-19 data lake public S3 bucket</a> by <a href="https://aws.amazon.com/big-data/datalakes-and-analytics/" target="_none">AWS Data Lake Team</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/aws-covid19-lake/#usageexamples">See 5 usage examples &rarr;</a></p>
+        </div>
+        <div id="serratus-lovelywater" class="dataset">
+          <h3><a href="/serratus-lovelywater/">Serratus: Ultra-deep Search for Novel Viruses - Versioned Data Release</a></h3>
+          <p><span class="label label-info tag link-tag">bam</span><span class="label label-info tag link-tag">COVID-19</span><span class="label label-info tag link-tag">genetic</span><span class="label label-info tag link-tag">genomic</span><span class="label label-info tag link-tag">life sciences</span><span class="label label-info tag link-tag">MERS</span><span class="label label-info tag link-tag">SARS</span><span class="label label-info tag link-tag">SARS-CoV-2</span><span class="label label-info tag link-tag">virus</span></p>
+          <p>Serratus is a collaborative open science project for ultra-rapid discovery of known and unknown coronaviruses in response to the COVID-19 pandemic through re-analysis of publicly available genomic data. Our resulting vertebrate viral alignment data is explorable via the <a href="https://serratus.io/explorer">Serratus Explorer</a> and directly accessible on Amazon S3.</p>
+          <p><a href="/serratus-lovelywater/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://www.pnas.org/content/118/3/e2019907118" class="" target="_none">Diversification of mammalian deltaviruses by host shifting</a> by Bergner L.M., Orton R.J., et al (2021)</li></a>
+          </li>
+          <li>
+            <a href="https://www.biorxiv.org/content/10.1101/2020.08.07.241729v1" class="" target="_none">Petabase-scale sequence alignment catalyses viral discovery</a> by Edgar R., Taylor J., Altman T., Barbera P., Meleshko D., Lin V., et al (2020)</li></a>
+          </li>
+          <li>
+            <a href="https://github.com/serratus-bio/tantalus" class="" target="_none">Tantalus: An R Package for exploration of Serratus data</a> by Serratus Team</li></a>
+          </li>
+          <li>
+            <a href="https://www.biorxiv.org/content/10.1101/2020.07.28.224584v2" class="" target="_none">coronaSPAdes. From biosynthetic gene clusters to RNA viral assemblies</a> by Meleshko D., Hajirasouliha I., and Korobeynikov A. (2021)</li></a>
+          </li>
+          <li>
+            <a href="https://serratus.io/explorer" class="" target="_none">Serratus Explorer</a> by Serratus Team</li></a>
+          </li>
+        </ul>
+        <p><a href="/serratus-lovelywater/#usageexamples">See 5 usage examples &rarr;</a></p>
+        </div>
+        <div id="ncbi-covid-19" class="dataset">
+          <h3><a href="/ncbi-covid-19/">COVID-19 Genome Sequence Dataset</a></h3>
+          <p><span class="label label-info tag link-tag">bam</span><span class="label label-info tag link-tag">bioinformatics</span><span class="label label-info tag link-tag">biology</span><span class="label label-info tag link-tag">coronavirus</span><span class="label label-info tag link-tag">COVID-19</span><span class="label label-info tag link-tag">cram</span><span class="label label-info tag link-tag">fastq</span><span class="label label-info tag link-tag">genetic</span><span class="label label-info tag link-tag">genomic</span><span class="label label-info tag link-tag">health</span><span class="label label-info tag link-tag">life sciences</span><span class="label label-info tag link-tag">MERS</span><span class="label label-info tag link-tag">SARS</span><span class="label label-info tag link-tag">STRIDES</span><span class="label label-info tag link-tag">transcriptomics</span><span class="label label-info tag link-tag">virus</span><span class="label label-info tag link-tag">whole genome sequencing</span></p>
+          <p>A centralized sequence repository for all records containing sequence associated with the novel corona virus (SARS-CoV-2) submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA). Included are both the original sequences submitted by the principal investigator as well as SRA-processed sequences that require the SRA Toolkit for analysis. Additionally, submitter provided metadata included in associated BioSample and BioProject records is available alongside NCBI calculated data, such k-mer based taxonomy analysis results, contiguous assemblies (contigs) a...</p>
+          <p><a href="/ncbi-covid-19/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/" class="" target="_none">Download SRA sequence data using Amazon Web Services (AWS)</a> by NCBI SRA</li></a>
+          </li>
+        </ul>
+        <p><a href="/ncbi-covid-19/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+        <div id="cord-19" class="dataset">
+          <h3><a href="/cord-19/">COVID-19 Open Research Dataset (CORD-19)</a></h3>
+          <p><span class="label label-info tag link-tag">coronavirus</span><span class="label label-info tag link-tag">COVID-19</span><span class="label label-info tag link-tag">life sciences</span><span class="label label-info tag link-tag">MERS</span><span class="label label-info tag link-tag">SARS</span></p>
+          <p>Full-text and metadata dataset of COVID-19 and coronavirus-related research articles optimized for machine readability.</p>
+          <p><a href="/cord-19/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge" class="" target="_none">COVID-19 Open Research Dataset Challenge (CORD-19)</a> by Kaggle</li></a>
+          </li>
+        </ul>
+        <p><a href="/cord-19/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>  </body>
+  <script src="/js/index.js"></script>
+</html>

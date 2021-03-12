@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <div class="about col-md-5">
+      <div class="row aboutbox">
+            <h3>About</h3>
+            <p>This registry exists to help people discover and share datasets that are available via AWS resources. <a href="https://opendata.aws">Learn more about sharing data on AWS</a>.</p>
+    
+            <p>See <a href="/tag/lidar/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>lidar</strong>.</p>
+    
+        <hr>
+    
+        <h4>Search datasets (currently <span id="count-matching">13</span> matching <span id="count-matching-text">datasets</span>)</h4>
+        <form>
+          <div class="form-group">
+            <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
+          </div>
+        </form>
+        <p>You are currently viewing a subset of data tagged with <strong>lidar</strong>.</p>
+    
+        <hr>
+    
+        <h4>Add to this registry</h4>
+        <p>If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the <a href="https://github.com/awslabs/open-data-registry/">Registry of Open Data on AWS GitHub repository</a>.</p>
+    
+        <p>Unless specifically stated in the applicable dataset documentation, datasets available through the Registry of Open Data on AWS are not provided and maintained by AWS. Datasets are provided and maintained by a variety of third parties under a variety of licenses. Please check dataset licenses and related documentation to determine if a dataset may be used for your application.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datasets">
+      <div class="row">
+        <div id="usgs-lidar" class="dataset">
+          <h3><a href="/usgs-lidar/">USGS 3DEP LiDAR Point Clouds</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">elevation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">lidar</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>The goal of the <a href="https://www.usgs.gov/core-science-systems/ngp/3dep">USGS 3D Elevation Program </a> (3DEP) is to collect elevation data in the form of light detection and ranging (LiDAR) data over the conterminous United States, Hawaii, and the U.S. territories, with data acquired over an 8-year period. This dataset provides two realizations of the 3DEP point cloud data. The first resource is a public access organization provided in <a href="https://entwine.io/entwine-point-tile.html">Entwine Point Tiles</a> format, which a lossless, full-density, streamable octree based on <a href="https://laszip.org">LASzip</a> (LAZ) encoding. The second resource is a <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html">Requester Pays</a> of the same data in LAZ (Compressed LAS) format. Resource names in bot...</p>
+          <p><a href="/usgs-lidar/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://aws.amazon.com/blogs/machine-learning/extracting-buildings-and-roads-from-aws-open-data-using-amazon-sagemaker/" class="aws-link" target="_none">Extracting buildings and roads from AWS Open Data using Amazon SageMaker</a> by Yunzhi Shi, Tianyu Zhang, and Xin Chen</li></a>
+          </li>
+          <li>
+            <a href="https://portal.opentopography.org/datasets" class="" target="_none">OpenTopography access to 3DEP lidar point cloud data</a> by <a href="https://opentopography.org/" target="_none">OpenTopography</a></li></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/isptoolbox/line-of-sight-check/" class="" target="_none">Facebook Line of Sight Check</a> by <a href="https://www.facebook.com/isptoolbox/" target="_none">Facebook</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/hobu/usgs-lidar/tree/master/lambda" class="" target="_none">Using Lambda Layers with USGS 3DEP LiDAR Point Clouds</a> by <a href="https://twitter.com/howardbutler" target="_none">Howard Butler</a></li></a>
+          </li>
+          <li>
+            <a href="https://usgs.entwine.io/" class="" target="_none">WebGL Visualization of USGS 3DEP Lidar Point Clouds with Potree and Plasio.js</a> by <a href="https://twitter.com/csmannin" target="_none">Connor Manning</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/usgs-lidar/#usageexamples">See 6 usage examples &rarr;</a></p>
+        </div>
+        <div id="nrel-oedi-pv-rooftops" class="dataset">
+          <h3><a href="/nrel-oedi-pv-rooftops/">National Renewable Energy Laboratory&#x27;s (NREL) PV Rooftop Database</a></h3>
+          <p><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">lidar</span><span class="label label-info tag link-tag">solar</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Released to the public as part of the Department of Energy&#39;s Open Energy Data Initiative, the National Renewable Energy Laboratory&#39;s (NREL) PV Rooftop Database (PVRDB) is a lidar-derived, geospatially-resolved dataset of suitable roof surfaces and their PV technical potential for 128 metropolitan regions in the United States. The source lidar data and building footprints were obtained by the U.S. Department of Homeland Security Homeland Security Infrastructure Program for 2006-2014. Using GIS methods, NREL identified suitable roof surfaces based on their size, orientation, and shading ...</p>
+          <p><a href="/nrel-oedi-pv-rooftops/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://iopscience.iop.org/article/10.1088/1748-9326/aa7225/pdf" class="" target="_none">Using GIS-based methods and lidar data to estimate rooftop solar technical potential in US cities</a> by Robert Margolis et al 2017 Environ. Res. Lett. 12 074013</li></a>
+          </li>
+          <li>
+            <a href="https://maps.nrel.gov/nsrdb-viewer/?aL&#x3D;0&amp;bL&#x3D;groad&amp;cE&#x3D;0&amp;lR&#x3D;0&amp;mC&#x3D;31.653381399664%2C-3.1640625&amp;zL&#x3D;2" class="" target="_none">NSRDB Viewer</a> by <a href="https://www.nrel.gov/" target="_none">NREL</a></li></a>
+          </li>
+          <li>
+            <a href="https://www.nrel.gov/docs/fy18osti/70901.pdf" class="" target="_none">Rooftop Solar Technical Potential for Low-to-Moderate Income Households in the United States</a> by <a href="https://www.nrel.gov/" target="_none">Benjamin Sigrin and Meghan Mooney</a></li></a>
+          </li>
+          <li>
+            <a href="https://iopscience.iop.org/article/10.1088/1748-9326/aaa554/pdf" class="" target="_none">Estimating rooftop solar technical potential across the US using a combination of GIS-based methods, lidar data, and statistical modeling</a> by Pieter Gagnon et al 2018 Environ. Res. Lett. 13 024027</li></a>
+          </li>
+          <li>
+            <a href="https://www.nrel.gov/docs/fy16osti/65298.pdf" class="" target="_none">Rooftop Solar Photovoltaic Technical Potential in the United States: A Detailed Assessment</a> by <a href="https://www.nrel.gov/" target="_none">Pieter Gagnon, Robert Margolis, Jennifer Melius, Caleb Phillips, and Ryan Elmore</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/nrel-oedi-pv-rooftops/#usageexamples">See 5 usage examples &rarr;</a></p>
+        </div>
+        <div id="pmsp-lidar" class="dataset">
+          <h3><a href="/pmsp-lidar/">Prefeitura Municipal de São Paulo (PMSP) LiDAR Point Cloud</a></h3>
+          <p><span class="label label-info tag link-tag">cities</span><span class="label label-info tag link-tag">elevation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">land</span><span class="label label-info tag link-tag">lidar</span><span class="label label-info tag link-tag">mapping</span><span class="label label-info tag link-tag">urban</span></p>
+          <p>The objective of the Mapa 3D Digital da Cidade (M3DC) of the São Paulo City Hall is to publish LiDAR point cloud data. The initial data was acquired in 2017 by aerial surveying and future data will be added. This publicly accessible dataset is provided in the <a href="https://entwine.io/entwine-point-tile.html">Entwine Point Tiles</a> format as a lossless octree, full density, based on <a href="https://laszip.org">LASzip</a> (LAZ) encoding.</p>
+          <p><a href="/pmsp-lidar/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://entwine.io/" class="" target="_none">Entwine</a> by <a href="https://hobu.co/" target="_none">Hobu, Inc.</a></li></a>
+          </li>
+          <li>
+            <a href="https://pdal.io/" class="" target="_none">PDAL - Point Data Abstraction Library</a> by <a href="https://doi.org/10.5281/zenodo.2556738" target="_none">PDAL Contributors</a></li></a>
+          </li>
+          <li>
+            <a href="http://forsys.sefs.uw.edu/fusion/fusionlatest.html" class="" target="_none">Fusion</a> by <a href="https://www.usda.gov/" target="_none">US Department of Agriculture - Forest Service</a></li></a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.5194/isprs-annals-IV-2-W5-437-2019" class="" target="_none">Describing the Vertical Structure of Informal Settlements on the Basis of LiDAR Data – A Case Study for Favelas (Slums) in Sao Paulo City</a> by S. C. L. Ribeiro, M. Jarzabek-Rychard, J. P. Cintra, H.-G. Maas</li></a>
+          </li>
+          <li>
+            <a href="https://rapidlasso.com/lastools/" class="" target="_none">LAStools</a> by <a href="https://rapidlasso.com" target="_none">rapidlasso GmbH, GERMANY</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/pmsp-lidar/#usageexamples">See 5 usage examples &rarr;</a></p>
+        </div>
+        <div id="ford-multi-av-seasonal" class="dataset">
+          <h3><a href="/ford-multi-av-seasonal/">Ford Multi-AV Seasonal Dataset</a></h3>
+          <p><span class="label label-info tag link-tag">autonomous vehicles</span><span class="label label-info tag link-tag">computer vision</span><span class="label label-info tag link-tag">lidar</span><span class="label label-info tag link-tag">mapping</span><span class="label label-info tag link-tag">robotics</span><span class="label label-info tag link-tag">transportation</span><span class="label label-info tag link-tag">urban</span><span class="label label-info tag link-tag">weather</span></p>
+          <p>This research presents a challenging multi-agent seasonal dataset collected by a fleet of Ford autonomous vehicles at different days and times during 2017-18. The vehicles The vehicles were manually driven on an average route of 66 km in Michigan that included a mix of driving scenarios like the Detroit Airport, freeways, city-centres, university campus and suburban neighbourhood, etc. Each vehicle used in this data collection  is a Ford Fusion outfitted with an Applanix POS-LV inertial measurement unit (IMU), four HDL-32E Velodyne 3D-lidar scanners, 6 Point Grey 1.3 MP Cameras arranged on the...</p>
+          <p><a href="/ford-multi-av-seasonal/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/Ford/AVData" class="" target="_none">Ford AV Dataset Tutorial</a> by Ford Motor Company</li></a>
+          </li>
+        </ul>
+        <p><a href="/ford-multi-av-seasonal/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+        <div id="nj-lidar" class="dataset">
+          <h3><a href="/nj-lidar/">New Jersey Statewide LiDAR</a></h3>
+          <p><span class="label label-info tag link-tag">elevation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">lidar</span><span class="label label-info tag link-tag">mapping</span></p>
+          <p>Elevation datasets in New Jersey have been collected over several years as several
+discrete projects.  Each project covers a geographic area, which is a subsection of
+the entire state, and has differing specifications based on the available technology
+at the time and project budget.  The geographic extent of one project may overlap that
+of a neighboring project. Each of the 18 projects contains deliverable products such
+as LAS (Lidar point cloud) files, unclassified/classified, tiled to cover project area;
+relevant metadata records or documents, most adhering to the Federal Geographic Data
+Com...</p>
+          <p><a href="/nj-lidar/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://njogis-elevation.s3-us-west-2.amazonaws.com/NJ+3D+Visualization.pdf" class="" target="_none">3D Visualization</a> by <a href="https://njgin.nj.gov/njgin/edata/elevation/index.html" target="_none">stephanie.bosits@tech.nj.us</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/nj-lidar/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+        <div id="aev-a2d2" class="dataset">
+          <h3><a href="/aev-a2d2/">A2D2: Audi Autonomous Driving Dataset</a></h3>
+          <p><span class="label label-info tag link-tag">autonomous vehicles</span><span class="label label-info tag link-tag">computer vision</span><span class="label label-info tag link-tag">deep learning</span><span class="label label-info tag link-tag">lidar</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">mapping</span><span class="label label-info tag link-tag">robotics</span></p>
+          <p>An open multi-sensor dataset for autonomous driving research. This dataset comprises semantically segmented images, semantic point clouds, and 3D bounding boxes. In addition, it contains unlabelled 360 degree camera images, lidar, and bus data for three sequences. We hope this dataset will further facilitate active research and development in AI, computer vision, and robotics for autonomous driving.</p>
+          <p><a href="/aev-a2d2/">Details &rarr;</a></p>
+        </div>
+        <div id="noaa-coastal-lidar" class="dataset">
+          <h3><a href="/noaa-coastal-lidar/">NOAA Coastal Lidar Data</a></h3>
+          <p><span class="label label-info tag link-tag">climate</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">elevation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">lidar</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Lidar (light detection and ranging) is a technology that can measure the 3-dimentional location of objects, including the solid earth surface. The data consists of a point cloud of the positions of solid objects that reflected a laser pulse, typically from an airborne platform. In addition to the position, each point may also be attributed by the type of object it reflected from, the intensity of the reflection, and other system dependent metadata. The NOAA Coastal Lidar Data is a collection of lidar projects from many different sources and agencies, geographically focused on the coastal areas...</p>
+          <p><a href="/noaa-coastal-lidar/">Details &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>  </body>
+  <script src="/js/index.js"></script>
+</html>

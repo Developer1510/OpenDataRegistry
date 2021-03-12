@@ -1,0 +1,1835 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Registry of Open Data on AWS</title>
+    <link>https://registry.opendata.aws</link>
+    <description>Recent datasets listed on the Registry of Open Data on AWS</description>
+    <language>en-us</language>
+    <managingEditor>opendata@amazon.com</managingEditor>
+    <lastBuildDate>Thu, 11 Mar 2021 13:25:59 GMT</lastBuildDate>
+    <item>
+      <title>The Cancer Genome Atlas</title>
+      <link>/tcga</link>
+      <guid>/tcga</guid>
+      <description>The Cancer Genome Atlas (TCGA), a collaboration between the National Cancer Institute (NCI) and National Human Genome Research Institute (NHGRI), aims to generate comprehensive, multi-dimensional maps of the key genomic changes in major types and subtypes of cancer. TCGA has analyzed matched tumor and normal tissues from 11,000 patients, allowing for the comprehensive characterization of 33 cancer types and subtypes, including 10 rare cancers.
+The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression Quantification, miRNA Expression Quantification, Genotyping Array Copy Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping Array Gene Level Copy Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation Beta Value Tissue Slide Image, and Diagnostic Slide Image data from Genomic Data Commons (GDC).
+This dataset also contains controlled Whole Exome Sequencing (WXS), RNA-Seq, miRNA-Seq, ATAC-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic Mutation, and WXS Aggregated Somatic Mutation data from GDC.
+TCGA is made available on AWS via the &lt;a href&#x3D;&quot;https://aws.amazon.com/blogs/publicsector/aws-and-national-institutes-of-health-collaborate-to-accelerate-discoveries-with-strides-initiative/&quot;&gt;NIH STRIDES Initiative&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Therapeutically Applicable Research to Generate Effective Treatments (TARGET)</title>
+      <link>/target</link>
+      <guid>/target</guid>
+      <description>Therapeutically Applicable Research to Generate Effective Treatments (TARGET) is the collaborative effort of a large, diverse consortium of extramural and NCI investigators. The goal of the effort is to accelerate molecular discoveries that drive the initiation and progression of hard-to-treat childhood cancers and facilitate rapid translation of those findings into the clinic.
+TARGET projects provide comprehensive molecular characterization to determine the genetic changes that drive the initiation and progression of childhood cancers.The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression Quantification, miRNA-Seq miRNA Expression Quantification data from Genomic Data Commons (GDC), and open data from GDC Legacy Archive.</description>
+    </item>
+    <item>
+      <title>Common Crawl</title>
+      <link>/commoncrawl</link>
+      <guid>/commoncrawl</guid>
+      <description>A corpus of web crawl data composed of over 50 billion web pages.</description>
+    </item>
+    <item>
+      <title>Sentinel-2</title>
+      <link>/sentinel-2</link>
+      <guid>/sentinel-2</guid>
+      <description>The &lt;a href&#x3D;&quot;https://sentinel.esa.int/web/sentinel/missions/sentinel-2&quot;&gt;Sentinel-2 mission&lt;/a&gt; is
+a land monitoring constellation of two satellites that provide high resolution
+optical imagery and provide continuity for the current SPOT and Landsat missions.
+The mission provides a global coverage of the Earth&amp;#39;s land surface every 5 days,
+making the data of great use in on-going studies. L1C data are available from
+June 2015 globally. L2A data are available from September 2016 over wider Europe
+region and globally since January 2017.</description>
+    </item>
+    <item>
+      <title>Gabriella Miller Kids First Pediatric Research Program (Kids First)</title>
+      <link>/kids-first</link>
+      <guid>/kids-first</guid>
+      <description>The NIH Common Fund&amp;#39;s Gabriella Miller Kids First Pediatric Research Program’s (“Kids First”) vision is to “alleviate suffering from childhood cancer and structural birth defects by fostering collaborative research to uncover the etiology of these diseases and by supporting data sharing within the pediatric research community.” The program continues to generate and share whole genome sequence data from thousands of children affected by these conditions, ranging from rare pediatric cancers, such as osteosarcoma, to more prevalent diagnoses, such as congenital heart defects. In 2018, Kids First launched the Gabriella Miller Kids First Data Resource Center, charged with building a large-scale data platform supporting clinical and genetic data from these patients and their families in order to accelerate discovery and ultimately clinical impact. Researchers can search, access, aggregate, and analyze these data through the Kids First Data Resource Portal. Additionally, by using cloud-based individual workspaces in CAVATICA, a data analysis and sharing computation platform, researchers can cross-analyze Kids First data with data from other efforts, such as NCI’s TARGET program and consortia-based datasets like the Children’s Brain Tumor Tissue Consortium (CBTTC).
+Kids First is made available on AWS via the &lt;a href&#x3D;&quot;https://aws.amazon.com/blogs/publicsector/aws-and-national-institutes-of-health-collaborate-to-accelerate-discoveries-with-strides-initiative/&quot;&gt;NIH STRIDES Initiative&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Landsat 8</title>
+      <link>/landsat-8</link>
+      <guid>/landsat-8</guid>
+      <description>An ongoing collection of satellite imagery of all land on Earth produced by
+the Landsat 8 satellite.&lt;strong&gt;Note this dataset is deprecated in favor of the &lt;a href&#x3D;&quot;https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access&quot;&gt;USGS cloud access mechanism&lt;/a&gt;. This bucket will be deleted on July 1, 2021.&lt;/strong&gt;</description>
+    </item>
+    <item>
+      <title>Sudachi Language Resources</title>
+      <link>/sudachi</link>
+      <guid>/sudachi</guid>
+      <description>Japanese dictionaries and word embeddings for natural language processing.
+&lt;a href&#x3D;&quot;https://github.com/WorksApplications/SudachiDict&quot;&gt;SudachiDict&lt;/a&gt; is the dictionary for a Japanese tokenizer (morphological analyzer) &lt;a href&#x3D;&quot;https://github.com/WorksApplications/Sudachi&quot;&gt;Sudachi&lt;/a&gt;.
+&lt;a href&#x3D;&quot;https://github.com/WorksApplications/chiVe&quot;&gt;chiVe&lt;/a&gt; is Japanese pretrained word embeddings (word vectors), trained using the ultra-large-scale web corpus NWJC by National Institute for Japanese Langauge and Linguistics, analyzed by Sudachi.</description>
+    </item>
+    <item>
+      <title>Foldingathome COVID-19 Datasets</title>
+      <link>/foldingathome-covid19</link>
+      <guid>/foldingathome-covid19</guid>
+      <description>&lt;a href&#x3D;&quot;http://foldingathome.org&quot;&gt;Folding@home&lt;/a&gt; is a massively distributed computing project that uses biomolecular simulations to investigate the &lt;a href&#x3D;&quot;https://foldingathome.org/diseases/&quot;&gt;molecular origins of disease&lt;/a&gt; and accelerate the discovery of new therapies. Run by the &lt;a href&#x3D;&quot;https://foldingathome.org/about/the-foldinghome-consortium/&quot;&gt;Folding@home Consortium&lt;/a&gt;, a worldwide network of research laboratories focusing on a variety of different diseases, Folding@home seeks to address problems in human health on a scale that is infeasible by another other means, sharing the results of these large-scale studies with the research community through &lt;a href&#x3D;&quot;https://foldingathome.org/papers-results/&quot;&gt;peer-reviewed publications&lt;/a&gt; and publicly shared datasets. During the &lt;a href&#x3D;&quot;https://en.wikipedia.org/wiki/Coronavirus_disease_2019&quot;&gt;COVID-19 epidemic&lt;/a&gt;, Folding@home focused its resources on understanding the vulernabilities in &lt;a href&#x3D;&quot;https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2&quot;&gt;SARS-CoV-2&lt;/a&gt;, the virus that causes COVID-19 disease, and working closely with a number of experimental collaborators to accelerate progress toward effective therapies for treating COVID-19 and ending the pandemic. In the process, it created the world&amp;#39;s first &lt;a href&#x3D;&quot;https://doi.org/10.1101/2020.06.27.175430&quot;&gt;exascale distributed computing resource&lt;/a&gt;, enabling it to generate valuable scientific datasets of unprecedented size. More information about Folding@home&amp;#39;s COVID-19 research activities at the &lt;a href&#x3D;&quot;https://foldingathome.org/diseases/infectious-diseases/covid-19/&quot;&gt;Folding@home COVID-19 page&lt;/a&gt;. In addition to working directly with experimental collaborators and rapidly sharing new research findings through preprint servers, Folding@home has joined other researchers in committing to &lt;a href&#x3D;&quot;https://doi.org/10.1021/acs.jcim.0c00319&quot;&gt;rapidly share all COVID-19 research data&lt;/a&gt;, and has joined forces with &lt;a href&#x3D;&quot;https://aws.amazon.com/&quot;&gt;AWS&lt;/a&gt; and the &lt;a href&#x3D;&quot;http://molssi.org&quot;&gt;Molecular Sciences Software Institute (MolSSI)&lt;/a&gt; to share datasets of unprecented side through the &lt;a href&#x3D;&quot;https://registry.opendata.aws/&quot;&gt;AWS Open Data Registry&lt;/a&gt;, indexing these massive datsets via the &lt;a href&#x3D;&quot;https://covid.molssi.org/&quot;&gt;MolSSI COVID-19 Molecular Structure and Therapeutics Hub&lt;/a&gt;. The complete index of all Folding@home datasets can be found &lt;a href&#x3D;&quot;https://covid.molssi.org//org-contributions/#folding--home&quot;&gt;here&lt;/a&gt;. This repository contains several major datasets from this effort and comprises the single largest collection of molecular simulation data ever released.</description>
+    </item>
+    <item>
+      <title>Genome Aggregation Database (gnomAD)</title>
+      <link>/broad-gnomad</link>
+      <guid>/broad-gnomad</guid>
+      <description>The Genome Aggregation Database (gnomAD) is a resource developed by an international coalition of investigators that aggregates and harmonizes both exome and genome data from a wide range of large-scale human sequencing projects. The summary data provided here are released for the benefit of the wider scientific community without restriction on use.
+The v2 data set (GRCh37) spans 125,748 exome sequences and 15,708 whole-genome sequences from unrelated individuals. The v3 data set (GRCh38) spans 71,702 genomes, selected as in v2.
+Sign up for the gnomAD mailing list &lt;a href&#x3D;&quot;http://broad.io/gnomad_list&quot;&gt;here&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>NEXRAD on AWS</title>
+      <link>/noaa-nexrad</link>
+      <guid>/noaa-nexrad</guid>
+      <description>Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.</description>
+    </item>
+    <item>
+      <title>Terrain Tiles</title>
+      <link>/terrain-tiles</link>
+      <guid>/terrain-tiles</guid>
+      <description>A global dataset providing bare-earth terrain heights, tiled for easy usage and provided on S3.</description>
+    </item>
+    <item>
+      <title>Allen Cell Imaging Collections</title>
+      <link>/allen-cell-imaging-collections</link>
+      <guid>/allen-cell-imaging-collections</guid>
+      <description>This bucket contains multiple datasets (as Quilt packages) created by the
+Allen Institute for Cell Science (AICS). The imaging data in this bucket contains
+either of the following:1) field of view images from glass plates
+2) cell membrane, DNA, and structure segmentations
+3) cell membrane, DNA and structure contours
+4) machine learning imaging predictions of the previously listed modalities.In addition, many of the datasets include CSVs that contain feature sets
+related to that data.</description>
+    </item>
+    <item>
+      <title>CBERS on AWS</title>
+      <link>/cbers</link>
+      <guid>/cbers</guid>
+      <description>This project creates a S3 repository with imagery acquired
+by the China-Brazil Earth Resources Satellite (CBERS). The
+image files are recorded and processed by Instituto Nacional de Pesquisa
+Espaciais (INPE) and are converted to Cloud Optimized Geotiff
+format in order to optimize its use for cloud based applications.
+The repository contains all CBERS-4 MUX, AWFI, PAN5M and
+PAN10M scenes acquired since
+the start of the satellite mission and is daily updated with
+new scenes.</description>
+    </item>
+    <item>
+      <title>International Neuroimaging Data-Sharing Initiative (INDI)</title>
+      <link>/fcp-indi</link>
+      <guid>/fcp-indi</guid>
+      <description>This bucket contains multiple neuroimaging datasets that are part of the International Neuroimaging Data-Sharing Initiative. Raw human and non-human primate neuroimaging data include 1) Structural MRI; 2) Functional MRI; 3) Diffusion Tensor Imaging; 4) Electroencephalogram (EEG)
+In addition to the raw data, preprocessed data is also included for some datasets.
+A complete list of the available datasets can be seen in the documentation lonk provided below. </description>
+    </item>
+    <item>
+      <title>SpaceNet</title>
+      <link>/spacenet</link>
+      <guid>/spacenet</guid>
+      <description>SpaceNet, launched in August 2016 as an open innovation project offering a repository of freely available
+imagery with co-registered map features. Before SpaceNet, computer vision researchers had minimal options
+to obtain free, precision-labeled, and high-resolution satellite imagery. Today, SpaceNet hosts datasets
+developed by its own team, along with data sets from projects like IARPA’s Functional Map of the World (fMoW).</description>
+    </item>
+    <item>
+      <title>Fly Brain Anatomy: FlyLight Gen1 and Split-GAL4 Imagery</title>
+      <link>/janelia-flylight</link>
+      <guid>/janelia-flylight</guid>
+      <description>This data set, made available by Janelia&amp;#39;s FlyLight project, consists of fluorescence images 
+of Drosophila melanogaster driver lines, aligned to standard templates, and stored in formats 
+suitable for rapid searching and visualization. Additional data will be added as it is published. 
+A large release of Gen1 MCFO samples is coming at the beginning of May 2020. </description>
+    </item>
+    <item>
+      <title>IRS 990 Filings</title>
+      <link>/irs990</link>
+      <guid>/irs990</guid>
+      <description>Machine-readable data from certain electronic 990 forms filed with the IRS from 2013 to present.</description>
+    </item>
+    <item>
+      <title>NOAA Geostationary Operational Environmental Satellites (GOES) 16 &amp; 17</title>
+      <link>/noaa-goes</link>
+      <guid>/noaa-goes</guid>
+      <description>GOES satellites (GOES-16 &amp;amp; GOES-17) provide continuous weather imagery and
+monitoring of meteorological and space environment data across North America.
+GOES satellites provide the kind of continuous monitoring necessary for
+intensive data analysis. They hover continuously over one position on the surface.
+The satellites orbit high enough to allow for a full-disc view of the Earth. Because
+they stay above a fixed spot on the surface, they provide a constant vigil for the
+atmospheric &amp;quot;triggers&amp;quot; for severe weather conditions such as tornadoes, flash floods,
+hailstorms, and hurricanes. When these conditions develop, the GOES satellites are able
+to monitor storm development and track their movements.</description>
+    </item>
+    <item>
+      <title>Multi-Scale Ultra High Resolution (MUR) Sea Surface Temperature (SST)</title>
+      <link>/mur</link>
+      <guid>/mur</guid>
+      <description>A global, gap-free, gridded, daily 1 km Sea Surface Temperature (SST) dataset created by merging multiple Level-2 satellite SST datasets. Those input datasets include the NASA Advanced Microwave Scanning Radiometer-EOS (AMSR-E), the JAXA Advanced Microwave Scanning Radiometer 2 (AMSR-2) on GCOM-W1, the Moderate Resolution Imaging Spectroradiometers (MODIS) on the NASA Aqua and Terra platforms, the US Navy microwave WindSat radiometer, the Advanced Very High Resolution Radiometer (AVHRR) on several NOAA satellites, and in situ SST observations from the NOAA iQuam project. Data are available from 2002 to present in Zarr format. The original source of the MUR data is the NASA JPL Physical Oceanography DAAC.</description>
+    </item>
+    <item>
+      <title>Open NeuroData</title>
+      <link>/open-neurodata</link>
+      <guid>/open-neurodata</guid>
+      <description>This bucket contains multiple neuroimaging datasets (as Neuroglancer Precomputed Volumes) across multiple modalities and scales, ranging from nanoscale (electron microscopy), to microscale (cleared lightsheet microscopy and array tomography), and mesoscale (structural and functional magnetic resonance imaging). Additionally, many of the datasets include segmentations and meshes.</description>
+    </item>
+    <item>
+      <title>Cancer Cell Line Encyclopedia (CCLE)</title>
+      <link>/ccle</link>
+      <guid>/ccle</guid>
+      <description>The Cancer Cell Line Encyclopedia (CCLE) project is an effort to conduct a detailed genetic
+characterization of a large panel of human cancer cell lines. The CCLE provides public access to
+genomic data, visualization and analysis for over 1100 cancer cell lines. This dataset contains
+RNA-Seq Aligned Reads, WXS Aligned Reads, and WGS Aligned Reads data.</description>
+    </item>
+    <item>
+      <title>NOAA Water-Column Sonar Data Archive</title>
+      <link>/ncei-wcsd-archive</link>
+      <guid>/ncei-wcsd-archive</guid>
+      <description>Water-column sonar data archived at the NOAA National Centers for Environmental Information.</description>
+    </item>
+    <item>
+      <title>Sentinel-2 Cloud-Optimized GeoTIFFs</title>
+      <link>/sentinel-2-l2a-cogs</link>
+      <guid>/sentinel-2-l2a-cogs</guid>
+      <description>The &lt;a href&#x3D;&quot;https://sentinel.esa.int/web/sentinel/missions/sentinel-2&quot;&gt;Sentinel-2 mission&lt;/a&gt; is
+a land monitoring constellation of two satellites that provide high resolution
+optical imagery and provide continuity for the current SPOT and Landsat missions.
+The mission provides a global coverage of the Earth&amp;#39;s land surface every 5 days,
+making the data of great use in ongoing studies.
+This dataset is the same as the &lt;a href&#x3D;&quot;https://registry.opendata.aws/sentinel-2/&quot;&gt;Sentinel-2&lt;/a&gt;
+dataset, except the JP2K files were converted into Cloud-Optimized GeoTIFFs (COGs).
+Additionally, SpatioTemporal Asset Catalog metadata has were in a JSON file
+alongside the data, and a STAC API called &lt;a href&#x3D;&quot;https://earth-search.aws.element84.com/v0&quot;&gt;Earth-search&lt;/a&gt;
+is freely available to search the archive. This dataset contains all of the scenes in the
+original Sentinel-2 Public Dataset and will grow as that does.
+L2A data are available from April 2017 over wider Europe region and globally since December 2018.</description>
+    </item>
+    <item>
+      <title>World Bank - Light Every Night</title>
+      <link>/wb-light-every-night</link>
+      <guid>/wb-light-every-night</guid>
+      <description>Light Every Night - World Bank Nightime Light Data – provides open access to all nightly imagery and data from the Visible Infrared Imaging Radiometer Suite Day-Night Band (VIIRS DNB) from 2012-2020 and the Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS) from 1992-2013. The underlying data are sourced from the NOAA National Centers for Environmental Information (NCEI) archive. Additional processing by the University of Michigan enables access in Cloud Optimized GeoTIFF format (COG) and search using the Spatial Temporal Asset Catalog (STAC) standard. The data is published and openly available under the terms of the World Bank’s open data license.</description>
+    </item>
+    <item>
+      <title>eBird Status and Trends Model Results</title>
+      <link>/ebirdst</link>
+      <guid>/ebirdst</guid>
+      <description>The eBird Status and Trends project generates estimates of bird
+occurrence and abundance at a high spatiotemporal resolution.
+This dataset represents the primary modeled results from the
+analysis workflow and are designed for further analysis,
+synthesis, visualization, and exploration.</description>
+    </item>
+    <item>
+      <title>Clinical Proteomic Tumor Analysis Consortium 2 (CPTAC-2)</title>
+      <link>/cptac-2</link>
+      <guid>/cptac-2</guid>
+      <description>The Clinical Proteomic Tumor Analysis Consortium (CPTAC) is a national effort to accelerate the
+understanding of the molecular basis of cancer through the application of large-scale proteome and
+genome analysis, or proteogenomics. CPTAC-2 is the Phase II of the CPTAC Initiative (2011-2016).
+Datasets contain open RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression
+Quantification, and miRNA Expression Quantification data.</description>
+    </item>
+    <item>
+      <title>ICGC on AWS</title>
+      <link>/icgc</link>
+      <guid>/icgc</guid>
+      <description>The International Cancer Genome Consortium (ICGC) coordinates projects with the common aim of accelerating research into the causes and control of cancer. The PanCancer Analysis of Whole Genomes (PCAWG) study is an international collaboration to identify common patterns of mutation in whole genomes from ICGC. More than 2,400 consistently analyzed genomes corresponding to over 1,100 unique ICGC donors are now freely available on Amazon S3 to credentialed researchers subject to ICGC data sharing policies.</description>
+    </item>
+    <item>
+      <title>NREL Wind Integration National Dataset</title>
+      <link>/nrel-pds-wtk</link>
+      <guid>/nrel-pds-wtk</guid>
+      <description>Released to the public as part of the Department of Energy&amp;#39;s Open Energy Data Initiative,
+the &lt;a href&#x3D;&quot;https://www.nrel.gov/grid/wind-toolkit.html&quot;&gt;Wind Integration National Dataset (WIND)&lt;/a&gt;
+is an update and expansion of the Eastern Wind Integration Data Set and
+Western Wind Integration Data Set. It supports the next generation of wind
+integration studies.</description>
+    </item>
+    <item>
+      <title>Clinical Proteomic Tumor Analysis Consortium 3 (CPTAC-3)</title>
+      <link>/cptac-3</link>
+      <guid>/cptac-3</guid>
+      <description>The Clinical Proteomic Tumor Analysis Consortium (CPTAC) is a national effort to accelerate the
+understanding of the molecular basis of cancer through the application of large-scale proteome and
+genome analysis, or proteogenomics. CPTAC-3 is the Phase III of the CPTAC Initiative. The dataset
+contains open RNA-Seq Gene Expression Quantification data.</description>
+    </item>
+    <item>
+      <title>Global Database of Events, Language and Tone (GDELT)</title>
+      <link>/gdelt</link>
+      <guid>/gdelt</guid>
+      <description>This project monitors the world&amp;#39;s broadcast, print,
+and web news from nearly every corner of every country in
+over 100 languages and identifies the people, locations,
+organizations, counts, themes, sources, emotions,
+quotes, images and events driving our global society every
+second of every day.</description>
+    </item>
+    <item>
+      <title>Low Altitude Disaster Imagery (LADI) Dataset</title>
+      <link>/ladi</link>
+      <guid>/ladi</guid>
+      <description>The Low Altitude Disaster Imagery (LADI) Dataset consists of human and machine annotated airborne images collected by the Civil Air Patrol in support of various disaster responses from 2015-2019. The initial release of LADI focuses on the Atlantic hurricane seasons and coastal states along the Atlantic Ocean and Gulf of Mexico. Annotations are included for major hurricanes of Harvey, Maria, and Florence. Two key distinctions are the low altitude, oblique perspective of the imagery and disaster-related features, which are rarely featured in computer vision benchmarks and datasets.</description>
+    </item>
+    <item>
+      <title>NYU Langone &amp; FAIR FastMRI Dataset</title>
+      <link>/nyu-fastmri</link>
+      <guid>/nyu-fastmri</guid>
+      <description>This dataset contains deidentified raw k-space data and DICOM image files of over 1,500 knees and 6,970 brains.</description>
+    </item>
+    <item>
+      <title>OpenAQ</title>
+      <link>/openaq</link>
+      <guid>/openaq</guid>
+      <description>Global, aggregated physical air quality data from public data sources provided by government, research-grade and other sources. These awesome groups do the hard work of measuring these data and publicly sharing them, and our community makes them more universally-accessible to both humans and machines.</description>
+    </item>
+    <item>
+      <title>Radiant MLHub</title>
+      <link>/radiant-mlhub</link>
+      <guid>/radiant-mlhub</guid>
+      <description>Radiant MLHub is an open library for geospatial training data that hosts datasets generated by &lt;a href&#x3D;&quot;https://www.radiant.earth/&quot;&gt;Radiant Earth Foundation&lt;/a&gt;&amp;#39;s team as well as other training data catalogs contributed by Radiant Earth’s partners. Radiant MLHub is open to anyone to access, store, register and/or share their training datasets for high-quality Earth observations. All of the training datasets are stored using a &lt;a href&#x3D;&quot;https://stacspec.org/&quot;&gt;SpatioTemporal Asset Catalog (STAC)&lt;/a&gt; compliant catalog and exposed through a common API. Training datasets include pairs of imagery and labels for different types of machine learning problems including image classification, object detection, and semantic segmentation. Labels are generated from ground reference data and/or image annotation.</description>
+    </item>
+    <item>
+      <title>USGS 3DEP LiDAR Point Clouds</title>
+      <link>/usgs-lidar</link>
+      <guid>/usgs-lidar</guid>
+      <description>The goal of the &lt;a href&#x3D;&quot;https://www.usgs.gov/core-science-systems/ngp/3dep&quot;&gt;USGS 3D Elevation Program &lt;/a&gt; (3DEP) is to collect elevation data in the form of light detection and ranging (LiDAR) data over the conterminous United States, Hawaii, and the U.S. territories, with data acquired over an 8-year period. This dataset provides two realizations of the 3DEP point cloud data. The first resource is a public access organization provided in &lt;a href&#x3D;&quot;https://entwine.io/entwine-point-tile.html&quot;&gt;Entwine Point Tiles&lt;/a&gt; format, which a lossless, full-density, streamable octree based on &lt;a href&#x3D;&quot;https://laszip.org&quot;&gt;LASzip&lt;/a&gt; (LAZ) encoding. The second resource is a &lt;a href&#x3D;&quot;https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html&quot;&gt;Requester Pays&lt;/a&gt; of the same data in LAZ (Compressed LAS) format. Resource names in both buckets correspond to the USGS project names.</description>
+    </item>
+    <item>
+      <title>COVID-19 Data Lake</title>
+      <link>/aws-covid19-lake</link>
+      <guid>/aws-covid19-lake</guid>
+      <description>A centralized repository of up-to-date and curated datasets on or related to the spread and characteristics of the novel corona virus (SARS-CoV-2) and its associated illness, COVID-19. Globally, there are several efforts underway to gather this data, and we are working with partners to make this crucial data freely available and keep it up-to-date. Hosted on the AWS cloud, we have seeded our curated data lake with COVID-19 case tracking data from Johns Hopkins and The New York Times, hospital bed availability from Definitive Healthcare, and over 45,000 research articles about COVID-19 and related coronaviruses from the Allen Institute for AI.</description>
+    </item>
+    <item>
+      <title>CoMMpass from the Multiple Myeloma Research Foundation</title>
+      <link>/mmrf-commpass</link>
+      <guid>/mmrf-commpass</guid>
+      <description>The Relating Clinical Outcomes in Multiple Myeloma to Personal Assessment of Genetic Profile study is the Multiple Myeloma Research Foundation (MMRF)’s landmark personalized medicine initiative.  CoMMpass is a
+longitudinal observation study of around 1000 newly diagnosed myeloma patients receiving various
+standard approved treatments. The MMRF’s vision is to track the treatment and results for each
+CoMMpass patient so that someday the information can be used to guide decisions for newly
+diagnosed patients. CoMMpass checked on patients every 6 months for 8 years, collecting tissue
+samples, genetic, information, quality of life and various disease and clinical outcomes. The
+study has produced one of the largest genomic and clinical datasets of a single disease.</description>
+    </item>
+    <item>
+      <title>NOAA High-Resolution Rapid Refresh (HRRR) Model</title>
+      <link>/noaa-hrrr-pds</link>
+      <guid>/noaa-hrrr-pds</guid>
+      <description>The HRRR is a NOAA real-time 3-km resolution, hourly updated, cloud-resolving, convection-allowing atmospheric model, initialized by 3km grids with 3km radar assimilation. Radar data is assimilated in the HRRR every 15 min over a 1-h period adding further detail to that provided by the hourly data assimilation from the 13km radar-enhanced Rapid Refresh.</description>
+    </item>
+    <item>
+      <title>National Renewable Energy Laboratory&#x27;s (NREL) PV Rooftop Database</title>
+      <link>/nrel-oedi-pv-rooftops</link>
+      <guid>/nrel-oedi-pv-rooftops</guid>
+      <description>Released to the public as part of the Department of Energy&amp;#39;s Open Energy Data Initiative, the National Renewable Energy Laboratory&amp;#39;s (NREL) PV Rooftop Database (PVRDB) is a lidar-derived, geospatially-resolved dataset of suitable roof surfaces and their PV technical potential for 128 metropolitan regions in the United States. The source lidar data and building footprints were obtained by the U.S. Department of Homeland Security Homeland Security Infrastructure Program for 2006-2014. Using GIS methods, NREL identified suitable roof surfaces based on their size, orientation, and shading parameters Gagnon et al. 2016. Standard 2015 technical potential was then estimated for each plane using NREL&amp;#39;s System Advisor Model.  The PVRDB is down-loadable by city and year of lidar collection. Five geospatial layers are available for each city and year: 1) the raster extent of the lidar collection, 2) buildings identified from the lidar data, 3) suitable developable planes for each building, 4) aspect values of the developable planes, and 5) the technical potential estimates of the developable planes. The first and current version of the PVRDB is derived from 2006-2014, 1-meter lidar data from the U.S. Department of Homeland Security for 128 metropolitan regions. Suitability is defined as any roof area that is less than 60 degrees in tilt; has an orientation facing east, southeast, south, southwest, or west; is in sunlight for a minimum number of hours per day (determined uniquely for each region); and has at least 10 m2 of contiguous area that meets the above listed criteria. Technical potential estiamtes were estimated using SAM, with NSRDB v1 as the underlying resource data. Technical parameters assumed a 2015 typical residential PV rooftop system.</description>
+    </item>
+    <item>
+      <title>New York City Taxi and Limousine Commission (TLC) Trip Record Data</title>
+      <link>/nyc-tlc-trip-records-pds</link>
+      <guid>/nyc-tlc-trip-records-pds</guid>
+      <description>Data of trips taken by taxis and for-hire vehicles in New York City.</description>
+    </item>
+    <item>
+      <title>Ozone Monitoring Instrument (OMI) / Aura NO2 Tropospheric Column Density</title>
+      <link>/omi-no2-nasa</link>
+      <guid>/omi-no2-nasa</guid>
+      <description>NO2 tropospheric column density, screened for CloudFraction &amp;lt; 30% global daily
+ composite at 0.25 degree resolution for the temporal range of 2004 to May
+2020. Original archive data in HDF5 has been processed into a &lt;a href&#x3D;&quot;https://www.cogeo.org/&quot;&gt;Cloud-Optimized
+GeoTiff (COG)&lt;/a&gt; format. Quality Assurance - This data
+has been validated by the NASA Science Team at Goddard Space Flight Center.Cautionary Note: &lt;a href&#x3D;&quot;https://airquality.gsfc.nasa.gov/caution-interpretation&quot;&gt;https://airquality.gsfc.nasa.gov/caution-interpretation&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Prefeitura Municipal de São Paulo (PMSP) LiDAR Point Cloud</title>
+      <link>/pmsp-lidar</link>
+      <guid>/pmsp-lidar</guid>
+      <description>The objective of the Mapa 3D Digital da Cidade (M3DC) of the São Paulo City Hall is to publish LiDAR point cloud data. The initial data was acquired in 2017 by aerial surveying and future data will be added. This publicly accessible dataset is provided in the &lt;a href&#x3D;&quot;https://entwine.io/entwine-point-tile.html&quot;&gt;Entwine Point Tiles&lt;/a&gt; format as a lossless octree, full density, based on &lt;a href&#x3D;&quot;https://laszip.org&quot;&gt;LASzip&lt;/a&gt; (LAZ) encoding.</description>
+    </item>
+    <item>
+      <title>SondeHub Radiosonde Telemetry</title>
+      <link>/sondehub-telemetry</link>
+      <guid>/sondehub-telemetry</guid>
+      <description>SondeHub Radiosonde telemetry contains global radiosonde (weather balloon) data captured by SondeHub from our participating radiosonde_auto_rx receiving stations. radiosonde_auto_rx is a open source project aimed at receiving and decoding telemetry from airborne radiosondes using software-defined-radio techniques, enabling study of the telemetry and sometimes recovery of the radiosonde itself.
+Currently 313 receiver stations are providing data for an average of 384 radiosondes a day.  The data within this repository contains received telemetry frames, including radiosonde type, gps position, and for some radiosondes atmospheric sensor data (temperature, humidity, pressure). As the downlinked telemetry does not always contain calibration information, any atmospheric sensor data should be considered to be uncalibrated. Note that radiosonde_auto_rx does not have sensor data support for all radiosonde types.</description>
+    </item>
+    <item>
+      <title>Southern California Earthquake Data</title>
+      <link>/southern-california-earthquakes</link>
+      <guid>/southern-california-earthquakes</guid>
+      <description>This dataset contains ground motion velocity and acceleration seismic waveforms recorded by the Southern California Seismic Network (SCSN) and archived at the Southern California Earthquake Data Center (SCEDC).</description>
+    </item>
+    <item>
+      <title>1000 Genomes Phase 3 Reanalysis with DRAGEN 3.5</title>
+      <link>/ilmn-dragen-1kgp</link>
+      <guid>/ilmn-dragen-1kgp</guid>
+      <description>This dataset contains alignment files and short nucleotide, copy number, and structural variant call files from the newly revised (n&#x3D;3202) 1000 Genomes Project Phase 3 using Illumina DRAGEN v3.5.7b</description>
+    </item>
+    <item>
+      <title>3000 Rice Genomes Project</title>
+      <link>/3kricegenome</link>
+      <guid>/3kricegenome</guid>
+      <description>The 3000 Rice Genome Project is an international effort to sequence the genomes of 3,024 rice varieties from 89 countries.</description>
+    </item>
+    <item>
+      <title>Community Earth System Model Large Ensemble (CESM LENS)</title>
+      <link>/ncar-cesm-lens</link>
+      <guid>/ncar-cesm-lens</guid>
+      <description>The Community Earth System Model (CESM) Large Ensemble Numerical Simulation (LENS) dataset includes a 40-member ensemble of climate simulations for the period 1920-2100 using historical data (1920-2005) or assuming the RCP8.5 greenhouse gas concentration scenario (2006-2100), as well as longer control runs based on pre-industrial conditions. The data comprise both surface (2D) and volumetric (3D) variables in the atmosphere, ocean, land, and ice domains. The total data volume of the original dataset is ~500TB, which has traditionally been stored as ~150,000 individual CF/NetCDF files on disk or magnetic tape made available through the NCAR Climate Data Gateway for download or via web services.   NCAR has copied a subset (currently ~70 TB) of CESM LENS data to Amazon S3 as part of the AWS Public Datasets Program. To optimize for large-scale analytics we have represented the data as ~275 Zarr stores format accessible through the Python Xarray library. Each Zarr store contains a single physical variable for a given model run type and temporal frequency (monthly, daily, 6-hourly).</description>
+    </item>
+    <item>
+      <title>DOE&#x27;s Water Power Technology Office&#x27;s (WPTO) US Wave dataset</title>
+      <link>/wpto-pds-us-wave</link>
+      <guid>/wpto-pds-us-wave</guid>
+      <description>Released to the public as part of the Department of Energy&amp;#39;s Open Energy Data Initiative,
+this is the highest resolution publicly available long-term wave hindcast
+dataset that – when complete – will cover the entire U.S. Exclusive Economic
+Zone (EEZ).</description>
+    </item>
+    <item>
+      <title>Department of Energy&#x27;s Open Energy Data Initiative (OEDI)</title>
+      <link>/oedi-data-lake</link>
+      <guid>/oedi-data-lake</guid>
+      <description>Data released under the Department of Energy&amp;#39;s Open Energy Data Initiative
+(DOE). The Open Energy Data Initiative (OEDI) aims to improve and automate
+access of high-value energy data sets across the U.S. Department of Energy’s
+(DOE’s) programs, offices, and national laboratories. OEDI aims to make data
+actionable and discoverable by researchers and industry to accelerate
+analysis and advance innovation.</description>
+    </item>
+    <item>
+      <title>ECMWF ERA5 Reanalysis</title>
+      <link>/ecmwf-era5</link>
+      <guid>/ecmwf-era5</guid>
+      <description>ERA5 is the fifth generation of ECMWF atmospheric reanalyses of the global climate, and the first reanalysis produced as an operational service. It utilizes the best available observation data from satellites and in-situ stations, which are assimilated and processed using ECMWF&amp;#39;s Integrated Forecast System (IFS) Cycle 41r2.
+The dataset provides all essential atmospheric meteorological parameters like, but not limited to, air temperature, pressure and wind at different altitudes, along with surface parameters like rainfall, soil moisture content and sea parameters like sea-surface temperature and wave height.
+ERA5 provides data at a considerably higher spatial and temporal resolution than its legacy counterpart ERA-Interim. ERA5 consists of high resolution version with 31 km horizontal resolution, and a reduced resolution ensemble version with 10 members. It is currently available since 2008, but will be continuously extended backwards, first until 1979 and then to 1950.
+Learn more about ERA5 in Jon Olauson&amp;#39;s paper &lt;a href&#x3D;&quot;https://www.researchgate.net/publication/320084119_ERA5_The_new_champion_of_wind_power_modelling&quot;&gt;ERA5: The new champion of wind power modelling?&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Encyclopedia of DNA Elements (ENCODE)</title>
+      <link>/encode-project</link>
+      <guid>/encode-project</guid>
+      <description>The Encyclopedia of DNA Elements (ENCODE) Consortium is an international collaboration of
+research groups funded by the National Human Genome Research Institute (NHGRI). The goal
+of ENCODE is to build a comprehensive parts list of functional elements in the human genome,
+including elements that act at the protein and RNA levels, and regulatory elements that
+control cells and circumstances in which a gene is active. ENCODE investigators employ a
+variety of assays and methods to identify functional elements. The discovery and annotation
+of gene elements is accomplished primarily by sequencing a diverse range of RNA sources,
+comparative genomics, integrative bioinformatic methods, and human curation. Regulatory
+elements are typically investigated through DNA hypersensitivity assays, assays of
+DNA methylation, and immunoprecipitation (IP) of proteins that interact with DNA and RNA,
+i.e., modified histones, transcription factors, chromatin regulators, and
+RNA-binding proteins, followed by sequencing.</description>
+    </item>
+    <item>
+      <title>First Street Foundation (FSF) Flood Risk Summary Statistics</title>
+      <link>/fsf-flood-risk</link>
+      <guid>/fsf-flood-risk</guid>
+      <description>CSV files of flood statistics for the 48 contiguous states at the congressional district, county, and zip code level. The CSV for each of these geographical extents includes statistics on the amount of properties at risk according to FEMA, the number of properties at risk according to First Street Foundation, and the difference between the two.</description>
+    </item>
+    <item>
+      <title>GEOS-Chem Input Data</title>
+      <link>/geoschem-input-data</link>
+      <guid>/geoschem-input-data</guid>
+      <description>Input data for the GEOS-Chem Chemical Transport Model. Including the NASA/GMAO MERRA-2 and GEOS-FP &lt;a href&#x3D;&quot;http://wiki.seas.harvard.edu/geos-chem/index.php/Overview_of_GMAO_met_data_products&quot;&gt;meteorological products&lt;/a&gt;, the &lt;a href&#x3D;&quot;http://wiki.seas.harvard.edu/geos-chem/index.php/HEMCO_data_directories&quot;&gt;HEMCO emission inventories&lt;/a&gt;, and other small data such as &lt;a href&#x3D;&quot;http://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_basics#Restart_files&quot;&gt;model initial conditions&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Genome in a Bottle on AWS</title>
+      <link>/giab</link>
+      <guid>/giab</guid>
+      <description>Several reference genomes to enable translation of whole human genome sequencing to clinical practice. On 11/12/2020 these data were updated to reflect the most &lt;a href&#x3D;&quot;https://www.nist.gov/programs-projects/genome-bottle&quot;&gt;up to date GIAB release&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>NIH NCBI Sequence Read Archive (SRA) on AWS</title>
+      <link>/ncbi-sra</link>
+      <guid>/ncbi-sra</guid>
+      <description>The Sequence Read Archive (SRA), produced by the &lt;a href&#x3D;&quot;https://www.ncbi.nlm.nih.gov/&quot;&gt;National Center for Biotechnology Information (NCBI)&lt;/a&gt; at the &lt;a href&#x3D;&quot;http://nlm.nih.gov/&quot;&gt;National Library of Medicine (NLM)&lt;/a&gt; at the &lt;a href&#x3D;&quot;http://www.nih.gov/&quot;&gt;National Institutes of Health (NIH)&lt;/a&gt;, stores raw DNA sequencing data and alignment information from high-throughput sequencing platforms. The SRA provides open access to these biological sequence data to support the research community&amp;#39;s efforts to enhance reproducibility and make new discoveries by comparing data sets. This bucket contains public SRA data in  original format from select high value and newly-released studies.</description>
+    </item>
+    <item>
+      <title>OpenStreetMap on AWS</title>
+      <link>/osm</link>
+      <guid>/osm</guid>
+      <description>OSM is a free, editable map of the world, created and maintained by volunteers. Regular OSM data archives are made available in Amazon S3.</description>
+    </item>
+    <item>
+      <title>Refgenie reference genome assets</title>
+      <link>/refgenie</link>
+      <guid>/refgenie</guid>
+      <description>Pre-built refgenie reference genome data assets used for aligning and analyzing DNA sequence data.</description>
+    </item>
+    <item>
+      <title>Sentinel-1</title>
+      <link>/sentinel-1</link>
+      <guid>/sentinel-1</guid>
+      <description>&lt;a href&#x3D;&quot;https://sentinel.esa.int/web/sentinel/missions/sentinel-1&quot;&gt;Sentinel-1&lt;/a&gt; is a pair of European radar imaging (SAR) satellites launched in 2014 and 2016. Its 6 days revisit cycle and ability to observe through clouds makes it perfect for sea and land monitoring, emergency response due to environmental disasters, and economic applications. GRD data is available globally since January 2017.</description>
+    </item>
+    <item>
+      <title>Sentinel-3</title>
+      <link>/sentinel-3</link>
+      <guid>/sentinel-3</guid>
+      <description>This data set consists of observations from the Sentinel-3 satellite of the European Commission’s Copernicus Earth Observation Programme. Sentinel-3 is a polar orbiting satellite that completes 14 orbits of the Earth a day. It carries the Ocean and Land Colour Instrument (OLCI) for medium resolution marine and terrestrial optical measurements, the Sea and Land Surface Termperature Radiometer (SLSTR), the SAR Radar Altimeter (SRAL), the MicroWave Radiometer (MWR) and the Precise Orbit Determination (POD) instruments. The satellite was launched in 2016 and entered routine operational phase in 2017. Data is available from July 2017 onwards.</description>
+    </item>
+    <item>
+      <title>Sentinel-5P Level 2</title>
+      <link>/sentinel5p</link>
+      <guid>/sentinel5p</guid>
+      <description>This data set consists of observations from the Sentinel-5 Precursor (Sentinel-5P) satellite of the European Commission’s Copernicus Earth Observation Programme. Sentinel-5P is a polar orbiting satellite that completes 14 orbits of the Earth a day. It carries the TROPOspheric Monitoring Instrument (TROPOMI) which is a spectrometer that senses ultraviolet (UV), visible (VIS), near (NIR) and short wave infrared (SWIR) to monitor ozone, methane, formaldehyde, aerosol, carbon monoxide, nitrogen dioxide and sulphur dioxide in the atmosphere. The satellite was launched in October 2017 and entered routine operational phase in March 2019. Data is available from July 2018 onwards.</description>
+    </item>
+    <item>
+      <title>UK Biobank Pan-Ancestry Summary Statistics</title>
+      <link>/broad-pan-ukb</link>
+      <guid>/broad-pan-ukb</guid>
+      <description>A multi-ancestry analysis of 7,221 phenotypes using a generalized mixed model association testing framework, spanning 16,119 genome-wide association studies. We provide standard meta-analysis across all populations and with a leave-one-population-out approach for each trait. The data are provided in tsv format (per phenotype) and Hail MatrixTable (all phenotypes and variants). Metadata is provided in phenotype and variant manifests.</description>
+    </item>
+    <item>
+      <title>Yale-CMU-Berkeley (YCB) Object and Model Set</title>
+      <link>/ycb-benchmarks</link>
+      <guid>/ycb-benchmarks</guid>
+      <description>This project primarily aims to facilitate performance benchmarking in robotics research. The dataset provides mesh models, RGB, RGB-D and point cloud images of over 80 objects. The physical objects are also available via the &lt;a href&#x3D;&quot;http://www.ycbbenchmarks.com/&quot;&gt;YCB benchmarking project&lt;/a&gt;. The data are collected by two state of the art systems: UC Berkley&amp;#39;s scanning rig and the Google scanner. The UC Berkley&amp;#39;s scanning rig data provide meshes generated with Poisson reconstruction, meshes generated with volumetric range image integration, textured versions of both meshes, Kinbody files for using the meshes with OpenRAVE, 600 High-resolution RGB images, 600 RGB-D images, and 600 point cloud images for each object. The Google scanner data provides 3 meshes with different resolutions (16k, 64k, and 512k polygons), textured versions of each mesh, Kinbody files for using the meshes with OpenRAVE.</description>
+    </item>
+    <item>
+      <title>Allen Mouse Brain Atlas</title>
+      <link>/allen-mouse-brain-atlas</link>
+      <guid>/allen-mouse-brain-atlas</guid>
+      <description>The Allen Mouse Brain Atlas is a genome-scale collection of cellular resolution gene expression profiles using in situ hybridization (ISH). Highly methodical data production methods and comprehensive anatomical coverage via dense, uniformly spaced sampling facilitate data consistency and comparability across &amp;gt;20,000 genes. The use of an inbred mouse strain with minimal animal-to-animal variance allows one to treat the brain essentially as a complex but highly reproducible three-dimensional tissue array. The entire Allen Mouse Brain Atlas dataset and associated tools are available through an unrestricted web-based viewing application (&lt;a href&#x3D;&quot;http://mouse.brain-map.org&quot;&gt;http://mouse.brain-map.org&lt;/a&gt;). The collection of &amp;gt; 650,000 images have been made available in this Open Data bucket to enable efficient access and analysis of the this dataset.</description>
+    </item>
+    <item>
+      <title>Basic Local Alignment Sequences Tool (BLAST) Databases</title>
+      <link>/ncbi-blast-databases</link>
+      <guid>/ncbi-blast-databases</guid>
+      <description>A centralized repository of pre-formatted BLAST databases created by the National Center for Biotechnology Information (NCBI).</description>
+    </item>
+    <item>
+      <title>Beat Acute Myeloid Leukemia (AML) 1.0</title>
+      <link>/beataml</link>
+      <guid>/beataml</guid>
+      <description>Beat AML 1.0 is a collaborative research program involving 11 academic medical centers who worked
+collectively to better understand  drugs and drug combinations that should be prioritized for
+further development within clinical and/or molecular subsets of acute myeloid leukemia (AML)
+patients. Beat AML 1.0 provides the largest-to-date dataset on primary acute myeloid leukemia
+samples offering genomic, clinical, and drug response.This dataset contains open Clinical Supplement and RNA-Seq Gene Expression Quantification data.This dataset also contains controlled Whole Exome Sequencing (WXS) and RNA-Seq Aligned Reads, WXS Annotated Somatic Mutation,
+WXS Raw Somatic Mutation, and RNA-Seq Splice Junction Quantification  </description>
+    </item>
+    <item>
+      <title>COVID-19 Harmonized Data</title>
+      <link>/talend-covid19</link>
+      <guid>/talend-covid19</guid>
+      <description>A harmonized collection of the core data pertaining to COVID-19 reported cases by geography, in a format prepared for analysis</description>
+    </item>
+    <item>
+      <title>Clinical Trial Sequencing Project - Diffuse Large B-Cell Lymphoma</title>
+      <link>/ctsp-dlbcl</link>
+      <guid>/ctsp-dlbcl</guid>
+      <description>The goal of the project is to identify recurrent genetic alterations (mutations, deletions,
+amplifications, rearrangements) and/or gene expression signatures. National Cancer Institute (NCI)
+utilized whole genome sequencing and/or whole exome sequencing in conjunction with transcriptome
+sequencing. The samples were processed and submitted for genomic characterization using pipelines
+and procedures established within The Cancer Genome Analysis (TCGA) project.</description>
+    </item>
+    <item>
+      <title>Deutsche Börse Public Dataset</title>
+      <link>/deutsche-boerse-pds</link>
+      <guid>/deutsche-boerse-pds</guid>
+      <description>The Deutsche Börse Public Data Set consists of trade data aggregated to one minute intervals from the Eurex and Xetra trading systems. It provides the initial price, lowest price, highest price, final price and volume for every minute of the trading day, and for every tradeable security.  If you need higher resolution data, including untraded price movements, please refer to our historical market data product &lt;a href&#x3D;&quot;http://www.eurexchange.com/exchange-en/market-data/historical-data&quot;&gt;here&lt;/a&gt;.  Also, be sure to check out our &lt;a href&#x3D;&quot;https://console.developer.deutsche-boerse.com/&quot;&gt;developer&amp;#39;s portal&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Distributed Archives for Neurophysiology Data Integration (DANDI)</title>
+      <link>/dandiarchive</link>
+      <guid>/dandiarchive</guid>
+      <description>DANDI is a public archive of neurophysiology datasets, including raw and processed data,  and associated software containers. Datasets are shared according to a Creative Commons  CC0 or CC-BY licenses. The data archive provides a broad range of cellular neurophysiology data.  This includes electrode and optical recordings, and associated imaging data using a  set of community standards: &lt;a href&#x3D;&quot;https://www.nwb.org/nwb-neurophysiology/&quot;&gt;NWB:N - NWB:Neurophysiology&lt;/a&gt;, &lt;a href&#x3D;&quot;https://bids.neuroimaging.io/&quot;&gt;BIDS - Brain Imaging Data Structure&lt;/a&gt;, and  &lt;a href&#x3D;&quot;http://nidm.nidash.org/&quot;&gt;NIDM - Neuro Imaging Data Model&lt;/a&gt;. Development of DANDI is  supported by the National Institute of Mental Health.</description>
+    </item>
+    <item>
+      <title>Finnish Meteorological Institute Weather Radar Data</title>
+      <link>/fmi-radar</link>
+      <guid>/fmi-radar</guid>
+      <description>The up-to-date weather radar from the FMI radar network is available as Open Data. The data contain both single radar data along with composites over Finland in GeoTIFF and HDF5-formats. Available composite parameters consist of radar reflectivity (DBZ), rainfall intensity (RR), and precipitation accumulation of 1, 12, and 24 hours. Single radar parameters consist of radar reflectivity (DBZ), radial velocity (VRAD), rain classification (HCLASS), and Cloud top height (ETOP 20). Raw volume data from singe radars are also provided in HDF5 format with ODIM 2.3 conventions. Radar data becomes available as soon as it&amp;#39;s received from the radar and pre-processed into deliverable formats. Typically the most recent radar data was collected less than 5 minutes ago.</description>
+    </item>
+    <item>
+      <title>Foundation Medicine Adult Cancer Clinical Dataset (FM-AD)</title>
+      <link>/fm-ad</link>
+      <guid>/fm-ad</guid>
+      <description>The Foundation Medicine Adult Cancer Clinical Dataset (FM-AD) is a study conducted by Foundation
+Medicine Inc (FMI). Genomic profiling data for approximately 18,000 adult patients with a diverse
+array of cancers was generated using FoundationeOne, FMI&amp;#39;s commercially available, comprehensive
+genomic profiling assay. This dataset contains open Clinical and Biospecimen data.</description>
+    </item>
+    <item>
+      <title>JMA Himawari-8</title>
+      <link>/noaa-himawari</link>
+      <guid>/noaa-himawari</guid>
+      <description>Himawari-8, stationed at 140E, owned and operated by the Japan Meteorological Agency (JMA), is a geostationary meteorological satellite, with Himawari-9  as on-orbit back-up, that provides constant and uniform coverage of east Asia, and the west and central Pacific regions from around 35,800 km above the equator with an orbit corresponding to the period of the earth’s rotation. This allows JMA weather offices to perform uninterrupted observation of environmental phenomena such as typhoons, volcanoes, and general weather systems. For questions regarding Himawari-8 imagery specifications, visit the JMA site at &lt;a href&#x3D;&quot;https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html&quot;&gt;https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html&lt;/a&gt;.  For examples of Full Disk Himawari-8 imagery coverage, visit the NOAA Himawari-8 data page at &lt;a href&#x3D;&quot;https://www.goes.noaa.gov/f_himawari-8.html&quot;&gt;https://www.goes.noaa.gov/f_himawari-8.html&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Japanese Tokenizer Dictionaries</title>
+      <link>/cotonoha-dic</link>
+      <guid>/cotonoha-dic</guid>
+      <description>Japanese Tokenizer Dictionaries for use with MeCab.</description>
+    </item>
+    <item>
+      <title>Medical Segmentation Decathlon</title>
+      <link>/msd</link>
+      <guid>/msd</guid>
+      <description>With recent advances in machine learning, semantic segmentation algorithms are becoming increasingly general purpose and translatable to unseen tasks. Many key algorithmic advances in the field of medical imaging are commonly validated on a small number of tasks, limiting our understanding of the generalisability of the proposed contributions. A model which works out-of-the-box on many tasks, in the spirit of AutoML, would have a tremendous impact on healthcare. The field of medical imaging is also missing a fully open source and comprehensive benchmark for general purpose algorithmic validation and testing covering a large span of challenges, such as: small data, unbalanced labels, large-ranging object scales, multi-class labels, and multimodal imaging, etc. This challenge and dataset aims to provide such resource thorugh the open sourcing of large medical imaging datasets on several highly different tasks, and by standardising the analysis and validation process.</description>
+    </item>
+    <item>
+      <title>NASA NEX</title>
+      <link>/nasanex</link>
+      <guid>/nasanex</guid>
+      <description>A collection of Earth science datasets maintained by NASA, including climate change projections and satellite images of the Earth&amp;#39;s surface.</description>
+    </item>
+    <item>
+      <title>NOAA Global Ensemble Forecast System (GEFS) Re-forecast</title>
+      <link>/noaa-gefs-reforecast</link>
+      <guid>/noaa-gefs-reforecast</guid>
+      <description>NOAA has generated a multi-decadal reanalysis and reforecast data set to accompany the next-generation version of its ensemble prediction system, the Global Ensemble Forecast System, version 12 (GEFSv12). Accompanying the real-time forecasts are “reforecasts” of the weather, that is, retrospective forecasts spanning the period 2000-2019. These reforecasts are not as numerous as the real-time data; they were generated only once per day, from 00 UTC initial conditions, and only 5 members were provided, with the following exception. Once weekly, an 11-member reforecast was generated, and these extend in lead time to +35 days. </description>
+    </item>
+    <item>
+      <title>NOAA Global Historical Climatology Network Daily (GHCN-D)</title>
+      <link>/noaa-ghcn</link>
+      <guid>/noaa-ghcn</guid>
+      <description>Global Historical Climatology Network - Daily is a dataset from NOAA that contains daily observations over global land areas. It contains station-based measurements from land-based stations worldwide, about two thirds of which are for precipitation measurement only. Other meteorological elements include, but are not limited to, daily maximum and minimum temperature, temperature at the time of observation, snowfall and snow depth. It is a composite of climate records from numerous sources that were merged together and subjected to a common suite of quality assurance reviews.  Some data are more than 175 years old. The data is in CSV format. Each file corresponds to a year from 1763 to present and is named as such.</description>
+    </item>
+    <item>
+      <title>NREL National Solar Radiation Database</title>
+      <link>/nrel-pds-nsrdb</link>
+      <guid>/nrel-pds-nsrdb</guid>
+      <description>Released to the public as part of the Department of Energy&amp;#39;s Open Energy Data Initiative,
+the &lt;a href&#x3D;&quot;https://nsrdb.nrel.gov/&quot;&gt;National Solar Radiation Database (NSRDB)&lt;/a&gt; is
+a serially complete collection of hourly and half-hourly values of the three
+most common measurements of solar radiation – global horizontal, direct
+normal, and diffuse horizontal irradiance — and meteorological data. These
+data have been collected at a sufficient number of locations and temporal and
+spatial scales to accurately represent regional solar radiation climates.</description>
+    </item>
+    <item>
+      <title>National Herbarium of NSW</title>
+      <link>/nsw-herbarium</link>
+      <guid>/nsw-herbarium</guid>
+      <description>The National Herbarium of New South Wales is one of the most significant scientific, cultural and historical botanical resources in the Southern hemisphere. The 1.43 million preserved plant specimens have been captured as high-resolution images and the biodiversity metadata associated with each of the images captured in digital form. Botanical specimens date from year 1770 to today, and form voucher collections that document the distribution and diversity of the world&amp;#39;s flora through time, particularly that of NSW, Austalia and the Pacific.The data is used in biodiversity assessment, systematic botanical research, ecosystem conservation and policy development. The data is used by scientists, students and the public.</description>
+    </item>
+    <item>
+      <title>OpenEEW</title>
+      <link>/grillo-openeew</link>
+      <guid>/grillo-openeew</guid>
+      <description>Grillo has developed an IoT-based earthquake early-warning system,
+with sensors currently deployed in Mexico, Chile, Puerto Rico and Costa Rica,
+and is now opening its entire archive of unprocessed accelerometer
+data to the world to encourage the development of new algorithms
+capable of rapidly detecting and characterizing earthquakes in
+real time.</description>
+    </item>
+    <item>
+      <title>PoroTomo</title>
+      <link>/nrel-pds-porotomo</link>
+      <guid>/nrel-pds-porotomo</guid>
+      <description>Released to the public as part of the Department of Energy&amp;#39;s Open Energy Data
+Initiative, these data represent vertical and horizontal distributed acoustic
+sensing (DAS) data collected as part of the Poroelastic Tomography (PoroTomo)
+project funded in part by the Office of Energy Efficiency and Renewable
+Energy (EERE), U.S. Department of Energy.</description>
+    </item>
+    <item>
+      <title>SILO climate data on AWS</title>
+      <link>/silo</link>
+      <guid>/silo</guid>
+      <description>&lt;a href&#x3D;&quot;https://www.longpaddock.qld.gov.au/silo&quot;&gt;SILO&lt;/a&gt; is a database of Australian &lt;a href&#x3D;&quot;https://www.longpaddock.qld.gov.au/silo/about/climate-variables&quot;&gt;climate data&lt;/a&gt; from 1889 to the present. It provides continuous, daily time-step &lt;a href&#x3D;&quot;https://www.longpaddock.qld.gov.au/silo/about/data-products&quot;&gt;data products&lt;/a&gt; in ready-to-use &lt;a href&#x3D;&quot;https://www.longpaddock.qld.gov.au/silo/about/file-formats-and-samples&quot;&gt;formats&lt;/a&gt; for research and operational applications.
+SILO&amp;#39;s gridded datasets (in NetCDF and GeoTiff formats) are hosted on AWS Public Data. Point data (at both station and grid cell locations) are available from the &lt;a href&#x3D;&quot;https://www.longpaddock.qld.gov.au/silo/&quot;&gt;SILO website&lt;/a&gt;. Incremental update files for mirroring point datasets at station locations are also available on AWS Public Data.</description>
+    </item>
+    <item>
+      <title>Sophos/ReversingLabs 20 Million malware detection dataset</title>
+      <link>/sorel-20m</link>
+      <guid>/sorel-20m</guid>
+      <description>A dataset intended to support research on machine learning
+techniques for detecting malware.  It includes metadata and EMBER-v2
+features for approximately 10 million benign and 10 million malicous
+Portable Executable files, with disarmed but otherwise complete
+files for all malware samples.  All samples are labeled using Sophos
+in-house labeling methods, have features extracted using the
+EMBER-v2 feature set, well as metadata obtained via the pefile
+python library, detection counts obtained via ReversingLabs
+telemetry, and additional behavioral tags that indicate the rough
+behavior of the samples.</description>
+    </item>
+    <item>
+      <title>Storm EVent ImageRy (SEVIR)</title>
+      <link>/sevir</link>
+      <guid>/sevir</guid>
+      <description>Collection of spatially and temporally aligned GOES-16 ABI satellite imagery, NEXRAD radar mosaics, and GOES-16 GLM lightning detections.</description>
+    </item>
+    <item>
+      <title>The Human Microbiome Project</title>
+      <link>/human-microbiome-project</link>
+      <guid>/human-microbiome-project</guid>
+      <description>The NIH-funded Human Microbiome Project (HMP) is a collaborative effort of over 300 scientists from more than 80 organizations to comprehensively characterize the microbial communities inhabiting the human body and elucidate their role in human health and disease. To accomplish this task, microbial community samples were isolated from a cohort of 300 healthy adult human subjects at 18 specific sites within five regions of the body (oral cavity, airways, urogenital track, skin, and gut). Targeted sequencing of the 16S bacterial marker gene and/or whole metagenome shotgun sequencing was performed for thousands of these samples. In addition, whole genome sequences were generated for isolate strains collected from human body sites to act as reference organisms for analysis. Finally, 16S marker and whole metagenome sequencing was also done on additional samples from people suffering from several disease conditions.</description>
+    </item>
+    <item>
+      <title>Variant Effect Predictor (VEP) and the Loss-Of-Function Transcript Effect Estimator (LOFTEE) Plugin</title>
+      <link>/hail-vep-pipeline</link>
+      <guid>/hail-vep-pipeline</guid>
+      <description>VEP determines the effect of genetic variants (SNPs, insertions, deletions, CNVs or structural variants) on genes, transcripts, and protein sequence, as well as regulatory regions. The European Bioinformatics Institute produces the VEP tool/db and releases updates every 1 - 6 months. The latest release contains 267 genomes from 232 species containing 5567663 protein coding genes. This dataset hosts the last 5 releases for human, rat, and zebrafish. Also, it hosts the required reference files for the Loss-Of-Function Transcript Effect Estimator (LOFTEE) plugin as it is commonly used with VEP.</description>
+    </item>
+    <item>
+      <title>Africa Soil Information Service (AfSIS) Soil Chemistry</title>
+      <link>/afsis</link>
+      <guid>/afsis</guid>
+      <description>This dataset contains soil infrared spectral data and paired soil property
+reference measurements for georeferenced soil samples that were collected
+through the Africa Soil Information Service (AfSIS) project, which lasted
+from 2009 through 2018. In this release, we include data collected during
+Phase I (2009-2013.) Georeferenced samples were collected from 19 countries
+in Sub-Saharan African using a statistically sound sampling scheme,
+and their soil properties were analyzed using &lt;em&gt;both&lt;/em&gt; conventional soil
+testing methods and spectral methods (infrared diffuse reflectance
+spectroscopy). The two types of data can be paired to form a training
+dataset for machine learning, such that certain soil properties can be
+well-predicted through less expensive spectral techniques.</description>
+    </item>
+    <item>
+      <title>Amazon Bin Image Dataset</title>
+      <link>/amazon-bin-imagery</link>
+      <guid>/amazon-bin-imagery</guid>
+      <description>The Amazon Bin Image Dataset contains over 500,000 images and metadata from bins of a pod in an operating Amazon Fulfillment Center. The bin images in this dataset are captured as robot units carry pods as part of normal Amazon Fulfillment Center operations.</description>
+    </item>
+    <item>
+      <title>Atmospheric Models from Météo-France</title>
+      <link>/meteo-france-models</link>
+      <guid>/meteo-france-models</guid>
+      <description>Global and high-resolution regional atmospheric models from Météo-France.&lt;ul&gt;
+&lt;li&gt;ARPEGE World covers the entire world at a base horizontal resolution of 0.5° (~55km) between grid points, it predicts weather out up to 114 hours in the future.&lt;/li&gt;
+&lt;li&gt;ARPEGE Europe covers Europe and North-Africa at a base horizontal resolution of 0.1° (~11km) between grid points, it predicts weather out up to 114 hours in the future.&lt;/li&gt;
+&lt;li&gt;AROME France covers France at a base horizontal resolution of 0.025° (~2.5km) between grid points, it predicts weather out up to 42 hours in the future.&lt;/li&gt;
+&lt;li&gt;AROME France HD covers France and neigborhood at a base horizontal resolution of 0.01° (~1.5km) between grid points, it predicts weather out up to 42 hours in the future.&lt;/li&gt;
+&lt;/ul&gt;
+Dozens of atmospheric variables are available through this datase: temperatures, winds, precipitation...Our work is based on open-data from Météo-France, but we are not affiliated or endorsed by Météo-France.</description>
+    </item>
+    <item>
+      <title>Broad Genome References</title>
+      <link>/broad-references</link>
+      <guid>/broad-references</guid>
+      <description>Broad maintained human genome reference builds hg19/hg38 and decoy references.</description>
+    </item>
+    <item>
+      <title>Cancer Genome Characterization Initiatives - Burkitt Lymphoma, HIV+ Cervical Cancer</title>
+      <link>/cgci</link>
+      <guid>/cgci</guid>
+      <description>The Cancer Genome Characterization Initiatives (CGCI) program supports cutting-edge genomics research of adult and pediatric cancers. CGCI investigators develop and apply advanced sequencing methods that examine genomes, exomes, and transcriptomes within various types of tumors. The program includes Burkitt Lymphoma Genome Sequencing Project (BLGSP) project and HIV+ Tumor Molecular Characterization Project - Cervical Cancer (HTMCP-CC) project.
+The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression Quantification, and miRNA Expression Quantification data.
+This dataset also contains controlled WGS/Targeted Sequencing/RNA-Seq/miRNA-Seq Aligned Reads, and RNA-Seq Splice Junction Quantification</description>
+    </item>
+    <item>
+      <title>Cell Organelle Segmentation in Electron Microscopy (COSEM) on AWS</title>
+      <link>/janelia-cosem</link>
+      <guid>/janelia-cosem</guid>
+      <description>High resolution images of subcellular structures.</description>
+    </item>
+    <item>
+      <title>Cloud Indexes for Genomic Analyses</title>
+      <link>/jhu-indexes</link>
+      <guid>/jhu-indexes</guid>
+      <description>Genomic tools use reference databases as indexes to operate quickly and efficiently, analogous to how web search engines use indexes for fast querying. Here, we aggregate genomic, pan-genomic and metagenomic indexes for analysis of sequencing data.</description>
+    </item>
+    <item>
+      <title>Copernicus Digital Elevation Model (DEM)</title>
+      <link>/copernicus-dem</link>
+      <guid>/copernicus-dem</guid>
+      <description>The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. We provide two instances of Copernicus DEM named GLO-30 Public and GLO-90. GLO-90 provides worldwide coverage at 90 meters. GLO-30 Public provides limited worldwide coverage at 30 meters because a small subset of tiles covering specific countries are not yet released to the public by the Copernicus Programme. Note that in both cases ocean areas do not have tiles, there one can assume height values equal to zero. Data is provided as Cloud Optimized GeoTIFFs.</description>
+    </item>
+    <item>
+      <title>Coupled Model Intercomparison Project 6</title>
+      <link>/cmip6</link>
+      <guid>/cmip6</guid>
+      <description>The sixth phase of global coupled ocean-atmosphere general circulation model ensemble. Additional data can be requested via &lt;a href&#x3D;&quot;https://docs.google.com/forms/d/e/1FAIpQLScFjA5IddqBs2Rc0xGbzn32NPq12TKr-b-8KGtXWyNDK5sJCg/viewform&quot;&gt;Google Form&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>DigitalCorpora</title>
+      <link>/digitalcorpora</link>
+      <guid>/digitalcorpora</guid>
+      <description>Disk images, memory dumps, network packet captures, and files for use in digital forensics research and education. All of this information is accessible through the digitalcorpora.org website, and made available at s3://digitalcorpora/. Some of these datasets implement scenarios that were performed by students, faculty, and others acting &lt;em&gt;in persona&lt;/em&gt;. As such, the information is synthetic and may be used without prior authorization or IRB approval. Details of these datasets can be found at &lt;a href&#x3D;&quot;http://www.simson.net/clips/academic/2009.DFRWS.Corpora.pdf&quot;&gt;http://www.simson.net/clips/academic/2009.DFRWS.Corpora.pdf&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>Hubble Space Telescope Public Data</title>
+      <link>/hst</link>
+      <guid>/hst</guid>
+      <description>The Hubble Space Telescope (HST) is one of the most productive scientific instruments ever created. This dataset contains calibrated and raw data for all of the currently active instruments on HST: ACS, COS, STIS and WFC3.</description>
+    </item>
+    <item>
+      <title>MIMIC-III (‘Medical Information Mart for Intensive Care’)</title>
+      <link>/mimiciii</link>
+      <guid>/mimiciii</guid>
+      <description>MIMIC-III (‘Medical Information Mart for Intensive Care’) is a large, 
+single-center database comprising information relating to patients 
+admitted to critical care units at a large tertiary care hospital. 
+Data includes vital signs, medications, laboratory measurements, 
+observations and notes charted by care providers, fluid balance, 
+procedure codes, diagnostic codes, imaging reports, hospital length 
+of stay, survival data, and more. The database supports applications 
+including academic and industrial research, quality improvement initiatives, 
+and higher education coursework. The MIMIC-III dataset is freely-available. 
+Researchers seeking to use the database must formally request access. For details, see 
+&lt;a href&#x3D;&quot;https://mimic.physionet.org/gettingstarted/access/&quot;&gt;the getting started page&lt;/a&gt;.  Once you 
+have a PhysioNet account, you must enable acccess to the MIMIC-III dataset from your 
+AWS account.  To do this, please &lt;a href&#x3D;&quot;https://physionet.org/settings/cloud/&quot;&gt;input your AWS account number&lt;/a&gt;, and 
+&lt;a href&#x3D;&quot;https://physionet.org/projects/mimiciii/1.4/request_access/2&quot;&gt;request access to the MIMIC-III Clinical Database on AWS&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>NAIP on AWS</title>
+      <link>/naip</link>
+      <guid>/naip</guid>
+      <description>The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This &amp;quot;leaf-on&amp;quot; imagery andtypically ranges from 60 centimeters to 100 centimeters in resolution and is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeotTiff format. NAIP data is delivered at the state level; every year, a number of states receive updates, with an overall update cycle of two or three years. More details on &lt;a href&#x3D;&quot;https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/&quot;&gt;NAIP&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>NOAA Climate Forecast System (CFS)</title>
+      <link>/noaa-cfs</link>
+      <guid>/noaa-cfs</guid>
+      <description>The Climate Forecast System (CFS) is a model representing the global interaction between Earth&amp;#39;s oceans, land, and atmosphere. Produced by several dozen scientists under guidance from the National Centers for Environmental Prediction (NCEP), this model offers hourly data with a horizontal resolution down to one-half of a degree (approximately 56 km) around Earth for many variables. CFS uses the latest scientific approaches for taking in, or assimilating, observations from data sources including surface observations, upper air balloon observations, aircraft observations, and satellite observations.</description>
+    </item>
+    <item>
+      <title>NOAA National Water Model Reanalysis</title>
+      <link>/nwm-archive</link>
+      <guid>/nwm-archive</guid>
+      <description>The NOAA National Water Model Reanalysis dataset contains output
+from multi-decade retrospective simulations. These
+simulations used observed rainfall as input and ingested other
+required meteorological input fields from a weather reanalysis
+dataset. The output frequency and fields available in this
+historical NWM dataset differ from those contained in the
+real-time forecast model. One application of this dataset is
+to provide historical context to current real-time streamflow,
+soil moisture and snowpack NWM conditions. The reanalysis data
+can be used to infer flow frequencies and perform temporal analyses
+with hourly streamflow output and 3-hourly land surface output. The
+long-term dataset can also be used in the development of end user
+applications which require a long baseline of data for system
+training or verification purposes. This dataset contains output from two
+retrospective simulations.  Currently there are two versions of the dataset:
+A 25-year (January 1993 through December 2017) retrospective simulation using
+version 1.2 of the National Water Model, and a 26-year (January 1993 through
+ December 2018) retrospective simulation using version 2.0
+ of the National Water Model.</description>
+    </item>
+    <item>
+      <title>NOAA Operational Forecast System (OFS)</title>
+      <link>/noaa-ofs</link>
+      <guid>/noaa-ofs</guid>
+      <description>The Operational Forecast System (OFS) has been developed to serve the maritime user community. OFS was developed in a joint project of the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/NOS/Center for Operational Oceanographic Products and Services (CO-OPS), and the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central Operations (NCO). OFS generates water level, water current, water temperature, water salinity (except for the Great Lakes) and nowcast and forecast guidance four times per day.</description>
+    </item>
+    <item>
+      <title>NOAA World Ocean Database (WOD)</title>
+      <link>/noaa-wod</link>
+      <guid>/noaa-wod</guid>
+      <description>The World Ocean Database (WOD) is the largest uniformly formatted, quality-controlled, publicly available historical subsurface ocean profile database. From Captain Cook&amp;#39;s second voyage in 1772 to today&amp;#39;s automated Argo floats, global aggregation of ocean variable information including temperature, salinity, oxygen, nutrients, and others vs. depth allow for study and understanding of the changing physical, chemical, and to some extent biological state of the World&amp;#39;s Oceans. Browse the bucket via the AWS S3 explorer: &lt;a href&#x3D;&quot;https://noaa-wod-pds.s3.amazonaws.com/index.html&quot;&gt;https://noaa-wod-pds.s3.amazonaws.com/index.html&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>National Cancer Institute Center for Cancer Research - Diffuse Large B Cell Lymphoma (DLBCL) Genomics and Expression</title>
+      <link>/nciccr-dlbcl</link>
+      <guid>/nciccr-dlbcl</guid>
+      <description>The study describes integrative analysis of genetic lesions in 574 diffuse large B cell lymphomas
+(DLBCL) involving exome and transcriptome sequencing, array-based DNA copy number analysis and
+targeted amplicon resequencing. The dataset contains open RNA-Seq Gene Expression Quantification
+data.</description>
+    </item>
+    <item>
+      <title>Open City Model (OCM)</title>
+      <link>/opencitymodel</link>
+      <guid>/opencitymodel</guid>
+      <description>Open City Model is an initiative to provide cityGML data for all the buildings in the United States.
+By using other open datasets in conjunction with our own code and algorithms it is our goal to provide 3D geometries for every US building.</description>
+    </item>
+    <item>
+      <title>Oregon Health &amp; Science University Chronic Neutrophilic Leukemia Dataset</title>
+      <link>/ohsu-cnl</link>
+      <guid>/ohsu-cnl</guid>
+      <description>The OHSU-CNL study offers the whole exome and RNA-sequencing on a cohort of 100 cases with rare
+hematologic malignancies such as Chronic neutrophilic leukemia (CNL), atypical chronic myeloid
+leukemia (aCML), and unclassified myelodysplastic syndrome/myeloproliferative neoplasms
+(MDS/MPN-U). This dataset contains open RNA-Seq Gene Expression Quantification data.</description>
+    </item>
+    <item>
+      <title>Pancreatic Cancer Organoid Profiling</title>
+      <link>/organoid-pancreatic</link>
+      <guid>/organoid-pancreatic</guid>
+      <description>This study generated a collection of patient-derived pancreatic normal and cancer organoids and it was sequenced using Whole Genome Sequencing (WGS), Whole Exome Sequencing (WXS) and RNA-Seq as well as matched tumor and normal tissue if available. The study provides a valuable resource for pancreatic cancer researchers.
+The dataset contains open RNA-Seq Gene Expression Quantification data and controlled WGS/WXS/RNA-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic Mutation, and RNA-Seq Splice Junction Quantification.</description>
+    </item>
+    <item>
+      <title>RAPID NRT Flood Maps</title>
+      <link>/rapid-nrt-flood-maps</link>
+      <guid>/rapid-nrt-flood-maps</guid>
+      <description>Near Real-time and archival data of High-resolution (10 m) flood inundation dataset over the Contiguous United States, developed based on the Sentinel-1 SAR imagery (2016-current) archive, using an automated Radar Produced Inundation Diary (RAPID) algorithm.</description>
+    </item>
+    <item>
+      <title>Rapid7 FDNS ANY Dataset</title>
+      <link>/rapid7-fdns-any</link>
+      <guid>/rapid7-fdns-any</guid>
+      <description>Subset of FDNS ANY queries against domain names produced by &lt;a href&#x3D;&quot;https://www.rapid7.com&quot;&gt;Rapid7&lt;/a&gt; Project Sonar, made available in s3.
+More information on the schema can be found at Rapid7&amp;#39;s &lt;a href&#x3D;&quot;https://opendata.rapid7.com/sonar.fdns_v2/&quot;&gt;Open Data website&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>RarePlanes</title>
+      <link>/rareplanes</link>
+      <guid>/rareplanes</guid>
+      <description>RarePlanes is a unique open-source machine learning dataset from CosmiQ Works and AI.Reverie that incorporates both real and synthetically generated satellite imagery. The RarePlanes dataset specifically focuses on the value of AI.Reverie synthetic data to aid computer vision algorithms in their ability to automatically detect aircraft and their attributes in satellite imagery. Although other synthetic/real combination datasets exist, RarePlanes is the largest openly-available very high resolution dataset built to test the value of synthetic data from an overhead perspective. The real portion of the dataset consists of 253 Maxar WorldView-3 satellite scenes spanning 112 locations and 2,142 km^2 with 14,700 hand-annotated aircraft. The accompanying synthetic dataset is generated via AI.Reverie’s novel simulation platform and features 50,000 synthetic satellite images with ~630,000 aircraft annotations.</description>
+    </item>
+    <item>
+      <title>Sentinel-1 SLC dataset for South and Southeast Asia, Taiwan, Korea and Japan</title>
+      <link>/sentinel1-slc-seasia-pds</link>
+      <guid>/sentinel1-slc-seasia-pds</guid>
+      <description>The S1 Single Look Complex (SLC) dataset contains Synthetic Aperture Radar (SAR) data in the C-Band wavelength. The SAR sensors are installed on a two-satellite (Sentinel-1A and Sentinel-1B) constellation orbiting the Earth with a combined revisit time of six days, operated by the European Space Agency. The S1 SLC data are a Level-1 product that collects radar amplitude and phase information in all-weather, day or night conditions, which is ideal for studying natural hazards and emergency response, land applications, oil spill monitoring, sea-ice conditions, and associated climate change effects.</description>
+    </item>
+    <item>
+      <title>Serratus: Ultra-deep Search for Novel Viruses - Versioned Data Release</title>
+      <link>/serratus-lovelywater</link>
+      <guid>/serratus-lovelywater</guid>
+      <description>Serratus is a collaborative open science project for ultra-rapid discovery of known and unknown coronaviruses in response to the COVID-19 pandemic through re-analysis of publicly available genomic data. Our resulting vertebrate viral alignment data is explorable via the &lt;a href&#x3D;&quot;https://serratus.io/explorer&quot;&gt;Serratus Explorer&lt;/a&gt; and directly accessible on Amazon S3.</description>
+    </item>
+    <item>
+      <title>Terra Fusion Data Sampler</title>
+      <link>/terrafusion</link>
+      <guid>/terrafusion</guid>
+      <description>The Terra Basic Fusion dataset is a fused dataset of the original Level 1 radiances
+from the five Terra instruments. They have been fully validate to contain the original
+Terra instrument Level 1 data. Each Level 1 Terra Basic Fusion file contains one full
+Terra orbit of data and is typically 15 – 40 GB in size, depending on how much data was
+collected for that orbit. It contains instrument radiance in physical units; radiance
+quality indicator; geolocation for each IFOV at its native resolution; sun-view geometry;
+bservation time; and other attributes/metadata. It is stored in HDF5, conformed to CF
+conventions, and accessible by netCDF-4 enhanced models. It’s naming convention
+follows: TERRA_BF_L1B_OXXXX_YYYYMMDDHHMMSS_F000_V000.h5. A concise description of the
+dataset, along with links to complete documentation and available software tools, can
+be found on the Terra Fusion project page: &lt;a href&#x3D;&quot;https://terrafusion.web.illinois.edu&quot;&gt;https://terrafusion.web.illinois.edu&lt;/a&gt;.&lt;/br&gt;&lt;/br&gt;Terra is the flagship satellite of NASA’s Earth Observing System (EOS). It was launched
+into orbit on December 18, 1999 and carries five instruments. These are the
+Moderate-resolution Imaging Spectroradiometer (MODIS), the Multi-angle Imaging
+SpectroRadiometer (MISR), the Advanced Spaceborne Thermal Emission and Reflection
+Radiometer (ASTER), the Clouds and Earth’s Radiant Energy System (CERES), and the
+Measurements of Pollution in the Troposphere (MOPITT).&lt;/br&gt;&lt;/br&gt;The Terra Basic Fusion dataset is an easy-to-access record of the Level 1 radiances
+for instruments on the Terra mission for selected WRS-2 paths covering the years
+2000-2015. These paths are Paths 20-26 (e.g., US corn belt), 108 (e.g., Japan),
+125 (e.g., China), 143 (e.g., India), 150 (e.g., Showa Station, Antarctica),
+169 (e.g., Europe and Africa), 188 (e.g., Nigeria calibration site), and 233
+(e.g., Greenland).</description>
+    </item>
+    <item>
+      <title>UK Met Office Atmospheric Deterministic and Probabilistic Forecasts</title>
+      <link>/uk-met-office</link>
+      <guid>/uk-met-office</guid>
+      <description>Meteorological data reusers now have an exciting opportunity to sample, experiment and evaluate
+Met Office atmospheric model data, whilst also experiencing a transformative method of requesting
+data via Restful APIs on AWS.For information about the data see the &lt;a href&#x3D;&quot;https://www.metoffice.gov.uk/services/data/met-office-data-for-reuse/discovery&quot;&gt;Met Office website&lt;/a&gt;.
+For examples of using the data check out the &lt;a href&#x3D;&quot;https://github.com/MetOffice/aws-earth-examples&quot;&gt;examples repository&lt;/a&gt;.
+If you need help and support using the data please raise an issue on the examples repository. &lt;strong&gt;Please note:&lt;/strong&gt; Met Office continuously improves and updates its operational forecast models.
+Our last update became effective 04/12/2019. Please find the details &lt;a href&#x3D;&quot;https://www.metoffice.gov.uk/services/data/met-office-data-for-reuse/ps43_aws&quot;&gt;here&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>1000 Genomes</title>
+      <link>/1000-genomes</link>
+      <guid>/1000-genomes</guid>
+      <description>The 1000 Genomes Project is an international collaboration which has established the most detailed catalogue of human genetic variation, including SNPs, structural variants, and their haplotype context. The final phase of the project sequenced more than 2500 individuals from 26 different populations around the world and produced an integrated set of phased haplotypes with more than 80 million variants for these individuals.</description>
+    </item>
+    <item>
+      <title>AWS iGenomes</title>
+      <link>/aws-igenomes</link>
+      <guid>/aws-igenomes</guid>
+      <description>Common reference genomes hosted on AWS S3. Can be used when aligning and analysing raw DNA sequencing data.</description>
+    </item>
+    <item>
+      <title>Allen Brain Observatory - Visual Coding AWS Public Data Set</title>
+      <link>/allen-brain-observatory</link>
+      <guid>/allen-brain-observatory</guid>
+      <description>The Allen Brain Observatory – Visual Coding is a large-scale, standardized survey of physiological activity across the mouse visual cortex, hippocampus, and thalamus. It includes datasets collected with both two-photon imaging and Neuropixels probes, two complementary techniques for measuring the activity of neurons in vivo. The two-photon imaging dataset features visually evoked calcium responses from GCaMP6-expressing neurons in a range of cortical layers, visual areas, and Cre lines. The Neuropixels dataset features spiking activity from distributed cortical and subcortical brain regions, collected under analogous conditions to the two-photon imaging experiments. We hope that experimentalists and modelers will use these comprehensive, open datasets as a testbed for theories of visual information processing.</description>
+    </item>
+    <item>
+      <title>Answer Reformulation</title>
+      <link>/answer-reformulation</link>
+      <guid>/answer-reformulation</guid>
+      <description>Original StackExchange answers and their voice-friendly Reformulation.</description>
+    </item>
+    <item>
+      <title>Automatic Speech Recognition (ASR) Error Robustness</title>
+      <link>/asr-error-robustness</link>
+      <guid>/asr-error-robustness</guid>
+      <description>Sentence classification datatasets with ASR Errors.</description>
+    </item>
+    <item>
+      <title>CMIP6 GCMs downscaled using WRF</title>
+      <link>/wrf-cmip6</link>
+      <guid>/wrf-cmip6</guid>
+      <description>High-resolution historical and future climate simulations from 1980-2100</description>
+    </item>
+    <item>
+      <title>COVID-19 Genome Sequence Dataset</title>
+      <link>/ncbi-covid-19</link>
+      <guid>/ncbi-covid-19</guid>
+      <description>A centralized sequence repository for all records containing sequence associated with the novel corona virus (SARS-CoV-2) submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA). Included are both the original sequences submitted by the principal investigator as well as SRA-processed sequences that require the SRA Toolkit for analysis. Additionally, submitter provided metadata included in associated BioSample and BioProject records is available alongside NCBI calculated data, such k-mer based taxonomy analysis results, contiguous assemblies (contigs) and associated statistics such as contig length, blast results for the assembled contigs, contig annotation, blast databases of contigs and their annotated peptides, and VCF files generated for each record relative to the SARS-CoV-2 RefSeq record. Finally, metadata is additionally made available in parquet format to facilitate search and filtering using the AWS Athena Service.</description>
+    </item>
+    <item>
+      <title>Cell Painting Image Collection</title>
+      <link>/cell-painting-image-collection</link>
+      <guid>/cell-painting-image-collection</guid>
+      <description>The Cell Painting Image Collection is a collection of freely
+downloadable microscopy image sets. Cell Painting is an
+unbiased high throughput imaging assay used to analyze
+perturbations in cell models. In addition to the images
+themselves, each set includes a description of the biological
+application and some type of &amp;quot;ground truth&amp;quot; (expected results).
+Researchers are encouraged to use these image sets as reference
+points when developing, testing, and publishing new image
+analysis algorithms for the life sciences. We hope that the
+this data set will lead to a better understanding of which
+methods are best for various biological image analysis
+applications.</description>
+    </item>
+    <item>
+      <title>CoversBR</title>
+      <link>/covers-br</link>
+      <guid>/covers-br</guid>
+      <description>CoversBR is the first large audio database with, predominantly, Brazilian music for the tasks of Covers Song
+Identification (CSI) and Live Song Identifications (LSI). Due to copyright restrictions audios of
+the songs cannot be made available, however metadata and files of features have public access. Audio
+streamings captured from radio and TV channels for the live song identification task will be made public.
+CoversBR is composed of metadata and features extracted from 102298 songs, distributed in 26366
+groups of covers/versions, with an average of 3.88 versions per group. The entire collection adds up to a total of
+approximately 7070 hours and the average song length is 240 seconds (4 minutes).</description>
+    </item>
+    <item>
+      <title>Crowdsourced Bathymetry</title>
+      <link>/odp-noaa-nesdis-ncei-csb</link>
+      <guid>/odp-noaa-nesdis-ncei-csb</guid>
+      <description>Community provided bathymetry data collected in collaboration with the International Hydrographic Organization.</description>
+    </item>
+    <item>
+      <title>DialoGLUE: A Natural Language Understanding Benchmark for Task-Oriented Dialogue</title>
+      <link>/dialoglue</link>
+      <guid>/dialoglue</guid>
+      <description>This bucket contains the checkpoints used to reproduce the baseline results reported in the DialoGLUE benchmark hosted
+on EvalAI (&lt;a href&#x3D;&quot;https://evalai.cloudcv.org/web/challenges/challenge-page/708/overview&quot;&gt;https://evalai.cloudcv.org/web/challenges/challenge-page/708/overview&lt;/a&gt;). The associated scripts for using the checkpoints are located here:
+&lt;a href&#x3D;&quot;https://github.com/alexa/dialoglue&quot;&gt;https://github.com/alexa/dialoglue&lt;/a&gt;. The associated paper describing the benchmark and checkpoints is here: &lt;a href&#x3D;&quot;https://arxiv.org/abs/2009.13570&quot;&gt;https://arxiv.org/abs/2009.13570&lt;/a&gt;.
+The provided checkpoints include the CONVBERT model, a BERT-esque model trained on a large open-domain conversational
+dataset. It also includes the CONVBERT-DG and BERT-DG checkpoints described in the linked
+paper.</description>
+    </item>
+    <item>
+      <title>Enriched Topical-Chat Dataset for Knowledge-Grounded Dialogue Systems</title>
+      <link>/topical-chat-enriched</link>
+      <guid>/topical-chat-enriched</guid>
+      <description>This dataset provides extra annotations on top of the publicly released
+Topical-Chat dataset(&lt;a href&#x3D;&quot;https://github.com/alexa/Topical-Chat&quot;&gt;https://github.com/alexa/Topical-Chat&lt;/a&gt;) which will help in reproducing the results in our paper
+&amp;quot;Policy-Driven Neural Response Generation for Knowledge-Grounded Dialogue Systems&amp;quot; (&lt;a href&#x3D;&quot;https://arxiv.org/abs/2005.12529?context&#x3D;cs.CL&quot;&gt;https://arxiv.org/abs/2005.12529?context&#x3D;cs.CL&lt;/a&gt;). 
+The dataset contains 5 files: train.json, valid_freq.json, valid_rare.json, test_freq.json and test_rare.json. 
+Each of these files will have additional annotations on top of the original Topical-Chat dataset.
+These specific annotations are: dialogue act annotations and knowledge sentence annotations.
+The annotations were computed automatically using off the shelf models which are mentioned in the README.txt</description>
+    </item>
+    <item>
+      <title>Ford Multi-AV Seasonal Dataset</title>
+      <link>/ford-multi-av-seasonal</link>
+      <guid>/ford-multi-av-seasonal</guid>
+      <description>This research presents a challenging multi-agent seasonal dataset collected by a fleet of Ford autonomous vehicles at different days and times during 2017-18. The vehicles The vehicles were manually driven on an average route of 66 km in Michigan that included a mix of driving scenarios like the Detroit Airport, freeways, city-centres, university campus and suburban neighbourhood, etc. Each vehicle used in this data collection  is a Ford Fusion outfitted with an Applanix POS-LV inertial measurement unit (IMU), four HDL-32E Velodyne 3D-lidar scanners, 6 Point Grey 1.3 MP Cameras arranged on the rooftop for 360 degree coverage and 1 Pointgrey 5 MP camera mounted behind the windsheild for forward field of view. We present the seasonal variation in weather, lighting, construction and traffic conditions experienced in dynamic urban environments. This dataset can help design robust algorithms for autonomous vehicles and multi-agent systems. Each log in the dataset is time-stamped and contains raw data from all the sensors, calibration values, pose trajectory, ground truth pose, and 3D maps. All data is available in Rosbag format that can be visualized, modified and applied using the open-source Robot Operating System (ROS).</description>
+    </item>
+    <item>
+      <title>GATK Test Data</title>
+      <link>/gatk-test-data</link>
+      <guid>/gatk-test-data</guid>
+      <description>The GATK test data resource bundle is a collection of files for resequencing human genomic data with the
+Broad Institute&amp;#39;s &lt;a href&#x3D;&quot;https://software.broadinstitute.org/gatk/&quot;&gt;Genome Analysis Toolkit (GATK)&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Geosnap Data, Center for Geospatial Sciences</title>
+      <link>/spatial-ucr</link>
+      <guid>/spatial-ucr</guid>
+      <description>This bucket contains multiple datasets (as Quilt packages) created by the
+Center for Geospatial Sciences (CGS) at the University of California-Riverside.
+The data in this bucket contains the following:1) Tabular and geographic data from the US Census
+2) Land Cover imagery collected from &lt;a href&#x3D;&quot;https://www.mrlc.gov/&quot;&gt;Multi-Resolution Land Characteristics Consortium&lt;/a&gt;
+3) Road network data processed from OpenStreetMap</description>
+    </item>
+    <item>
+      <title>Human Cancer Models Initiative (HCMI) Cancer Model Development Center</title>
+      <link>/hcmi-cmdc</link>
+      <guid>/hcmi-cmdc</guid>
+      <description>The Human Cancer Models Initiative (HCMI) is an international consortium that is generating novel,
+next-generation, tumor-derived culture models annotated with genomic and clinical data.
+HCMI-developed models and related data are available as a community resource. The NCI is
+contributing to the initiative by supporting four Cancer Model Development Centers (CMDCs).  CMDCs
+are tasked with producing next-generation cancer models from clinical samples. The cancer models
+include tumor types that are rare, originate from patients from underrepresented populations, lack
+precision therapy, or lack cancer model tools. Throughout the development process, the CMDCs
+utilize stringent internal QC measures to ensure both clinical and molecular integrity. These
+models are then annotated with clinical and genomic data and are available as a community
+resource.</description>
+    </item>
+    <item>
+      <title>Human PanGenomics Project</title>
+      <link>/hpgp-data</link>
+      <guid>/hpgp-data</guid>
+      <description>This dataset includes sequencing data, assemblies, and analyses for the offspring of ten parent-offspring trios.</description>
+    </item>
+    <item>
+      <title>Humor Detection from Product Question Answering Systems</title>
+      <link>/humor-detection</link>
+      <guid>/humor-detection</guid>
+      <description>This dataset provides labeled humor detection from product question answering systems.
+The dataset contains 3 csv files: &lt;a href&#x3D;&quot;https://humor-detection-pds.s3-us-west-2.amazonaws.com/Humorous.csv&quot;&gt;Humorous.csv&lt;/a&gt; 
+containing the humorous product questions, 
+&lt;a href&#x3D;&quot;https://humor-detection-pds.s3-us-west-2.amazonaws.com/Non-humorous-unbiased.csv&quot;&gt;Non-humorous-unbiased.csv&lt;/a&gt; containing 
+the non-humorous prodcut questions from the same products as the humorous one, and, 
+&lt;a href&#x3D;&quot;https://humor-detection-pds.s3-us-west-2.amazonaws.com/Non-humours-biased.csv&quot;&gt;Non-humorous-biased.csv&lt;/a&gt; containing 
+the non-humorous prodcut questions from randomly selected products. 
+Each file has the question, product description, image url to the product, 
+and a label if the question is humorous or not.</description>
+    </item>
+    <item>
+      <title>IDEAM - Colombian Radar Network</title>
+      <link>/ideam-radares</link>
+      <guid>/ideam-radares</guid>
+      <description>Historical and one-day delay data from the IDEAM radar network.</description>
+    </item>
+    <item>
+      <title>LOFAR ELAIS-N1 cycle 2 observations on AWS</title>
+      <link>/lofar-elais-n1</link>
+      <guid>/lofar-elais-n1</guid>
+      <description>These data correspond to the &lt;a href&#x3D;&quot;http://www.lofar.org/&quot;&gt;International LOFAR Telescope&lt;/a&gt; observations of the sky field ELAIS-N1 (16:10:01 +54:30:36) during the cycle 2 of observations. There are 11 runs of about 8 hours each plus the corresponding observation of the calibration targets before and after the target field. The data are measurement sets (&lt;a href&#x3D;&quot;https://casa.nrao.edu/Memos/229.html&quot;&gt;MS&lt;/a&gt;) containing the cross-correlated data and metadata divided in 371 frequency sub-bands per target centred at ~150 MHz.</description>
+    </item>
+    <item>
+      <title>NOAA Global Forecast System (GFS)</title>
+      <link>/noaa-gfs-bdp-pds</link>
+      <guid>/noaa-gfs-bdp-pds</guid>
+      <description>The Global Forecast System (GFS) is a weather forecast model produced
+by the National Centers for Environmental Prediction (NCEP). Dozens of
+atmospheric and land-soil variables are available through this dataset,
+from temperatures, winds, and precipitation to soil moisture and
+atmospheric ozone concentration. The entire globe is covered by the GFS
+at a base horizontal resolution of 18 miles (28 kilometers) between grid
+points, which is used by the operational forecasters who predict weather
+out to 16 days in the future. Horizontal resolution drops to 44 miles
+(70 kilometers) between grid point for forecasts between one week and two
+weeks.
+&lt;br/&gt;
+&lt;br/&gt;
+The NOAA Global Forecast Systems (GFS) Warm Start Initial Conditions are 
+produced by the National Centers for Environmental Prediction Center (NCEP) 
+to run operational deterministic medium-range numerical weather predictions.&lt;br&gt;The GFS is built with the GFDL Finite-Volume Cubed-Sphere Dynamical Core (FV3) 
+and the Grid-Point Statistical Interpolation (GSI) data assimilation system.&lt;br&gt;Please visit the links below in the Documentation section to find more details 
+about the model and the data assimilation systems.   The current operational 
+GFS is run at 64 layers in the vertical extending from the surface to the upper
+stratosphere and on six cubic-sphere tiles at  the C768 or 13-km horizontal
+resolution.  A new version of the GFS that has 127 layers extending to the
+mesopause will be implemented for operation on February 3, 2021.   These initial
+conditions are made available four times per day for running forecasts at the
+00Z, 06Z, 12Z and 18Z cycles, respectively.   For each cycle, the dataset
+contains the first guess of the atmosphere states found in the directory
+./gdas.yyyymmdd/hh-6/RESTART, which are  6-hour GDAS forecast from the last
+cycle,  and atmospheric analysis increments and surface analysis for the current
+cycle  found in the directory ./gfs.yyyymmdd/hh, which are produced by the data
+assimilation systems. </description>
+    </item>
+    <item>
+      <title>NOAA National Digital Forecast Database (NDFD)</title>
+      <link>/noaa-ndfd</link>
+      <guid>/noaa-ndfd</guid>
+      <description>The National Digital Forecast Database (NDFD) is a suite of gridded forecasts of sensible weather elements (e.g., cloud cover, maximum temperature).  Forecasts prepared by NWS field offices working in collaboration with the National Centers for Environmental Prediction (NCEP) are combined in the NDFD to create a seamless mosaic of digital forecasts from which operational NWS products are generated. The most recent data is under the opnl and expr prefixes. A copy is also placed under the wmo prefix. The wmo prefix is structured like so: wmo/&amp;lt;parameter&amp;gt;/&amp;lt;year&amp;gt;/&amp;lt;month&amp;gt;/&amp;lt;day&amp;gt;/&amp;lt;wmo-file-name&amp;gt; The wmo filename codes can be deciphered using the spreadsheet in the root of the bucket.</description>
+    </item>
+    <item>
+      <title>New Jersey Statewide Digital Aerial Imagery Catalog</title>
+      <link>/nj-imagery</link>
+      <guid>/nj-imagery</guid>
+      <description>The New Jersey Office of GIS, NJ Office of Information Technology manages a series of 11 digital orthophotography and scanned aerial photo maps collected at various years ranging from 1930 to 2017. Each year’s worth of imagery are available as Cloud Optimized GeoTIFF (COG) files and some years are available as compressed MrSID and/or JP2 files.  Additionally, each year of imagery is organized into a tile grid scheme covering the entire geography of New Jersey.  Many years share the same tiling grid while others have unique grids as defined by the project at the time.</description>
+    </item>
+    <item>
+      <title>New Jersey Statewide LiDAR</title>
+      <link>/nj-lidar</link>
+      <guid>/nj-lidar</guid>
+      <description>Elevation datasets in New Jersey have been collected over several years as several
+discrete projects.  Each project covers a geographic area, which is a subsection of
+the entire state, and has differing specifications based on the available technology
+at the time and project budget.  The geographic extent of one project may overlap that
+of a neighboring project. Each of the 18 projects contains deliverable products such
+as LAS (Lidar point cloud) files, unclassified/classified, tiled to cover project area;
+relevant metadata records or documents, most adhering to the Federal Geographic Data
+Committee’s (FGDC) Content Standard for Digital Geospatial Metadata (CSDGM); tiling
+index feature class or shapefile; flights lines feature class or shapefile; Digital
+Elevation Model in image format or Esri grid format; other derivative data products
+such as contour lines feature class or shapefile.</description>
+    </item>
+    <item>
+      <title>Ohio State Cardiac MRI Raw Data (OCMR)</title>
+      <link>/ocmr_data</link>
+      <guid>/ocmr_data</guid>
+      <description>OCMR is an open-access repository that provides multi-coil k-space data for cardiac cine.  The fully sampled MRI datasets are intended for quantitative comparison and evaluation of image reconstruction methods. The free-breathing, prospectively undersampled datasets are intended to evaluate their performance and generalizability qualitatively.</description>
+    </item>
+    <item>
+      <title>Oxford Nanopore Technologies Benchmark Datasets</title>
+      <link>/ont-open-data</link>
+      <guid>/ont-open-data</guid>
+      <description>The ont-open-data registry provides reference sequencing data from Oxford Nanopore Technologies to support, 1) Exploration of the characteristics of nanopore sequence data. 2) Assessment and reproduction of performance benchmarks 3) Development of tools and methods. The data deposited showcases DNA sequences from a representative subset of sequencing chemistries. The datasets correspond to publicly-available reference samples (e.g. GM24385 as reference human). Raw data are provided with metadata and scripts to describe sample and data provenance.</description>
+    </item>
+    <item>
+      <title>QIIME 2 User Tutorial Datasets</title>
+      <link>/qiime2</link>
+      <guid>/qiime2</guid>
+      <description>QIIME 2 is a powerful, extensible, and decentralized microbiome analysis package with a focus on data and analysis transparency. QIIME 2 enables researchers to start an analysis with raw DNA sequence data and finish with publication-quality figures and statistical results. This dataset contains the user docs (and related datasets) for QIIME 2.</description>
+    </item>
+    <item>
+      <title>SILAM Air Quality</title>
+      <link>/silam</link>
+      <guid>/silam</guid>
+      <description>Air Quality is a global SILAM atmospheric composition and air quality forecast performed on a daily basis for &amp;gt; 100 species and covering the troposphere and the stratosphere. The output produces 3D concentration fields and aerosol optical thickness. The data are unique: 20km resolution for global AQ models is unseen worldwide.</description>
+    </item>
+    <item>
+      <title>Safecast</title>
+      <link>/safecast</link>
+      <guid>/safecast</guid>
+      <description>An ongoing collection of radiation and air quality measurements taken by devices involved in the Safecast project.</description>
+    </item>
+    <item>
+      <title>Sentinel-2 L2A 120m Mosaic</title>
+      <link>/sentinel-s2-l2a-mosaic-120</link>
+      <guid>/sentinel-s2-l2a-mosaic-120</guid>
+      <description>Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As there are some parts of the world, which have lengthy cloudy periods, clouds might be remaining in some parts. The actual modelling script is available &lt;a href&#x3D;&quot;https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/&quot;&gt;here&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Speedtest by Ookla Global Fixed and Mobile Network Performance Maps</title>
+      <link>/speedtest-global-performance</link>
+      <guid>/speedtest-global-performance</guid>
+      <description>Global fixed broadband and mobile (cellular) network performance, allocated to zoom level 16 web mercator tiles (approximately 610.8 meters by 610.8 meters at the equator). Data is provided in both Shapefile format as well as Apache Parquet with geometries represented in Well Known Text (WKT) projected in EPSG:4326. Download speed, upload speed, and latency are collected via the Speedtest by Ookla applications for Android and iOS and averaged for each tile. Measurements are filtered to results containing GPS-quality location accuracy.</description>
+    </item>
+    <item>
+      <title>Tabula Muris</title>
+      <link>/tabula-muris</link>
+      <guid>/tabula-muris</guid>
+      <description>Tabula Muris is a compendium of single cell transcriptomic data from the model organism &lt;em&gt;Mus musculus&lt;/em&gt; comprising more than 100,000 cells from 20 organs and tissues. These data represent a new resource for cell biology, reveal gene expression in poorly characterized cell populations, and allow for direct and controlled comparison of gene expression in cell types shared between tissues, such as T-lymphocytes and endothelial cells from different anatomical locations. Two distinct technical approaches were used for most organs: one approach, microfluidic droplet-based 3’-end counting, enabled the survey of thousands of cells at relatively low coverage, while the other, FACS-based full length transcript analysis, enabled characterization of cell types with high sensitivity and coverage. The cumulative data provide the foundation for an atlas of transcriptomic cell biology. See: &lt;a href&#x3D;&quot;https://www.nature.com/articles/s41586-018-0590-4&quot;&gt;https://www.nature.com/articles/s41586-018-0590-4&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>The Multilingual Amazon Reviews Corpus</title>
+      <link>/amazon-reviews-ml</link>
+      <guid>/amazon-reviews-ml</guid>
+      <description>We present a collection of Amazon reviews specifically designed to aid research in multilingual text classification. The dataset contains reviews in English, Japanese, German, French, Chinese and Spanish, collected between November 1, 2015 and November 1, 2019. Each record in the dataset contains the review text, the review title, the star rating, an anonymized reviewer ID, an anonymized product ID and the coarse-grained product category (e.g. &amp;#39;books&amp;#39;, &amp;#39;appliances&amp;#39;, etc.)</description>
+    </item>
+    <item>
+      <title>Transiting Exoplanet Survey Satellite (TESS)</title>
+      <link>/tess</link>
+      <guid>/tess</guid>
+      <description>The Transiting Exoplanet Survey Satellite (TESS) is a multi-year survey that will discover exoplanets in orbit around bright stars across the entire sky using high-precision photometry.  The survey will also enable a wide variety of stellar astrophysics, solar system science, and extragalactic variability studies. More information about TESS is available at &lt;a href&#x3D;&quot;https://archive.stsci.edu/tess/&quot;&gt;MAST&lt;/a&gt; and the &lt;a href&#x3D;&quot;https://heasarc.gsfc.nasa.gov/docs/tess/&quot;&gt;TESS Science Support Center&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>U.S. Census ACS PUMS</title>
+      <link>/census-dataworld-pums</link>
+      <guid>/census-dataworld-pums</guid>
+      <description>U.S. Census Bureau American Community Survey (ACS) Public Use Microdata Sample (PUMS) available in a linked data format using the Resource Description Framework (RDF) data model.</description>
+    </item>
+    <item>
+      <title>Voices Obscured in Complex Environmental Settings (VOiCES)</title>
+      <link>/lab41-sri-voices</link>
+      <guid>/lab41-sri-voices</guid>
+      <description>VOiCES is a speech corpus recorded in acoustically challenging settings,
+using distant microphone recording. Speech was recorded in real rooms with various
+acoustic features (reverb, echo, HVAC systems, outside noise, etc.). Adversarial noise,
+either television, music, or babble, was concurrently played with clean speech.
+Data was recorded using multiple microphones strategically placed
+throughout the room. The corpus includes audio recordings, orthographic transcriptions,
+and speaker labels.</description>
+    </item>
+    <item>
+      <title>Xiph.Org Test Media</title>
+      <link>/xiph-media</link>
+      <guid>/xiph-media</guid>
+      <description>Uncompressed video used for video compression and video processing research.</description>
+    </item>
+    <item>
+      <title>ZINC Database</title>
+      <link>/zinc15</link>
+      <guid>/zinc15</guid>
+      <description>3D models for molecular docking screens.</description>
+    </item>
+    <item>
+      <title>iHART Whole Genome Sequencing Data Set</title>
+      <link>/ihart</link>
+      <guid>/ihart</guid>
+      <description>iHART is the &lt;a href&#x3D;&quot;http://www.thehartwellfoundation.org/&quot;&gt;Hartwell Foundation&lt;/a&gt;’s Autism Research and Technology Initiative. This release contains whole genome data from over 1000 families with 2 or more children with autism, of which biomaterials were provided by the Autism Genetic Resource Exchange (&lt;a href&#x3D;&quot;http://research.agre.org/&quot;&gt;AGRE&lt;/a&gt;).</description>
+    </item>
+    <item>
+      <title>A Realistic Cyber Defense Dataset (CSE-CIC-IDS2018)</title>
+      <link>/cse-cic-ids2018</link>
+      <guid>/cse-cic-ids2018</guid>
+      <description>This dataset is the result of a collaborative project between the Communications Security Establishment (CSE) and The Canadian Institute for Cybersecurity (CIC) that use the notion of profiles to generate cybersecurity dataset in a systematic manner. It incluides a detailed description of intrusions along with abstract distribution models for applications, protocols, or lower level network entities. The dataset includes seven different attack scenarios, namely Brute-force, Heartbleed, Botnet, DoS, DDoS, Web attacks, and infiltration of the network from inside. The attacking infrastructure includes 50 machines and the victim organization has 5 departments includes 420 PCs and 30 servers. This dataset includes the network traffic and log files of each machine from the victim side, along with 80 network traffic features extracted from captured traffic using CICFlowMeter-V3.
+For more information on the creation of this dataset, see this paper by researchers at the Canadian Institute for Cybersecurity (CIC) and the University of New Brunswick (UNB): &lt;a href&#x3D;&quot;http://www.scitepress.org/Papers/2018/66398/66398.pdf&quot;&gt;Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>A2D2: Audi Autonomous Driving Dataset</title>
+      <link>/aev-a2d2</link>
+      <guid>/aev-a2d2</guid>
+      <description>An open multi-sensor dataset for autonomous driving research. This dataset comprises semantically segmented images, semantic point clouds, and 3D bounding boxes. In addition, it contains unlabelled 360 degree camera images, lidar, and bus data for three sequences. We hope this dataset will further facilitate active research and development in AI, computer vision, and robotics for autonomous driving.</description>
+    </item>
+    <item>
+      <title>Analysis Ready Sentinel-1 Backscatter Imagery</title>
+      <link>/sentinel-1-rtc-indigo</link>
+      <guid>/sentinel-1-rtc-indigo</guid>
+      <description>The &lt;a href&#x3D;&quot;https://sentinel.esa.int/web/sentinel/missions/sentinel-1&quot;&gt;Sentinel-1 mission&lt;/a&gt; is a constellation of
+C-band Synthetic Aperature Radar (SAR) satellites from the European Space Agency launched since 2014.
+These satellites collect observations of radar backscatter intensity day or night, regardless of the
+weather conditions, making them enormously valuable for environmental monitoring.
+These radar data have been processed from original Ground Range Detected (GRD) scenes into a Radiometrically
+Terrain Corrected, tiled product suitable for analysis. This product is available over the Contiguous United States (CONUS)
+since 2017 when Sentinel-1 data became globally available.</description>
+    </item>
+    <item>
+      <title>CCAFS-Climate Data</title>
+      <link>/cgiardata</link>
+      <guid>/cgiardata</guid>
+      <description>High resolution climate data to help assess the impacts of climate change primarily on agriculture. These open access datasets of climate projections will help researchers make climate change impact assessments.</description>
+    </item>
+    <item>
+      <title>COCO - Common Objects in Context - fast.ai datasets</title>
+      <link>/fast-ai-coco</link>
+      <guid>/fast-ai-coco</guid>
+      <description>COCO is a large-scale object detection, segmentation, and captioning dataset.
+This is part of the fast.ai datasets collection hosted by AWS for convenience
+of fast.ai students. If you use this dataset in your research please cite
+arXiv:1405.0312 [cs.CV].</description>
+    </item>
+    <item>
+      <title>COVID-19 Molecular Structure and Therapeutics Hub</title>
+      <link>/molssi-covid19-hub</link>
+      <guid>/molssi-covid19-hub</guid>
+      <description>Aggregating critical information to accelerate drug discovery for the molecular modeling and simulation community.
+A community-driven data repository and curation service for molecular structures, models, therapeutics, and
+simulations related to computational research related to therapeutic opportunities for COVID-19
+(caused by the SARS-CoV-2 coronavirus).</description>
+    </item>
+    <item>
+      <title>District of Columbia - Classified Point Cloud LiDAR</title>
+      <link>/dc-lidar</link>
+      <guid>/dc-lidar</guid>
+      <description>LiDAR point cloud data for Washington, DC is available for anyone to use on Amazon S3.
+This dataset, managed by the Office of the Chief Technology Officer (OCTO), through the
+direction of the District of Columbia GIS program, contains tiled point cloud data for
+the entire District along with associated metadata.</description>
+    </item>
+    <item>
+      <title>Downscaled Climate Data for Alaska</title>
+      <link>/wrf-alaska-snap</link>
+      <guid>/wrf-alaska-snap</guid>
+      <description>Warning to data users - Errors have been discovered in the following variables in the previously-available versions of this dataset: u, u10, ubot, v, v10 and vbot. The SNAP team is working to address the issue and those variables have been removed from the currently-available version of the dataset. If you have previously downloaded this dataset which included those variables please download the new version of the dataset and refrain from utilizing the problematic variables for analysis. The dataset is being corrected and will be available including the variables at-issue when possible. We apologize for the inconvenience. This dataset contains historical and projected dynamically downscaled climate data for the State of Alaska and surrounding regions at 20km spatial resolution and hourly temporal resolution. Select variables are also summarized into daily resolutions. This data was produced using the Weather Research and Forecasting (WRF) model (Version 3.5). We downscaled both ERA-Interim historical reanalysis data (1979-2015) and both historical and projected runs from 2 GCM’s from the Coupled Model Inter-comparison Project 5 (CMIP5): GFDL-CM3 and NCAR-CCSM4 (historical run: 1970-2005 and RCP 8.5: 2006-2100).</description>
+    </item>
+    <item>
+      <title>EPA Risk-Screening Environmental Indicators</title>
+      <link>/epa-rsei-pds</link>
+      <guid>/epa-rsei-pds</guid>
+      <description>Detailed air model results from EPA’s Risk-Screening Environmental Indicators (RSEI) model.</description>
+    </item>
+    <item>
+      <title>Epoch of Reionization Dataset</title>
+      <link>/epoch-of-reionization</link>
+      <guid>/epoch-of-reionization</guid>
+      <description>The data are from observations with the Murchison Widefield Array (MWA) which is a
+Square Kilometer Array (SKA) precursor in Western Australia.  This particular
+dataset is from the Epoch of Reionization project which is a key science driver
+of the SKA. Nearly 2PB of such observations have been recorded to date, this is
+a small subset of that which has been exported from the MWA data archive in
+Perth and made available to the public on AWS.  The data were taken to detect
+signatures of the first stars and galaxies forming and the effect of these early
+stars and galaxies on the evolution of the universe.</description>
+    </item>
+    <item>
+      <title>Genome Ark</title>
+      <link>/genomeark</link>
+      <guid>/genomeark</guid>
+      <description>The Genome Ark hosts genomic information for the Vertebrate Genomes Project (VGP) and other related projects. The VGP is an international collaboration that aims to generate complete and near error-free reference genomes for all extant vertebrate species. These genomes will be used to address fundamental questions in biology and disease, to identify species most genetically at risk for extinction, and to preserve genetic information of life.</description>
+    </item>
+    <item>
+      <title>Global Surface Summary of Day</title>
+      <link>/noaa-gsod</link>
+      <guid>/noaa-gsod</guid>
+      <description>GSOD is a collection of daily weather measurements (temperature, wind speed, humidity, pressure, and more) from 9000+ weather stations around the world.</description>
+    </item>
+    <item>
+      <title>Google Books Ngrams</title>
+      <link>/google-ngrams</link>
+      <guid>/google-ngrams</guid>
+      <description>N-grams are fixed size tuples of items. In this case the items are words extracted from the Google Books corpus. The n specifies the number of elements in the tuple, so a 5-gram contains five words or characters. The n-grams in this dataset were produced by passing a sliding window of the text of books and outputting a record for each new token.</description>
+    </item>
+    <item>
+      <title>HIRLAM Weather Model</title>
+      <link>/hirlam</link>
+      <guid>/hirlam</guid>
+      <description>HIRLAM (High Resolution Limited Area Model) is an operational synoptic and mesoscale weather prediction model managed by the Finnish Meteorological Institute.</description>
+    </item>
+    <item>
+      <title>High Resolution Downscaled Climate Data for Southeast Alaska</title>
+      <link>/wrf-se-alaska-snap</link>
+      <guid>/wrf-se-alaska-snap</guid>
+      <description>This dataset contains historical and projected dynamically downscaled climate data for the Southeast region of the State of Alaska at 1 and 4km spatial resolution and hourly temporal resolution. Select variables are also summarized into daily resolutions. This data was produced using the Weather Research and Forecasting (WRF) model (Version 4.0). We downscaled both Climate Forecast System Reanalysis (CFSR) historical reanalysis data (1980-2019) and both historical and projected runs from two GCM’s from the Coupled Model Inter-comparison Project 5 (CMIP5): GFDL-CM3 and NCAR-CCSM4 (historical run: 1980-2010 and RCP 8.5: 2030-2060).</description>
+    </item>
+    <item>
+      <title>High Resolution Population Density Maps + Demographic Estimates by CIESIN and Facebook</title>
+      <link>/dataforgood-fb-hrsl</link>
+      <guid>/dataforgood-fb-hrsl</guid>
+      <description>Population data for a selection of countries, allocated to 1 arcsecond blocks and provided in a combination of CSV
+and Cloud-optimized GeoTIFF files. This refines &lt;a href&#x3D;&quot;https://sedac.ciesin.columbia.edu/data/collection/gpw-v4&quot;&gt;CIESIN’s Gridded Population of the World&lt;/a&gt;
+using machine learning models on high-resolution worldwide Digital Globe
+satellite imagery. CIESIN population counts aggregated from worldwide census
+data are allocated to blocks where imagery appears to contain buildings.</description>
+    </item>
+    <item>
+      <title>IChangeMyCity Complaints Data from Janaagraha</title>
+      <link>/ichangemycity</link>
+      <guid>/ichangemycity</guid>
+      <description>The &lt;a href&#x3D;&quot;https://www.ichangemycity.com&quot;&gt;IChangeMyCity&lt;/a&gt; project provides insight into the complaints raised by citizens from diffent cities of India related to the issues in their neighbourhoods and the resolution of the same by the civic bodies.</description>
+    </item>
+    <item>
+      <title>IRS 990 Filings (Spreadsheets)</title>
+      <link>/990-spreadsheets</link>
+      <guid>/990-spreadsheets</guid>
+      <description>Excerpts of electronic Form 990 and 990-EZ filings, converted to spreadsheet form. Additional fields being added regularly.</description>
+    </item>
+    <item>
+      <title>ISERV</title>
+      <link>/iserv</link>
+      <guid>/iserv</guid>
+      <description>ISS SERVIR Environmental Research and Visualization System (ISERV) was a fully-automated prototype camera aboard the International Space Station that was tasked to capture high-resolution Earth imagery of specific locations at 3-7 frames per second. In the course of its regular operations during 2013 and 2014, ISERV&amp;#39;s camera acquired images that can be used primaliry in use is environmental and disaster management.</description>
+    </item>
+    <item>
+      <title>Image classification - fast.ai datasets</title>
+      <link>/fast-ai-imageclas</link>
+      <guid>/fast-ai-imageclas</guid>
+      <description>Some of the most important datasets for image classification research, including
+CIFAR 10 and 100, Caltech 101, MNIST, Food-101, Oxford-102-Flowers, Oxford-IIIT-Pets,
+and Stanford-Cars.  This is part of the fast.ai datasets collection hosted by
+AWS for convenience of fast.ai students. See documentation link for citation and
+license details for each dataset.</description>
+    </item>
+    <item>
+      <title>Image localization  - fast.ai datasets</title>
+      <link>/fast-ai-imagelocal</link>
+      <guid>/fast-ai-imagelocal</guid>
+      <description>Some of the most important datasets for image localization  research, including
+Camvid and PASCAL VOC (2007 and 2012). This is part of the fast.ai datasets
+collection hosted by AWS for convenience of fast.ai students. See
+documentation link for citation and license details for each dataset.</description>
+    </item>
+    <item>
+      <title>K2 Mission Data</title>
+      <link>/k2</link>
+      <guid>/k2</guid>
+      <description>The K2 mission observed 100 square degrees for 80 days each across 20 different pointings along the ecliptic, collecting high-precision photometry for a selection of targets within each field. The mission began when the original Kepler mission ended due to loss of the second reaction wheel in 2011. More information about the K2 mission is available at &lt;a href&#x3D;&quot;https://archive.stsci.edu/k2/&quot;&gt;MAST&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>KITTI Vision Benchmark Suite</title>
+      <link>/kitti</link>
+      <guid>/kitti</guid>
+      <description>Dataset and benchmarks for computer vision research in the context of autonomous driving. The dataset has been recorded in and around the city of Karlsruhe, Germany using the mobile platform AnnieWay (VW station wagon) which has been equipped with several RGB and monochrome cameras, a Velodyne HDL 64 laser scanner as well as an accurate RTK corrected GPS/IMU localization unit. The dataset has been created for computer vision and machine learning research on stereo, optical flow, visual odometry, semantic segmentation, semantic instance segmentation, road segmentation, single image depth prediction, depth map completion, 2D and 3D object detection and object tracking. In addition, several raw data recordings are provided. The datasets are captured by driving around the mid-size city of Karlsruhe, in rural areas and on highways. Up to 15 cars and 30 pedestrians are visible per image.</description>
+    </item>
+    <item>
+      <title>Kepler Mission Data</title>
+      <link>/kepler</link>
+      <guid>/kepler</guid>
+      <description>The Kepler mission observed the brightness of more than 180,000 stars near the Cygnus constellation at a 30 minute cadence for 4 years in order to find transiting exoplanets, study variable stars, and find eclipsing binaries. More information about the Kepler mission is available at &lt;a href&#x3D;&quot;https://archive.stsci.edu/kepler/&quot;&gt;MAST&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Multimedia Commons</title>
+      <link>/multimedia-commons</link>
+      <guid>/multimedia-commons</guid>
+      <description>The Multimedia Commons is a collection of audio and visual features computed for the nearly 100 million Creative Commons-licensed Flickr images and videos in the YFCC100M dataset from Yahoo! Labs, along with ground-truth annotations for selected subsets. The International Computer Science Institute (ICSI) and Lawrence Livermore National Laboratory are producing and distributing a core set of derived feature sets and annotations as part of an effort to enable large-scale video search capabilities. They have released this feature corpus into the public domain, under Creative Commons License 0, so it is free for anyone to use for any purpose.</description>
+    </item>
+    <item>
+      <title>Multiview Extended Video with Activities (MEVA)</title>
+      <link>/mevadata</link>
+      <guid>/mevadata</guid>
+      <description>The Multiview Extended Video with Activities (MEVA) dataset consists
+video data of human activity, both scripted and unscripted,
+collected with roughly 100 actors over several weeks.  The data was
+collected with 29 cameras with overlapping and non-overlapping
+fields of view. The current release consists of about 328 hours
+(516GB, 4259 clips) of video data, as well as 4.6 hours (26GB) of
+UAV data. Other data includes GPS tracks of actors, camera models,
+and a site map. We have also released annotations for 22 hours of
+data. Further updates are planned.</description>
+    </item>
+    <item>
+      <title>NLP - fast.ai datasets</title>
+      <link>/fast-ai-nlp</link>
+      <guid>/fast-ai-nlp</guid>
+      <description>Some of the most important datasets for NLP, with a focus on classification, including
+IMDb, AG-News, Amazon Reviews (polarity and full), Yelp Reviews (polarity and
+full), Dbpedia, Sogou News (Pinyin), Yahoo Answers, Wikitext 2 and Wikitext
+103, and ACL-2010 French-English 10^9 corpus.  This is part of the
+fast.ai datasets collection hosted by AWS for convenience of fast.ai
+students. See documentation link for citation and license details for each
+dataset.</description>
+    </item>
+    <item>
+      <title>NOAA Coastal Lidar Data</title>
+      <link>/noaa-coastal-lidar</link>
+      <guid>/noaa-coastal-lidar</guid>
+      <description>Lidar (light detection and ranging) is a technology that can measure the 3-dimentional location of objects, including the solid earth surface. The data consists of a point cloud of the positions of solid objects that reflected a laser pulse, typically from an airborne platform. In addition to the position, each point may also be attributed by the type of object it reflected from, the intensity of the reflection, and other system dependent metadata. The NOAA Coastal Lidar Data is a collection of lidar projects from many different sources and agencies, geographically focused on the coastal areas of the United States of America. The data is provided in Entwine Point Tiles (&lt;a href&#x3D;&quot;https://entwine.io&quot;&gt;https://entwine.io&lt;/a&gt;) format, which is a lossless streamable octree of the point cloud. Datasets are maintained in their original projects and care should be taken when merging projects. The coordinate reference system for the data is The NAD83(2011) UTM zone appropriate for the center of each data set and the orthometric datum appropriate for that area (for example, NAVD88 in the mainland United States, PRVD02 in Puerto Rico, or GUVD03 in Guam). The geoid model used is reflected in the data set resource name.</description>
+    </item>
+    <item>
+      <title>NOAA Continuously Operating Reference Stations (CORS) Network (NCN)</title>
+      <link>/noaa-ncn</link>
+      <guid>/noaa-ncn</guid>
+      <description>The &lt;a href&#x3D;&quot;https://geodesy.noaa.gov/CORS/&quot;&gt;NOAA Continuously Operating Reference Stations (CORS) Network (NCN)&lt;/a&gt;, managed by NOAA/National Geodetic Survey (&lt;a href&#x3D;&quot;https://geodesy.noaa.gov/&quot;&gt;NGS&lt;/a&gt;), provide Global Navigation Satellite System (GNSS) data, supporting three dimensional positioning, meteorology, space weather, and geophysical applications throughout the United States. The NCN is a multi-purpose, multi-agency cooperative endeavor, combining the efforts of hundreds of government, academic, and private organizations. The stations are independently owned and operated. Each agency shares their GNSS/GPS carrier phase and code range measurements and station metadata with NGS, which are analyzed and distributed free of charge.
+NGS provides access to all NCN data collected since 9 February (040) 1994.&lt;ul&gt;
+&lt;li&gt;&lt;h4 id&#x3D;&quot;access-to-ncn-data-and-products&quot;&gt;Access to NCN Data and Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://noaa-cors-pds.s3.amazonaws.com/index.html&quot;&gt;NOAA-NCN on AWS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;ftp://geodesy.noaa.gov/cors/&quot;&gt;Anonymous ftp://geodesy.noaa.gov/cors/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;ftp://alt.ngs.noaa.gov/cors&quot;&gt;Anonymous ftp://alt.ngs.noaa.gov/cors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href&#x3D;&quot;https://geodesy.noaa.gov/UFCORS/&quot;&gt;NGS&amp;#39;s customized data request service (UFCORS)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h4 id&#x3D;&quot;ncn-data-and-products&quot;&gt;NCN Data and Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;RINEX&lt;/strong&gt;: The GPS/GNSS data collected at NCN stations are made available to the public by NGS in Receiver INdependent EXchange (RINEX) format. Most data are available within 1 hour (60 minutes) from when they were recorded at the remote site, and a few sites have a delay of 24 hours (1440 minutes).&lt;br/&gt;RINEX data can be found at: &lt;em&gt;rinex/&lt;code&gt;YYYY&lt;/code&gt;/&lt;code&gt;DDD&lt;/code&gt;/&lt;code&gt;ssss&lt;/code&gt;/&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Station logs&lt;/strong&gt;: &lt;ul&gt;
+&lt;li&gt;Station log files contain all the historical equipment (receiver/antenna) used at that station, approximate location, owner and operating agency, etc..&lt;br/&gt;Station log files can be found at: &lt;em&gt;station_log/&lt;code&gt;ssss&lt;/code&gt;.log.txt&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Historical and current equipment information of all NCN stations, except those that are considered IGS stations.&lt;br/&gt;These data can be found at: &lt;em&gt;station_log/cummulative.station.info.cors&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Published Coordinates and Velocities&lt;/strong&gt;: NAD83 and ITRF coordinates and velocities of each NCN station. All published coordinates and velocities are given for the Antenna Reference Point (ARP).&lt;br/&gt;Published coordinate and velocity files can be found at: &lt;em&gt;coord/coord_&lt;code&gt;YY&lt;/code&gt;/&lt;/em&gt;&lt;br/&gt;In July 2019, NGS published &lt;a href&#x3D;&quot;https://geodesy.noaa.gov/CORS/news/mycs2/mycs2.shtml&quot;&gt;MYCS2&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Time-series Plots&lt;/strong&gt;:&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Short-term&lt;/em&gt; plots show the repeatability of a site for the last 90-days with respect to the current published position, corrected for the effect of the published velocity. These plots are updated daily.&lt;br/&gt;Short-term plots can be found at: &lt;em&gt;/Plots/&lt;code&gt;ssss&lt;/code&gt;_&lt;code&gt;YY&lt;/code&gt;.short.png&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Long-term&lt;/em&gt; plots show the show weekly residual positions with respect to the current published coordinates from our stacked solution. Newer sites may not have a long-term plot if they were added after our Multi-year Solution Processing campaign.&lt;br/&gt;Long-term plots can be found at: &lt;em&gt;/Plots/Longterm/&lt;code&gt;ssss&lt;/code&gt;_&lt;code&gt;YY&lt;/code&gt;.long.png&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Daily Broadcast Ephemeris&lt;/strong&gt;:&lt;ul&gt;
+&lt;li&gt;Daily GPS Broadcast ephemeris can be found at: &lt;em&gt;rinex/&lt;code&gt;YYYY&lt;/code&gt;/&lt;code&gt;DDD&lt;/code&gt;/brdc&lt;code&gt;DDD&lt;/code&gt;0.&lt;code&gt;YY&lt;/code&gt;n.gz&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Daily GLONASS-only Broadcast ephemeris can be found at: &lt;em&gt;rinex/&lt;code&gt;YYYY&lt;/code&gt;/&lt;code&gt;DDD&lt;/code&gt;/brdc&lt;code&gt;DDD&lt;/code&gt;0.&lt;code&gt;YY&lt;/code&gt;g.gz&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Daily final, rapid, and hourly ultra-rapid GNSS Orbit&lt;/strong&gt; can be found at: &lt;ul&gt;
+&lt;li&gt;Daily final and rapid GNSS Orbit can be found at: &lt;em&gt;rinex/&lt;code&gt;YYYY&lt;/code&gt;/&lt;code&gt;DDD&lt;/code&gt;/&lt;code&gt;AAAWWWWD&lt;/code&gt;.sp3.gz&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Hourly ultra-rapid GNSS Orbit can be found at: &lt;em&gt;rinex/&lt;code&gt;YYYY&lt;/code&gt;/&lt;code&gt;DDD&lt;/code&gt;/&lt;code&gt;AAAWWWWD&lt;/code&gt;_&lt;code&gt;HH&lt;/code&gt;.sp3.gz&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;In which:&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;YYYY&lt;/code&gt;: 4-digit year&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;YY&lt;/code&gt;: The last 2-digit of year&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DDD&lt;/code&gt;: 3-digit day of year [001,002,..366]&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;D&lt;/code&gt;: day of week [Sun&#x3D;0, Mon&#x3D;1,..,Fri&#x3D;6]&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ssss&lt;/code&gt;: 4-char station ID&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;h&lt;/code&gt;: 1-char hour of day (a&#x3D;00, b&#x3D;01, c&#x3D;02,..,x&#x3D;23)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HH&lt;/code&gt;: 2-digit hour of day (00,01,02,..,23)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;WWWW&lt;/code&gt;: 4-digit GPS week number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AAA&lt;/code&gt;: 3-char analysis center name/type of solution, such as:&lt;ul&gt;
+&lt;li&gt;igs: IGS final solution combination&lt;/li&gt;
+&lt;li&gt;igl: IGS final solution combination (GLONASS-only)&lt;/li&gt;
+&lt;li&gt;igr: IGS rapid solution combination&lt;/li&gt;
+&lt;li&gt;igu: IGS ultra-rapid solution combination&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>NOAA Emergency Response Imagery</title>
+      <link>/noaa-eri</link>
+      <guid>/noaa-eri</guid>
+      <description>In order to support NOAA&amp;#39;s homeland security and emergency response requirements, the National Geodetic Survey Remote Sensing Division (NGS/RSD) has the capability to acquire and rapidly disseminate a variety of spatially-referenced datasets to federal, state, and local government agencies, as well as the general public. Remote sensing technologies used for these projects have included lidar, high-resolution digital cameras, a film-based RC-30 aerial camera system, and hyperspectral imagers. Examples of rapid response initiatives include acquiring high resolution images with the Emerge/Applanix Digital Sensor System (DSS).</description>
+    </item>
+    <item>
+      <title>NOAA Global Ensemble Forecast System (GEFS)</title>
+      <link>/noaa-gefs</link>
+      <guid>/noaa-gefs</guid>
+      <description>The Global Ensemble Forecast System (GEFS), previously known as the GFS Global ENSemble (GENS), is a weather forecast model made up of 21 separate forecasts, or ensemble members.  The National Centers for Environmental Prediction (NCEP) started the GEFS to address the nature of uncertainty in weather observations, which is used to initialize weather forecast models. The GEFS attempts to quantify the amount of uncertainty in a forecast by generating an ensemble of multiple forecasts, each minutely different, or perturbed, from the original observations. With global coverage, GEFS is produced four times a day with weather forecasts going out to 16 days.</description>
+    </item>
+    <item>
+      <title>NOAA Global Extratropical Surge and Tide Operational Forecast System (Global ESTOFS)</title>
+      <link>/noaa-gestofs</link>
+      <guid>/noaa-gestofs</guid>
+      <description>NOAA&amp;#39;s Global Extratropical Surge and Tide Operational Forecast System (Global ESTOFS) provides users with nowcasts (analyses of near present conditions) and forecast guidance of water level conditions for the entire globe. Global ESTOFS has been developed to serve the marine navigation, weather forecasting, and disaster mitigation user communities. Global ESTOFS was developed in a collaborative effort between the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central Operations (NCO), the University of Notre Dame, the University of North Carolina, and The Water Institute of the Gulf. The model generates forecasts out to 180 hours four times per day; forecast output includes water levels caused by the combined effects of storm surge and tides, by astronomical tides alone, and by sub-tidal water levels (isolated storm surge). &lt;br /&gt;&lt;br /&gt;The hydrodynamic model employed by Global ESTOFS is the ADvanced CIRCulation (ADCIRC) finite element model. The model is forced by GFS winds, mean sea level pressure, and sea ice. The unstructured grid used by Global ESTOFS consists of 8,063,409 nodes and 15,478,900 triangular elements. Coastal resolution is up to 80 m for Hawaii and the U.S. West Coast; up to 90-120 m for the Pacific Islands including Guam, American Samoa, Marianas, Wake Island, Marshall Islands, and Palau; and up to 120 m for the U.S. East Coast, Puerto Rico, Micronesia, and Alaska. The flood plain extends overland to approximately 6 m elevation ASL for the U.S. East Coast, and up to 20 m elevation ASL for the Pacific Islands. Global ESTOFS a) reduces bias and errors due to the removal of the open ocean boundaries that were included in previous ESTOFS regional domains (ESTOFS-Atlantic, -Pacific, -Micronesia); b) includes internal tide-induced dissipation in the deep ocean; c) includes sea ice effect on wind drag, and d) incorporates a bias correction using 2-day average water level observations from CO-OPS tide stations that are interpolated spatially across the Global ESTOFS mesh. &lt;br /&gt;&lt;br /&gt;Global ESTOFS water level forecast guidance output available here include NetCDF, GRIB2, and SHEF files. Please see README documentation for more details.</description>
+    </item>
+    <item>
+      <title>NOAA Global Hydro Estimator (GHE)</title>
+      <link>/noaa-ghe</link>
+      <guid>/noaa-ghe</guid>
+      <description>Global Hydro-Estimator provides a global
+mosaic imagery of rainfall estimates from
+multi-geostationary satellites, which
+currently includes GOES-16, GOES-15,
+Meteosat-8, Meteosat-11 and Himawari-8.
+The GHE products include: Instantaneous
+rain rate, 1 hour, 3 hour, 6 hour, 24 hour
+and also multi-day rainfall accumulation.</description>
+    </item>
+    <item>
+      <title>NOAA Integrated Surface Database (ISD)</title>
+      <link>/noaa-isd</link>
+      <guid>/noaa-isd</guid>
+      <description>The Integrated Surface Database (ISD) consists
+of global hourly and synoptic observations
+compiled from numerous sources into a gzipped
+fixed width format. ISD was developed as a joint
+activity within Asheville&amp;#39;s Federal Climate
+Complex. The database includes over 35,000 stations
+worldwide, with some having data as far back
+as 1901, though the data show a substantial
+increase in volume in the 1940s and again in
+the early 1970s. Currently, there are over
+14,000 &amp;quot;active&amp;quot; stations updated daily in the
+database. The total uncompressed data volume is
+around 600 gigabytes; however, it continues to
+grow as more data are added. ISD includes
+numerous parameters such as wind speed and
+direction, wind gust, temperature, dew point,
+cloud data, sea level pressure, altimeter setting,
+station pressure, present weather, visibility,
+precipitation amounts for various time periods,
+snow depth, and various other elements as observed
+by each station.</description>
+    </item>
+    <item>
+      <title>NOAA National Blend of Models (NBM)</title>
+      <link>/noaa-nbm</link>
+      <guid>/noaa-nbm</guid>
+      <description>The National Blend of Models (NBM) is a nationally consistent and skillful suite of calibrated forecast guidance based on a blend of both NWS and non-NWS numerical weather prediction model data and post-processed model guidance. The goal of the NBM is to create a highly accurate, skillful and consistent starting point for the gridded forecast. </description>
+    </item>
+    <item>
+      <title>NOAA National Water Model Short-Range Forecast</title>
+      <link>/noaa-nwm-pds</link>
+      <guid>/noaa-nwm-pds</guid>
+      <description>The National Water Model (NWM) is a water resources model that simulates and forecasts water
+budget variables, including snowpack, evapotranspiration, soil moisture and streamflow, over
+the entire continental United States (CONUS). The model, launched in August 2016, is designed
+to improve the ability of NOAA to meet the needs of its stakeholders (forecasters, emergency
+managers, reservoir operators, first responders, recreationists, farmers, barge operators, and
+ecosystem and floodplain managers) by providing expanded accuracy, detail, and frequency of water
+information. It is operated by NOAA’s Office of Water Prediction. This bucket contains a four-week
+rollover of the Short Range Forecast model output and the corresponding forcing data for the
+model. The model is forced with meteorological data from the High Resolution Rapid Refresh (HRRR)
+and the Rapid Refresh (RAP) models. The Short Range Forecast configuration cycles hourly and produces
+hourly deterministic forecasts of streamflow and hydrologic states out to 18 hours.</description>
+    </item>
+    <item>
+      <title>NOAA Rapid Refresh (RAP)</title>
+      <link>/noaa-rap</link>
+      <guid>/noaa-rap</guid>
+      <description>The Rapid Refresh (RAP) is a NOAA/NCEP operational weather prediction system comprised primarily of a numerical forecast model and analysis/assimilation system to initialize that model. It covers North America and is run with a horizontal resolution of 13 km and 50 vertical layers. The RAP was developed to serve users needing frequently updated short-range weather forecasts, including those in the US aviation community and US severe weather forecasting community. The model is run for every hour of the day; it is integrated to 51 hours for the 03/09/15/21 UTC cycles and to 21 hours for every other cycle. The RAP uses the ARW core of the WRF model and the Gridpoint Statistical Interpolation (GSI) analysis - the analysis is aided with the assimilation of cloud and hydrometeor data to provide more skill in short-range cloud and precipitation forecasts.</description>
+    </item>
+    <item>
+      <title>NOAA S-111 Surface Water Currents Data</title>
+      <link>/noaa-s111</link>
+      <guid>/noaa-s111</guid>
+      <description>S-111 is a data and metadata encoding specification that is part of the &lt;a href&#x3D;&quot;https://iho.int/en/s100-project&quot;&gt;S-100 Universal Hydrographic Data Model&lt;/a&gt;, an international standard for hydrographic data. This collection of data contains surface water currents forecast guidance from &lt;a href&#x3D;&quot;https://tidesandcurrents.noaa.gov/models.html&quot;&gt;NOAA/NOS Operational Forecast Systems&lt;/a&gt;, a set of operational hydrodynamic nowcast and forecast modeling systems, for various U.S. coastal waters and the great lakes. The collection also contains surface current forecast guidance output from the &lt;a href&#x3D;&quot;https://polar.ncep.noaa.gov/global/&quot;&gt;NCEP Global Real-Time Ocean Forecast System (GRTOFS)&lt;/a&gt; for some offshore areas. These datasets are encoded as HDF-5 files conforming to the S-111 specification, and are geospatially subset into individual tiles conforming to the NOAA/OCS Nautical Product Tiling Scheme, with filenames indicating the corresponding NOAA Electronic Navigational Chart (ENC) Cell Identifier.
+A full set of S-111 tiles is created for each new model run cycle, which occurs four times per day for all models except for RTOFS, which updates only once per day. Files are organized using a path naming convention that includes the OFS identifier (e.g. &amp;#39;cbofs&amp;#39; corresponding with output from the Chesapeake Bay Operational Forecast System) as well as the year, month, day, and hour corresponding with each model run initialization time. Each individual S-111 (HDF-5) file contains all forecast projections from a single model run for that geographic area. In other words, a single S-111 file will contain multiple gridded arrays each containing a forecast valid at a distinct time in the future, out to the forecast horizon of the underlying modeling system. All surface currents forecasts in this collection are computed at a depth of 4.5 meters below water surface, or half the water column depth, whichever is shallower.</description>
+    </item>
+    <item>
+      <title>NOAA Severe Weather Data Inventory (SWDI)</title>
+      <link>/noaa-swdi</link>
+      <guid>/noaa-swdi</guid>
+      <description>The Storm Events Database is an integrated database of severe weather events across the United States from 1950 to this year, with information about a storm event&amp;#39;s location, azimuth, distance, impact, and severity, including the cost of damages to property and crops. It contains data documenting: The occurrence of storms and other significant weather phenomena having sufficient intensity to cause loss of life, injuries, significant property damage, and/or disruption to commerce. Rare, unusual, weather phenomena that generate media attention, such as snow flurries in South Florida or the San Diego coastal area. Other significant meteorological events, such as record maximum or minimum temperatures or precipitation that occur in connection with another event. Data about a specific event is added to the dataset within 120 days to allow time for damage assessments and other analysis.</description>
+    </item>
+    <item>
+      <title>NOAA Space Weather Forecast and Observation Data</title>
+      <link>/noaa-space-weather</link>
+      <guid>/noaa-space-weather</guid>
+      <description>Space weather forecast and observation data is collected and disseminated by NOAA’s Space Weather Prediction Center (SWPC) in Boulder, CO. SWPC produces forecasts for multiple space weather phenomenon types and the resulting impacts to Earth and human activities.  A variety of products are available that provide these forecast expectations, and their respective measurements, in formats that range from detailed technical forecast discussions to NOAA Scale values to simple bulletins that give information in laymen&amp;#39;s terms. Forecasting is the prediction of future events, based on analysis and modeling of the past and present conditions of the environment you are interested in. In Space Weather, persistence and recurrence of active regions on the sun over the 27-day solar rotational period play an important role in accurately forecasting the space environment.</description>
+    </item>
+    <item>
+      <title>NOAA Unified Forecast System Subseasonal to Seasonal Prototype 5</title>
+      <link>/noaa-ufs-s2s</link>
+      <guid>/noaa-ufs-s2s</guid>
+      <description>The Unified Forecast System Subseasonal to Seasonal prototype 5 (UFS S2Sp5) dataset is reforecast data from the UFS atmosphere-ocean coupled model experimental prototype version 5 produced by the Medium Range and Subseasonal to Seasonal Application team of the UFS-R2O project. The UFS S2Sp5 is the first dataset released to the broader weather community for analysis and feedback as part of the development of the next generation operational numerical weather prediction system from NWS. The dataset includes all the major weather variables for atmosphere, land, ocean, sea ice, and ocean waves.
+&lt;br/&gt;
+&lt;br/&gt;
+Acknowledgment - The Unified Forecast System (UFS) atmosphere-ocean coupled model experimental version 5 (UFS S2Sp5) data used in this study are made available through the UFS Research to Operations (UFS-R2O) project sponsored by the National Weather Service (NWS) Office of Science and Technology Integration (OSTI) Modeling Program Division and the National Oceanic and Atmospheric Administration (NOAA) Oceanic and Atmospheric Research (OAR) Weather Program Office (WPO).</description>
+    </item>
+    <item>
+      <title>Nanopore Reference Human Genome</title>
+      <link>/nanopore</link>
+      <guid>/nanopore</guid>
+      <description>This dataset includes the sequencing and assembly of a reference standard human genome (GM12878) using the MinION nanopore sequencing instrument with the R9.4 1D chemistry.</description>
+    </item>
+    <item>
+      <title>Natural Scenes Dataset</title>
+      <link>/nsd</link>
+      <guid>/nsd</guid>
+      <description>Here, we collected and pre-processed a massive, high-quality 7T fMRI dataset that can be used to advance our understanding of how the brain works. A unique feature of this dataset is the massive amount of data available per individual subject. The data were acquired using ultra-high-field fMRI (7T, whole-brain, 1.8-mm resolution, 1.6-s TR). We measured fMRI responses while each of 8 participants viewed 9,000–10,000 distinct, color natural scenes (22,500–30,000 trials) in 30–40 weekly scan sessions over the course of a year. Additional measures were collected including resting-state data, retinotopy, category localizers, anatomical data (T1, T2, diffusion, venogram, angiogram), physiological data (pulse, respiration), eye-tracking data, and additional behavioral assessments outside the scanner. Because of its unprecedented scale and richness, NSD can be used to explore diverse neuroscientific questions with high power at the level of individual subjects. In particular, the number of images sampled in this dataset is sufficiently large that the dataset may be of high interest for computer vision, machine learning, and other data-driven applications.</description>
+    </item>
+    <item>
+      <title>Open Observatory of Network Interference</title>
+      <link>/ooni</link>
+      <guid>/ooni</guid>
+      <description>A free software, global observation network for detecting censorship, surveillance and traffic manipulation on the internet.</description>
+    </item>
+    <item>
+      <title>OpenNeuro</title>
+      <link>/openneuro</link>
+      <guid>/openneuro</guid>
+      <description>OpenNeuro is a database of openly-available brain imaging data. The data are shared according to a Creative Commons CC0 license, providing a broad range of brain imaging data to researchers and citizen scientists alike. The database primarily focuses on functional magnetic resonance imaging (fMRI) data, but also includes other imaging modalities including structural and diffusion MRI, electroencephalography (EEG), and magnetoencephalograpy (MEG). OpenfMRI is a project of the &lt;a href&#x3D;&quot;http://reproducibility.stanford.edu&quot;&gt;Center for Reproducible Neuroscience at Stanford University&lt;/a&gt;. Development of the OpenNeuro resource has been funded by the National Science Foundation, National Institute of Mental Health, National Institute on Drug Abuse, and the Laura and John Arnold Foundation.</description>
+    </item>
+    <item>
+      <title>OpenStreetMap Linear Referencing</title>
+      <link>/osmlr</link>
+      <guid>/osmlr</guid>
+      <description>OSMLR a linear referencing system built on top of OpenStreetMap. OSM has great information about roads around the world and their interconnections, but it lacks the means to give a stable identifier to a stretch of roadway. OSMLR provides a stable set of numerical IDs for every 1 kilometer stretch of roadway around the world. In urban areas, OSMLR IDs are attached to each block of roadways between significant intersections.</description>
+    </item>
+    <item>
+      <title>PROJ datum grids</title>
+      <link>/proj-datum-grids</link>
+      <guid>/proj-datum-grids</guid>
+      <description>Horizontal and vertical adjustment datasets for coordinate transformation to be used by PROJ 7 or later. PROJ is a generic coordinate transformation software that transforms geospatial coordinates from one coordinate reference system (CRS) to another. This includes cartographic projections as well as geodetic transformations.</description>
+    </item>
+    <item>
+      <title>Physionet</title>
+      <link>/physionet</link>
+      <guid>/physionet</guid>
+      <description>PhysioNet offers free web access to large collections of recorded physiologic signals (PhysioBank) and related open-source software (PhysioToolkit).</description>
+    </item>
+    <item>
+      <title>Provision of Web-Scale Parallel Corpora for Official European Languages (ParaCrawl)</title>
+      <link>/paracrawl</link>
+      <guid>/paracrawl</guid>
+      <description>ParaCrawl is a set of large parallel corpora to/from English for all official EU languages by a broad web crawling effort. State-of-the-art methods are applied for the entire processing chain from identifying web sites with translated text all the way to collecting, cleaning and delivering parallel corpora that are ready as training data for CEF.AT and translation memories for DG Translation.</description>
+    </item>
+    <item>
+      <title>Smithsonian Open Access</title>
+      <link>/smithsonian-open-access</link>
+      <guid>/smithsonian-open-access</guid>
+      <description>The Smithsonian’s mission is the &amp;quot;increase and diffusion of knowledge&amp;quot; and has been collecting since 1846. The Smithsonian, through its efforts to digitize its multidisciplinary collections, has created millions of digital assets and related metadata describing the collection objects. On February 25th, 2020, the Smithsonian released over 2.8 million CC0 interdisciplinary 2-D and 3-D images, related metadata, and additionally, research data from researches across the Smithsonian. The 2.8 million &amp;quot;open access&amp;quot; collections are a subset of the Smithsonian’s 155 million objects, 2.1 million library volumes and 156,000 cubic feet of archival collections held in 19 museums, 9 research centers, libraries, archives and the National Zoo. Digitization of collections is ongoing.</description>
+    </item>
+    <item>
+      <title>Software Heritage Graph Dataset</title>
+      <link>/software-heritage</link>
+      <guid>/software-heritage</guid>
+      <description>&lt;a href&#x3D;&quot;https://www.softwareheritage.org/&quot;&gt;Software Heritage&lt;/a&gt; is the largest
+existing public archive of software source code and accompanying
+development history. The Software Heritage Graph Dataset is a fully
+deduplicated Merkle DAG representation of the Software Heritage archive.The dataset links together file content identifiers, source code
+directories, Version Control System (VCS) commits tracking evolution over
+time, up to the full states of VCS repositories as observed by Software
+Heritage during periodic crawls. The dataset’s contents come from major
+development forges (including GitHub and GitLab), FOSS distributions (e.g.,
+Debian), and language-specific package managers (e.g., PyPI). Crawling
+information is also included, providing timestamps about when and where all
+archived source code artifacts have been observed in the wild.</description>
+    </item>
+    <item>
+      <title>Sounds of Central African landscapes</title>
+      <link>/elp-nouabale-landscape</link>
+      <guid>/elp-nouabale-landscape</guid>
+      <description>Archival soundscapes recorded in the rainforest landscapes of
+Central Africa, with a focus on the vocalizations of African forest
+elephants (Loxodonta cyclotis).</description>
+    </item>
+    <item>
+      <title>Tabula Muris Senis</title>
+      <link>/tabula-muris-senis</link>
+      <guid>/tabula-muris-senis</guid>
+      <description>Tabula Muris Senis is a comprehensive compendium of single cell transcriptomic data from the model organism &lt;em&gt;Mus musculus&lt;/em&gt; comprising more than 500,000 cells from 18 organs and tissues across the mouse lifespan. We discovered cell-specific changes occurring across multiple cell types and organs, as well as age related changes in the cellular composition of different organs. Using single-cell transcriptomic data we were able to assess cell type specific manifestations of different hallmarks of aging, such as senescence, changes in the activity of metabolic pathways, depletion of stem-cell populations, genomic instability and the role of inflammation as well as other changes in the organism’s immune system. Tabula Muris Senis provides a wealth of new molecular information about how the most significant hallmarks of aging are reflected in a broad range of tissues and cell types.See: &lt;a href&#x3D;&quot;https://www.biorxiv.org/content/10.1101/661728v1&quot;&gt;https://www.biorxiv.org/content/10.1101/661728v1&lt;/a&gt;</description>
+    </item>
+    <item>
+      <title>The Genome Modeling System</title>
+      <link>/gmsdata</link>
+      <guid>/gmsdata</guid>
+      <description>The Genome Institute at Washington University has developed a high-throughput, fault-tolerant analysis information management system called the Genome Modeling System (GMS), capable of executing complex, interdependent, and automated genome analysis pipelines at a massive scale. The GMS framework provides detailed tracking of samples and data coupled with reliable and repeatable analysis pipelines. GMS includes a full system image with software and services, expandable from one workstation to a large compute cluster.</description>
+    </item>
+    <item>
+      <title>The Human Connectome Project</title>
+      <link>/hcp-openaccess</link>
+      <guid>/hcp-openaccess</guid>
+      <description>The Human Connectome Project aims to provide an unparalleled compilation of neural data, an interface to graphically navigate this data and the opportunity to achieve never before realized conclusions about the living human brain.</description>
+    </item>
+    <item>
+      <title>The Massively Multilingual Image Dataset (MMID)</title>
+      <link>/mmid</link>
+      <guid>/mmid</guid>
+      <description>MMID is a large-scale, massively multilingual dataset of images paired with the words they represent collected at the &lt;a href&#x3D;&quot;https://upenn.edu&quot;&gt;University of Pennsylvania&lt;/a&gt;.
+The dataset is doubly parallel: for each language, words are stored parallel to images that represent the word, &lt;em&gt;and&lt;/em&gt; parallel to the word&amp;#39;s translation into English (and corresponding images.)</description>
+    </item>
+    <item>
+      <title>University of British Columbia Sunflower Genome Dataset</title>
+      <link>/ubc-sunflower-genome</link>
+      <guid>/ubc-sunflower-genome</guid>
+      <description>This dataset captures Sunflower&amp;#39;s genetic diversity originating
+from thousands of wild, cultivated, and landrace sunflower
+individuals distributed across North America.The data consists of raw sequences and associated botanical metadata,
+aligned sequences (to three different reference genomes), and sets of
+SNPs computed across several cohorts.</description>
+    </item>
+    <item>
+      <title>stdpopsim species resources</title>
+      <link>/stdpopsim_kern</link>
+      <guid>/stdpopsim_kern</guid>
+      <description>Contains all resources (genome specifications, recombination maps, etc.) required for species specific simulation with the stdpopsim package. These resources are originally from a variety of other consortium and published work but are consolidated here for ease of access and use. If you are interested in adding a new species to the stdpopsim resource please raise an issue on the stdpopsim GitHub page to have the necessary files added here.</description>
+    </item>
+    <item>
+      <title>Binding DB</title>
+      <link>/binding-db</link>
+      <guid>/binding-db</guid>
+      <description>This a parquet representation of The Binding Database&amp;#39;s &lt;a href&#x3D;&quot;https://www.bindingdb.org/bind/chemsearch/marvin/SDFdownload.jsp?all_download&#x3D;yes&quot;&gt;Full BindingDB Database Dump&lt;/a&gt; that you can query straight from Athena in under 60 seconds (no Oracle database required). The Binding Database projects aims to make experimental data on the noncovalent association of molecules in solution searchable via the WWW. The initial focus is on biomolecular systems, but data on host-guest and supramolecular systems are also important and being included over time. It is expected that the enhanced access to data provided by this resource will facilitate drug-discovery, the design of self-assembling systems, and the development of predictive computer models of binding. The Binding Database is based at the Skaggs School of Pharmacy and Pharmaceutical Sciences at the University of California, San Diego, La Jolla, CA.</description>
+    </item>
+    <item>
+      <title>ChEMBL</title>
+      <link>/chembl</link>
+      <guid>/chembl</guid>
+      <description>ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs. This representation of ChEMBL is stored in Parquet format and most easily utilized through Amazon Athena. Follow the documentation for install instructions (&amp;lt; 2 minute install). New ChEMBL releases occur sporadically; the most up to date information on ChEMBL releases can be found &lt;a href&#x3D;&quot;https://chembl.gitbook.io/chembl-interface-documentation/downloads&quot;&gt;here&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>ClinVar</title>
+      <link>/clinvar</link>
+      <guid>/clinvar</guid>
+      <description>ClinVar is a freely accessible, public archive of reports of the relationships among human variations and phenotypes, with supporting evidence. ClinVar thus facilitates access to and communication about the relationships asserted between human variation and observed health status, and the history of that interpretation. ClinVar processes submissions reporting variants found in patient samples, assertions made regarding their clinical significance, information about the submitter, and other supporting data. The alleles described in submissions are mapped to reference sequences, and reported according to the HGVS standard. ClinVar then presents the data for interactive users as well as those wishing to use ClinVar in daily workflows and other local applications. ClinVar works in collaboration with interested organizations to meet the needs of the medical genetics community as efficiently and effectively as possible. This representation of ClinVar is stored in Parquet format and most easily utilized through Amazon Athena. Follow the documentation link for install instructions (&amp;lt; 2 minute install).</description>
+    </item>
+    <item>
+      <title>Covid Job Impacts - US Hiring Data Since March 1 2020</title>
+      <link>/us-hiring-rates-pandemic</link>
+      <guid>/us-hiring-rates-pandemic</guid>
+      <description>This dataset provides daily updates on the volume of US job listings filtered by geography industry job family and role; normalized to pre-covid levels.These data files feed the business intelligence visuals at covidjobimpacts.greenwich.hr, a public-facing site hosted by Greenwich.HR and OneModel Inc.
+Data is derived from online job listings tracked continuously, calculated daily and published nightly.  On average data from 70% of all new US jobs are captured,
+and the dataset currently contains data from 3.3 million hiring organizations.Data for each filter segment is represented as the 7-day average of new job listings for a specific date, expressed as a percentage of the corresponding value 
+on March 1, 2020.</description>
+    </item>
+    <item>
+      <title>Open Targets</title>
+      <link>/opentargets</link>
+      <guid>/opentargets</guid>
+      <description>This a Parquet representation of the Open Targets Platform&amp;#39;s &lt;a href&#x3D;&quot;https://www.targetvalidation.org/downloads/data&quot;&gt;2020-06 export&lt;/a&gt;. The Open Targets Platform integrates evidence from genetics, genomics, transcriptomics, drugs, animal models and scientific literature to score and rank target-disease associations for drug target identification. The Open Targets Platform (&lt;a href&#x3D;&quot;https://www.targetvalidation.org&quot;&gt;https://www.targetvalidation.org&lt;/a&gt;) is a freely available resource for the integration of genetics, genomics, and chemical data to aid systematic drug target identification and prioritisation.</description>
+    </item>
+    <item>
+      <title>AgricultureVision</title>
+      <link>/agriculture_vision</link>
+      <guid>/agriculture_vision</guid>
+      <description>Dataset associated with the paper &amp;quot;Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis&amp;quot;. Agriculture-Vision aims to be a publicly available large-scale aerial agricultural image dataset that is high-resolution, multi-band, and with multiple types of patterns annotated by agronomy experts. In its current stage, we have captured 94,986 512x512images sampled from 3,432 farmlands with nine types of annotations: double plant, drydown, endrow, nutrient deficiency, planter skip, storm damage, water, waterway and weed cluster. All of these patterns have substantial impacts on field conditions and the final yield. These farmland images were captured between 2017 and 2019 across multiple growing seasons in numerous farming locations in the US. Each field image contains four color channels: Near-infrared (NIR), Red, Green and Blue.  We first randomly split the 3,432 farmland images with a 6/2/2 train/val/test ratio. We then assign each sampled image to the split of the farmland image they are cropped from. This guarantees that no cropped images from the same farmland will appear in multiple splits in the final dataset. The generated Agriculture-Vision dataset thus contains 56,944/18,334/19,708 train/val/test images.</description>
+    </item>
+    <item>
+      <title>COVID-19 Open Research Dataset (CORD-19)</title>
+      <link>/cord-19</link>
+      <guid>/cord-19</guid>
+      <description>Full-text and metadata dataset of COVID-19 and coronavirus-related research articles optimized for machine readability.</description>
+    </item>
+    <item>
+      <title>MODIS MYD13A1, MOD13A1, MYD11A1, MOD11A1, MCD43A4</title>
+      <link>/modis-astraea</link>
+      <guid>/modis-astraea</guid>
+      <description>Data from the Moderate Resolution Imaging Spectroradiometer (MODIS), managed by
+the U.S. Geological Survey and NASA. Five products are included:
+MCD43A4 (MODIS/Terra and Aqua Nadir BRDF-Adjusted Reflectance Daily L3 Global 500 m SIN Grid),
+MOD11A1 (MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid),
+MYD11A1 (MODIS/Aqua Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid),
+MOD13A1 (MODIS/Terra Vegetation Indices 16-Day L3 Global 500 m SIN Grid),
+and MYD13A1 (MODIS/Aqua Vegetation Indices 16-Day L3 Global 500 m SIN Grid).
+MCD43A4 has global coverage, all time (~21 years).
+The other products have ~11 years of global coverage.  All data files are in single-band
+cloud-optimized GeoTIFF (COG) format.</description>
+    </item>
+    <item>
+      <title>Swiss Public Transport Stops</title>
+      <link>/schweizer-haltestellen-oev</link>
+      <guid>/schweizer-haltestellen-oev</guid>
+      <description>The basic geo-data set for public transport stops comprises public transport stops in Switzerland and additional selected geo-referenced public transport locations that are of operational or structural importance (operating points).</description>
+    </item>
+    <item>
+      <title>DigitalGlobe Open Data Program</title>
+      <link>/digital-globe-open-data</link>
+      <guid>/digital-globe-open-data</guid>
+      <description>Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, monitoring of staging areas and emergency response, damage assessment, and recovery. Also incudes crowdsourced damage assessments for major, sudden onset disasters.</description>
+    </item>
+  </channel>
+</rss>

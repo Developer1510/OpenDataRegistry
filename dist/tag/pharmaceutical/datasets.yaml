@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/zinc15.yaml
+    - /datasets/awslabs-open-data-registry/datasets/molssi-covid19-hub.yaml

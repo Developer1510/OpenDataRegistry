@@ -1,0 +1,4 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/allen-cell-imaging-collections.yaml
+    - /datasets/awslabs-open-data-registry/datasets/janelia-flylight.yaml
+    - /datasets/awslabs-open-data-registry/datasets/cell-painting-image-collection.yaml

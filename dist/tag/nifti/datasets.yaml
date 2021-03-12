@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/msd.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nsd.yaml

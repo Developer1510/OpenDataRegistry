@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Sentinel-2 Cloud-Optimized GeoTIFFs - Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Dataset",
+      "name" : "Sentinel-2 Cloud-Optimized GeoTIFFs",
+      "description" : "The <a href=\"https://sentinel.esa.int/web/sentinel/missions/sentinel-2\">Sentinel-2 mission</a> is
+  a land monitoring constellation of two satellites that provide high resolution
+  optical imagery and provide continuity for the current SPOT and Landsat missions.
+  The mission provides a global coverage of the Earth&#39;s land surface every 5 days,
+  making the data of great use in ongoing studies.
+  This dataset is the same as the <a href=\"https://registry.opendata.aws/sentinel-2/\">Sentinel-2</a>
+  dataset, except the JP2K files were converted into Cloud-Optimized GeoTIFFs (COGs).
+  Additionally, SpatioTemporal Asset Catalog metadata has were in a JSON file
+  alongside the data, and a STAC API called <a href=\"https://earth-search.aws.element84.com/v0\">Earth-search</a>
+  is freely available to search the archive. This dataset contains all of the scenes in the
+  original Sentinel-2 Public Dataset and will grow as that does.
+  L2A data are available from April 2017 over wider Europe region and globally since December 2018.",
+      "license" : "Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View <a href=\"https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions\">Terms and Conditions</a>.",
+      "sourceOrganization" : "<a href=\"https://www.element84.com/\">Element 84</a>"
+    }
+    </script>
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <h1>Sentinel-2 Cloud-Optimized GeoTIFFs</h1>
+    <p>
+      <span class="label label-info tag link-tag">agriculture</span>
+
+      
+
+      <span class="label label-info tag link-tag">disaster response</span>
+
+      <span class="label label-info tag link-tag">earth observation</span>
+
+      <span class="label label-info tag link-tag">geospatial</span>
+
+      <span class="label label-info tag link-tag">natural resource</span>
+
+      <span class="label label-info tag link-tag">satellite imagery</span>
+
+      <span class="label label-info-sustainability tag link-tag">sustainability</span>
+    </p>
+    <div class="row">
+      <div class="col-md-6">
+      <h3>Description</h3>
+      <p>The <a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2">Sentinel-2 mission</a> is
+a land monitoring constellation of two satellites that provide high resolution
+optical imagery and provide continuity for the current SPOT and Landsat missions.
+The mission provides a global coverage of the Earth&#39;s land surface every 5 days,
+making the data of great use in ongoing studies.
+This dataset is the same as the <a href="https://registry.opendata.aws/sentinel-2/">Sentinel-2</a>
+dataset, except the JP2K files were converted into Cloud-Optimized GeoTIFFs (COGs).
+Additionally, SpatioTemporal Asset Catalog metadata has were in a JSON file
+alongside the data, and a STAC API called <a href="https://earth-search.aws.element84.com/v0">Earth-search</a>
+is freely available to search the archive. This dataset contains all of the scenes in the
+original Sentinel-2 Public Dataset and will grow as that does.
+L2A data are available from April 2017 over wider Europe region and globally since December 2018.</p>
+
+      <h4>Update Frequency</h4>
+      <p>New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.</p>
+
+      <h4>License</h4>
+      <p>Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View <a href="https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions">Terms and Conditions</a>.</p>
+
+      <h4>Documentation</h4>
+      <p><a href="https://github.com/cirrus-geo/cirrus-earth-search">https://github.com/cirrus-geo/cirrus-earth-search</a></p>
+
+      <h4>Managed By</h4>
+      <p><a href="https://www.element84.com/">Element 84</a></p>
+      <p>See all datasets managed by <a href="undefined?search&#x3D;managedBy:element 84">Element 84</a>.</p>
+
+      <h4>Contact</h4>
+      <p><a href="mailto:opendata@element84.com">opendata@element84.com</a></p>
+
+      <h4 name="usageexamples">Usage Examples</h4>
+        <h5 class="dataatwork-category">Tutorials</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/developmentseed/titiler/blob/master/docs/examples/Create_CustomSentinel2Tiler.ipynb" class="" target="_none">Create a Dynamic Tiler with TiTiler</a> by Vincent Sarago</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://github.com/intake/intake-stac/blob/master/examples/aws-earth-search.ipynb" class="" target="_none">Intake-STAC with sat-search</a> by Scott Henderson</a>
+            <br>
+            
+          </li>          <li>
+            <a href="http://www.acgeospatial.co.uk/stac-cog-python-and-qgis/" class="" target="_none">STAC, COG, Python and QGIS</a> by Andrew Cutts</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://github.com/opendatacube/cube-in-a-box" class="" target="_none">Use Sentinel-2 data in the Open Data Cube</a> by Alex Leith</a>
+            <br>
+            
+          </li>        </ul>
+        <h5 class="dataatwork-category">Tools & Applications</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/cogeotiff/rio-tiler-pds" class="" target="_none">rio-tiler-pds</a> by Vincent Sarago, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://github.com/sat-utils/sat-search" class="" target="_none">Sat-search</a> by Matthew Hanson</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://stacindex.org/" class="" target="_none">SpatioTemporal Asset Catalogs</a> by STAC Contriubutors</a>
+            <br>
+            
+          </li>        </ul>
+        <h5 class="dataatwork-category">Publications</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://docs.google.com/presentation/d/14NsKFZ3UF2Swwx_9L7sPMX9ccFUK1ruQyZXWK9Cz4L4/edit?usp&#x3D;sharing" class="" target="_none">STAC and Sentinel-2 COGs (ESIP Summer Meeting 2020)</a> by Matthew Hanson</a>
+            <br>
+            
+          </li>        </ul>
+
+    </div>
+    <div class="col-md-5 col-md-offset-1">
+      <h3>Resources on AWS</h3>
+      <ul class="resource-list">
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description">Level 2A scenes and metadata</dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type s3-bucket">S3 Bucket</dd>
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>arn:aws:s3:::sentinel-cogs</code></dd>
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>us-west-2</code></dd>
+            <dt class="resource-region"><a href="https://aws.amazon.com/cli/">AWS CLI</a> Access (No AWS account required)</dt>
+            <dd><code>aws s3 ls s3://sentinel-cogs/ --no-sign-request</code></dd>
+            <dt class="resource-explore">Explore</dt>
+            <dd><a href="https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a-cogs">Earth Search STAC Catalog</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description"><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents">S3 Inventory</a> files for L1C (ORC and CSV)</dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type s3-bucket">S3 Bucket</dd>
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>arn:aws:s3:::sentinel-cogs-inventory</code></dd>
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>us-west-2</code></dd>
+            <dt class="resource-region"><a href="https://aws.amazon.com/cli/">AWS CLI</a> Access (No AWS account required)</dt>
+            <dd><code>aws s3 ls s3://sentinel-cogs-inventory/ --no-sign-request</code></dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description">New scene notifications, can subscribe with <a href="https://aws.amazon.com/lambda/">Lambda</a> or <a href="https://aws.amazon.com/sqs/">SQS</a>. Message contains entire STAC record for each new Item.</dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type sns-topic">SNS Topic</dd>
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>arn:aws:sns:us-west-2:608149789419:cirrus-v0-publish</code></dd>
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>us-west-2</code></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <hr/>
+    <p><a href="https://github.com/awslabs/open-data-registry/blob/main/datasets/sentinel-2-l2a-cogs.yaml">Edit this dataset entry on GitHub</a></p>
+    <p><a href="/"><b>Home</b></a></p>
+  </div>
+  <script src="/js/tags.js"></script>

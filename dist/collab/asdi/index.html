@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <div class="about col-md-5">
+      <div class="row aboutbox">
+            <h3>Amazon Sustainability Data Initiative</h3>
+            <p>The Amazon Sustainability Data Initiative (ASDI) seeks to accelerate sustainability research and innovation by minimizing the cost and time required to acquire and analyze large sustainability datasets. These datasets are publicly available to anyone. In addition, ASDI provides <a href="https://d39w7f4ix9f5s9.cloudfront.net/a9/57/1af708de4b9dac190a64d6b366bc/cloud-credit-for-sustainability-form-june-2020-1.pdf">cloud grants (pdf link)</a> to those interested in exploring the use of AWS’ technology and scalable infrastructure to solve big, long-term sustainability challenges with this data. The dual-pronged approach allows sustainability researchers to analyze massive amounts of data in mere minutes, regardless of where they are in the world or how much local storage space or computing capacity they can access. <a href="https://sustainability.aboutamazon.com/tech-for-good/asdi">Learn more about ASDI here.</a>
+    <br><br> Categories: <a href="#weather">weather</a>, <a href="#climate">climate</a>, <a href="#water">water</a>, <a href="#agriculture">agriculture</a>, <a href="#satellite-imagery">satellite imagery</a>, <a href="#elevation">elevation</a>, <a href="#air-quality">air quality</a>, <a href="#energy">energy</a>, <a href="#ecosystems">ecosystems</a>, <a href="#disaster-response">disaster response</a>, <a href="#oceans">oceans</a></p>
+    
+        <hr>
+    
+        <h4>Search datasets (currently <span id="count-matching">13</span> matching <span id="count-matching-text">datasets</span>)</h4>
+        <form>
+          <div class="form-group">
+            <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
+          </div>
+        </form>
+        
+    
+        <hr>
+    
+        <h4>Add to this registry</h4>
+        <p>If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the <a href="https://github.com/awslabs/open-data-registry/">Registry of Open Data on AWS GitHub repository</a>.</p>
+    
+        <p>Unless specifically stated in the applicable dataset documentation, datasets available through the Registry of Open Data on AWS are not provided and maintained by AWS. Datasets are provided and maintained by a variety of third parties under a variety of licenses. Please check dataset licenses and related documentation to determine if a dataset may be used for your application.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datasets">
+      <a class="cat-anchor" name="weather"></a>
+      <div class="row">
+      <h2>weather</h2>
+      <hr class="section-row">
+        <div id="meteo-france-models" class="dataset">
+          <h3><a href="/meteo-france-models/">Atmospheric Models from Météo-France</a></h3>
+            <p>Managed by <a href="https://openmeteodata.com">OpenMeteoData</a></p>
+          <p>Global and high-resolution regional atmospheric models from Météo-France.<ul>
+<li>ARPEGE World covers the entire world at a base horizontal resolution of 0.5° (~55km) between grid points, it predicts weather out up to 114 hours in the future.</li>
+<li>ARPEGE Europe covers Europe and North-Africa at a base horizontal resolution of 0.1° (~11km) between grid points, it predicts weather out up to 114 hours in the future.</li>
+<li>AROME France covers France at a base horizontal resolution of 0.025° (~2.5km) between grid points, it predicts weather out up to 42 hours in the future.</li>
+<li>AROME France HD covers France and neigborhood at a base horizontal resolution of 0.01° (~1.5km) between grid points, it predicts weather out up to 42 hours in the future.</li>
+</ul>
+Dozens of atmospheric variables are avail...</p>
+        </div>
+        <div id="fmi-radar" class="dataset">
+          <h3><a href="/fmi-radar/">Finnish Meteorological Institute Weather Radar Data</a></h3>
+            <p>Managed by <a href="https://www.ilmatieteenlaitos.fi/">Finnish Meteorological Institute</a></p>
+          <p>The up-to-date weather radar from the FMI radar network is available as Open Data. The data contain both single radar data along with composites over Finland in GeoTIFF and HDF5-formats. Available composite parameters consist of radar reflectivity (DBZ), rainfall intensity (RR), and precipitation accumulation of 1, 12, and 24 hours. Single radar parameters consist of radar reflectivity (DBZ), radial velocity (VRAD), rain classification (HCLASS), and Cloud top height (ETOP 20). Raw volume data from singe radars are also provided in HDF5 format with ODIM 2.3 conventions. Radar data becomes avail...</p>
+        </div>
+        <div id="noaa-gsod" class="dataset">
+          <h3><a href="/noaa-gsod/">Global Surface Summary of Day</a></h3>
+          <p>GSOD is a collection of daily weather measurements (temperature, wind speed, humidity, pressure, and more) from 9000+ weather stations around the world.</p>
+        </div>
+        <div id="hirlam" class="dataset">
+          <h3><a href="/hirlam/">HIRLAM Weather Model</a></h3>
+            <p>Managed by <a href="https://www.ilmatieteenlaitos.fi/">Finnish Meteorological Institute</a></p>
+          <p>HIRLAM (High Resolution Limited Area Model) is an operational synoptic and mesoscale weather prediction model managed by the Finnish Meteorological Institute.</p>
+        </div>
+        <div id="ideam-radares" class="dataset">
+          <h3><a href="/ideam-radares/">IDEAM - Colombian Radar Network</a></h3>
+            <p>Managed by <a href="http://www.ideam.gov.co/">IDEAM</a></p>
+          <p>Historical and one-day delay data from the IDEAM radar network.</p>
+        </div>
+        <div id="noaa-nexrad" class="dataset">
+          <h3><a href="/noaa-nexrad/">NEXRAD on AWS</a></h3>
+            <p>Managed by <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+          <p>Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.</p>
+        </div>
+        <div id="noaa-cfs" class="dataset">
+          <h3><a href="/noaa-cfs/">NOAA Climate Forecast System (CFS)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The Climate Forecast System (CFS) is a model representing the global interaction between Earth&#39;s oceans, land, and atmosphere. Produced by several dozen scientists under guidance from the National Centers for Environmental Prediction (NCEP), this model offers hourly data with a horizontal resolution down to one-half of a degree (approximately 56 km) around Earth for many variables. CFS uses the latest scientific approaches for taking in, or assimilating, observations from data sources including surface observations, upper air balloon observations, aircraft observations, and satellite obser...</p>
+        </div>
+        <div id="noaa-gefs" class="dataset">
+          <h3><a href="/noaa-gefs/">NOAA Global Ensemble Forecast System (GEFS)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The Global Ensemble Forecast System (GEFS), previously known as the GFS Global ENSemble (GENS), is a weather forecast model made up of 21 separate forecasts, or ensemble members.  The National Centers for Environmental Prediction (NCEP) started the GEFS to address the nature of uncertainty in weather observations, which is used to initialize weather forecast models. The GEFS attempts to quantify the amount of uncertainty in a forecast by generating an ensemble of multiple forecasts, each minutely different, or perturbed, from the original observations. With global coverage, GEFS is produced fo...</p>
+        </div>
+        <div id="noaa-gefs-reforecast" class="dataset">
+          <h3><a href="/noaa-gefs-reforecast/">NOAA Global Ensemble Forecast System (GEFS) Re-forecast</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>NOAA has generated a multi-decadal reanalysis and reforecast data set to accompany the next-generation version of its ensemble prediction system, the Global Ensemble Forecast System, version 12 (GEFSv12). Accompanying the real-time forecasts are “reforecasts” of the weather, that is, retrospective forecasts spanning the period 2000-2019. These reforecasts are not as numerous as the real-time data; they were generated only once per day, from 00 UTC initial conditions, and only 5 members were provided, with the following exception. Once weekly, an 11-member reforecast was generated, and these ex...</p>
+        </div>
+        <div id="noaa-gfs-bdp-pds" class="dataset">
+          <h3><a href="/noaa-gfs-bdp-pds/">NOAA Global Forecast System (GFS)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The Global Forecast System (GFS) is a weather forecast model produced
+by the National Centers for Environmental Prediction (NCEP). Dozens of
+atmospheric and land-soil variables are available through this dataset,
+from temperatures, winds, and precipitation to soil moisture and
+atmospheric ozone concentration. The entire globe is covered by the GFS
+at a base horizontal resolution of 18 miles (28 kilometers) between grid
+points, which is used by the operational forecasters who predict weather
+out to 16 days in the future. Horizontal resolution drops to 44 miles
+(70 kilometers) between grid point for forecasts between one week and two
+weeks.
+<br/>
+<br/>
+The NOAA Global Forecast Systems (GFS) Warm Start Initial Conditions are 
+produced by the National Centers for Environmental Prediction Center (NCEP) 
+to run operational deterministic medium-range numerical weather predictions.<br>The GFS is built with the GFDL Finite-Volume Cubed-Sphere Dynamical Core (FV3) 
+and the Grid-Point Statistical Interpolation (GSI) data assimilation system.<br>Please visit the links below in the Documentation section to find more details 
+about the model and the data assimilation systems.   The current operational 
+GFS is run at 64 layers in the vertical extending from th</br/>...</p>
+        </div>
+        <div id="noaa-hrrr-pds" class="dataset">
+          <h3><a href="/noaa-hrrr-pds/">NOAA High-Resolution Rapid Refresh (HRRR) Model</a></h3>
+            <p>Managed by <a href="https://www.noaa.gov/">NOAA</a></p>
+          <p>The HRRR is a NOAA real-time 3-km resolution, hourly updated, cloud-resolving, convection-allowing atmospheric model, initialized by 3km grids with 3km radar assimilation. Radar data is assimilated in the HRRR every 15 min over a 1-h period adding further detail to that provided by the hourly data assimilation from the 13km radar-enhanced Rapid Refresh.</p>
+        </div>
+        <div id="noaa-isd" class="dataset">
+          <h3><a href="/noaa-isd/">NOAA Integrated Surface Database (ISD)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The Integrated Surface Database (ISD) consists
+of global hourly and synoptic observations
+compiled from numerous sources into a gzipped
+fixed width format. ISD was developed as a joint
+activity within Asheville&#39;s Federal Climate
+Complex. The database includes over 35,000 stations
+worldwide, with some having data as far back
+as 1901, though the data show a substantial
+increase in volume in the 1940s and again in
+the early 1970s. Currently, there are over
+14,000 &quot;active&quot; stations updated daily in the
+database. The total uncompressed data volume is
+around 600 gigabytes; however, it ...</p>
+        </div>
+        <div id="noaa-nbm" class="dataset">
+          <h3><a href="/noaa-nbm/">NOAA National Blend of Models (NBM)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The National Blend of Models (NBM) is a nationally consistent and skillful suite of calibrated forecast guidance based on a blend of both NWS and non-NWS numerical weather prediction model data and post-processed model guidance. The goal of the NBM is to create a highly accurate, skillful and consistent starting point for the gridded forecast. </p>
+        </div>
+        <div id="noaa-ndfd" class="dataset">
+          <h3><a href="/noaa-ndfd/">NOAA National Digital Forecast Database (NDFD)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The National Digital Forecast Database (NDFD) is a suite of gridded forecasts of sensible weather elements (e.g., cloud cover, maximum temperature).  Forecasts prepared by NWS field offices working in collaboration with the National Centers for Environmental Prediction (NCEP) are combined in the NDFD to create a seamless mosaic of digital forecasts from which operational NWS products are generated. The most recent data is under the opnl and expr prefixes. A copy is also placed under the wmo prefix. The wmo prefix is structured like so: wmo/&lt;parameter&gt;/&lt;year&gt;/&lt;month&gt;/&lt;day&g...</p>
+        </div>
+        <div id="noaa-rap" class="dataset">
+          <h3><a href="/noaa-rap/">NOAA Rapid Refresh (RAP)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The Rapid Refresh (RAP) is a NOAA/NCEP operational weather prediction system comprised primarily of a numerical forecast model and analysis/assimilation system to initialize that model. It covers North America and is run with a horizontal resolution of 13 km and 50 vertical layers. The RAP was developed to serve users needing frequently updated short-range weather forecasts, including those in the US aviation community and US severe weather forecasting community. The model is run for every hour of the day; it is integrated to 51 hours for the 03/09/15/21 UTC cycles and to 21 hours for every ot...</p>
+        </div>
+        <div id="noaa-swdi" class="dataset">
+          <h3><a href="/noaa-swdi/">NOAA Severe Weather Data Inventory (SWDI)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The Storm Events Database is an integrated database of severe weather events across the United States from 1950 to this year, with information about a storm event&#39;s location, azimuth, distance, impact, and severity, including the cost of damages to property and crops. It contains data documenting: The occurrence of storms and other significant weather phenomena having sufficient intensity to cause loss of life, injuries, significant property damage, and/or disruption to commerce. Rare, unusual, weather phenomena that generate media attention, such as snow flurries in South Florida or the S...</p>
+        </div>
+        <div id="noaa-ufs-s2s" class="dataset">
+          <h3><a href="/noaa-ufs-s2s/">NOAA Unified Forecast System Subseasonal to Seasonal Prototype 5</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The Unified Forecast System Subseasonal to Seasonal prototype 5 (UFS S2Sp5) dataset is reforecast data from the UFS atmosphere-ocean coupled model experimental prototype version 5 produced by the Medium Range and Subseasonal to Seasonal Application team of the UFS-R2O project. The UFS S2Sp5 is the first dataset released to the broader weather community for analysis and feedback as part of the development of the next generation operational numerical weather prediction system from NWS. The dataset includes all the major weather variables for atmosphere, land, ocean, sea ice, and ocean waves.
+<br/>
+<br/>
+A</br/>...</p>
+        </div>
+        <div id="sondehub-telemetry" class="dataset">
+          <h3><a href="/sondehub-telemetry/">SondeHub Radiosonde Telemetry</a></h3>
+            <p>Managed by <a href="https://sondehub.org/">SondeHub</a></p>
+          <p>SondeHub Radiosonde telemetry contains global radiosonde (weather balloon) data captured by SondeHub from our participating radiosonde_auto_rx receiving stations. radiosonde_auto_rx is a open source project aimed at receiving and decoding telemetry from airborne radiosondes using software-defined-radio techniques, enabling study of the telemetry and sometimes recovery of the radiosonde itself.
+Currently 313 receiver stations are providing data for an average of 384 radiosondes a day.  The data within this repository contains received telemetry frames, including radiosonde type, gps position, a...</p>
+        </div>
+        <div id="uk-met-office" class="dataset">
+          <h3><a href="/uk-met-office/">UK Met Office Atmospheric Deterministic and Probabilistic Forecasts</a></h3>
+            <p>Managed by <a href="https://www.metoffice.gov.uk/">UK Met Office</a></p>
+          <p>Meteorological data reusers now have an exciting opportunity to sample, experiment and evaluate
+Met Office atmospheric model data, whilst also experiencing a transformative method of requesting
+data via Restful APIs on AWS.For information about the data see the <a href="https://www.metoffice.gov.uk/services/data/met-office-data-for-reuse/discovery">Met Office website</a>.
+For examples of using the data check out the <a href="https://github.com/MetOffice/aws-earth-examples">examples repository</a>.
+If you need help and support using the data please raise an issue on the examples repository. <strong>Please note:</strong> Met Office continuously improves and updates its operational forecast models.
+Our last update became effective 04/12/2019. Please find the detail...</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="climate"></a>
+      <div class="row">
+      <h2>climate</h2>
+      <hr class="section-row">
+        <div id="cgiardata" class="dataset">
+          <h3><a href="/cgiardata/">CCAFS-Climate Data</a></h3>
+          <p>High resolution climate data to help assess the impacts of climate change primarily on agriculture. These open access datasets of climate projections will help researchers make climate change impact assessments.</p>
+        </div>
+        <div id="wrf-cmip6" class="dataset">
+          <h3><a href="/wrf-cmip6/">CMIP6 GCMs downscaled using WRF</a></h3>
+            <p>Managed by <a href="https://dept.atmos.ucla.edu/">UCLA Center for Climate Science</a></p>
+          <p>High-resolution historical and future climate simulations from 1980-2100</p>
+        </div>
+        <div id="ncar-cesm-lens" class="dataset">
+          <h3><a href="/ncar-cesm-lens/">Community Earth System Model Large Ensemble (CESM LENS)</a></h3>
+            <p>Managed by <a href="https://ncar.ucar.edu/">National Center for Atmospheric Research</a></p>
+          <p>The Community Earth System Model (CESM) Large Ensemble Numerical Simulation (LENS) dataset includes a 40-member ensemble of climate simulations for the period 1920-2100 using historical data (1920-2005) or assuming the RCP8.5 greenhouse gas concentration scenario (2006-2100), as well as longer control runs based on pre-industrial conditions. The data comprise both surface (2D) and volumetric (3D) variables in the atmosphere, ocean, land, and ice domains. The total data volume of the original dataset is ~500TB, which has traditionally been stored as ~150,000 individual CF/NetCDF files on disk o...</p>
+        </div>
+        <div id="cmip6" class="dataset">
+          <h3><a href="/cmip6/">Coupled Model Intercomparison Project 6</a></h3>
+            <p>Managed by ESGF and Pangeo</p>
+          <p>The sixth phase of global coupled ocean-atmosphere general circulation model ensemble. Additional data can be requested via <a href="https://docs.google.com/forms/d/e/1FAIpQLScFjA5IddqBs2Rc0xGbzn32NPq12TKr-b-8KGtXWyNDK5sJCg/viewform">Google Form</a></p>
+        </div>
+        <div id="wrf-alaska-snap" class="dataset">
+          <h3><a href="/wrf-alaska-snap/">Downscaled Climate Data for Alaska</a></h3>
+            <p>Managed by Scenarios Network for Alaska + Arctic Planning at the International Arctic Research Center, University of Alaska, Fairbanks</p>
+          <p>Warning to data users - Errors have been discovered in the following variables in the previously-available versions of this dataset: u, u10, ubot, v, v10 and vbot. The SNAP team is working to address the issue and those variables have been removed from the currently-available version of the dataset. If you have previously downloaded this dataset which included those variables please download the new version of the dataset and refrain from utilizing the problematic variables for analysis. The dataset is being corrected and will be available including the variables at-issue when possible. We apo...</p>
+        </div>
+        <div id="ecmwf-era5" class="dataset">
+          <h3><a href="/ecmwf-era5/">ECMWF ERA5 Reanalysis</a></h3>
+          <p>ERA5 is the fifth generation of ECMWF atmospheric reanalyses of the global climate, and the first reanalysis produced as an operational service. It utilizes the best available observation data from satellites and in-situ stations, which are assimilated and processed using ECMWF&#39;s Integrated Forecast System (IFS) Cycle 41r2.
+The dataset provides all essential atmospheric meteorological parameters like, but not limited to, air temperature, pressure and wind at different altitudes, along with surface parameters like rainfall, soil moisture content and sea parameters like sea-surface temperatu...</p>
+        </div>
+        <div id="wrf-se-alaska-snap" class="dataset">
+          <h3><a href="/wrf-se-alaska-snap/">High Resolution Downscaled Climate Data for Southeast Alaska</a></h3>
+            <p>Managed by Scenarios Network for Alaska + Arctic Planning at the International Arctic Research Center, University of Alaska, Fairbanks</p>
+          <p>This dataset contains historical and projected dynamically downscaled climate data for the Southeast region of the State of Alaska at 1 and 4km spatial resolution and hourly temporal resolution. Select variables are also summarized into daily resolutions. This data was produced using the Weather Research and Forecasting (WRF) model (Version 4.0). We downscaled both Climate Forecast System Reanalysis (CFSR) historical reanalysis data (1980-2019) and both historical and projected runs from two GCM’s from the Coupled Model Inter-comparison Project 5 (CMIP5): GFDL-CM3 and NCAR-CCSM4 (historical ru...</p>
+        </div>
+        <div id="nasanex" class="dataset">
+          <h3><a href="/nasanex/">NASA NEX</a></h3>
+          <p>A collection of Earth science datasets maintained by NASA, including climate change projections and satellite images of the Earth&#39;s surface.</p>
+        </div>
+        <div id="noaa-ghcn" class="dataset">
+          <h3><a href="/noaa-ghcn/">NOAA Global Historical Climatology Network Daily (GHCN-D)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>Global Historical Climatology Network - Daily is a dataset from NOAA that contains daily observations over global land areas. It contains station-based measurements from land-based stations worldwide, about two thirds of which are for precipitation measurement only. Other meteorological elements include, but are not limited to, daily maximum and minimum temperature, temperature at the time of observation, snowfall and snow depth. It is a composite of climate records from numerous sources that were merged together and subjected to a common suite of quality assurance reviews.  Some data are more...</p>
+        </div>
+        <div id="silo" class="dataset">
+          <h3><a href="/silo/">SILO climate data on AWS</a></h3>
+            <p>Managed by Queensland Government</p>
+          <p><a href="https://www.longpaddock.qld.gov.au/silo">SILO</a> is a database of Australian <a href="https://www.longpaddock.qld.gov.au/silo/about/climate-variables">climate data</a> from 1889 to the present. It provides continuous, daily time-step <a href="https://www.longpaddock.qld.gov.au/silo/about/data-products">data products</a> in ready-to-use <a href="https://www.longpaddock.qld.gov.au/silo/about/file-formats-and-samples">formats</a> for research and operational applications.
+SIL...</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="water"></a>
+      <div class="row">
+      <h2>water</h2>
+      <hr class="section-row">
+        <div id="fsf-flood-risk" class="dataset">
+          <h3><a href="/fsf-flood-risk/">First Street Foundation (FSF) Flood Risk Summary Statistics</a></h3>
+            <p>Managed by <a href="http://www.firststreet.org/">First Street</a></p>
+          <p>CSV files of flood statistics for the 48 contiguous states at the congressional district, county, and zip code level. The CSV for each of these geographical extents includes statistics on the amount of properties at risk according to FEMA, the number of properties at risk according to First Street Foundation, and the difference between the two.</p>
+        </div>
+        <div id="noaa-ghe" class="dataset">
+          <h3><a href="/noaa-ghe/">NOAA Global Hydro Estimator (GHE)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>Global Hydro-Estimator provides a global
+mosaic imagery of rainfall estimates from
+multi-geostationary satellites, which
+currently includes GOES-16, GOES-15,
+Meteosat-8, Meteosat-11 and Himawari-8.
+The GHE products include: Instantaneous
+rain rate, 1 hour, 3 hour, 6 hour, 24 hour
+and also multi-day rainfall accumulation.</p>
+        </div>
+        <div id="nwm-archive" class="dataset">
+          <h3><a href="/nwm-archive/">NOAA National Water Model Reanalysis</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The NOAA National Water Model Reanalysis dataset contains output
+from multi-decade retrospective simulations. These
+simulations used observed rainfall as input and ingested other
+required meteorological input fields from a weather reanalysis
+dataset. The output frequency and fields available in this
+historical NWM dataset differ from those contained in the
+real-time forecast model. One application of this dataset is
+to provide historical context to current real-time streamflow,
+soil moisture and snowpack NWM conditions. The reanalysis data
+can be used to infer flow frequencies and perform temp...</p>
+        </div>
+        <div id="noaa-nwm-pds" class="dataset">
+          <h3><a href="/noaa-nwm-pds/">NOAA National Water Model Short-Range Forecast</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The National Water Model (NWM) is a water resources model that simulates and forecasts water
+budget variables, including snowpack, evapotranspiration, soil moisture and streamflow, over
+the entire continental United States (CONUS). The model, launched in August 2016, is designed
+to improve the ability of NOAA to meet the needs of its stakeholders (forecasters, emergency
+managers, reservoir operators, first responders, recreationists, farmers, barge operators, and
+ecosystem and floodplain managers) by providing expanded accuracy, detail, and frequency of water
+information. It is operated by NOA...</p>
+        </div>
+        <div id="rapid-nrt-flood-maps" class="dataset">
+          <h3><a href="/rapid-nrt-flood-maps/">RAPID NRT Flood Maps</a></h3>
+            <p>Managed by University of Connecticut; Guangxi University</p>
+          <p>Near Real-time and archival data of High-resolution (10 m) flood inundation dataset over the Contiguous United States, developed based on the Sentinel-1 SAR imagery (2016-current) archive, using an automated Radar Produced Inundation Diary (RAPID) algorithm.</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="agriculture"></a>
+      <div class="row">
+      <h2>agriculture</h2>
+      <hr class="section-row">
+        <div id="afsis" class="dataset">
+          <h3><a href="/afsis/">Africa Soil Information Service (AfSIS) Soil Chemistry</a></h3>
+            <p>Managed by <a href="https://qed.ai/">QED</a></p>
+          <p>This dataset contains soil infrared spectral data and paired soil property
+reference measurements for georeferenced soil samples that were collected
+through the Africa Soil Information Service (AfSIS) project, which lasted
+from 2009 through 2018. In this release, we include data collected during
+Phase I (2009-2013.) Georeferenced samples were collected from 19 countries
+in Sub-Saharan African using a statistically sound sampling scheme,
+and their soil properties were analyzed using <em>both</em> conventional soil
+testing methods and spectral methods (infrared diffuse reflectance
+spectroscopy). The two ...</p>
+        </div>
+        <div id="naip" class="dataset">
+          <h3><a href="/naip/">NAIP on AWS</a></h3>
+            <p>Managed by <a href="https://www.esri.com/en-us/home">Esri</a></p>
+          <p>The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This &quot;leaf-on&quot; imagery andtypically ranges from 60 centimeters to 100 centimeters in resolution and is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeotTiff format. NAIP data is delivered at the state level; every year, a number of states receive updates, with...</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="satellite-imagery"></a>
+      <div class="row">
+      <h2>satellite imagery</h2>
+      <hr class="section-row">
+        <div id="cbers" class="dataset">
+          <h3><a href="/cbers/">CBERS on AWS</a></h3>
+            <p>Managed by <a href="https://amskepler.com/">AMS Kepler</a></p>
+          <p>This project creates a S3 repository with imagery acquired
+by the China-Brazil Earth Resources Satellite (CBERS). The
+image files are recorded and processed by Instituto Nacional de Pesquisa
+Espaciais (INPE) and are converted to Cloud Optimized Geotiff
+format in order to optimize its use for cloud based applications.
+The repository contains all CBERS-4 MUX, AWFI, PAN5M and
+PAN10M scenes acquired since
+the start of the satellite mission and is daily updated with
+new scenes.</p>
+        </div>
+        <div id="iserv" class="dataset">
+          <h3><a href="/iserv/">ISERV</a></h3>
+            <p>Managed by <a href="https://www.radiant.earth/">Radiant Earth Foundation</a></p>
+          <p>ISS SERVIR Environmental Research and Visualization System (ISERV) was a fully-automated prototype camera aboard the International Space Station that was tasked to capture high-resolution Earth imagery of specific locations at 3-7 frames per second. In the course of its regular operations during 2013 and 2014, ISERV&#39;s camera acquired images that can be used primaliry in use is environmental and disaster management.</p>
+        </div>
+        <div id="noaa-himawari" class="dataset">
+          <h3><a href="/noaa-himawari/">JMA Himawari-8</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>Himawari-8, stationed at 140E, owned and operated by the Japan Meteorological Agency (JMA), is a geostationary meteorological satellite, with Himawari-9  as on-orbit back-up, that provides constant and uniform coverage of east Asia, and the west and central Pacific regions from around 35,800 km above the equator with an orbit corresponding to the period of the earth’s rotation. This allows JMA weather offices to perform uninterrupted observation of environmental phenomena such as typhoons, volcanoes, and general weather systems. For questions regarding Himawari-8 imagery specifications, visit ...</p>
+        </div>
+        <div id="landsat-8" class="dataset">
+          <h3><a href="/landsat-8/">Landsat 8</a></h3>
+            <p>Managed by <a href="https://www.planet.com/">Planet</a></p>
+          <p>An ongoing collection of satellite imagery of all land on Earth produced by
+the Landsat 8 satellite.<strong>Note this dataset is deprecated in favor of the <a href="https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access">USGS cloud access mechanism</a>. This bucket will be deleted on July 1, 2021.</strong></p>
+        </div>
+        <div id="modis-astraea" class="dataset">
+          <h3><a href="/modis-astraea/">MODIS MYD13A1, MOD13A1, MYD11A1, MOD11A1, MCD43A4</a></h3>
+            <p>Managed by <a href="https://astraea.earth/">Astraea</a></p>
+          <p>Data from the Moderate Resolution Imaging Spectroradiometer (MODIS), managed by
+the U.S. Geological Survey and NASA. Five products are included:
+MCD43A4 (MODIS/Terra and Aqua Nadir BRDF-Adjusted Reflectance Daily L3 Global 500 m SIN Grid),
+MOD11A1 (MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid),
+MYD11A1 (MODIS/Aqua Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid),
+MOD13A1 (MODIS/Terra Vegetation Indices 16-Day L3 Global 500 m SIN Grid),
+and MYD13A1 (MODIS/Aqua Vegetation Indices 16-Day L3 Global 500 m SIN Grid).
+MCD43A4 has global coverage, all...</p>
+        </div>
+        <div id="noaa-goes" class="dataset">
+          <h3><a href="/noaa-goes/">NOAA Geostationary Operational Environmental Satellites (GOES) 16 &amp; 17</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>GOES satellites (GOES-16 &amp; GOES-17) provide continuous weather imagery and
+monitoring of meteorological and space environment data across North America.
+GOES satellites provide the kind of continuous monitoring necessary for
+intensive data analysis. They hover continuously over one position on the surface.
+The satellites orbit high enough to allow for a full-disc view of the Earth. Because
+they stay above a fixed spot on the surface, they provide a constant vigil for the
+atmospheric &quot;triggers&quot; for severe weather conditions such as tornadoes, flash floods,
+hailstorms, and hurrican...</p>
+        </div>
+        <div id="sentinel-1" class="dataset">
+          <h3><a href="/sentinel-1/">Sentinel-1</a></h3>
+            <p>Managed by <a href="https://www.sinergise.com/">Sinergise</a></p>
+          <p><a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-1">Sentinel-1</a> is a pair of European radar imaging (SAR) satellites launched in 2014 and 2016. Its 6 days revisit cycle and ability to observe through clouds makes it perfect for sea and land monitoring, emergency response due to environmental disasters, and economic applications. GRD data is available globally since January 2017.</p>
+        </div>
+        <div id="sentinel1-slc-seasia-pds" class="dataset">
+          <h3><a href="/sentinel1-slc-seasia-pds/">Sentinel-1 SLC dataset for South and Southeast Asia, Taiwan, Korea and Japan</a></h3>
+            <p>Managed by <a href="https://earthobservatory.sg">Earth Observatory of Singapore, Nanyang Technological University</a></p>
+          <p>The S1 Single Look Complex (SLC) dataset contains Synthetic Aperture Radar (SAR) data in the C-Band wavelength. The SAR sensors are installed on a two-satellite (Sentinel-1A and Sentinel-1B) constellation orbiting the Earth with a combined revisit time of six days, operated by the European Space Agency. The S1 SLC data are a Level-1 product that collects radar amplitude and phase information in all-weather, day or night conditions, which is ideal for studying natural hazards and emergency response, land applications, oil spill monitoring, sea-ice conditions, and associated climate change effec...</p>
+        </div>
+        <div id="sentinel-2" class="dataset">
+          <h3><a href="/sentinel-2/">Sentinel-2</a></h3>
+            <p>Managed by <a href="https://www.sinergise.com/">Sinergise</a></p>
+          <p>The <a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2">Sentinel-2 mission</a> is
+a land monitoring constellation of two satellites that provide high resolution
+optical imagery and provide continuity for the current SPOT and Landsat missions.
+The mission provides a global coverage of the Earth&#39;s land surface every 5 days,
+making the data of great use in on-going studies. L1C data are available from
+June 2015 globally. L2A data are available from September 2016 over wider Europe
+region and globally since January 2017.</p>
+        </div>
+        <div id="sentinel-2-l2a-cogs" class="dataset">
+          <h3><a href="/sentinel-2-l2a-cogs/">Sentinel-2 Cloud-Optimized GeoTIFFs</a></h3>
+            <p>Managed by <a href="https://www.element84.com/">Element 84</a></p>
+          <p>The <a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2">Sentinel-2 mission</a> is
+a land monitoring constellation of two satellites that provide high resolution
+optical imagery and provide continuity for the current SPOT and Landsat missions.
+The mission provides a global coverage of the Earth&#39;s land surface every 5 days,
+making the data of great use in ongoing studies.
+This dataset is the same as the <a href="https://registry.opendata.aws/sentinel-2/">Sentinel-2</a>
+dataset, except the JP2K files were converted into Cloud-Optimized GeoTIFFs (COGs).
+Additionally, SpatioTemporal Asset Catalog metadata has were in a JSON file
+alongside the data, and a STAC API called <a href="https://earth-search.aws.element84.com/v0">Earth-search</a>
+is freely available t...</p>
+        </div>
+        <div id="sentinel-s2-l2a-mosaic-120" class="dataset">
+          <h3><a href="/sentinel-s2-l2a-mosaic-120/">Sentinel-2 L2A 120m Mosaic</a></h3>
+            <p>Managed by <a href="https://www.sinergise.com/">Sinergise</a></p>
+          <p>Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As there are some parts of the world, which have lengthy cloudy periods, clouds might be remaining in some parts. The actual modelling script is available <a href="https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/">here</a>.</p>
+        </div>
+        <div id="sentinel5p" class="dataset">
+          <h3><a href="/sentinel5p/">Sentinel-5P Level 2</a></h3>
+            <p>Managed by <a href="http://www.meeo.it/">Meteorological Enviromental Earth Observation</a></p>
+          <p>This data set consists of observations from the Sentinel-5 Precursor (Sentinel-5P) satellite of the European Commission’s Copernicus Earth Observation Programme. Sentinel-5P is a polar orbiting satellite that completes 14 orbits of the Earth a day. It carries the TROPOspheric Monitoring Instrument (TROPOMI) which is a spectrometer that senses ultraviolet (UV), visible (VIS), near (NIR) and short wave infrared (SWIR) to monitor ozone, methane, formaldehyde, aerosol, carbon monoxide, nitrogen dioxide and sulphur dioxide in the atmosphere. The satellite was launched in October 2017 and entered ro...</p>
+        </div>
+        <div id="terrafusion" class="dataset">
+          <h3><a href="/terrafusion/">Terra Fusion Data Sampler</a></h3>
+            <p>Managed by University of Illinois</p>
+          <p>The Terra Basic Fusion dataset is a fused dataset of the original Level 1 radiances
+from the five Terra instruments. They have been fully validate to contain the original
+Terra instrument Level 1 data. Each Level 1 Terra Basic Fusion file contains one full
+Terra orbit of data and is typically 15 – 40 GB in size, depending on how much data was
+collected for that orbit. It contains instrument radiance in physical units; radiance
+quality indicator; geolocation for each IFOV at its native resolution; sun-view geometry;
+bservation time; and other attributes/metadata. It is stored in HDF5, conformed to CF
+conventions, and accessible by netCDF-4 enhanced models. It’s naming convention
+follows: TERRA_BF_L1B_OXXXX_YYYYMMDDHHMMSS_F000_V000.h5. A concise description of the
+dataset, along with links to complete documentation and available software tools, can
+be found on the Terra Fusion project page: <a href="https://terrafusion.web.illinois.edu">https://terrafusion.web.illinois.edu</a>.</br></br>Terra is the flagship satellite of NASA’s Earth Observing System (EOS). It was launched
+into orbit on December 18, 1999 and carries five instruments. These are the
+Moderate-resolution Imaging Spectroradiometer (MODIS), the Multi-angle Imaging
+SpectroRadiometer (MISR), the Advanced Spaceborne Thermal Emission and Reflection
+Radiometer (ASTER), the Clouds and Earth’s Radiant Energy System (CERES), and the
+Measurements of Pollution in the Troposphere (MOPITT).</br></br>The Terra Basic Fusion dataset is an easy-to-access record of the Level 1 radiances
+for instruments on...</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="elevation"></a>
+      <div class="row">
+      <h2>elevation</h2>
+      <hr class="section-row">
+        <div id="copernicus-dem" class="dataset">
+          <h3><a href="/copernicus-dem/">Copernicus Digital Elevation Model (DEM)</a></h3>
+            <p>Managed by <a href="https://www.sinergise.com/">Sinergise</a></p>
+          <p>The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. We provide two instances of Copernicus DEM named GLO-30 Public and GLO-90. GLO-90 provides worldwide coverage at 90 meters. GLO-30 Public provides limited worldwide coverage at 30 meters because a small subset of tiles covering specific countries are not yet released to the public by the Copernicus Programme. Note that in both cases ocean areas do not have tiles, there one can assume height values equal to zero. Data is provided as Cloud Optimized Ge...</p>
+        </div>
+        <div id="noaa-coastal-lidar" class="dataset">
+          <h3><a href="/noaa-coastal-lidar/">NOAA Coastal Lidar Data</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>Lidar (light detection and ranging) is a technology that can measure the 3-dimentional location of objects, including the solid earth surface. The data consists of a point cloud of the positions of solid objects that reflected a laser pulse, typically from an airborne platform. In addition to the position, each point may also be attributed by the type of object it reflected from, the intensity of the reflection, and other system dependent metadata. The NOAA Coastal Lidar Data is a collection of lidar projects from many different sources and agencies, geographically focused on the coastal areas...</p>
+        </div>
+        <div id="terrain-tiles" class="dataset">
+          <h3><a href="/terrain-tiles/">Terrain Tiles</a></h3>
+          <p>A global dataset providing bare-earth terrain heights, tiled for easy usage and provided on S3.</p>
+        </div>
+        <div id="usgs-lidar" class="dataset">
+          <h3><a href="/usgs-lidar/">USGS 3DEP LiDAR Point Clouds</a></h3>
+            <p>Managed by <a href="https://hobu.co">Hobu, Inc.</a></p>
+          <p>The goal of the <a href="https://www.usgs.gov/core-science-systems/ngp/3dep">USGS 3D Elevation Program </a> (3DEP) is to collect elevation data in the form of light detection and ranging (LiDAR) data over the conterminous United States, Hawaii, and the U.S. territories, with data acquired over an 8-year period. This dataset provides two realizations of the 3DEP point cloud data. The first resource is a public access organization provided in <a href="https://entwine.io/entwine-point-tile.html">Entwine Point Tiles</a> format, which a lossless, full-density, streamable octree based on <a href="https://laszip.org">LASzip</a> (LAZ) encoding. The second resource is a <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html">Requester Pays</a> of the same data in LAZ (Compressed LAS) format. Resource names in bot...</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="air-quality"></a>
+      <div class="row">
+      <h2>air quality</h2>
+      <hr class="section-row">
+        <div id="epa-rsei-pds" class="dataset">
+          <h3><a href="/epa-rsei-pds/">EPA Risk-Screening Environmental Indicators</a></h3>
+          <p>Detailed air model results from EPA’s Risk-Screening Environmental Indicators (RSEI) model.</p>
+        </div>
+        <div id="geoschem-input-data" class="dataset">
+          <h3><a href="/geoschem-input-data/">GEOS-Chem Input Data</a></h3>
+          <p>Input data for the GEOS-Chem Chemical Transport Model. Including the NASA/GMAO MERRA-2 and GEOS-FP <a href="http://wiki.seas.harvard.edu/geos-chem/index.php/Overview_of_GMAO_met_data_products">meteorological products</a>, the <a href="http://wiki.seas.harvard.edu/geos-chem/index.php/HEMCO_data_directories">HEMCO emission inventories</a>, and other small data such as <a href="http://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_basics#Restart_files">model initial conditions</a>.</p>
+        </div>
+        <div id="openaq" class="dataset">
+          <h3><a href="/openaq/">OpenAQ</a></h3>
+            <p>Managed by <a href="https://openaq.org">OpenAQ</a></p>
+          <p>Global, aggregated physical air quality data from public data sources provided by government, research-grade and other sources. These awesome groups do the hard work of measuring these data and publicly sharing them, and our community makes them more universally-accessible to both humans and machines.</p>
+        </div>
+        <div id="omi-no2-nasa" class="dataset">
+          <h3><a href="/omi-no2-nasa/">Ozone Monitoring Instrument (OMI) / Aura NO2 Tropospheric Column Density</a></h3>
+            <p>Managed by NASA</p>
+          <p>NO2 tropospheric column density, screened for CloudFraction &lt; 30% global daily
+ composite at 0.25 degree resolution for the temporal range of 2004 to May
+2020. Original archive data in HDF5 has been processed into a <a href="https://www.cogeo.org/">Cloud-Optimized
+GeoTiff (COG)</a> format. Quality Assurance - This data
+has been validated by the NASA Science Team at Goddard Space Flight Center.Cautionary Note: <a href="https://airquality.gsfc.nasa.gov/caution-interpretation">https://airquality.gsfc.nasa.gov/caution-interpretation</a>.</p>
+        </div>
+        <div id="silam" class="dataset">
+          <h3><a href="/silam/">SILAM Air Quality</a></h3>
+            <p>Managed by <a href="https://www.ilmatieteenlaitos.fi/">Finnish Meteorological Institute</a></p>
+          <p>Air Quality is a global SILAM atmospheric composition and air quality forecast performed on a daily basis for &gt; 100 species and covering the troposphere and the stratosphere. The output produces 3D concentration fields and aerosol optical thickness. The data are unique: 20km resolution for global AQ models is unseen worldwide.</p>
+        </div>
+        <div id="safecast" class="dataset">
+          <h3><a href="/safecast/">Safecast</a></h3>
+            <p>Managed by <a href="https://safecast.org/">Safecast</a></p>
+          <p>An ongoing collection of radiation and air quality measurements taken by devices involved in the Safecast project.</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="energy"></a>
+      <div class="row">
+      <h2>energy</h2>
+      <hr class="section-row">
+        <div id="oedi-data-lake" class="dataset">
+          <h3><a href="/oedi-data-lake/">Department of Energy&#x27;s Open Energy Data Initiative (OEDI)</a></h3>
+            <p>Managed by <a href="https://www.nrel.gov/">National Renewable Energy Laboratory</a></p>
+          <p>Data released under the Department of Energy&#39;s Open Energy Data Initiative
+(DOE). The Open Energy Data Initiative (OEDI) aims to improve and automate
+access of high-value energy data sets across the U.S. Department of Energy’s
+(DOE’s) programs, offices, and national laboratories. OEDI aims to make data
+actionable and discoverable by researchers and industry to accelerate
+analysis and advance innovation.</p>
+        </div>
+        <div id="nrel-pds-nsrdb" class="dataset">
+          <h3><a href="/nrel-pds-nsrdb/">NREL National Solar Radiation Database</a></h3>
+            <p>Managed by <a href="https://www.nrel.gov/">National Renewable Energy Laboratory</a></p>
+          <p>Released to the public as part of the Department of Energy&#39;s Open Energy Data Initiative,
+the <a href="https://nsrdb.nrel.gov/">National Solar Radiation Database (NSRDB)</a> is
+a serially complete collection of hourly and half-hourly values of the three
+most common measurements of solar radiation – global horizontal, direct
+normal, and diffuse horizontal irradiance — and meteorological data. These
+data have been collected at a sufficient number of locations and temporal and
+spatial scales to accurately represent regional solar radiation climates.</p>
+        </div>
+        <div id="nrel-pds-wtk" class="dataset">
+          <h3><a href="/nrel-pds-wtk/">NREL Wind Integration National Dataset</a></h3>
+            <p>Managed by <a href="https://www.nrel.gov/">National Renewable Energy Laboratory</a></p>
+          <p>Released to the public as part of the Department of Energy&#39;s Open Energy Data Initiative,
+the <a href="https://www.nrel.gov/grid/wind-toolkit.html">Wind Integration National Dataset (WIND)</a>
+is an update and expansion of the Eastern Wind Integration Data Set and
+Western Wind Integration Data Set. It supports the next generation of wind
+integration studies.</p>
+        </div>
+        <div id="nrel-oedi-pv-rooftops" class="dataset">
+          <h3><a href="/nrel-oedi-pv-rooftops/">National Renewable Energy Laboratory&#x27;s (NREL) PV Rooftop Database</a></h3>
+            <p>Managed by <a href="https://www.nrel.gov/">National Renewable Energy Laboratory</a></p>
+          <p>Released to the public as part of the Department of Energy&#39;s Open Energy Data Initiative, the National Renewable Energy Laboratory&#39;s (NREL) PV Rooftop Database (PVRDB) is a lidar-derived, geospatially-resolved dataset of suitable roof surfaces and their PV technical potential for 128 metropolitan regions in the United States. The source lidar data and building footprints were obtained by the U.S. Department of Homeland Security Homeland Security Infrastructure Program for 2006-2014. Using GIS methods, NREL identified suitable roof surfaces based on their size, orientation, and shading ...</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="ecosystems"></a>
+      <div class="row">
+      <h2>ecosystems</h2>
+      <hr class="section-row">
+        <div id="ebirdst" class="dataset">
+          <h3><a href="/ebirdst/">eBird Status and Trends Model Results</a></h3>
+            <p>Managed by <a href="https://www.birds.cornell.edu/home/">Cornell Lab of Ornithology</a></p>
+          <p>The eBird Status and Trends project generates estimates of bird
+occurrence and abundance at a high spatiotemporal resolution.
+This dataset represents the primary modeled results from the
+analysis workflow and are designed for further analysis,
+synthesis, visualization, and exploration.</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="disaster-response"></a>
+      <div class="row">
+      <h2>disaster response</h2>
+      <hr class="section-row">
+        <div id="digital-globe-open-data" class="dataset">
+          <h3><a href="/digital-globe-open-data/">DigitalGlobe Open Data Program</a></h3>
+            <p>Managed by <a href="https://www.digitalglobe.com/">DigitalGlobe</a></p>
+          <p>Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, monitoring of staging areas and emergency response, damage assessment, and recovery. Also incudes crowdsourced damage assessments for major, sudden onset disasters.</p>
+        </div>
+        <div id="dataforgood-fb-hrsl" class="dataset">
+          <h3><a href="/dataforgood-fb-hrsl/">High Resolution Population Density Maps + Demographic Estimates by CIESIN and Facebook</a></h3>
+            <p>Managed by <a href="https://dataforgood.fb.com/">Facebook</a></p>
+          <p>Population data for a selection of countries, allocated to 1 arcsecond blocks and provided in a combination of CSV
+and Cloud-optimized GeoTIFF files. This refines <a href="https://sedac.ciesin.columbia.edu/data/collection/gpw-v4">CIESIN’s Gridded Population of the World</a>
+using machine learning models on high-resolution worldwide Digital Globe
+satellite imagery. CIESIN population counts aggregated from worldwide census
+data are allocated to blocks where imagery appears to contain buildings.</p>
+        </div>
+        <div id="noaa-eri" class="dataset">
+          <h3><a href="/noaa-eri/">NOAA Emergency Response Imagery</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>In order to support NOAA&#39;s homeland security and emergency response requirements, the National Geodetic Survey Remote Sensing Division (NGS/RSD) has the capability to acquire and rapidly disseminate a variety of spatially-referenced datasets to federal, state, and local government agencies, as well as the general public. Remote sensing technologies used for these projects have included lidar, high-resolution digital cameras, a film-based RC-30 aerial camera system, and hyperspectral imagers. Examples of rapid response initiatives include acquiring high resolution images with the Emerge/App...</p>
+        </div>
+        <div id="grillo-openeew" class="dataset">
+          <h3><a href="/grillo-openeew/">OpenEEW</a></h3>
+            <p>Managed by <a href="https://grillo.io/">Grillo</a></p>
+          <p>Grillo has developed an IoT-based earthquake early-warning system,
+with sensors currently deployed in Mexico, Chile, Puerto Rico and Costa Rica,
+and is now opening its entire archive of unprocessed accelerometer
+data to the world to encourage the development of new algorithms
+capable of rapidly detecting and characterizing earthquakes in
+real time.</p>
+        </div>
+        <div id="osmlr" class="dataset">
+          <h3><a href="/osmlr/">OpenStreetMap Linear Referencing</a></h3>
+          <p>OSMLR a linear referencing system built on top of OpenStreetMap. OSM has great information about roads around the world and their interconnections, but it lacks the means to give a stable identifier to a stretch of roadway. OSMLR provides a stable set of numerical IDs for every 1 kilometer stretch of roadway around the world. In urban areas, OSMLR IDs are attached to each block of roadways between significant intersections.</p>
+        </div>
+        <div id="osm" class="dataset">
+          <h3><a href="/osm/">OpenStreetMap on AWS</a></h3>
+          <p>OSM is a free, editable map of the world, created and maintained by volunteers. Regular OSM data archives are made available in Amazon S3.</p>
+        </div>
+        <div id="southern-california-earthquakes" class="dataset">
+          <h3><a href="/southern-california-earthquakes/">Southern California Earthquake Data</a></h3>
+            <p>Managed by <a href="https://scedc.caltech.edu">Southern California Earthquake Data Center</a></p>
+          <p>This dataset contains ground motion velocity and acceleration seismic waveforms recorded by the Southern California Seismic Network (SCSN) and archived at the Southern California Earthquake Data Center (SCEDC).</p>
+        </div>
+        <div id="census-dataworld-pums" class="dataset">
+          <h3><a href="/census-dataworld-pums/">U.S. Census ACS PUMS</a></h3>
+          <p>U.S. Census Bureau American Community Survey (ACS) Public Use Microdata Sample (PUMS) available in a linked data format using the Resource Description Framework (RDF) data model.</p>
+        </div>
+      </div>
+      <a class="cat-anchor" name="oceans"></a>
+      <div class="row">
+      <h2>oceans</h2>
+      <hr class="section-row">
+        <div id="odp-noaa-nesdis-ncei-csb" class="dataset">
+          <h3><a href="/odp-noaa-nesdis-ncei-csb/">Crowdsourced Bathymetry</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>Community provided bathymetry data collected in collaboration with the International Hydrographic Organization.</p>
+        </div>
+        <div id="mur" class="dataset">
+          <h3><a href="/mur/">Multi-Scale Ultra High Resolution (MUR) Sea Surface Temperature (SST)</a></h3>
+            <p>Managed by <a href="https://faralloninstitute.org">Farallon Institute</a></p>
+          <p>A global, gap-free, gridded, daily 1 km Sea Surface Temperature (SST) dataset created by merging multiple Level-2 satellite SST datasets. Those input datasets include the NASA Advanced Microwave Scanning Radiometer-EOS (AMSR-E), the JAXA Advanced Microwave Scanning Radiometer 2 (AMSR-2) on GCOM-W1, the Moderate Resolution Imaging Spectroradiometers (MODIS) on the NASA Aqua and Terra platforms, the US Navy microwave WindSat radiometer, the Advanced Very High Resolution Radiometer (AVHRR) on several NOAA satellites, and in situ SST observations from the NOAA iQuam project. Data are available fro...</p>
+        </div>
+        <div id="noaa-gestofs" class="dataset">
+          <h3><a href="/noaa-gestofs/">NOAA Global Extratropical Surge and Tide Operational Forecast System (Global ESTOFS)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>NOAA&#39;s Global Extratropical Surge and Tide Operational Forecast System (Global ESTOFS) provides users with nowcasts (analyses of near present conditions) and forecast guidance of water level conditions for the entire globe. Global ESTOFS has been developed to serve the marine navigation, weather forecasting, and disaster mitigation user communities. Global ESTOFS was developed in a collaborative effort between the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central Operations (NCO), the University of Notre Dame, the University of North Carolina, and The Water Institute of the Gulf. The model generates forecasts out to 180 hours four times per day; forecast output includes water levels caused by the combined effects of storm surge and tides, by astronomical tides alone, and by sub-tidal water levels (isolated storm surge). <br /><br />The hydrodynamic model employed by Global ESTOFS is the ADvanced CIRCulation (ADCIRC) finite element model. The model is forced by GFS winds, mean sea level pressure, and sea ice. The unstructured grid used by Global ESTOFS consists of 8,063,409 nodes and 15,478,900 triangular elements. Coastal resolution is up to 80 m for Hawaii and the U.S. West Coast; up to 90-120 m for the Pacific Islands including Guam, American Samoa, Marianas, Wake Island, Marshall Islands, and Palau; and up to 120 m for the U.S. East Coast, Puerto Rico, Micronesia, and Alaska. The flood plain extends overland to approx</b>...</p>
+        </div>
+        <div id="noaa-ofs" class="dataset">
+          <h3><a href="/noaa-ofs/">NOAA Operational Forecast System (OFS)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The Operational Forecast System (OFS) has been developed to serve the maritime user community. OFS was developed in a joint project of the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/NOS/Center for Operational Oceanographic Products and Services (CO-OPS), and the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central Operations (NCO). OFS generates water level, water current, water temperature, water salinity (except for the Great Lakes) and nowcast and forecast guidance four times per day.</p>
+        </div>
+        <div id="noaa-s111" class="dataset">
+          <h3><a href="/noaa-s111/">NOAA S-111 Surface Water Currents Data</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>S-111 is a data and metadata encoding specification that is part of the <a href="https://iho.int/en/s100-project">S-100 Universal Hydrographic Data Model</a>, an international standard for hydrographic data. This collection of data contains surface water currents forecast guidance from <a href="https://tidesandcurrents.noaa.gov/models.html">NOAA/NOS Operational Forecast Systems</a>, a set of operational hydrodynamic nowcast and forecast modeling systems, for various U.S. coastal waters and the great lakes. The collection also contains surface current forecast guidance output from the <a href="https://polar.ncep.noaa.gov/global/">NCEP Global Real-Time Ocean Forecast System (GRTOFS)</a> for some offshore areas. These datasets are encoded as HDF-5 f...</p>
+        </div>
+        <div id="ncei-wcsd-archive" class="dataset">
+          <h3><a href="/ncei-wcsd-archive/">NOAA Water-Column Sonar Data Archive</a></h3>
+            <p>Managed by <a href="https://www.ngdc.noaa.gov/mgg/wcd/">NOAA</a></p>
+          <p>Water-column sonar data archived at the NOAA National Centers for Environmental Information.</p>
+        </div>
+        <div id="noaa-wod" class="dataset">
+          <h3><a href="/noaa-wod/">NOAA World Ocean Database (WOD)</a></h3>
+            <p>Managed by <a href="http://www.noaa.gov/">NOAA</a></p>
+          <p>The World Ocean Database (WOD) is the largest uniformly formatted, quality-controlled, publicly available historical subsurface ocean profile database. From Captain Cook&#39;s second voyage in 1772 to today&#39;s automated Argo floats, global aggregation of ocean variable information including temperature, salinity, oxygen, nutrients, and others vs. depth allow for study and understanding of the changing physical, chemical, and to some extent biological state of the World&#39;s Oceans. Browse the bucket via the AWS S3 explorer: <a href="https://noaa-wod-pds.s3.amazonaws.com/index.html">https://noaa-wod-pds.s3.amazonaws.com/index.html</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>  </body>
+  <script src="/js/index.js"></script>
+</html>

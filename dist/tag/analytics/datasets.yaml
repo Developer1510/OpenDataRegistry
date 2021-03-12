@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/rapid7-fdns-any.yaml
+    - /datasets/awslabs-open-data-registry/datasets/speedtest-global-performance.yaml

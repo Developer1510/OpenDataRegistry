@@ -1,0 +1,9 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/openaq.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nyc-tlc-trip-records-pds.yaml
+    - /datasets/awslabs-open-data-registry/datasets/pmsp-lidar.yaml
+    - /datasets/awslabs-open-data-registry/datasets/opencitymodel.yaml
+    - /datasets/awslabs-open-data-registry/datasets/speedtest-global-performance.yaml
+    - /datasets/awslabs-open-data-registry/datasets/dc-lidar.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ichangemycity.yaml
+    - /datasets/awslabs-open-data-registry/datasets/schweizer-haltestellen-oev.yaml

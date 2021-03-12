@@ -1,0 +1,12 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/foldingathome-covid19.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nyu-fastmri.yaml
+    - /datasets/awslabs-open-data-registry/datasets/aws-covid19-lake.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ilmn-dragen-1kgp.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ncbi-blast-databases.yaml
+    - /datasets/awslabs-open-data-registry/datasets/msd.yaml
+    - /datasets/awslabs-open-data-registry/datasets/mimiciii.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ncbi-covid-19.yaml
+    - /datasets/awslabs-open-data-registry/datasets/qiime2.yaml
+    - /datasets/awslabs-open-data-registry/datasets/tabula-muris.yaml
+    - /datasets/awslabs-open-data-registry/datasets/tabula-muris-senis.yaml

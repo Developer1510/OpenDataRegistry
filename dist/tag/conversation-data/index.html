@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <div class="about col-md-5">
+      <div class="row aboutbox">
+            <h3>About</h3>
+            <p>This registry exists to help people discover and share datasets that are available via AWS resources. <a href="https://opendata.aws">Learn more about sharing data on AWS</a>.</p>
+    
+            <p>See <a href="/tag/conversation-data/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>conversation data</strong>.</p>
+    
+        <hr>
+    
+        <h4>Search datasets (currently <span id="count-matching">13</span> matching <span id="count-matching-text">datasets</span>)</h4>
+        <form>
+          <div class="form-group">
+            <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
+          </div>
+        </form>
+        <p>You are currently viewing a subset of data tagged with <strong>conversation data</strong>.</p>
+    
+        <hr>
+    
+        <h4>Add to this registry</h4>
+        <p>If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the <a href="https://github.com/awslabs/open-data-registry/">Registry of Open Data on AWS GitHub repository</a>.</p>
+    
+        <p>Unless specifically stated in the applicable dataset documentation, datasets available through the Registry of Open Data on AWS are not provided and maintained by AWS. Datasets are provided and maintained by a variety of third parties under a variety of licenses. Please check dataset licenses and related documentation to determine if a dataset may be used for your application.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datasets">
+      <div class="row">
+        <div id="dialoglue" class="dataset">
+          <h3><a href="/dialoglue/">DialoGLUE: A Natural Language Understanding Benchmark for Task-Oriented Dialogue</a></h3>
+          <p><span class="label label-info tag link-tag">conversation data</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">natural language processing</span></p>
+          <p>This bucket contains the checkpoints used to reproduce the baseline results reported in the DialoGLUE benchmark hosted
+on EvalAI (<a href="https://evalai.cloudcv.org/web/challenges/challenge-page/708/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/708/overview</a>). The associated scripts for using the checkpoints are located here:
+<a href="https://github.com/alexa/dialoglue">https://github.com/alexa/dialoglue</a>. The associated paper describing the benchmark and checkpoints is here: <a href="https://arxiv.org/abs/2009.13570">https://arxiv.org/abs/2009.13570</a>.
+The provided checkpoints include the CONVBERT model, a BERT-esque model trained on a large open-domain conversational
+dataset. It also includes the CONVBERT-DG and BERT-DG checkpoints descri...</p>
+          <p><a href="/dialoglue/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://arxiv.org/abs/2009.13570" class="" target="_none">DialoGLUE: A Natural Language Understanding Benchmark for Task-Oriented Dialogue</a> by Shikib Mehri, Mihail Eric, Dilek Hakkani-Tur</li></a>
+          </li>
+        </ul>
+        <p><a href="/dialoglue/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+        <div id="topical-chat-enriched" class="dataset">
+          <h3><a href="/topical-chat-enriched/">Enriched Topical-Chat Dataset for Knowledge-Grounded Dialogue Systems</a></h3>
+          <p><span class="label label-info tag link-tag">conversation data</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">natural language processing</span></p>
+          <p>This dataset provides extra annotations on top of the publicly released
+Topical-Chat dataset(<a href="https://github.com/alexa/Topical-Chat">https://github.com/alexa/Topical-Chat</a>) which will help in reproducing the results in our paper
+&quot;Policy-Driven Neural Response Generation for Knowledge-Grounded Dialogue Systems&quot; (<a href="https://arxiv.org/abs/2005.12529?context=cs.CL">https://arxiv.org/abs/2005.12529?context=cs.CL</a>). 
+The dataset contains 5 files: train.json, valid_freq.json, valid_rare.json, test_freq.json and test_rare.json. 
+Each of these files will have additional annotations on top of the original Topical-Chat dataset.
+These specific annotations are: dialogue act annotations a...</p>
+          <p><a href="/topical-chat-enriched/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://arxiv.org/abs/2005.12529?context&#x3D;cs.CL" class="" target="_none">Policy-Driven Neural Response Generation for Knowledge-Grounded Dialogue Systems</a> by Behnam Hedayatnia, Karthik Gopalakrishnan, Seokhwan Kim, Yang Liu, Mihail Eric &amp; Dilek Hakkani-Tur</li></a>
+          </li>
+        </ul>
+        <p><a href="/topical-chat-enriched/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>  </body>
+  <script src="/js/index.js"></script>
+</html>

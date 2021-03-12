@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>SondeHub Radiosonde Telemetry - Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Dataset",
+      "name" : "SondeHub Radiosonde Telemetry",
+      "description" : "SondeHub Radiosonde telemetry contains global radiosonde (weather balloon) data captured by SondeHub from our participating radiosonde_auto_rx receiving stations. radiosonde_auto_rx is a open source project aimed at receiving and decoding telemetry from airborne radiosondes using software-defined-radio techniques, enabling study of the telemetry and sometimes recovery of the radiosonde itself.
+  Currently 313 receiver stations are providing data for an average of 384 radiosondes a day.  The data within this repository contains received telemetry frames, including radiosonde type, gps position, and for some radiosondes atmospheric sensor data (temperature, humidity, pressure). As the downlinked telemetry does not always contain calibration information, any atmospheric sensor data should be considered to be uncalibrated. Note that radiosonde_auto_rx does not have sensor data support for all radiosonde types.",
+      "license" : "Creative Commons BY-SA 2.0",
+      "sourceOrganization" : "<a href=\"https://sondehub.org/\">SondeHub</a>"
+    }
+    </script>
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <h1>SondeHub Radiosonde Telemetry</h1>
+    <p>
+      
+
+      <span class="label label-info tag link-tag">climate</span>
+
+      <span class="label label-info tag link-tag">environmental</span>
+
+      <span class="label label-info tag link-tag">GPS</span>
+
+      <span class="label label-info tag link-tag">weather</span>
+    </p>
+    <div class="row">
+      <div class="col-md-6">
+      <h3>Description</h3>
+      <p>SondeHub Radiosonde telemetry contains global radiosonde (weather balloon) data captured by SondeHub from our participating radiosonde_auto_rx receiving stations. radiosonde_auto_rx is a open source project aimed at receiving and decoding telemetry from airborne radiosondes using software-defined-radio techniques, enabling study of the telemetry and sometimes recovery of the radiosonde itself.
+Currently 313 receiver stations are providing data for an average of 384 radiosondes a day.  The data within this repository contains received telemetry frames, including radiosonde type, gps position, and for some radiosondes atmospheric sensor data (temperature, humidity, pressure). As the downlinked telemetry does not always contain calibration information, any atmospheric sensor data should be considered to be uncalibrated. Note that radiosonde_auto_rx does not have sensor data support for all radiosonde types.</p>
+
+      <h4>Update Frequency</h4>
+      <p>Data is updated as we receive it</p>
+
+      <h4>License</h4>
+      <p>Creative Commons BY-SA 2.0</p>
+
+      <h4>Documentation</h4>
+      <p><a href="https://github.com/projecthorus/sondehub-infra/wiki/Amazon-Open-Data">https://github.com/projecthorus/sondehub-infra/wiki/Amazon-Open-Data</a></p>
+
+      <h4>Managed By</h4>
+      <p><a href="https://sondehub.org/">SondeHub</a></p>
+      <p>See all datasets managed by <a href="undefined?search&#x3D;managedBy:sondehub">SondeHub</a>.</p>
+
+      <h4>Contact</h4>
+      <p>Michaela Wheeler <a href="mailto:&#x76;&#107;&#51;&#x66;&#117;&#114;&#64;&#x73;&#111;&#x6e;&#x64;&#x65;&#104;&#117;&#98;&#x2e;&#x6f;&#x72;&#103;">&#x76;&#107;&#51;&#x66;&#117;&#114;&#64;&#x73;&#111;&#x6e;&#x64;&#x65;&#104;&#117;&#98;&#x2e;&#x6f;&#x72;&#103;</a></p>
+
+      <h4 name="usageexamples">Usage Examples</h4>
+        <h5 class="dataatwork-category">Tutorials</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/projecthorus/pysondehub/blob/main/examples/README.md" class="" target="_none">Loading example notebooks into SageMaker</a> by Michaela Wheeler</a>
+            <br>
+            <span class="label label-info tag service-tag">SageMaker</span>
+          </li>          <li>
+            <a href="https://github.com/projecthorus/pysondehub/blob/main/examples/sondehub-athena.ipynb" class="" target="_none">Using Athena to read radiosonde data</a> by Michaela Wheeler</a>
+            <br>
+            <span class="label label-info tag service-tag">Athena</span>
+          </li>          <li>
+            <a href="https://github.com/projecthorus/pysondehub/blob/main/examples/sondehub.ipynb" class="" target="_none">Using pysondehub to read radiosonde data</a> by Michaela Wheeler</a>
+            <br>
+            <span class="label label-info tag service-tag">S3</span>
+          </li>        </ul>
+        <h5 class="dataatwork-category">Tools & Applications</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://pypi.org/project/sondehub/" class="" target="_none">pysondehub</a> by <a href="https://github.com/projecthorus/pysondehub" target="_none">Sondehub</a></a>
+            <br>
+            
+          </li>        </ul>
+        <h5 class="dataatwork-category">Publications</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://www.youtube.com/watch?v&#x3D;YBy-bXEWZeM" class="" target="_none">STM32 Development Boards (literally) Falling From The Sky (How to submit data)</a> by Mark Jessop &amp; Michaela Wheeler</a>
+            <br>
+            
+          </li>        </ul>
+
+    </div>
+    <div class="col-md-5 col-md-offset-1">
+      <h3>Resources on AWS</h3>
+      <ul class="resource-list">
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description">Radiosonde Telemetry as JSON blobs of Universal Telemetry format</dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type s3-bucket">S3 Bucket</dd>
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>arn:aws:s3:::sondehub-open-data</code></dd>
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>us-east-1</code></dd>
+            <dt class="resource-region"><a href="https://aws.amazon.com/cli/">AWS CLI</a> Access (No AWS account required)</dt>
+            <dd><code>aws s3 ls s3://sondehub-open-data/ --no-sign-request</code></dd>
+            <dt class="resource-explore">Explore</dt>
+            <dd><a href="http://sondehub-open-data.s3-website-us-east-1.amazonaws.com/#serial/">Browse Bucket by serial number</a></dd>
+            <dd><a href="http://sondehub-open-data.s3-website-us-east-1.amazonaws.com/#date/">Browse Bucket by date/time</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <hr/>
+    <p><a href="https://github.com/awslabs/open-data-registry/blob/main/datasets/sondehub-telemetry.yaml">Edit this dataset entry on GitHub</a></p>
+    <p><a href="/"><b>Home</b></a></p>
+  </div>
+  <script src="/js/tags.js"></script>

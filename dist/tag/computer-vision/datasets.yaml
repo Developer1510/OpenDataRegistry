@@ -1,0 +1,18 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/spacenet.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/amazon-bin-imagery.yaml
+    - /datasets/awslabs-open-data-registry/datasets/janelia-cosem.yaml
+    - /datasets/awslabs-open-data-registry/datasets/rareplanes.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ford-multi-av-seasonal.yaml
+    - /datasets/awslabs-open-data-registry/datasets/xiph-media.yaml
+    - /datasets/awslabs-open-data-registry/datasets/aev-a2d2.yaml
+    - /datasets/awslabs-open-data-registry/datasets/fast-ai-coco.yaml
+    - /datasets/awslabs-open-data-registry/datasets/fast-ai-imageclas.yaml
+    - /datasets/awslabs-open-data-registry/datasets/fast-ai-imagelocal.yaml
+    - /datasets/awslabs-open-data-registry/datasets/kitti.yaml
+    - /datasets/awslabs-open-data-registry/datasets/multimedia-commons.yaml
+    - /datasets/awslabs-open-data-registry/datasets/mevadata.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nsd.yaml
+    - /datasets/awslabs-open-data-registry/datasets/mmid.yaml
+    - /datasets/awslabs-open-data-registry/datasets/agriculture_vision.yaml

@@ -1,0 +1,4 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/southern-california-earthquakes.yaml
+    - /datasets/awslabs-open-data-registry/datasets/grillo-openeew.yaml

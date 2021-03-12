@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/serratus-lovelywater.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ncbi-covid-19.yaml

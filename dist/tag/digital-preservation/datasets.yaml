@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/nsw-herbarium.yaml
+    - /datasets/awslabs-open-data-registry/datasets/software-heritage.yaml

@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/speedtest-global-performance.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-gestofs.yaml

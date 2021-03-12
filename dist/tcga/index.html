@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>The Cancer Genome Atlas - Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Dataset",
+      "name" : "The Cancer Genome Atlas",
+      "description" : "The Cancer Genome Atlas (TCGA), a collaboration between the National Cancer Institute (NCI) and National Human Genome Research Institute (NHGRI), aims to generate comprehensive, multi-dimensional maps of the key genomic changes in major types and subtypes of cancer. TCGA has analyzed matched tumor and normal tissues from 11,000 patients, allowing for the comprehensive characterization of 33 cancer types and subtypes, including 10 rare cancers.
+  The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression Quantification, miRNA Expression Quantification, Genotyping Array Copy Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping Array Gene Level Copy Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation Beta Value Tissue Slide Image, and Diagnostic Slide Image data from Genomic Data Commons (GDC).
+  This dataset also contains controlled Whole Exome Sequencing (WXS), RNA-Seq, miRNA-Seq, ATAC-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic Mutation, and WXS Aggregated Somatic Mutation data from GDC.
+  TCGA is made available on AWS via the <a href=\"https://aws.amazon.com/blogs/publicsector/aws-and-national-institutes-of-health-collaborate-to-accelerate-discoveries-with-strides-initiative/\">NIH STRIDES Initiative</a>.",
+      "license" : "NIH Genomic Data Sharing Policy: <a href=\"https://gdc.cancer.gov/access-data/data-access-policies\">https://gdc.cancer.gov/access-data/data-access-policies</a>",
+      "sourceOrganization" : "<a href=\"https://ctds.uchicago.edu/\">Center for Translational Data Science at The University of Chicago</a>"
+    }
+    </script>
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <h1>The Cancer Genome Atlas</h1>
+    <p>
+      
+
+      <span class="label label-info tag link-tag">cancer</span>
+
+      <span class="label label-info tag link-tag">genomic</span>
+
+      <span class="label label-info tag link-tag">life sciences</span>
+
+      <span class="label label-info tag link-tag">STRIDES</span>
+
+      <span class="label label-info tag link-tag">whole genome sequencing</span>
+    </p>
+    <div class="row">
+      <div class="col-md-6">
+      <h3>Description</h3>
+      <p>The Cancer Genome Atlas (TCGA), a collaboration between the National Cancer Institute (NCI) and National Human Genome Research Institute (NHGRI), aims to generate comprehensive, multi-dimensional maps of the key genomic changes in major types and subtypes of cancer. TCGA has analyzed matched tumor and normal tissues from 11,000 patients, allowing for the comprehensive characterization of 33 cancer types and subtypes, including 10 rare cancers.
+The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression Quantification, miRNA Expression Quantification, Genotyping Array Copy Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping Array Gene Level Copy Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation Beta Value Tissue Slide Image, and Diagnostic Slide Image data from Genomic Data Commons (GDC).
+This dataset also contains controlled Whole Exome Sequencing (WXS), RNA-Seq, miRNA-Seq, ATAC-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic Mutation, and WXS Aggregated Somatic Mutation data from GDC.
+TCGA is made available on AWS via the <a href="https://aws.amazon.com/blogs/publicsector/aws-and-national-institutes-of-health-collaborate-to-accelerate-discoveries-with-strides-initiative/">NIH STRIDES Initiative</a>.</p>
+
+      <h4>Update Frequency</h4>
+      <p>Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+although this dataset may not be updated at every release.
+</p>
+
+      <h4>License</h4>
+      <p>NIH Genomic Data Sharing Policy: <a href="https://gdc.cancer.gov/access-data/data-access-policies">https://gdc.cancer.gov/access-data/data-access-policies</a></p>
+
+      <h4>Documentation</h4>
+      <p><a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga</a></p>
+
+      <h4>Managed By</h4>
+      <p><a href="https://ctds.uchicago.edu/"><img src="/img/logos/center-for-translational-data-science-at-the-university-of-chicago-logo.png" class="managed-by-logo" alt="Center for Translational Data Science at The University of Chicago"></a></p>
+      <p>See all datasets managed by <a href="undefined/collab/nih">Center for Translational Data Science at The University of Chicago</a>.</p>
+
+      <h4>Contact</h4>
+      <p><a href="mailto:dcf-support@datacommons.io">dcf-support@datacommons.io</a></p>
+
+      <h4 name="usageexamples">Usage Examples</h4>
+        <h5 class="dataatwork-category">Tools & Applications</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://firecloud.terra.bio/" class="" target="_none">Broad Institute FireCloud</a> by <a href="https://www.broadinstitute.org/" target="_none">The Broad Institute of MIT &amp; Harvard</a></a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://cgc-accounts.sbgenomics.com/" class="" target="_none">Cancer Genomics Cloud</a> by <a href="https://docs.sevenbridges.com/docs/tcga-data" target="_none">Seven Bridges</a></a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://portal.gdc.cancer.gov/legacy-archive/" class="" target="_none">GDC Legacy Archive</a> by <a href="https://gdc.cancer.gov/" target="_none">National Cancer Institute</a></a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://portal.gdc.cancer.gov/projects/" class="" target="_none">Genomic Data Commons</a> by <a href="https://gdc.cancer.gov/" target="_none">National Cancer Institute</a></a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://isb-cgc.appspot.com/" class="" target="_none">ISB Cancer Genomics Cloud</a> by <a href="https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TCGA_top.html
+          " target="_none">Institute for Systems Biology</a></a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga/studied-cancers
+          " class="" target="_none">TCGA Cancers Selected for Study</a> by <a href="https://ocg.cancer.gov/" target="_none">National Cancer Institute</a></a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga/using-tcga
+          " class="" target="_none">Using TCGA Data, Resources, and Materials</a> by <a href="https://ocg.cancer.gov/" target="_none">National Cancer Institute</a></a>
+            <br>
+            
+          </li>        </ul>
+        <h5 class="dataatwork-category">Publications</h5>
+        <ul class="dataatwork-list">
+          <li>
+            <a href="https://doi.org/10.1016/j.cels.2019.06.006" class="" target="_none">&quot;Before and After: A Comparison of Legacy and Harmonized TCGA Data at the Genomic Data
+          Commons&quot;
+          </a> by Galen F. Gao, Joel S. Parker, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cell.2018.03.027" class="" target="_none">A Pan-Cancer Analysis of Enhancer Expression in Nearly 9000 Patient Samples</a> by Han Chen, Chunyan Li, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cell.2018.02.052" class="" target="_none">An Integrated TCGA Pan-Cancer Clinical Data Resource to Drive High-Quality Survival Outcome
+          Analytics
+          </a> by Jianfang Liu, Tara Lichtenberg, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cell.2018.03.022" class="" target="_none">Cell-of-Origin Patterns Dominate the Molecular Classification of 10,000 Tumors from 33 Types
+          of Cancer
+          </a> by Katherine A. Hoadley, Christina Yau, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.ccell.2018.03.010" class="" target="_none">Comparative Molecular Analysis of Gastrointestinal Adenocarcinomas</a> by Yang Liu, Nilay S. Sethi, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.ccell.2018.07.001" class="" target="_none">Comprehensive Analysis of Alternative Splicing Across Tumors from 8,705 Patients</a> by André Kahles, Kjong-Van Lehmann, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cell.2018.02.060" class="" target="_none">Comprehensive Characterization of Cancer Driver Genes and Mutations</a> by Matthew H. Bailey, Collin Tokheim, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.ccell.2018.03.007" class="" target="_none">Genomic and Functional Approaches to Understanding Cancer Aneuploidy</a> by Alison M. Taylor, Juliann Shih, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.celrep.2018.03.076" class="" target="_none">Genomic and Molecular Landscape of DNA Damage Repair Deficiency across The Cancer Genome
+          Atlas
+          </a> by Theo A. Knijnenburg, Linghua Wang, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.celrep.2018.03.063" class="" target="_none">Genomic, Pathway Network, and Immunologic Features Distinguishing Squamous Carcinomas</a> by Joshua D. Campbell, Christina Yau, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.celrep.2018.03.047" class="" target="_none">Integrated Genomic Analysis of the Ubiquitin Pathway across Cancer Types</a> by Zhongqi Ge, Jake S. Leighton, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.celrep.2018.03.046" class="" target="_none">Machine Learning Detects Pan-Cancer Ras Pathway Activation in The Cancer Genome Atlas</a> by Gregory P. Way, Francisco Sanchez-Vega, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cell.2018.03.034" class="" target="_none">Machine Learning Identifies Stemness Features Associated with Oncogenic Dedifferentiation
+          </a> by Tathiane M. Malta, Artem Sokolov, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.celrep.2018.03.077" class="" target="_none">Molecular Characterization and Clinical Relevance of Metabolic Expression Subtypes in Human
+          Cancers
+          </a> by Xinxin Peng, Zhongyuan Chen, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cell.2018.03.035" class="" target="_none">Oncogenic Signaling Pathways in The Cancer Genome Atlas</a> by Francisco Sanchez-Vega, Marco Mina, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cels.2018.03.003" class="" target="_none">Pan-Cancer Alterations of the MYC Oncogene and its Proximal Network Across The Cancer Genome
+          Atlas
+          </a> by Franz X. Schaub, Varsha Dhankani, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.celrep.2018.03.064" class="" target="_none">Pan-Cancer Analysis of lncRNA Regulation Supports Their Targeting of Cancer Genes in Each
+          Tumor Context
+          </a> by Hua-Sheng Chiu, Sonal Somvanshi, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cell.2018.03.039" class="" target="_none">Pathogenic Germline Variants in 10,389 Adult Cancers</a> by Kuan-lin Huang, R. Jay Mashl, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.cels.2018.03.002" class="" target="_none">Scalable Open Science Approach for Mutation Calling of Tumor Exomes Using Multiple Genomic
+          Pipelines
+          </a> by Kyle Ellrott, Matthew H. Bailey, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.celrep.2018.03.086" class="" target="_none">Spatial Organization And Molecular Correlation Of Tumor-Infiltrating Lymphocytes Using Deep
+          Learning On Pathology Images
+          </a> by Joel Saltz, Rajarsi Gupta, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1126/science.aav1898" class="" target="_none">The chromatin accessibility landscape of primary human cancers</a> by M. Ryan Corces, Jeffrey M. Granja, et al.</a>
+            <br>
+            
+          </li>          <li>
+            <a href="https://doi.org/10.1016/j.immuni.2018.03.023" class="" target="_none">The Immune Landscape of Cancer</a> by Vésteinn Thorsson, David L. Gibbs, et al.</a>
+            <br>
+            
+          </li>        </ul>
+
+    </div>
+    <div class="col-md-5 col-md-offset-1">
+      <h3>Resources on AWS</h3>
+      <ul class="resource-list">
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description">Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq
+Isoform Expression Quantification, miRNA Expression Quantification, Genotyping Array Copy
+Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping Array Gene Level Copy
+Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation Beta Value Tissue
+Slide Image, Diagnostic Slide Image</dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type s3-bucket">S3 Bucket</dd>
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>arn:aws:s3:::tcga-2-open</code></dd>
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>us-east-1</code></dd>
+            <dt class="resource-region"><a href="https://aws.amazon.com/cli/">AWS CLI</a> Access (No AWS account required)</dt>
+            <dd><code>aws s3 ls s3://tcga-2-open/ --no-sign-request</code></dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="resource-list">
+            <dt class="resource-description">Description</dt>
+            <dd class="resource-description">WXS/RNA-Seq/miRNA-Seq/ATAC-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic
+Mutation, WXS Aggregated Somatic Mutation</dd>
+            <dt class="resource-type">Resource type</dt>
+            <dd class="resource-type s3-bucket">S3 Bucket <a href="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id&#x3D;phs000178.v1.p1"><span class="label label-info tag link-tag">Controlled Access</span></a></dd>
+            <dt class="resource-arn">Amazon Resource Name (ARN)</dt>
+            <dd><code>arn:aws:s3:::tcga-2-controlled</code></dd>
+            <dt class="resource-region">AWS Region</dt>
+            <dd><code>us-east-1</code></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <hr/>
+    <p><a href="https://github.com/awslabs/open-data-registry/blob/main/datasets/tcga.yaml">Edit this dataset entry on GitHub</a></p>
+    <p><a href="/"><b>Home</b></a></p>
+  </div>
+  <script src="/js/tags.js"></script>

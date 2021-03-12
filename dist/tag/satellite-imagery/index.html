@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <div class="about col-md-5">
+      <div class="row aboutbox">
+            <h3>About</h3>
+            <p>This registry exists to help people discover and share datasets that are available via AWS resources. <a href="https://opendata.aws">Learn more about sharing data on AWS</a>.</p>
+    
+            <p>See <a href="/tag/satellite-imagery/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>satellite imagery</strong>.</p>
+    
+        <hr>
+    
+        <h4>Search datasets (currently <span id="count-matching">13</span> matching <span id="count-matching-text">datasets</span>)</h4>
+        <form>
+          <div class="form-group">
+            <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
+          </div>
+        </form>
+        <p>You are currently viewing a subset of data tagged with <strong>satellite imagery</strong>.</p>
+    
+        <hr>
+    
+        <h4>Add to this registry</h4>
+        <p>If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the <a href="https://github.com/awslabs/open-data-registry/">Registry of Open Data on AWS GitHub repository</a>.</p>
+    
+        <p>Unless specifically stated in the applicable dataset documentation, datasets available through the Registry of Open Data on AWS are not provided and maintained by AWS. Datasets are provided and maintained by a variety of third parties under a variety of licenses. Please check dataset licenses and related documentation to determine if a dataset may be used for your application.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datasets">
+      <div class="row">
+        <div id="sentinel-2" class="dataset">
+          <h3><a href="/sentinel-2/">Sentinel-2</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">natural resource</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>The <a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2">Sentinel-2 mission</a> is
+a land monitoring constellation of two satellites that provide high resolution
+optical imagery and provide continuity for the current SPOT and Landsat missions.
+The mission provides a global coverage of the Earth&#39;s land surface every 5 days,
+making the data of great use in on-going studies. L1C data are available from
+June 2015 globally. L2A data are available from September 2016 over wider Europe
+region and globally since January 2017.</p>
+          <p><a href="/sentinel-2/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="http://apps.sentinel-hub.com/sentinel-playground/" class="" target="_none">Sentinel Playground</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+          <li>
+            <a href="https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/imagery/sentinel-2-more-than-meets-the-eye/" class="" target="_none">Integrate imagery from the Sentinel-2 archive into your own apps, maps, and analysis with the Sentinel-2 image service</a> by <a href="https://www.esri.com/en-us/home" target="_none">Esri</a></li></a>
+          </li>
+          <li>
+            <a href="https://sentinel2explorer.esri.com/" class="" target="_none">Use the Sentinel Explorer app to explore, visualize, and analyze the entire Sentinel-2 archive</a> by <a href="https://www.esri.com/en-us/home" target="_none">Esri</a></li></a>
+          </li>
+          <li>
+            <a href="http://apps.sentinel-hub.com/eo-browser/" class="" target="_none">EO Browser</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+          <li>
+            <a href="https://map.onesoil.ai/" class="" target="_none">Interactive map with AI detected fields and crops based on Sentinel-2 imagery</a> by <a href="https://onesoil.ai/" target="_none">OneSoil</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/sentinel-2/#usageexamples">See 20 usage examples &rarr;</a></p>
+        </div>
+        <div id="landsat-8" class="dataset">
+          <h3><a href="/landsat-8/">Landsat 8</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">natural resource</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>An ongoing collection of satellite imagery of all land on Earth produced by
+the Landsat 8 satellite.<strong>Note this dataset is deprecated in favor of the <a href="https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access">USGS cloud access mechanism</a>. This bucket will be deleted on July 1, 2021.</strong></p>
+          <p><a href="/landsat-8/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://apps.sentinel-hub.com/sentinel-playground/?source&#x3D;L8" class="" target="_none">Sentinel Playground for Landsat</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+          <li>
+            <a href="https://eos.com/landviewer/" class="" target="_none">EOS Land Viewer</a> by <a href="https://eos.com/" target="_none">Earth Observing System</a></li></a>
+          </li>
+          <li>
+            <a href="http://www.esri.com/landing-pages/software/landsat/unlock-earths-secrets" class="" target="_none">Apps for exploring and analyzing Landsat imagery on the fly</a> by <a href="https://www.esri.com/en-us/home" target="_none">Esri</a></li></a>
+          </li>
+          <li>
+            <a href="https://developmentseed.org/blog/2017/08/17/geolambdas/" class="" target="_none">Development Seed Geolambda</a> by <a href="https://developmentseed.org/team/matt-hanson/" target="_none">Matthew Hanson</a></li></a>
+          </li>
+          <li>
+            <a href="https://landsatlive.live" class="" target="_none">landsatlive.live</a> by <a href="https://developmentseed.org/" target="_none">Development Seed</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/landsat-8/#usageexamples">See 18 usage examples &rarr;</a></p>
+        </div>
+        <div id="cbers" class="dataset">
+          <h3><a href="/cbers/">CBERS on AWS</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">imaging</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>This project creates a S3 repository with imagery acquired
+by the China-Brazil Earth Resources Satellite (CBERS). The
+image files are recorded and processed by Instituto Nacional de Pesquisa
+Espaciais (INPE) and are converted to Cloud Optimized Geotiff
+format in order to optimize its use for cloud based applications.
+The repository contains all CBERS-4 MUX, AWFI, PAN5M and
+PAN10M scenes acquired since
+the start of the satellite mission and is daily updated with
+new scenes.</p>
+          <p><a href="/cbers/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://stac.amskepler.com/v10/stac/search" class="" target="_none">STAC V1.0 search endpoint for archive</a> by <a href="https://github.com/fredliporace/cbers-2-stac" target="_none">AMS Kepler</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/RemotePixel/aws-sat-api-py" class="" target="_none">aws-sat-api-py</a> by <a href="http://remotepixel.ca/" target="_none">Remote Pixel</a></li></a>
+          </li>
+          <li>
+            <a href="http://brazildatacube.dpi.inpe.br/forest-monitor/" class="" target="_none">Forest Monitor</a> by <a href="http://brazildatacube.org/" target="_none">Brazil Datacube, INPE</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/fredliporace/cbersgif" class="" target="_none">CBERS timelapse GIF generator</a> by <a href="https://github.com/fredliporace" target="_none">Frederico Liporace</a></li></a>
+          </li>
+          <li>
+            <a href="https://eos.com/landviewer/" class="" target="_none">EOS Land Viewer</a> by <a href="https://eos.com/" target="_none">Earth Observing System</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/cbers/#usageexamples">See 11 usage examples &rarr;</a></p>
+        </div>
+        <div id="spacenet" class="dataset">
+          <h3><a href="/spacenet/">SpaceNet</a></h3>
+          <p><span class="label label-info tag link-tag">computer vision</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">satellite imagery</span></p>
+          <p>SpaceNet, launched in August 2016 as an open innovation project offering a repository of freely available
+imagery with co-registered map features. Before SpaceNet, computer vision researchers had minimal options
+to obtain free, precision-labeled, and high-resolution satellite imagery. Today, SpaceNet hosts datasets
+developed by its own team, along with data sets from projects like IARPA’s Functional Map of the World (fMoW).</p>
+          <p><a href="/spacenet/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://aws.amazon.com/blogs/machine-learning/extracting-buildings-and-roads-from-aws-open-data-using-amazon-sagemaker/" class="aws-link" target="_none">Extracting buildings and roads from AWS Open Data using Amazon SageMaker</a> by Yunzhi Shi, Tianyu Zhang, and Xin Chen</li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/the-downlinq/creating-training-datasets-for-the-spacenet-road-detection-and-routing-challenge-6f970d413e2f" class="" target="_none">Creating Training Datasets for the SpaceNet Road Detection and Routing Challenge</a> by <a href="https://medium.com/@avanetten" target="_none">Adam Van Etten and Jake Shermeyer</a></li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/the-downlinq/spacenet-winning-implementations-and-new-imagery-release-55f738e14253" class="" target="_none">SpaceNet: Winning Implementations and New Imagery Release</a> by <a href="https://medium.com/@toddstavish" target="_none">Todd Stavish</a></li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/the-downlinq/spacenet-5-dataset-release-80bd82d7c528" class="" target="_none">SpaceNet 5 Dataset Release</a> by <a href="https://medium.com/@avanetten" target="_none">Adam Van Etten and Ryan Lewis</a></li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/the-downlinq/introducing-the-spacenet-road-detection-and-routing-challenge-and-dataset-7604de39b779" class="" target="_none">Introducing the SpaceNet Road Detection and Routing Challenge and Dataset</a> by <a href="https://medium.com/@david.lindenbaum" target="_none">David Lindenbaum</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/spacenet/#usageexamples">See 11 usage examples &rarr;</a></p>
+        </div>
+        <div id="noaa-goes" class="dataset">
+          <h3><a href="/noaa-goes/">NOAA Geostationary Operational Environmental Satellites (GOES) 16 &amp; 17</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">meteorological</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span><span class="label label-info tag link-tag">weather</span></p>
+          <p>GOES satellites (GOES-16 &amp; GOES-17) provide continuous weather imagery and
+monitoring of meteorological and space environment data across North America.
+GOES satellites provide the kind of continuous monitoring necessary for
+intensive data analysis. They hover continuously over one position on the surface.
+The satellites orbit high enough to allow for a full-disc view of the Earth. Because
+they stay above a fixed spot on the surface, they provide a constant vigil for the
+atmospheric &quot;triggers&quot; for severe weather conditions such as tornadoes, flash floods,
+hailstorms, and hurrican...</p>
+          <p><a href="/noaa-goes/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/blaylockbk/goes2go" class="" target="_none">GOES-2-go is a python package for downloading and plotting plotting GOES data.</a> by <a href="https://www.linkedin.com/in/blaylockbk/" target="_none">Brian K. Blaylock</a></li></a>
+          </li>
+          <li>
+            <a href="https://www.nationalgeographic.com/magazine/2018/03/bird-migration-interactive-maps/" class="" target="_none">Billions of Birds Migrate. Where Do They Go?</a> by National Geographic</li></a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/blogs/publicsector/solcast-solar-irradiance-forecasting-for-the-solar-powered-future/" class="aws-link" target="_none">Solar irradiance forecasting for the solar powered future</a> by Solcast</li></a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/blogs/publicsector/embracing-the-cloud-for-climate-research/" class="aws-link" target="_none">Embracing the cloud for climate research</a> by North Carolina State University’s North Carolina Institute for Climate Studies</li></a>
+          </li>
+          <li>
+            <a href="https://www.nature.com/articles/s41598-020-74576-x" class="" target="_none">Observations of lightning in relation to transitions in volcanic activity during the 3 June 2018 Fuego Eruption</a> by Christopher J. Schultz, Virginia P. Andrews, Kimberly D. Genareau, and Aaron R. Naeger</li></a>
+          </li>
+        </ul>
+        <p><a href="/noaa-goes/#usageexamples">See 10 usage examples &rarr;</a></p>
+        </div>
+        <div id="mur" class="dataset">
+          <h3><a href="/mur/">Multi-Scale Ultra High Resolution (MUR) Sea Surface Temperature (SST)</a></h3>
+          <p><span class="label label-info tag link-tag">climate</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">natural resource</span><span class="label label-info tag link-tag">oceans</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span><span class="label label-info tag link-tag">water</span><span class="label label-info tag link-tag">weather</span></p>
+          <p>A global, gap-free, gridded, daily 1 km Sea Surface Temperature (SST) dataset created by merging multiple Level-2 satellite SST datasets. Those input datasets include the NASA Advanced Microwave Scanning Radiometer-EOS (AMSR-E), the JAXA Advanced Microwave Scanning Radiometer 2 (AMSR-2) on GCOM-W1, the Moderate Resolution Imaging Spectroradiometers (MODIS) on the NASA Aqua and Terra platforms, the US Navy microwave WindSat radiometer, the Advanced Very High Resolution Radiometer (AVHRR) on several NOAA satellites, and in situ SST observations from the NOAA iQuam project. Data are available fro...</p>
+          <p><a href="/mur/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://podaac-tools.jpl.nasa.gov/drive/files/OceanTemperature/ghrsst/docs/GDS20r5.pdf" class="" target="_none">GHRSST Data Processing Specification</a> by GHRSST Project</li></a>
+          </li>
+          <li>
+            <a href="https://opendap.jpl.nasa.gov/opendap/OceanTemperature/ghrsst/data/GDS2/L4/GLOB/JPL/MUR/v4.1/contents.html" class="" target="_none">OPeNDAP server</a> by <a href="https://podaac.jpl.nasa.gov" target="_none">Physical Oceanography Distributed Active Archive Center (PO.DAAC)</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/pangeo-gallery/osm2020tutorial" class="" target="_none">Python Jupyter Notebooks</a> by <a href="https://faralloninstitute.org" target="_none">Chelle Gentemann, Rich Signell</a></li></a>
+          </li>
+          <li>
+            <a href="https://podaac-tools.jpl.nasa.gov/drive/files/allData/ghrsst/data/GDS2/L4/GLOB/JPL/MUR/v4.1" class="" target="_none">HTTPS server</a> by <a href="https://podaac.jpl.nasa.gov" target="_none">PO.DAAC</a></li></a>
+          </li>
+          <li>
+            <a href="https://podaac-tools.jpl.nasa.gov/drive/files/allData/ghrsst/sw/generic_nc_readers/python/" class="" target="_none">Python Reader Software</a> by <a href="https://podaac.jpl.nasa.gov" target="_none">PO.DAAC</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/mur/#usageexamples">See 9 usage examples &rarr;</a></p>
+        </div>
+        <div id="sentinel-2-l2a-cogs" class="dataset">
+          <h3><a href="/sentinel-2-l2a-cogs/">Sentinel-2 Cloud-Optimized GeoTIFFs</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">natural resource</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>The <a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2">Sentinel-2 mission</a> is
+a land monitoring constellation of two satellites that provide high resolution
+optical imagery and provide continuity for the current SPOT and Landsat missions.
+The mission provides a global coverage of the Earth&#39;s land surface every 5 days,
+making the data of great use in ongoing studies.
+This dataset is the same as the <a href="https://registry.opendata.aws/sentinel-2/">Sentinel-2</a>
+dataset, except the JP2K files were converted into Cloud-Optimized GeoTIFFs (COGs).
+Additionally, SpatioTemporal Asset Catalog metadata has were in a JSON file
+alongside the data, and a STAC API called <a href="https://earth-search.aws.element84.com/v0">Earth-search</a>
+is freely available t...</p>
+          <p><a href="/sentinel-2-l2a-cogs/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/cogeotiff/rio-tiler-pds" class="" target="_none">rio-tiler-pds</a> by Vincent Sarago, et al.</li></a>
+          </li>
+          <li>
+            <a href="http://www.acgeospatial.co.uk/stac-cog-python-and-qgis/" class="" target="_none">STAC, COG, Python and QGIS</a> by Andrew Cutts</li></a>
+          </li>
+          <li>
+            <a href="https://github.com/intake/intake-stac/blob/master/examples/aws-earth-search.ipynb" class="" target="_none">Intake-STAC with sat-search</a> by Scott Henderson</li></a>
+          </li>
+          <li>
+            <a href="https://stacindex.org/" class="" target="_none">SpatioTemporal Asset Catalogs</a> by STAC Contriubutors</li></a>
+          </li>
+          <li>
+            <a href="https://github.com/opendatacube/cube-in-a-box" class="" target="_none">Use Sentinel-2 data in the Open Data Cube</a> by Alex Leith</li></a>
+          </li>
+        </ul>
+        <p><a href="/sentinel-2-l2a-cogs/#usageexamples">See 8 usage examples &rarr;</a></p>
+        </div>
+        <div id="wb-light-every-night" class="dataset">
+          <h3><a href="/wb-light-every-night/">World Bank - Light Every Night</a></h3>
+          <p><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">satellite imagery</span></p>
+          <p>Light Every Night - World Bank Nightime Light Data – provides open access to all nightly imagery and data from the Visible Infrared Imaging Radiometer Suite Day-Night Band (VIIRS DNB) from 2012-2020 and the Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS) from 1992-2013. The underlying data are sourced from the NOAA National Centers for Environmental Information (NCEI) archive. Additional processing by the University of Michigan enables access in Cloud Optimized GeoTIFF format (COG) and search using the Spatial Temporal Asset Catalog (STAC) standard. The data is ...</p>
+          <p><a href="/wb-light-every-night/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="http://nightlights.io" class="" target="_none">Twenty Years of India Lights</a> by <a href="http://nightlights.io" target="_none">Kwawu Mensan Gaba, Brian Min, Anand Thakker, Christopher Elvidge</a></li></a>
+          </li>
+          <li>
+            <a href="https://www.cambridge.org/core/books/power-and-the-vote/8091820171410B4FA557B6EBC3A5DD06" class="" target="_none">Power and the Vote - Elections and Electricity in the Developing World. Cambridge. 2015.</a> by Brian Min</li></a>
+          </li>
+          <li>
+            <a href="http://www-personal.umich.edu/~brianmin/HREA/" class="" target="_none">High Resolution Electricity Access Indicators (HREA) - Settlement-level measures of electricity access, reliability, and usage.</a> by <a href="http://www-personal.umich.edu/~brianmin/" target="_none">Brian Min, Zachary O&#x27;Keeffe</a></li></a>
+          </li>
+          <li>
+            <a href="http://documents.worldbank.org/curated/en/305771562750007469/Mainstreaming-Disruptive-Technologies-in-Energy" class="" target="_none">Mainstreaming Disruptive Technologies in Energy. World Bank Report. 2019</a> by Kwawu Mensan Gaba, Brian Min, Olaf Veerman, Kimberly Baugh</li></a>
+          </li>
+          <li>
+            <a href="https://www.asprs.org/wp-content/uploads/pers/97journal/june/1997_jun_727-734.pdf" class="" target="_none">Mapping city lights with nighttime data from the DMSP Operational Linescan System. Photogrammetric Engineering and Remote Sensing, 63(6)727-734.</a> by Elvidge, C.D., Baugh, K.E., Kihn, E.A., Kroehl, H.W. and Davis, E.R.</li></a>
+          </li>
+        </ul>
+        <p><a href="/wb-light-every-night/#usageexamples">See 8 usage examples &rarr;</a></p>
+        </div>
+        <div id="radiant-mlhub" class="dataset">
+          <h3><a href="/radiant-mlhub/">Radiant MLHub</a></h3>
+          <p><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">labeled</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Radiant MLHub is an open library for geospatial training data that hosts datasets generated by <a href="https://www.radiant.earth/">Radiant Earth Foundation</a>&#39;s team as well as other training data catalogs contributed by Radiant Earth’s partners. Radiant MLHub is open to anyone to access, store, register and/or share their training datasets for high-quality Earth observations. All of the training datasets are stored using a <a href="https://stacspec.org/">SpatioTemporal Asset Catalog (STAC)</a> compliant catalog and exposed through a common API. Training datasets include pairs of imagery and labels for different types of machine learning problems including image ...</p>
+          <p><a href="/radiant-mlhub/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/radiantearth/mlhub-tutorials/tree/master/notebooks" class="" target="_none">Radiant MLHub Tutorials with Jupyter Notebooks</a> by <a href="https://www.linkedin.com/in/kbgg/" target="_none">Kevin Booth</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/radiantearth/mlhub-tutorials/blob/master/RadiantMLHub-intro.pdf" class="" target="_none">How to access Radiant MLHub Data</a> by <a href="https://www.radiant.earth/" target="_none">Radiant Earth</a></li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/radiant-earth-insights/creating-a-machine-learning-commons-for-global-development-256ef3dd46aa" class="" target="_none">Creating a Machine Learning Commons for Global Development</a> by <a href="https://www.linkedin.com/in/hamedalemohammad/" target="_none">Hamed Alemohammad</a></li></a>
+          </li>
+          <li>
+            <a href="https://zindi.africa/competitions/iclr-workshop-challenge-2-radiant-earth-computer-vision-for-crop-recognition" class="" target="_none">Challenge on Computer Vision for Crop Detection from Satellite Imagery</a> by <a href="https://www.radiant.earth/" target="_none">Radiant Earth</a></li></a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/blogs/publicsector/geo-diverse-open-training-data-as-a-global-public-good/" class="aws-link" target="_none">Geo-Diverse Open Training Data as a Global Public Good</a> by <a href="https://www.linkedin.com/in/hamedalemohammad/" target="_none">Hamed Alemohammad</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/radiant-mlhub/#usageexamples">See 6 usage examples &rarr;</a></p>
+        </div>
+        <div id="omi-no2-nasa" class="dataset">
+          <h3><a href="/omi-no2-nasa/">Ozone Monitoring Instrument (OMI) / Aura NO2 Tropospheric Column Density</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">atmosphere</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>NO2 tropospheric column density, screened for CloudFraction &lt; 30% global daily
+ composite at 0.25 degree resolution for the temporal range of 2004 to May
+2020. Original archive data in HDF5 has been processed into a <a href="https://www.cogeo.org/">Cloud-Optimized
+GeoTiff (COG)</a> format. Quality Assurance - This data
+has been validated by the NASA Science Team at Goddard Space Flight Center.Cautionary Note: <a href="https://airquality.gsfc.nasa.gov/caution-interpretation">https://airquality.gsfc.nasa.gov/caution-interpretation</a>.</p>
+          <p><a href="/omi-no2-nasa/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://cogeo.xyz/?url&#x3D;s3://omi-no2-nasa/OMI-Aura_L3-OMNO2d_2020m0101_v003-2020m0330t173100.tif" class="" target="_none">COG Viewer</a> by <a href="https://developmentseed.org/" target="_none">Development Seed</a></li></a>
+          </li>
+          <li>
+            <a href="https://medium.com/devseed/cog-talk-part-1-whats-new-941facbcd3d1" class="" target="_none">Medium Post: COG Talk — Part 1: What’s new?</a> by <a href="https://medium.com/@_VincentS_" target="_none">Vincent Sarago</a></li></a>
+          </li>
+          <li>
+            <a href="https://rasterio.readthedocs.io/" class="" target="_none">Rasterio (Python Library) for access to geospatial raster data</a> by <a href="https://www.mapbox.com/" target="_none">Mapbox</a></li></a>
+          </li>
+          <li>
+            <a href="https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/v1/metadata?url&#x3D;https%3A%2F%2Fomi-no2-nasa.s3-us-west-2.amazonaws.com%2FOMI-Aura_L3-OMNO2d_2018m0101_v003-2019m1123t055315.tif&amp;pmin&#x3D;2&amp;pmax&#x3D;98&amp;max_size&#x3D;1024&amp;histogram_bins&#x3D;20" class="" target="_none">COG metadata example </a> by <a href="https://developmentseed.org/" target="_none">Development Seed</a></li></a>
+          </li>
+          <li>
+            <a href="https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/docs" class="" target="_none">COG Application Programming Interface (API)</a> by <a href="https://developmentseed.org/" target="_none">Development Seed</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/omi-no2-nasa/#usageexamples">See 5 usage examples &rarr;</a></p>
+        </div>
+        <div id="sentinel-1" class="dataset">
+          <h3><a href="/sentinel-1/">Sentinel-1</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p><a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-1">Sentinel-1</a> is a pair of European radar imaging (SAR) satellites launched in 2014 and 2016. Its 6 days revisit cycle and ability to observe through clouds makes it perfect for sea and land monitoring, emergency response due to environmental disasters, and economic applications. GRD data is available globally since January 2017.</p>
+          <p><a href="/sentinel-1/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://apps.sentinel-hub.com/sentinel-playground/?baseWmsUrl&#x3D;services.sentinel-hub.com&amp;instanceID&#x3D;a7c04225-b861-452d-ac89-7765352cd855&amp;source&#x3D;S2&amp;lat&#x3D;40.98676619345964&amp;lng&#x3D;28.89301300048828&amp;zoom&#x3D;13&amp;preset&#x3D;IW_VV&amp;layers&#x3D;B04,B03,B02&amp;maxcc&#x3D;20&amp;gain&#x3D;1.0&amp;gamma&#x3D;1.0&amp;time&#x3D;2015-01-01%7C2018-01-16&amp;atmFilter&#x3D;&amp;showDates&#x3D;false" class="" target="_none">Sentinel Playground</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+          <li>
+            <a href="http://apps.sentinel-hub.com/eo-browser/" class="" target="_none">EO Browser</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+          <li>
+            <a href="http://www.sentinel-hub.com/apps/wms" class="" target="_none">Sentinel Hub WMS/WMTS/WCS Service by Sinergise</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+          <li>
+            <a href="https://eos.com/landviewer/" class="" target="_none">EOS Land Viewer</a> by <a href="https://eos.com/" target="_none">Earth Observing System</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/sentinel-1/#usageexamples">See 4 usage examples &rarr;</a></p>
+        </div>
+        <div id="sentinel-3" class="dataset">
+          <h3><a href="/sentinel-3/">Sentinel-3</a></h3>
+          <p><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">land</span><span class="label label-info tag link-tag">oceans</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>This data set consists of observations from the Sentinel-3 satellite of the European Commission’s Copernicus Earth Observation Programme. Sentinel-3 is a polar orbiting satellite that completes 14 orbits of the Earth a day. It carries the Ocean and Land Colour Instrument (OLCI) for medium resolution marine and terrestrial optical measurements, the Sea and Land Surface Termperature Radiometer (SLSTR), the SAR Radar Altimeter (SRAL), the MicroWave Radiometer (MWR) and the Precise Orbit Determination (POD) instruments. The satellite was launched in 2016 and entered routine operational phase in 20...</p>
+          <p><a href="/sentinel-3/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://sentinel.esa.int/web/sentinel/user-guides" class="" target="_none">Sentinel-3 Document Library</a> by <a href="https://www.esa.int/" target="_none">European Space Agency</a></li></a>
+          </li>
+          <li>
+            <a href="https://meeo-s3.s3.amazonaws.com/index.html#/?t&#x3D;catalogs" class="" target="_none">Catalogue of data set</a> by <a href="https://www.meeo.it/" target="_none">Meteorological Envionmental Earth Observation</a></li></a>
+          </li>
+          <li>
+            <a href="https://step.esa.int/main/toolboxes/sentinel-3-toolbox/" class="" target="_none">Sentinel-3 Toolbox</a> by <a href="https://www.esa.int/" target="_none">European Space Agency</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/Sentinel-5P/data-on-s3/blob/master/notebooks/Sentinel3_Tutorial.ipynb" class="" target="_none">Accessing Sentinel-3 Data on S3 by MEEO</a> by <a href="http://www.meeo.it/" target="_none">Meteorological Envionmental Earth Observation</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/sentinel-3/#usageexamples">See 4 usage examples &rarr;</a></p>
+        </div>
+        <div id="sentinel5p" class="dataset">
+          <h3><a href="/sentinel5p/">Sentinel-5P Level 2</a></h3>
+          <p><span class="label label-info tag link-tag">air quality</span><span class="label label-info tag link-tag">atmosphere</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>This data set consists of observations from the Sentinel-5 Precursor (Sentinel-5P) satellite of the European Commission’s Copernicus Earth Observation Programme. Sentinel-5P is a polar orbiting satellite that completes 14 orbits of the Earth a day. It carries the TROPOspheric Monitoring Instrument (TROPOMI) which is a spectrometer that senses ultraviolet (UV), visible (VIS), near (NIR) and short wave infrared (SWIR) to monitor ozone, methane, formaldehyde, aerosol, carbon monoxide, nitrogen dioxide and sulphur dioxide in the atmosphere. The satellite was launched in October 2017 and entered ro...</p>
+          <p><a href="/sentinel5p/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://meeo-s5p.s3.amazonaws.com/index.html#/?t&#x3D;catalogs" class="" target="_none">Catalogue of data set</a> by <a href="https://www.meeo.it/" target="_none">Meteorological Envionmental Earth Observation</a></li></a>
+          </li>
+          <li>
+            <a href="https://sentinel.esa.int/web/sentinel/user-guides/sentinel-5p-tropomi/document-library" class="" target="_none">Sentinel-5P TROPOMI Document Library</a> by <a href="https://www.esa.int/" target="_none">European Space Agency</a></li></a>
+          </li>
+          <li>
+            <a href="https://atmospherictoolbox.org/" class="" target="_none">The Atmospheric Toolbox</a> by <a href="https://www.esa.int/" target="_none">European Space Agency</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/Sentinel-5P/data-on-s3/blob/master/notebooks/Sentinel5P_Tutorial.ipynb" class="" target="_none">Accessing Sentinel-5P Data on S3 by MEEO</a> by <a href="http://www.meeo.it/" target="_none">Meteorological Envionmental Earth Observation</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/sentinel5p/#usageexamples">See 4 usage examples &rarr;</a></p>
+        </div>
+        <div id="noaa-himawari" class="dataset">
+          <h3><a href="/noaa-himawari/">JMA Himawari-8</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">meteorological</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span><span class="label label-info tag link-tag">weather</span></p>
+          <p>Himawari-8, stationed at 140E, owned and operated by the Japan Meteorological Agency (JMA), is a geostationary meteorological satellite, with Himawari-9  as on-orbit back-up, that provides constant and uniform coverage of east Asia, and the west and central Pacific regions from around 35,800 km above the equator with an orbit corresponding to the period of the earth’s rotation. This allows JMA weather offices to perform uninterrupted observation of environmental phenomena such as typhoons, volcanoes, and general weather systems. For questions regarding Himawari-8 imagery specifications, visit ...</p>
+          <p><a href="/noaa-himawari/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://docs.opendata.aws/noaa-himawari/2020July08_NOAA_Himawari.pdf" class="aws-link" target="_none">Himawari-8 Advanced Himawari Imager Data on AWS (pdf file)</a> by NOAA NESDIS</li></a>
+          </li>
+          <li>
+            <a href="https://docs.opendata.aws/noaa-himawari/2020July08_Amazon_Himawari.pdf" class="aws-link" target="_none">Himawari-8 on AWS (pdf file)</a> by ASDI</li></a>
+          </li>
+          <li>
+            <a href="https://docs.opendata.aws/noaa-himawari/2020July07_JMA_Himawari.pdf" class="aws-link" target="_none">Introduction of Himawari-8/9 (pdf file)</a> by JMA</li></a>
+          </li>
+        </ul>
+        <p><a href="/noaa-himawari/#usageexamples">See 3 usage examples &rarr;</a></p>
+        </div>
+        <div id="nasanex" class="dataset">
+          <h3><a href="/nasanex/">NASA NEX</a></h3>
+          <p><span class="label label-info tag link-tag">climate</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">natural resource</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>A collection of Earth science datasets maintained by NASA, including climate change projections and satellite images of the Earth&#39;s surface.</p>
+          <p><a href="/nasanex/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://www.kdd.org/kdd2020/accepted-papers/view/climate-downscaling-using-ynet-a-deep-convolutional-network-with-skip-conne" class="" target="_none">Climate Downscaling Using YNet: a Deep Convolutional Network with Skip Connections and Fusion</a> by Yumin Liu, Auroop Ganguly, and Jennifer Dy</li></a>
+          </li>
+          <li>
+            <a href="https://climate.azavea.com" class="" target="_none">Azavea Climate API</a> by <a href="https://www.azavea.com/" target="_none">Azavea</a></li></a>
+          </li>
+          <li>
+            <a href="http://cloud-gc.readthedocs.io/en/stable/chapter02_beginner-tutorial/use-s3.html#access-nasa-nex-data-in-s3-optional-but-recommended" class="" target="_none">Accessing and plotting NASA-NEX data, from GEOSChem-on-cloud tutorial.</a> by <a href="https://github.com/JiaweiZhuang" target="_none">Jiawei Zhuang</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/nasanex/#usageexamples">See 3 usage examples &rarr;</a></p>
+        </div>
+        <div id="sevir" class="dataset">
+          <h3><a href="/sevir/">Storm EVent ImageRy (SEVIR)</a></h3>
+          <p><span class="label label-info tag link-tag">meteorological</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info tag link-tag">weather</span></p>
+          <p>Collection of spatially and temporally aligned GOES-16 ABI satellite imagery, NEXRAD radar mosaics, and GOES-16 GLM lightning detections.</p>
+          <p><a href="/sevir/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/MIT-AI-Accelerator/eie-sevir" class="" target="_none">sevir -- python utilities for working with SEVIR dataset</a> by <a href="https://github.com/markveillette" target="_none">Mark Veillette</a></li></a>
+          </li>
+          <li>
+            <a href="https://nbviewer.jupyter.org/github/MIT-AI-Accelerator/eie-sevir/blob/master/examples/Generators.ipynb" class="" target="_none">Using Generators for SEVIR data</a> by <a href="https://github.com/markveillette" target="_none">Mark Veillette</a></li></a>
+          </li>
+          <li>
+            <a href="https://nbviewer.jupyter.org/github/MIT-AI-Accelerator/eie-sevir/blob/master/examples/SEVIR_Tutorial.ipynb" class="" target="_none">Introduction to SEVIR</a> by <a href="https://github.com/markveillette" target="_none">Mark Veillette</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/sevir/#usageexamples">See 3 usage examples &rarr;</a></p>
+        </div>
+        <div id="copernicus-dem" class="dataset">
+          <h3><a href="/copernicus-dem/">Copernicus Digital Elevation Model (DEM)</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">elevation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. We provide two instances of Copernicus DEM named GLO-30 Public and GLO-90. GLO-90 provides worldwide coverage at 90 meters. GLO-30 Public provides limited worldwide coverage at 30 meters because a small subset of tiles covering specific countries are not yet released to the public by the Copernicus Programme. Note that in both cases ocean areas do not have tiles, there one can assume height values equal to zero. Data is provided as Cloud Optimized Ge...</p>
+          <p><a href="/copernicus-dem/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="http://apps.sentinel-hub.com/eo-browser/" class="" target="_none">EO Browser</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+          <li>
+            <a href="http://www.sentinel-hub.com/" class="" target="_none">Sentinel Hub WMS/WMTS/WCS Service and Process API</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/copernicus-dem/#usageexamples">See 2 usage examples &rarr;</a></p>
+        </div>
+        <div id="rareplanes" class="dataset">
+          <h3><a href="/rareplanes/">RarePlanes</a></h3>
+          <p><span class="label label-info tag link-tag">computer vision</span><span class="label label-info tag link-tag">deep learning</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">labeled</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">satellite imagery</span></p>
+          <p>RarePlanes is a unique open-source machine learning dataset from CosmiQ Works and AI.Reverie that incorporates both real and synthetically generated satellite imagery. The RarePlanes dataset specifically focuses on the value of AI.Reverie synthetic data to aid computer vision algorithms in their ability to automatically detect aircraft and their attributes in satellite imagery. Although other synthetic/real combination datasets exist, RarePlanes is the largest openly-available very high resolution dataset built to test the value of synthetic data from an overhead perspective. The real portion ...</p>
+          <p><a href="/rareplanes/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/aireveries/RarePlanes" class="" target="_none">RarePlanes Codebase</a> by Thomas Hossler and Jacob Shermeyer</li></a>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2006.02963" class="" target="_none">RarePlanes: Synthetic Data Takes Flight</a> by Jacob Shermeyer, Thomas Hossler, Adam Van Etten, Daniel Hogan, Ryan Lewis, Daeil Kim</li></a>
+          </li>
+        </ul>
+        <p><a href="/rareplanes/#usageexamples">See 2 usage examples &rarr;</a></p>
+        </div>
+        <div id="sentinel1-slc-seasia-pds" class="dataset">
+          <h3><a href="/sentinel1-slc-seasia-pds/">Sentinel-1 SLC dataset for South and Southeast Asia, Taiwan, Korea and Japan</a></h3>
+          <p><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>The S1 Single Look Complex (SLC) dataset contains Synthetic Aperture Radar (SAR) data in the C-Band wavelength. The SAR sensors are installed on a two-satellite (Sentinel-1A and Sentinel-1B) constellation orbiting the Earth with a combined revisit time of six days, operated by the European Space Agency. The S1 SLC data are a Level-1 product that collects radar amplitude and phase information in all-weather, day or night conditions, which is ideal for studying natural hazards and emergency response, land applications, oil spill monitoring, sea-ice conditions, and associated climate change effec...</p>
+          <p><a href="/sentinel1-slc-seasia-pds/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://www.nature.com/articles/s41597-020-0443-5" class="" target="_none">Rapid flood and damage mapping using synthetic aperture radar in response to Typhoon Hagibis, Japan</a> by Cheryl W. J. Tay, Sang-Ho Yun, Shi Tong Chin, Alok Bhardwaj, Jungkyo Jung &amp; Emma M. Hill</li></a>
+          </li>
+          <li>
+            <a href="https://github.com/earthobservatory/sentinel1-opds/wiki" class="" target="_none">Sentinel-1 Opendataset Wiki and Tutorials</a> by <a href="https://earthobservatory.sg/research-group/geodesy-group-emma-hill/people" target="_none">Earth Observatory of Singapore</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/sentinel1-slc-seasia-pds/#usageexamples">See 2 usage examples &rarr;</a></p>
+        </div>
+        <div id="terrafusion" class="dataset">
+          <h3><a href="/terrafusion/">Terra Fusion Data Sampler</a></h3>
+          <p><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>The Terra Basic Fusion dataset is a fused dataset of the original Level 1 radiances
+from the five Terra instruments. They have been fully validate to contain the original
+Terra instrument Level 1 data. Each Level 1 Terra Basic Fusion file contains one full
+Terra orbit of data and is typically 15 – 40 GB in size, depending on how much data was
+collected for that orbit. It contains instrument radiance in physical units; radiance
+quality indicator; geolocation for each IFOV at its native resolution; sun-view geometry;
+bservation time; and other attributes/metadata. It is stored in HDF5, conformed to CF
+conventions, and accessible by netCDF-4 enhanced models. It’s naming convention
+follows: TERRA_BF_L1B_OXXXX_YYYYMMDDHHMMSS_F000_V000.h5. A concise description of the
+dataset, along with links to complete documentation and available software tools, can
+be found on the Terra Fusion project page: <a href="https://terrafusion.web.illinois.edu">https://terrafusion.web.illinois.edu</a>.</br></br>Terra is the flagship satellite of NASA’s Earth Observing System (EOS). It was launched
+into orbit on December 18, 1999 and carries five instruments. These are the
+Moderate-resolution Imaging Spectroradiometer (MODIS), the Multi-angle Imaging
+SpectroRadiometer (MISR), the Advanced Spaceborne Thermal Emission and Reflection
+Radiometer (ASTER), the Clouds and Earth’s Radiant Energy System (CERES), and the
+Measurements of Pollution in the Troposphere (MOPITT).</br></br>The Terra Basic Fusion dataset is an easy-to-access record of the Level 1 radiances
+for instruments on...</p>
+          <p><a href="/terrafusion/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://go.illinois.edu/terra-fusion-doc" class="" target="_none">Basic Terra fusion product algorithm theoretical basis and data specifications</a> by <a href="http://hdl.handle.net/2142/105967" target="_none">Zhao, Guangu; Yang, Muqun; Clipp, Landon; Gao, Yizhao; Lee, Joe H.</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/TerraFusion" class="" target="_none">TerraFusion GitHub</a> by University of Illinois</li></a>
+          </li>
+        </ul>
+        <p><a href="/terrafusion/#usageexamples">See 2 usage examples &rarr;</a></p>
+        </div>
+        <div id="sentinel-s2-l2a-mosaic-120" class="dataset">
+          <h3><a href="/sentinel-s2-l2a-mosaic-120/">Sentinel-2 L2A 120m Mosaic</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">natural resource</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As there are some parts of the world, which have lengthy cloudy periods, clouds might be remaining in some parts. The actual modelling script is available <a href="https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/">here</a>.</p>
+          <p><a href="/sentinel-s2-l2a-mosaic-120/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/sentinel-hub/public-collections/blob/main/collections/sentinel-s2-l2a-mosaic-120.md" class="" target="_none">Sentinel Hub WMS/WMTS/WCS Service and Process API</a> by <a href="http://www.sinergise.com/" target="_none">Sinergise</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/sentinel-s2-l2a-mosaic-120/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+        <div id="sentinel-1-rtc-indigo" class="dataset">
+          <h3><a href="/sentinel-1-rtc-indigo/">Analysis Ready Sentinel-1 Backscatter Imagery</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>The <a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-1">Sentinel-1 mission</a> is a constellation of
+C-band Synthetic Aperature Radar (SAR) satellites from the European Space Agency launched since 2014.
+These satellites collect observations of radar backscatter intensity day or night, regardless of the
+weather conditions, making them enormously valuable for environmental monitoring.
+These radar data have been processed from original Ground Range Detected (GRD) scenes into a Radiometrically
+Terrain Corrected, tiled product suitable for analysis. This product is available over the Contiguous United States (CONUS)
+since 2017 when Sentinel-1 data becam...</p>
+          <p><a href="/sentinel-1-rtc-indigo/">Details &rarr;</a></p>
+        </div>
+        <div id="dataforgood-fb-hrsl" class="dataset">
+          <h3><a href="/dataforgood-fb-hrsl/">High Resolution Population Density Maps + Demographic Estimates by CIESIN and Facebook</a></h3>
+          <p><span class="label label-info tag link-tag">aerial imagery</span><span class="label label-info tag link-tag">demographics</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">image processing</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">population</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Population data for a selection of countries, allocated to 1 arcsecond blocks and provided in a combination of CSV
+and Cloud-optimized GeoTIFF files. This refines <a href="https://sedac.ciesin.columbia.edu/data/collection/gpw-v4">CIESIN’s Gridded Population of the World</a>
+using machine learning models on high-resolution worldwide Digital Globe
+satellite imagery. CIESIN population counts aggregated from worldwide census
+data are allocated to blocks where imagery appears to contain buildings.</p>
+          <p><a href="/dataforgood-fb-hrsl/">Details &rarr;</a></p>
+        </div>
+        <div id="iserv" class="dataset">
+          <h3><a href="/iserv/">ISERV</a></h3>
+          <p><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">environmental</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>ISS SERVIR Environmental Research and Visualization System (ISERV) was a fully-automated prototype camera aboard the International Space Station that was tasked to capture high-resolution Earth imagery of specific locations at 3-7 frames per second. In the course of its regular operations during 2013 and 2014, ISERV&#39;s camera acquired images that can be used primaliry in use is environmental and disaster management.</p>
+          <p><a href="/iserv/">Details &rarr;</a></p>
+        </div>
+        <div id="modis-astraea" class="dataset">
+          <h3><a href="/modis-astraea/">MODIS MYD13A1, MOD13A1, MYD11A1, MOD11A1, MCD43A4</a></h3>
+          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">natural resource</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Data from the Moderate Resolution Imaging Spectroradiometer (MODIS), managed by
+the U.S. Geological Survey and NASA. Five products are included:
+MCD43A4 (MODIS/Terra and Aqua Nadir BRDF-Adjusted Reflectance Daily L3 Global 500 m SIN Grid),
+MOD11A1 (MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid),
+MYD11A1 (MODIS/Aqua Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid),
+MOD13A1 (MODIS/Terra Vegetation Indices 16-Day L3 Global 500 m SIN Grid),
+and MYD13A1 (MODIS/Aqua Vegetation Indices 16-Day L3 Global 500 m SIN Grid).
+MCD43A4 has global coverage, all...</p>
+          <p><a href="/modis-astraea/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://astraea.earth/earth-ondemand/" class="" target="_none">Astraea Earth OnDemand</a> by <a href="https://astraea.earth" target="_none">Astraea, Inc.</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/modis-astraea/#usageexamples">See 1 usage example &rarr;</a></p>
+        </div>
+        <div id="digital-globe-open-data" class="dataset">
+          <h3><a href="/digital-globe-open-data/">DigitalGlobe Open Data Program</a></h3>
+          <p><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">earth observation</span><span class="label label-info tag link-tag">geospatial</span><span class="label label-info tag link-tag">satellite imagery</span><span class="label label-info-sustainability tag link-tag">sustainability</span></p>
+          <p>Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, monitoring of staging areas and emergency response, damage assessment, and recovery. Also incudes crowdsourced damage assessments for major, sudden onset disasters.</p>
+          <p><a href="/digital-globe-open-data/">Details &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>  </body>
+  <script src="/js/index.js"></script>
+</html>

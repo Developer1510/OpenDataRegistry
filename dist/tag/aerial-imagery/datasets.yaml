@@ -1,0 +1,7 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/naip.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nj-imagery.yaml
+    - /datasets/awslabs-open-data-registry/datasets/dataforgood-fb-hrsl.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-eri.yaml
+    - /datasets/awslabs-open-data-registry/datasets/agriculture_vision.yaml

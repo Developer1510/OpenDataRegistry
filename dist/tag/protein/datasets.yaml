@@ -1,0 +1,4 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/foldingathome-covid19.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ncbi-blast-databases.yaml
+    - /datasets/awslabs-open-data-registry/datasets/zinc15.yaml

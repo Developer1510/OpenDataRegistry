@@ -1,0 +1,15 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/commoncrawl.yaml
+    - /datasets/awslabs-open-data-registry/datasets/sudachi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/cotonoha-dic.yaml
+    - /datasets/awslabs-open-data-registry/datasets/mimiciii.yaml
+    - /datasets/awslabs-open-data-registry/datasets/answer-reformulation.yaml
+    - /datasets/awslabs-open-data-registry/datasets/asr-error-robustness.yaml
+    - /datasets/awslabs-open-data-registry/datasets/dialoglue.yaml
+    - /datasets/awslabs-open-data-registry/datasets/topical-chat-enriched.yaml
+    - /datasets/awslabs-open-data-registry/datasets/humor-detection.yaml
+    - /datasets/awslabs-open-data-registry/datasets/amazon-reviews-ml.yaml
+    - /datasets/awslabs-open-data-registry/datasets/google-ngrams.yaml
+    - /datasets/awslabs-open-data-registry/datasets/fast-ai-nlp.yaml
+    - /datasets/awslabs-open-data-registry/datasets/paracrawl.yaml
+    - /datasets/awslabs-open-data-registry/datasets/mmid.yaml

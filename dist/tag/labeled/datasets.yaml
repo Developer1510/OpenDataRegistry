@@ -1,0 +1,4 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/radiant-mlhub.yaml
+    - /datasets/awslabs-open-data-registry/datasets/sorel-20m.yaml
+    - /datasets/awslabs-open-data-registry/datasets/rareplanes.yaml

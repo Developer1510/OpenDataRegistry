@@ -1,0 +1,7 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/hst.yaml
+    - /datasets/awslabs-open-data-registry/datasets/lofar-elais-n1.yaml
+    - /datasets/awslabs-open-data-registry/datasets/tess.yaml
+    - /datasets/awslabs-open-data-registry/datasets/epoch-of-reionization.yaml
+    - /datasets/awslabs-open-data-registry/datasets/k2.yaml
+    - /datasets/awslabs-open-data-registry/datasets/kepler.yaml

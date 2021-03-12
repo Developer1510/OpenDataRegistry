@@ -1,0 +1,6 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/fcp-indi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/janelia-flylight.yaml
+    - /datasets/awslabs-open-data-registry/datasets/open-neurodata.yaml
+    - /datasets/awslabs-open-data-registry/datasets/dandiarchive.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nsd.yaml

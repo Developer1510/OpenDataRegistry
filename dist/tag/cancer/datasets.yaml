@@ -1,0 +1,19 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/tcga.yaml
+    - /datasets/awslabs-open-data-registry/datasets/target.yaml
+    - /datasets/awslabs-open-data-registry/datasets/kids-first.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ccle.yaml
+    - /datasets/awslabs-open-data-registry/datasets/cptac-2.yaml
+    - /datasets/awslabs-open-data-registry/datasets/icgc.yaml
+    - /datasets/awslabs-open-data-registry/datasets/cptac-3.yaml
+    - /datasets/awslabs-open-data-registry/datasets/mmrf-commpass.yaml
+    - /datasets/awslabs-open-data-registry/datasets/beataml.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ctsp-dlbcl.yaml
+    - /datasets/awslabs-open-data-registry/datasets/fm-ad.yaml
+    - /datasets/awslabs-open-data-registry/datasets/broad-references.yaml
+    - /datasets/awslabs-open-data-registry/datasets/cgci.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nciccr-dlbcl.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ohsu-cnl.yaml
+    - /datasets/awslabs-open-data-registry/datasets/organoid-pancreatic.yaml
+    - /datasets/awslabs-open-data-registry/datasets/gatk-test-data.yaml
+    - /datasets/awslabs-open-data-registry/datasets/hcmi-cmdc.yaml

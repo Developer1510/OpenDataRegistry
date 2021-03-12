@@ -1,0 +1,10 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/kids-first.yaml
+    - /datasets/awslabs-open-data-registry/datasets/allen-cell-imaging-collections.yaml
+    - /datasets/awslabs-open-data-registry/datasets/fcp-indi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ccle.yaml
+    - /datasets/awslabs-open-data-registry/datasets/beataml.yaml
+    - /datasets/awslabs-open-data-registry/datasets/broad-references.yaml
+    - /datasets/awslabs-open-data-registry/datasets/aws-igenomes.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ocmr_data.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ont-open-data.yaml

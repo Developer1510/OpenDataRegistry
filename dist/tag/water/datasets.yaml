@@ -1,0 +1,11 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/mur.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/wpto-pds-us-wave.yaml
+    - /datasets/awslabs-open-data-registry/datasets/fsf-flood-risk.yaml
+    - /datasets/awslabs-open-data-registry/datasets/silo.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-ofs.yaml
+    - /datasets/awslabs-open-data-registry/datasets/rapid-nrt-flood-maps.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-gestofs.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-ghe.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-s111.yaml

@@ -1,0 +1,6 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/refgenie.yaml
+    - /datasets/awslabs-open-data-registry/datasets/dandiarchive.yaml
+    - /datasets/awslabs-open-data-registry/datasets/speedtest-global-performance.yaml
+    - /datasets/awslabs-open-data-registry/datasets/schweizer-haltestellen-oev.yaml

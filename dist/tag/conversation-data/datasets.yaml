@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/dialoglue.yaml
+    - /datasets/awslabs-open-data-registry/datasets/topical-chat-enriched.yaml

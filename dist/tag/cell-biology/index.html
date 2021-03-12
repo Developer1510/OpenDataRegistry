@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+    
+  
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    
+    <link rel="shortcut icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"/>  
+  
+    <title>Registry of Open Data on AWS</title>
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://assets.opendata.aws/css/bootstrap/3.4.1/bootstrap.min.css">
+  
+    <!-- Our local CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  
+  
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://assets.opendata.aws/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://assets.opendata.aws/js/bootstrap/3.4.1/bootstrap.min.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="roda-header">
+          <h2><a href="/" alt="Home">Registry of Open Data on AWS</a></h2>
+          <a href="http://aws.amazon.com/what-is-cloud-computing">
+            <img src="https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+
+    <div class="about col-md-5">
+      <div class="row aboutbox">
+            <h3>About</h3>
+            <p>This registry exists to help people discover and share datasets that are available via AWS resources. <a href="https://opendata.aws">Learn more about sharing data on AWS</a>.</p>
+    
+            <p>See <a href="/tag/cell-biology/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>cell biology</strong>.</p>
+    
+        <hr>
+    
+        <h4>Search datasets (currently <span id="count-matching">13</span> matching <span id="count-matching-text">datasets</span>)</h4>
+        <form>
+          <div class="form-group">
+            <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
+          </div>
+        </form>
+        <p>You are currently viewing a subset of data tagged with <strong>cell biology</strong>.</p>
+    
+        <hr>
+    
+        <h4>Add to this registry</h4>
+        <p>If you want to add a dataset or example of how to use a dataset to this registry, please follow the instructions on the <a href="https://github.com/awslabs/open-data-registry/">Registry of Open Data on AWS GitHub repository</a>.</p>
+    
+        <p>Unless specifically stated in the applicable dataset documentation, datasets available through the Registry of Open Data on AWS are not provided and maintained by AWS. Datasets are provided and maintained by a variety of third parties under a variety of licenses. Please check dataset licenses and related documentation to determine if a dataset may be used for your application.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datasets">
+      <div class="row">
+        <div id="allen-cell-imaging-collections" class="dataset">
+          <h3><a href="/allen-cell-imaging-collections/">Allen Cell Imaging Collections</a></h3>
+          <p><span class="label label-info tag link-tag">biology</span><span class="label label-info tag link-tag">cell biology</span><span class="label label-info tag link-tag">cell imaging</span><span class="label label-info tag link-tag">Homo sapiens</span><span class="label label-info tag link-tag">image processing</span><span class="label label-info tag link-tag">life sciences</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">microscopy</span></p>
+          <p>This bucket contains multiple datasets (as Quilt packages) created by the
+Allen Institute for Cell Science (AICS). The imaging data in this bucket contains
+either of the following:1) field of view images from glass plates
+2) cell membrane, DNA, and structure segmentations
+3) cell membrane, DNA and structure contours
+4) machine learning imaging predictions of the previously listed modalities.In addition, many of the datasets include CSVs that contain feature sets
+related to that data.</p>
+          <p><a href="/allen-cell-imaging-collections/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://github.com/AllenCellModeling/aicsimageio" class="" target="_none">AICSImageIO</a> by <a href="https://www.alleninstitute.org/what-we-do/cell-science/about/team/" target="_none">Matthew Bowden, Jackson Brown, Jamie Sherman, Dan Toloudis</a></li></a>
+          </li>
+          <li>
+            <a href="github.com/AllenCellModeling/pytorch_integrated_cell" class="" target="_none">Pytorch 3D Integrated Cell</a> by <a href="https://www.alleninstitute.org/what-we-do/cell-science/about/team/" target="_none">Gregory R. Johnson, Rory M. Donovan-Maiye, Mary M. Maleckar</a></li></a>
+          </li>
+          <li>
+            <a href="https://www.nature.com/articles/s41592-018-0111-2" class="" target="_none">Label-free prediction of three-dimensional fluorescence images from transmitted-light microscopy</a> by <a href="https://alleninstitute.org/about/team/" target="_none">Chawin Ounkomol, Sharmishtaa Seshamani, Mary M. Maleckar, Forrest Collman &amp; Gregory R. Johnson</a></li></a>
+          </li>
+          <li>
+            <a href="https://github.com/AllenCellModeling/pytorch_fnet/blob/master/examples/download_and_train.py" class="" target="_none">Download and train label-free models</a> by <a href="https://www.alleninstitute.org/what-we-do/cell-science/about/team/staff-profiles/greg-johnson/" target="_none">Greg Johnson</a></li></a>
+          </li>
+          <li>
+            <a href="https://www.biorxiv.org/content/10.1101/2020.12.08.415562v1" class="" target="_none">Robust integrated intracellular organization of the human iPS cell: where, how much, and how variable?</a> by <a href="https://www.alleninstitute.org/what-we-do/cell-science/about/team/" target="_none">Matheus P. Viana, Jianxu Chen*, Theo A. Knijnenburg*, Ritvik Vasan*, Calysta Yan*... Allen Institute for Cell Science... Graham T. Johnson, Ruwanthi N. Gunawardane, Nathalie Gaudreault, Julie A. Theriot, Susanne M. Rafelski</a></li></a>
+          </li>
+        </ul>
+        <p><a href="/allen-cell-imaging-collections/#usageexamples">See 11 usage examples &rarr;</a></p>
+        </div>
+        <div id="janelia-cosem" class="dataset">
+          <h3><a href="/janelia-cosem/">Cell Organelle Segmentation in Electron Microscopy (COSEM) on AWS</a></h3>
+          <p><span class="label label-info tag link-tag">cell biology</span><span class="label label-info tag link-tag">computer vision</span><span class="label label-info tag link-tag">electron microscopy</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">organelle</span></p>
+          <p>High resolution images of subcellular structures.</p>
+          <p><a href="/janelia-cosem/">Details &rarr;</a></p>
+          <h4>Usage examples</h4>
+          <ul class="dataatwork-list">
+          <li>
+            <a href="https://elifesciences.org/articles/25916" class="" target="_none">Enhanced FIB-SEM systems for large-volume 3D imaging</a> by C. Shan Xu, Kenneth J. Hayworth, Zhiyuan Lu, Patricia Grob, Ahmed M. Hassan, José G. García-Cerdán, Krishna K. Niyogi, Eva Nogales, Richard J. Weinberg, Harald F. Hess.</li></a>
+          </li>
+          <li>
+            <a href="https://science.sciencemag.org/content/367/6475/eaaz5357" class="" target="_none">Correlative three-dimensional super-resolution and block-face electron microscopy of whole vitreously frozen cells.</a> by David P. Hoffman1, Gleb Shtengel, C. Shan Xu, Kirby R. Campbell, Melanie Freeman, Lei Wang, Daniel E. Milkie, H. Amalia Pasolli, Nirmala Iyer, John A. Bogovic, Daniel R. Stabley, Abbas Shirinifard, Song Pang, David Peale, Kathy Schaefer, Wim Pomp, Chi-Lun Chang, Jennifer Lippincott-Schwartz, Tom Kirchhausen1, David J. Solecki, Eric Betzig, Harald F. Hess.</li></a>
+          </li>
+        </ul>
+        <p><a href="/janelia-cosem/#usageexamples">See 2 usage examples &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr/>
+  </div>  </body>
+  <script src="/js/index.js"></script>
+</html>

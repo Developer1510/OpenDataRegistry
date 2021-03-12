@@ -1,0 +1,13 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/mur.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ncei-wcsd-archive.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ncar-cesm-lens.yaml
+    - /datasets/awslabs-open-data-registry/datasets/sentinel-3.yaml
+    - /datasets/awslabs-open-data-registry/datasets/cmip6.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-ofs.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-wod.yaml
+    - /datasets/awslabs-open-data-registry/datasets/wrf-cmip6.yaml
+    - /datasets/awslabs-open-data-registry/datasets/odp-noaa-nesdis-ncei-csb.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-gestofs.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-s111.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-ufs-s2s.yaml

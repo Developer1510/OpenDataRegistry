@@ -1,0 +1,5 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/foldingathome-covid19.yaml
+    - /datasets/awslabs-open-data-registry/datasets/cmip6.yaml
+    - /datasets/awslabs-open-data-registry/datasets/wrf-cmip6.yaml
+    - /datasets/awslabs-open-data-registry/datasets/stdpopsim_kern.yaml

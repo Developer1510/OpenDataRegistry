@@ -1,0 +1,5 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/ilmn-dragen-1kgp.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ncbi-sra.yaml
+    - /datasets/awslabs-open-data-registry/datasets/serratus-lovelywater.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ncbi-covid-19.yaml

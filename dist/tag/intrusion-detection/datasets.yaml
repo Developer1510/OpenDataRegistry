@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/digitalcorpora.yaml
+    - /datasets/awslabs-open-data-registry/datasets/cse-cic-ids2018.yaml

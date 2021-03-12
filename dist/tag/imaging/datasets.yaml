@@ -1,0 +1,11 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/cbers.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/allen-mouse-brain-atlas.yaml
+    - /datasets/awslabs-open-data-registry/datasets/msd.yaml
+    - /datasets/awslabs-open-data-registry/datasets/digitalcorpora.yaml
+    - /datasets/awslabs-open-data-registry/datasets/lofar-elais-n1.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nj-imagery.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ocmr_data.yaml
+    - /datasets/awslabs-open-data-registry/datasets/xiph-media.yaml
+    - /datasets/awslabs-open-data-registry/datasets/openneuro.yaml

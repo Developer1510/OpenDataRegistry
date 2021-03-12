@@ -1,0 +1,7 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/fcp-indi.yaml
+    - /datasets/awslabs-open-data-registry/datasets/open-neurodata.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nyu-fastmri.yaml
+    - /datasets/awslabs-open-data-registry/datasets/msd.yaml
+    - /datasets/awslabs-open-data-registry/datasets/ocmr_data.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nsd.yaml

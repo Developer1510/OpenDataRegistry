@@ -1,0 +1,7 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/terrain-tiles.yaml
+    - /datasets/awslabs-open-data-registry/datasets/usgs-lidar.yaml
+    - /datasets/awslabs-open-data-registry/datasets/pmsp-lidar.yaml
+    - /datasets/awslabs-open-data-registry/datasets/copernicus-dem.yaml
+    - /datasets/awslabs-open-data-registry/datasets/nj-lidar.yaml
+    - /datasets/awslabs-open-data-registry/datasets/noaa-coastal-lidar.yaml

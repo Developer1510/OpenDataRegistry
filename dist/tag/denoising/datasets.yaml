@@ -1,0 +1,3 @@
+datasets:
+    - /datasets/awslabs-open-data-registry/datasets/qiime2.yaml
+    - /datasets/awslabs-open-data-registry/datasets/lab41-sri-voices.yaml
