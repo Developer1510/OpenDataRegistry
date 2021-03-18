@@ -6,7 +6,7 @@
     <div class="col-md-6 col-md-offset-1 datasets">
       <div class="row">
       {{#each datasets}}
-        <div id="{{Slug}}" class="dataset">
+        <div id="{{baseUrl}}{{Slug}}" class="dataset">
           <h3><a href="{{Slug}}/">{{Name}}</a></h3>
           <p>{{#each Tags}}{{#isEqual . 'aws-pds'}}{{else}}<span class="label label-info{{#isEqual . 'sustainability'}}-sustainability{{else}}{{/isEqual}} tag link-tag">{{.}}</span>{{/isEqual}}{{/each}}</p>
           <p>{{{trimHTML (md Description) 600}}}</p>

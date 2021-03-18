@@ -39,6 +39,8 @@ const dataDirectory = (process.env.NODE_ENV === 'test') ? './tests/test-data-inp
 // The directory containing all of the data sources
 const dataSourcesDirectory = (process.env.NODE_ENV === 'test') ? './tests/test-data-input/' : './data-sources/';
 
+const baseUrl = process.env.BASE_URL;
+
 // Overriding MD renderer to remove outside <p> tags
 renderer.paragraph = function (text, level) {
   return text;
