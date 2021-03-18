@@ -139,7 +139,7 @@ var triggerInput = function (text) {
 
 // Listen for clicks on the tags and go to appropriate page
 $('.tag').click(function () {
-  window.location.href = '/tag/' + $(this).text().replace(/ /g, '-');
+  window.location.href = rootUrl + 'tag/' + $(this).text().replace(/ /g, '-');
 });
 
 // Handle query passed in url via ?search=foo
