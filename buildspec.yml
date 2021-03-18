@@ -11,6 +11,7 @@ phases:
     commands:
       - bash _scripts/build.sh
       - bash _scripts/deploy.sh
+      - rm -rf docs
       - mv dist docs
       - git config user.email "codebuild@aws.amazon.com"
       - git config user.name "AWS CodeBuild"
