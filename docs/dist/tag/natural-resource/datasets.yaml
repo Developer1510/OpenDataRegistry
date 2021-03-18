@@ -1,0 +1,3 @@
+datasets:
+    - https://registry.opendata.aws/datasets/awslabs-open-data-registry/datasets/sentinel-2.yaml
+    - https://registry.opendata.aws/datasets/awslabs-open-data-registry/datasets/sentinel-s2-l2a-mosaic-120.yaml
