@@ -92,6 +92,7 @@ const getDatasets = function (ignoreRank=false) {
     dataset.Slug = generateSlug(k);
     dataset.rootUrl = process.env.ROOT_URL;
     dataset.githubRepo = process.env.GIT_HUB_REPO;
+    dataset.githubBranch = process.env.GIT_HUB_BRANCH;
     arr.push(datasets[k]);
   }
 
@@ -465,7 +466,8 @@ function yamlOverview () {
     datasets: getDatasets(),
     baseURL: process.env.BASE_URL,
     rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO
+    githubRepo: process.env.GIT_HUB_REPO,
+    githubBranch: process.env.GIT_HUB_BRANCH
   };
 
   return gulp.src('./src/datasets.hbs')
@@ -499,7 +501,8 @@ function yamlTag (cb) {
       datasets: filteredDatasets,
       baseURL: process.env.BASE_URL,
       rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO
+      githubRepo: process.env.GIT_HUB_REPO,
+      githubBranch: process.env.GIT_HUB_BRANCH
     };
 
     return gulp.src('./src/datasets.hbs')
@@ -518,7 +521,8 @@ function rss () {
     baseURL: process.env.BASE_URL,
     buildDate: new Date().toUTCString(),
     rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO
+    githubRepo: process.env.GIT_HUB_REPO,
+    githubBranch: process.env.GIT_HUB_BRANCH
   };
 
   return gulp.src('./src/rss.xml.hbs')
@@ -567,7 +571,8 @@ function htmlSitemap () {
     slugs: slugs,
     baseURL: process.env.BASE_URL,
     rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO
+    githubRepo: process.env.GIT_HUB_REPO,
+    githubBranch: process.env.GIT_HUB_BRANCH
   };
 
   return gulp.src('./src/sitemap.hbs')
@@ -582,7 +587,8 @@ function js () {
   var templateData = {
     datasets: getDatasets(),
     rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO
+    githubRepo: process.env.GIT_HUB_REPO,
+    githubBranch: process.env.GIT_HUB_BRANCH
   };
   const options = {
     helpers: hbsHelpers
@@ -630,7 +636,8 @@ function htmlOverview () {
     datasets: datasets,
     isHome: true,
     rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO
+    githubRepo: process.env.GIT_HUB_REPO,
+    githubBranch: process.env.GIT_HUB_BRANCH
   };
 
   return gulp.src('./src/index.hbs')
@@ -654,7 +661,8 @@ function htmlRedirects (cb) {
     const templateData = {
       target: r.target,
       rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO
+      githubRepo: process.env.GIT_HUB_REPO,
+      githubBranch: process.env.GIT_HUB_BRANCH
     };
 
     return gulp.src('./src/redirect.hbs')
@@ -672,7 +680,8 @@ function htmlExamples () {
     datasets: getDatasets(),
     isHome: false,
     rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO
+    githubRepo: process.env.GIT_HUB_REPO,
+    githubBranch: process.env.GIT_HUB_BRANCH
   };
 
   // Handle pretty name for data at work field
@@ -709,7 +718,8 @@ function htmlTagUsage (cb) {
       isHome: false,
       tag: t,
       rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO
+      githubRepo: process.env.GIT_HUB_REPO,
+      githubBranch: process.env.GIT_HUB_BRANCH
     };
 
     return gulp.src('./src/examples.hbs')
@@ -728,6 +738,7 @@ function htmlDetail () {
       var templateData = JSON.parse(file.contents.toString('utf8'));
       templateData.rootUrl = process.env.ROOT_URL;
       templateData.githubRepo = process.env.GIT_HUB_REPO;
+      templateDate.githubBranch = process.env.GIT_HUB_BRANCH;
       // If we have no DataAtWork, remove it
       if (!templateData.DataAtWork || (templateData.DataAtWork && _.compact(_.flatMap(templateData.DataAtWork)).length === 0)) {
         delete templateData.DataAtWork;
@@ -801,7 +812,8 @@ function htmlTag (cb) {
       tag: t,
       tagURL: t.replace(/ /g, '-'),
       rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO
+      githubRepo: process.env.GIT_HUB_REPO,
+      githubBranch: process.env.GIT_HUB_BRANCH
     };
 
     return gulp.src('./src/index.hbs')
@@ -836,7 +848,8 @@ function htmlCollab (cb) {
         collabDescription: collabData.Description,
         collabLogo: collabData.Logo,
         rootUrl: process.env.ROOT_URL,
-        githubRepo: process.env.GIT_HUB_REPO
+        githubRepo: process.env.GIT_HUB_REPO,
+        githubBranch: process.env.GIT_HUB_BRANCH
       };
 
       return gulp.src('./src/index.hbs')
@@ -872,7 +885,8 @@ function htmlASDI (cb) {
         collabDescription: asdiData.Description,
         collabLogo: asdiData.Logo,
         rootUrl: process.env.ROOT_URL,
-        githubRepo: process.env.GIT_HUB_REPO
+        githubRepo: process.env.GIT_HUB_REPO,
+        githubBranch: process.env.GIT_HUB_BRANCH
       };
 
       templateData.collabDescription += "<br><br> Categories: ";
@@ -911,7 +925,8 @@ function htmlAdditions (cb) {
     datasets: filteredDatasets,
     isHome: false,
     rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO
+    githubRepo: process.env.GIT_HUB_REPO,
+    githubBranch: process.env.GIT_HUB_BRANCH
   };
 
   return gulp.src('./src/changelogindex.hbs')
@@ -930,7 +945,8 @@ function htmlProviders (cb) {
   const templateData = {
     Providers: logos,
     rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO
+    githubRepo: process.env.GIT_HUB_REPO,
+    githubBranch: process.env.GIT_HUB_BRANCH
   };
 
   return gulp.src('./src/providers.hbs')
