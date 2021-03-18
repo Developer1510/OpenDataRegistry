@@ -90,6 +90,7 @@ const getDatasets = function (ignoreRank=false) {
 
     var dataset = datasets[k];
     dataset.Slug = generateSlug(k);
+    dataset.rootUrl = process.env.ROOT_URL;
     arr.push(datasets[k]);
   }
 
