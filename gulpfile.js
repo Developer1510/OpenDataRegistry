@@ -91,6 +91,7 @@ const getDatasets = function (ignoreRank=false) {
     var dataset = datasets[k];
     dataset.Slug = generateSlug(k);
     dataset.rootUrl = process.env.ROOT_URL;
+    dataset.githubRepo = process.env.GIT_HUB_REPO;
     arr.push(datasets[k]);
   }
 
@@ -463,7 +464,8 @@ function yamlOverview () {
   var templateData = {
     datasets: getDatasets(),
     baseURL: process.env.BASE_URL,
-    rootUrl: process.env.ROOT_URL
+    rootUrl: process.env.ROOT_URL,
+    githubRepo: process.env.GIT_HUB_REPO
   };
 
   return gulp.src('./src/datasets.hbs')
@@ -496,7 +498,8 @@ function yamlTag (cb) {
     var templateData = {
       datasets: filteredDatasets,
       baseURL: process.env.BASE_URL,
-      rootUrl: process.env.ROOT_URL
+      rootUrl: process.env.ROOT_URL,
+      githubRepo: process.env.GIT_HUB_REPO
     };
 
     return gulp.src('./src/datasets.hbs')
@@ -514,7 +517,8 @@ function rss () {
     datasets: getDatasets(),
     baseURL: process.env.BASE_URL,
     buildDate: new Date().toUTCString(),
-    rootUrl: process.env.ROOT_URL
+    rootUrl: process.env.ROOT_URL,
+    githubRepo: process.env.GIT_HUB_REPO
   };
 
   return gulp.src('./src/rss.xml.hbs')
@@ -562,7 +566,8 @@ function htmlSitemap () {
   var templateData = {
     slugs: slugs,
     baseURL: process.env.BASE_URL,
-    rootUrl: process.env.ROOT_URL
+    rootUrl: process.env.ROOT_URL,
+    githubRepo: process.env.GIT_HUB_REPO
   };
 
   return gulp.src('./src/sitemap.hbs')
@@ -576,7 +581,8 @@ function js () {
   // HBS templating
   var templateData = {
     datasets: getDatasets(),
-    rootUrl: process.env.ROOT_URL
+    rootUrl: process.env.ROOT_URL,
+    githubRepo: process.env.GIT_HUB_REPO
   };
   const options = {
     helpers: hbsHelpers
@@ -623,7 +629,8 @@ function htmlOverview () {
     collabData: collabData,
     datasets: datasets,
     isHome: true,
-    rootUrl: process.env.ROOT_URL
+    rootUrl: process.env.ROOT_URL,
+    githubRepo: process.env.GIT_HUB_REPO
   };
 
   return gulp.src('./src/index.hbs')
@@ -646,7 +653,8 @@ function htmlRedirects (cb) {
     // HBS templating
     const templateData = {
       target: r.target,
-      rootUrl: process.env.ROOT_URL
+      rootUrl: process.env.ROOT_URL,
+      githubRepo: process.env.GIT_HUB_REPO
     };
 
     return gulp.src('./src/redirect.hbs')
@@ -663,7 +671,8 @@ function htmlExamples () {
   const templateData = {
     datasets: getDatasets(),
     isHome: false,
-    rootUrl: process.env.ROOT_URL
+    rootUrl: process.env.ROOT_URL,
+    githubRepo: process.env.GIT_HUB_REPO
   };
 
   // Handle pretty name for data at work field
@@ -699,7 +708,8 @@ function htmlTagUsage (cb) {
       datasets: filteredDatasets,
       isHome: false,
       tag: t,
-      rootUrl: process.env.ROOT_URL
+      rootUrl: process.env.ROOT_URL,
+      githubRepo: process.env.GIT_HUB_REPO
     };
 
     return gulp.src('./src/examples.hbs')
@@ -717,6 +727,7 @@ function htmlDetail () {
     .pipe(flatmap(function (stream, file) {
       var templateData = JSON.parse(file.contents.toString('utf8'));
       templateData.rootUrl = process.env.ROOT_URL;
+      templateData.githubRepo = process.env.GIT_HUB_REPO;
       // If we have no DataAtWork, remove it
       if (!templateData.DataAtWork || (templateData.DataAtWork && _.compact(_.flatMap(templateData.DataAtWork)).length === 0)) {
         delete templateData.DataAtWork;
@@ -789,7 +800,8 @@ function htmlTag (cb) {
       isHome: false,
       tag: t,
       tagURL: t.replace(/ /g, '-'),
-      rootUrl: process.env.ROOT_URL
+      rootUrl: process.env.ROOT_URL,
+      githubRepo: process.env.GIT_HUB_REPO
     };
 
     return gulp.src('./src/index.hbs')
@@ -823,7 +835,8 @@ function htmlCollab (cb) {
         collabTitle: collabData.Title,
         collabDescription: collabData.Description,
         collabLogo: collabData.Logo,
-        rootUrl: process.env.ROOT_URL
+        rootUrl: process.env.ROOT_URL,
+        githubRepo: process.env.GIT_HUB_REPO
       };
 
       return gulp.src('./src/index.hbs')
@@ -858,7 +871,8 @@ function htmlASDI (cb) {
         collabTitle: asdiData.Title,
         collabDescription: asdiData.Description,
         collabLogo: asdiData.Logo,
-        rootUrl: process.env.ROOT_URL
+        rootUrl: process.env.ROOT_URL,
+        githubRepo: process.env.GIT_HUB_REPO
       };
 
       templateData.collabDescription += "<br><br> Categories: ";
@@ -896,7 +910,8 @@ function htmlAdditions (cb) {
   var templateData = {
     datasets: filteredDatasets,
     isHome: false,
-    rootUrl: process.env.ROOT_URL
+    rootUrl: process.env.ROOT_URL,
+    githubRepo: process.env.GIT_HUB_REPO
   };
 
   return gulp.src('./src/changelogindex.hbs')
@@ -914,7 +929,8 @@ function htmlProviders (cb) {
   // HBS templating
   const templateData = {
     Providers: logos,
-    rootUrl: process.env.ROOT_URL
+    rootUrl: process.env.ROOT_URL,
+    githubRepo: process.env.GIT_HUB_REPO
   };
 
   return gulp.src('./src/providers.hbs')
