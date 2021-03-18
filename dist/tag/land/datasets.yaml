@@ -1,6 +1,2 @@
 datasets:
-    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
-    - /datasets/awslabs-open-data-registry/datasets/pmsp-lidar.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ncar-cesm-lens.yaml
-    - /datasets/awslabs-open-data-registry/datasets/sentinel-3.yaml
-    - /datasets/awslabs-open-data-registry/datasets/elp-nouabale-landscape.yaml
+    - https://registry.opendata.aws/datasets/awslabs-open-data-registry/datasets/sentinel-3.yaml

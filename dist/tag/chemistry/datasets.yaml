@@ -1,5 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/binding-db.yaml
-    - /datasets/awslabs-open-data-registry/datasets/chembl.yaml
-    - /datasets/awslabs-open-data-registry/datasets/clinvar.yaml
-    - /datasets/awslabs-open-data-registry/datasets/opentargets.yaml

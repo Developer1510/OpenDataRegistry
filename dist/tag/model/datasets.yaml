@@ -1,8 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/ncar-cesm-lens.yaml
-    - /datasets/awslabs-open-data-registry/datasets/oedi-data-lake.yaml
-    - /datasets/awslabs-open-data-registry/datasets/fsf-flood-risk.yaml
-    - /datasets/awslabs-open-data-registry/datasets/silo.yaml
-    - /datasets/awslabs-open-data-registry/datasets/meteo-france-models.yaml
-    - /datasets/awslabs-open-data-registry/datasets/cmip6.yaml
-    - /datasets/awslabs-open-data-registry/datasets/wrf-cmip6.yaml

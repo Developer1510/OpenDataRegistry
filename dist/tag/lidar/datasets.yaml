@@ -1,8 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/usgs-lidar.yaml
-    - /datasets/awslabs-open-data-registry/datasets/nrel-oedi-pv-rooftops.yaml
-    - /datasets/awslabs-open-data-registry/datasets/pmsp-lidar.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ford-multi-av-seasonal.yaml
-    - /datasets/awslabs-open-data-registry/datasets/nj-lidar.yaml
-    - /datasets/awslabs-open-data-registry/datasets/aev-a2d2.yaml
-    - /datasets/awslabs-open-data-registry/datasets/noaa-coastal-lidar.yaml

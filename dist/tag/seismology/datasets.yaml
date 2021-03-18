@@ -1,4 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
-    - /datasets/awslabs-open-data-registry/datasets/southern-california-earthquakes.yaml
-    - /datasets/awslabs-open-data-registry/datasets/nrel-pds-porotomo.yaml

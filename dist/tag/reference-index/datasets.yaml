@@ -1,6 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/giab.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ncbi-blast-databases.yaml
-    - /datasets/awslabs-open-data-registry/datasets/broad-references.yaml
-    - /datasets/awslabs-open-data-registry/datasets/jhu-indexes.yaml
-    - /datasets/awslabs-open-data-registry/datasets/aws-igenomes.yaml

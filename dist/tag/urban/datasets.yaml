@@ -1,7 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/ladi.yaml
-    - /datasets/awslabs-open-data-registry/datasets/nyc-tlc-trip-records-pds.yaml
-    - /datasets/awslabs-open-data-registry/datasets/pmsp-lidar.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ford-multi-av-seasonal.yaml
-    - /datasets/awslabs-open-data-registry/datasets/spatial-ucr.yaml
-    - /datasets/awslabs-open-data-registry/datasets/mevadata.yaml

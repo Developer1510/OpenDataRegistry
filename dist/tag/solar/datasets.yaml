@@ -1,5 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/nrel-oedi-pv-rooftops.yaml
-    - /datasets/awslabs-open-data-registry/datasets/oedi-data-lake.yaml
-    - /datasets/awslabs-open-data-registry/datasets/nrel-pds-nsrdb.yaml
-    - /datasets/awslabs-open-data-registry/datasets/noaa-space-weather.yaml

@@ -1,4 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/wpto-pds-us-wave.yaml
-    - /datasets/awslabs-open-data-registry/datasets/oedi-data-lake.yaml
-    - /datasets/awslabs-open-data-registry/datasets/nrel-pds-nsrdb.yaml

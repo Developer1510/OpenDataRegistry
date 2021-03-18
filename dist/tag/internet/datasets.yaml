@@ -1,7 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/commoncrawl.yaml
-    - /datasets/awslabs-open-data-registry/datasets/digitalcorpora.yaml
-    - /datasets/awslabs-open-data-registry/datasets/rapid7-fdns-any.yaml
-    - /datasets/awslabs-open-data-registry/datasets/speedtest-global-performance.yaml
-    - /datasets/awslabs-open-data-registry/datasets/cse-cic-ids2018.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ooni.yaml
