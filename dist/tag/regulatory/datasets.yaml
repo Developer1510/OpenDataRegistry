@@ -1,6 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/irs990.yaml
-    - /datasets/awslabs-open-data-registry/datasets/naip.yaml
-    - /datasets/awslabs-open-data-registry/datasets/speedtest-global-performance.yaml
-    - /datasets/awslabs-open-data-registry/datasets/noaa-gsod.yaml
-    - /datasets/awslabs-open-data-registry/datasets/990-spreadsheets.yaml

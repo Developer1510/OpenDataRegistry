@@ -1,5 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/3kricegenome.yaml
-    - /datasets/awslabs-open-data-registry/datasets/afsis.yaml
-    - /datasets/awslabs-open-data-registry/datasets/cgiardata.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ubc-sunflower-genome.yaml

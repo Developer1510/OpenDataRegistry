@@ -1,7 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/openaq.yaml
-    - /datasets/awslabs-open-data-registry/datasets/omi-no2-nasa.yaml
-    - /datasets/awslabs-open-data-registry/datasets/geoschem-input-data.yaml
-    - /datasets/awslabs-open-data-registry/datasets/sentinel5p.yaml
-    - /datasets/awslabs-open-data-registry/datasets/silam.yaml
-    - /datasets/awslabs-open-data-registry/datasets/safecast.yaml

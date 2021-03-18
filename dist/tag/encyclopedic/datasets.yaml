@@ -1,5 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/commoncrawl.yaml
-    - /datasets/awslabs-open-data-registry/datasets/tabula-muris.yaml
-    - /datasets/awslabs-open-data-registry/datasets/smithsonian-open-access.yaml
-    - /datasets/awslabs-open-data-registry/datasets/tabula-muris-senis.yaml

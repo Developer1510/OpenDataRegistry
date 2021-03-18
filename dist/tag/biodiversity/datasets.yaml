@@ -1,6 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/ncei-wcsd-archive.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ebirdst.yaml
-    - /datasets/awslabs-open-data-registry/datasets/nsw-herbarium.yaml
-    - /datasets/awslabs-open-data-registry/datasets/elp-nouabale-landscape.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ubc-sunflower-genome.yaml

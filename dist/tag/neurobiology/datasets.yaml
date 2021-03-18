@@ -1,6 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/janelia-flylight.yaml
-    - /datasets/awslabs-open-data-registry/datasets/nyu-fastmri.yaml
-    - /datasets/awslabs-open-data-registry/datasets/allen-mouse-brain-atlas.yaml
-    - /datasets/awslabs-open-data-registry/datasets/allen-brain-observatory.yaml
-    - /datasets/awslabs-open-data-registry/datasets/openneuro.yaml

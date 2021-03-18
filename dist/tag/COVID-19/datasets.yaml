@@ -1,9 +1,0 @@
-datasets:
-    - /datasets/awslabs-open-data-registry/datasets/foldingathome-covid19.yaml
-    - /datasets/awslabs-open-data-registry/datasets/aws-covid19-lake.yaml
-    - /datasets/awslabs-open-data-registry/datasets/talend-covid19.yaml
-    - /datasets/awslabs-open-data-registry/datasets/serratus-lovelywater.yaml
-    - /datasets/awslabs-open-data-registry/datasets/ncbi-covid-19.yaml
-    - /datasets/awslabs-open-data-registry/datasets/molssi-covid19-hub.yaml
-    - /datasets/awslabs-open-data-registry/datasets/us-hiring-rates-pandemic.yaml
-    - /datasets/awslabs-open-data-registry/datasets/cord-19.yaml
