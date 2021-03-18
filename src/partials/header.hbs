@@ -6,21 +6,21 @@
 
   {{#if redirect}}<meta http-equiv="Refresh" content="0; url={{redirect}}" />{{/if}}
 
-  <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" href="{{rootUrl}}/rss.xml" />
   
-  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
-  <link rel="apple-touch-icon" sizes="57x57" href="img/touch-icon-iphone-114-smile.png"/>
-  <link rel="apple-touch-icon" sizes="72x72" href="img/touch-icon-ipad-144-smile.png"/>
-  <link rel="apple-touch-icon" sizes="114x114" href="img/touch-icon-iphone-114-smile.png"/>
-  <link rel="apple-touch-icon" sizes="144x144" href="img/touch-icon-ipad-144-smile.png"/>  
+  <link rel="shortcut icon" type="image/ico" href="{{rootUrl}}img/favicon.ico"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="{{rootUrl}}img/touch-icon-iphone-114-smile.png"/>
+  <link rel="apple-touch-icon" sizes="72x72" href="{{rootUrl}}img/touch-icon-ipad-144-smile.png"/>
+  <link rel="apple-touch-icon" sizes="114x114" href="{{rootUrl}}img/touch-icon-iphone-114-smile.png"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="{{rootUrl}}img/touch-icon-ipad-144-smile.png"/>  
 
   <title>{{#if isDetail}}{{Name}} - {{/if}}Registry of Open Data on AWS</title>
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{rootUrl}}css/bootstrap.min.css">
 
   <!-- Our local CSS -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="{{rootUrl}}css/main.css">
 
   {{#if isDetail}}
   <script type="application/ld+json">
@@ -35,18 +35,21 @@
   </script>
   {{/if}}
 
+  <script>
+    var rootUrl = "{{rootUrl}}";
+  </script>
 </head>
 <body>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.min.js"></script>
+  <script src="{{rootUrl}}js/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{{rootUrl}}js/bootstrap.min.js"></script>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="roda-header">
         {{#if isHome}}<h1>{{else}}<h2><a href="/" alt="Home">{{/if}}Registry of Open Data on AWS{{#if isHome}}</h1>{{else}}</a></h2>{{/if}}
         <a href="http://aws.amazon.com/what-is-cloud-computing">
-          <img src="img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
+          <img src="{{rootUrl}}img/AWS-Logo_White-Color_300x180.png" alt="Powered by AWS Cloud Computing" id="aws_header_logo">
         </a>
       </div>
     </div>

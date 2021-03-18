@@ -11,7 +11,7 @@
       <hr class="section-row">
       {{#each this}}
         <div id="{{Slug}}" class="dataset">
-          <h3><a href="/{{Slug}}/">{{Name}}</a></h3>
+          <h3><a href="{{rootUrl}}{{Slug}}/">{{Name}}</a></h3>
           {{#if ManagedBy}}
             <p>Managed by {{{managedByRenderer ManagedBy false}}}</p>
           {{/if}}
@@ -25,5 +25,5 @@
 
   {{> footer}}
   </body>
-  <script src="/js/index.js"></script>
+  <script src="{{rootUrl}}js/index.js"></script>
 </html>

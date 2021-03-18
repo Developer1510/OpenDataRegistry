@@ -39,8 +39,6 @@ const dataDirectory = (process.env.NODE_ENV === 'test') ? './tests/test-data-inp
 // The directory containing all of the data sources
 const dataSourcesDirectory = (process.env.NODE_ENV === 'test') ? './tests/test-data-input/' : './data-sources/';
 
-const baseUrl = process.env.BASE_URL;
-
 // Overriding MD renderer to remove outside <p> tags
 renderer.paragraph = function (text, level) {
   return text;
@@ -463,7 +461,8 @@ function yamlCopy () {
 function yamlOverview () {
   var templateData = {
     datasets: getDatasets(),
-    baseURL: process.env.BASE_URL
+    baseURL: process.env.BASE_URL,
+    rootUrl: process.env.ROOT_URL
   };
 
   return gulp.src('./src/datasets.hbs')
@@ -495,7 +494,8 @@ function yamlTag (cb) {
 
     var templateData = {
       datasets: filteredDatasets,
-      baseURL: process.env.BASE_URL
+      baseURL: process.env.BASE_URL,
+      rootUrl: process.env.ROOT_URL
     };
 
     return gulp.src('./src/datasets.hbs')
@@ -512,7 +512,8 @@ function rss () {
   var templateData = {
     datasets: getDatasets(),
     baseURL: process.env.BASE_URL,
-    buildDate: new Date().toUTCString()
+    buildDate: new Date().toUTCString(),
+    rootUrl: process.env.ROOT_URL
   };
 
   return gulp.src('./src/rss.xml.hbs')
@@ -559,7 +560,8 @@ function htmlSitemap () {
 
   var templateData = {
     slugs: slugs,
-    baseURL: process.env.BASE_URL
+    baseURL: process.env.BASE_URL,
+    rootUrl: process.env.ROOT_URL
   };
 
   return gulp.src('./src/sitemap.hbs')
@@ -572,7 +574,8 @@ function htmlSitemap () {
 function js () {
   // HBS templating
   var templateData = {
-    datasets: getDatasets()
+    datasets: getDatasets(),
+    rootUrl: process.env.ROOT_URL
   };
   const options = {
     helpers: hbsHelpers
@@ -618,7 +621,8 @@ function htmlOverview () {
   var templateData = {
     collabData: collabData,
     datasets: datasets,
-    isHome: true
+    isHome: true,
+    rootUrl: process.env.ROOT_URL
   };
 
   return gulp.src('./src/index.hbs')
@@ -640,7 +644,8 @@ function htmlRedirects (cb) {
   config.redirects.forEach((r) => {
     // HBS templating
     const templateData = {
-      target: r.target
+      target: r.target,
+      rootUrl: process.env.ROOT_URL
     };
 
     return gulp.src('./src/redirect.hbs')
@@ -656,7 +661,8 @@ function htmlRedirects (cb) {
 function htmlExamples () {
   const templateData = {
     datasets: getDatasets(),
-    isHome: false
+    isHome: false,
+    rootUrl: process.env.ROOT_URL
   };
 
   // Handle pretty name for data at work field
@@ -691,7 +697,8 @@ function htmlTagUsage (cb) {
     var templateData = {
       datasets: filteredDatasets,
       isHome: false,
-      tag: t
+      tag: t,
+      rootUrl: process.env.ROOT_URL
     };
 
     return gulp.src('./src/examples.hbs')
@@ -708,7 +715,7 @@ function htmlDetail () {
   return gulp.src('./tmp/data/datasets/*.json')
     .pipe(flatmap(function (stream, file) {
       var templateData = JSON.parse(file.contents.toString('utf8'));
-
+      templateData.rootUrl = process.env.ROOT_URL;
       // If we have no DataAtWork, remove it
       if (!templateData.DataAtWork || (templateData.DataAtWork && _.compact(_.flatMap(templateData.DataAtWork)).length === 0)) {
         delete templateData.DataAtWork;
@@ -780,7 +787,8 @@ function htmlTag (cb) {
       datasets: filteredDatasets,
       isHome: false,
       tag: t,
-      tagURL: t.replace(/ /g, '-')
+      tagURL: t.replace(/ /g, '-'),
+      rootUrl: process.env.ROOT_URL
     };
 
     return gulp.src('./src/index.hbs')
@@ -813,7 +821,8 @@ function htmlCollab (cb) {
         isHome: false,
         collabTitle: collabData.Title,
         collabDescription: collabData.Description,
-        collabLogo: collabData.Logo
+        collabLogo: collabData.Logo,
+        rootUrl: process.env.ROOT_URL
       };
 
       return gulp.src('./src/index.hbs')
@@ -847,7 +856,8 @@ function htmlASDI (cb) {
         isHome: false,
         collabTitle: asdiData.Title,
         collabDescription: asdiData.Description,
-        collabLogo: asdiData.Logo
+        collabLogo: asdiData.Logo,
+        rootUrl: process.env.ROOT_URL
       };
 
       templateData.collabDescription += "<br><br> Categories: ";
@@ -884,7 +894,8 @@ function htmlAdditions (cb) {
   // HBS templating
   var templateData = {
     datasets: filteredDatasets,
-    isHome: false
+    isHome: false,
+    rootUrl: process.env.ROOT_URL
   };
 
   return gulp.src('./src/changelogindex.hbs')
@@ -901,7 +912,8 @@ function htmlProviders (cb) {
 
   // HBS templating
   const templateData = {
-    Providers: logos
+    Providers: logos,
+    rootUrl: process.env.ROOT_URL
   };
 
   return gulp.src('./src/providers.hbs')
