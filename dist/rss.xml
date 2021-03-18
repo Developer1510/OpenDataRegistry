@@ -5,7 +5,7 @@
     <description>Recent datasets listed on the Registry of Open Data on AWS</description>
     <language>en-us</language>
     <managingEditor>opendata@amazon.com</managingEditor>
-    <lastBuildDate>Thu, 18 Mar 2021 11:05:10 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Mar 2021 11:14:55 GMT</lastBuildDate>
     <item>
       <title>Sentinel-2</title>
       <link>https://registry.opendata.aws/sentinel-2</link>
@@ -16,7 +16,7 @@ optical imagery and provide continuity for the current SPOT and Landsat missions
 The mission provides a global coverage of the Earth&amp;#39;s land surface every 5 days,
 making the data of great use in on-going studies. L1C data are available from
 June 2015 globally. L2A data are available from September 2016 over wider Europe
-region and globally since January 2017.</description>
+region and globally since January 2017. Test change</description>
     </item>
     <item>
       <title>Sentinel-3</title>
