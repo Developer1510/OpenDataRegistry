@@ -12,7 +12,7 @@ Resolution: 10m
 GeographicalCoverage: Land surface area ([more info](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/revisit-coverage))
 TemporalAvailability: 2015 - ongoing
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus Hub.
-BandInformation: [bands and data](https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l1c/#available-bands-and-data)  
+BandInformation: Information about [bands and data](https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l1c/#available-bands-and-data)  
 Contact: https://forum.sentinel-hub.com
 Provider: "[Copernicus](https://copernicus.eu/)"
 ManagedBy: "[Sentinel Hub](https://www.sentinel-hub.com/)"
