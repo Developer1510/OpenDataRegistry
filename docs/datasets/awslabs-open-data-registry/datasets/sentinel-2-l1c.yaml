@@ -30,18 +30,18 @@ Tags:
 License: |
   [License](https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l1c/#attribution-and-use)
 Resources:
-  - Description: Global since November 2015
-    EndPoint: services.sentinel-hub.com
+  - EndPoint: services.sentinel-hub.com
     Type: S2L1C
-  - Description: Global since November 2015
-    EndPoint: creodias.sentinel-hub.com
+    Notes: Global since November 2015
+  - EndPoint: creodias.sentinel-hub.com
     Type: S2L1C
-  - Description: Global since November 2015
-    EndPoint: code-de.sentinel-hub.com
+    Notes: Global since November 2015
+  - EndPoint: code-de.sentinel-hub.com
     Type: S2L1C
-  - Description: Europe coverage since July 2015. Rolling policy of 12 months for World.
-    EndPoint: shservices.mundiwebservices.com
+    Notes: Global since November 2015
+  - EndPoint: shservices.mundiwebservices.com
     Type: S2L1C
+    Notes: Europe coverage since July 2015. Rolling policy of 12 months for World.
 Custom scripts:
   - Title: Collection of Sentinel-2 custom scripts
     URL: https://custom-scripts.sentinel-hub.com/#sentinel-2
