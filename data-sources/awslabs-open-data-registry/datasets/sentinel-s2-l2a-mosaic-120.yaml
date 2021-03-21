@@ -9,10 +9,6 @@ BandInformation: B02 (blue), B03 (green), B04 (red), B08 (NIR), B11 (SWIR), B12 
 Contact: https://forum.sentinel-hub.com  
 Provider: "[Sentinel Hub](https://www.sentinel-hub.com/)"
 ManagedBy: "[Sentinel Hub](https://www.sentinel-hub.com/)"
-Collabs:
-  ASDI:
-    Tags:
-      - satellite imagery
 Tags:
   - satellite imagery
   - multi spectral imagery
