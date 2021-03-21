@@ -5,19 +5,7 @@
     <description>Recent datasets listed on the Registry of Open Data on AWS</description>
     <language>en-us</language>
     <managingEditor>opendata@amazon.com</managingEditor>
-    <lastBuildDate>Sun, 21 Mar 2021 13:12:08 GMT</lastBuildDate>
-    <item>
-      <title>Sentinel-2</title>
-      <link>https://developer1510.github.io/OpenDataRegistry/sentinel-2</link>
-      <guid>https://developer1510.github.io/OpenDataRegistry/sentinel-2</guid>
-      <description>The &lt;a href&#x3D;&quot;https://sentinel.esa.int/web/sentinel/missions/sentinel-2&quot;&gt;Sentinel-2 mission&lt;/a&gt; is
-a land monitoring constellation of two satellites that provide high resolution
-optical imagery and provide continuity for the current SPOT and Landsat missions.
-The mission provides a global coverage of the Earth&amp;#39;s land surface every 5 days,
-making the data of great use in on-going studies. L1C data are available from
-June 2015 globally. L2A data are available from September 2016 over wider Europe
-region and globally since January 2017. </description>
-    </item>
+    <lastBuildDate>Sun, 21 Mar 2021 13:37:13 GMT</lastBuildDate>
     <item>
       <title>Sentinel-3</title>
       <link>https://developer1510.github.io/OpenDataRegistry/sentinel-3</link>
@@ -35,6 +23,18 @@ region and globally since January 2017. </description>
       <link>https://developer1510.github.io/OpenDataRegistry/sentinel-s2-l2a-mosaic-120</link>
       <guid>https://developer1510.github.io/OpenDataRegistry/sentinel-s2-l2a-mosaic-120</guid>
       <description>Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As there are some parts of the world, which have lengthy cloudy periods, clouds might be remaining in some parts. The actual modelling script is available &lt;a href&#x3D;&quot;https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/&quot;&gt;here&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Sentinel-2 L1C</title>
+      <link>https://developer1510.github.io/OpenDataRegistry/sentinel-2</link>
+      <guid>https://developer1510.github.io/OpenDataRegistry/sentinel-2</guid>
+      <description>The &lt;a href&#x3D;&quot;https://sentinel.esa.int/web/sentinel/missions/sentinel-2&quot;&gt;Sentinel-2 mission&lt;/a&gt; is
+a land monitoring constellation of two satellites that provide high resolution
+optical imagery and provide continuity for the current SPOT and Landsat missions.
+The mission provides a global coverage of the Earth&amp;#39;s land surface every 5 days,
+making the data of great use in on-going studies. L1C data are available from
+June 2015 globally. L2A data are available from September 2016 over wider Europe
+region and globally since January 2017. </description>
     </item>
   </channel>
 </rss>
