@@ -9,14 +9,11 @@ BandInformation: CLC (land cover class)
 Contact: "[Copernicus Land Monitoring Service Contact](https://land.copernicus.eu/contact)"
 Provider: "[European Environment Agency](https://www.eea.europa.eu/)"
 ManagedBy: "[Sentinel Hub](https://www.sentinel-hub.com/)"
-Collabs:
-  ASDI:
-    Tags:
-      - derived data
 Tags:
   - machine learning
   - land cover
   - CLMS
+  - derived data
 License: |
  Full, open and free access, Copernicus license ([details](https://land.copernicus.eu/terms-of-use)).
 Resources:
