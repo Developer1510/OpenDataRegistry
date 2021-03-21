@@ -25,7 +25,7 @@ Resources:
     Type: BYOC
     CollectionId: 0074520d-bcf5-4811-8f6f-afd946e77695
   - EndPoint: creodias.sentinel-hub.com
-    Type: BYOC
+    Type: byoc-eaa027cc-1d9b-40fc-a15c-9dc486caebd7
     CollectionId: eaa027cc-1d9b-40fc-a15c-9dc486caebd7
 DataAtWork:
   Tutorials:
