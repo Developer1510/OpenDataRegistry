@@ -12,8 +12,15 @@
       <h3>Description</h3>
       <p>{{{md Description}}}</p>
 
+      {{#if Documentation}}
       <h4>Documentation</h4>
       <p>{{{md Documentation}}}</p>
+      {{/if}}
+      
+      {{#if AdditionalInfo}}
+      <h4>Additional info</h4>
+      <p>{{{md AdditionalInfo}}}</p>
+      {{/if}}      
       
       <h4>Resolution</h4>
       <p>{{{md Resolution}}}</p>
