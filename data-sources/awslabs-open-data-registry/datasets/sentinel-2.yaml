@@ -8,7 +8,7 @@ Description: |
   June 2015 globally. L2A data are available from September 2016 over wider Europe
   region and globally since January 2017. 
 Documentation: [Sentinel-2 L1C documentation](https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l1c/)
-Contact: https://forum.sentinel-hub.com/
+Contact: https://forum.sentinel-hub.com  
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus Hub.
 Collabs:
