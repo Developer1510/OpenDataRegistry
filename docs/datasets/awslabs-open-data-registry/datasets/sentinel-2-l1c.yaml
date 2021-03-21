@@ -40,7 +40,7 @@ Resources:
     EndPoint: code-de.sentinel-hub.com
     Type: S2L1C
   - Description: Europe coverage since July 2015. Rolling policy of 12 months for World.
-    ARN: shservices.mundiwebservices.com
+    EndPoint: shservices.mundiwebservices.com
     Type: S2L1C
 Custom scripts:
   - Title: Collection of Sentinel-2 custom scripts
