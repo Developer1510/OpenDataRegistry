@@ -15,6 +15,13 @@ tag/land-cover/
 tag/land-cover/usage-examples/
 tag/machine-learning/
 tag/machine-learning/usage-examples/
+global-land-cover/
+tag/CLMS/
+tag/CLMS/usage-examples/
+tag/land-cover/
+tag/land-cover/usage-examples/
+tag/machine-learning/
+tag/machine-learning/usage-examples/
 sentinel-2-l1c/
 tag/agriculture/
 tag/agriculture/usage-examples/
