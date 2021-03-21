@@ -37,21 +37,9 @@ Resources:
   - Description: Europe coverage since July 2015. Rolling policy of 12 months for World.
     ARN: shservices.mundiwebservices.com
     Region: S2L1C
-DataAtWork:
-  Tutorials:
-    - Title: Tutorial for using Sentinel-2 data
-      URL: https://medium.com/@anttilip/seeing-earth-from-space-from-raw-satellite-data-to-beautiful-high-resolution-images-feb522adfa3f
-      AuthorName: Antti Lipponen
-      AuthorURL: https://medium.com/@anttilip
-  Tools & Applications:
-    - Title: Sentinel Hub WMS/WMTS/WCS Service
-      URL: http://www.sentinel-hub.com/apps/wms
-      AuthorName: Sinergise
-      AuthorURL: http://www.sinergise.com/
-  Publications:
-    - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
-      URL: https://ieeexplore.ieee.org/abstract/document/9165649
-      AuthorName: K. R. Ferreira, et al.
+Custom scripts:
+  - Title: Collection of Sentinel-2 custom scripts
+    URL: https://custom-scripts.sentinel-hub.com/#sentinel-2
 
 
 RegistryEntryAdded: "2018-04-17"
