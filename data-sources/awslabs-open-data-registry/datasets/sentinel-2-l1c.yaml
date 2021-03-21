@@ -7,7 +7,7 @@ Description: |
   making the data of great use in on-going studies. L1C data are available from
   June 2015 globally. L2A data are available from September 2016 over wider Europe
   region and globally since January 2017. 
-Documentation: Documentation is available [here](https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l1c/).
+Documentation: "[here](https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l1c/)"
 Resolution: 10m
 GeographicalCoverage: Land surface area ([more info](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/revisit-coverage))
 TemporalAvailability: 2015 - ongoing
