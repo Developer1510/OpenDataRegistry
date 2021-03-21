@@ -20,10 +20,10 @@ Tags:
 License: |
  Full, open and free access, Copernicus license ([details](https://land.copernicus.eu/terms-of-use)).
 Resources:
-  - Description: Full data
-    EndPoint: creodias.sentinel-hub.com
+  - EndPoint: creodias.sentinel-hub.com
     Type: BYOC
     CollectionId: cbdba844-f86d-41dc-95ad-b3f7f12535e9
+    Notes: Full data
 
 
 RegistryEntryAdded: "2021-03-21"
