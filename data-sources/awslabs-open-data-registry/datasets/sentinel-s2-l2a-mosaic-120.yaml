@@ -2,7 +2,10 @@ Name: Sentinel-2 L2A 120m Mosaic
 Description: Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As there are some parts of the world, which have lengthy cloudy periods, clouds might be remaining in some parts. The actual modelling script is available [here](https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/). 
 Documentation: Documentation is available [here](https://sentinel-s2-l2a-mosaic-120.s3.amazonaws.com/readme.html).
 Resolution: 120m
+Geographical coverage: Land surface area between 58 degrees South and 72 degrees North.
+Temporal availability: 2019 (2020 coming in April 2021, past years later on)
 UpdateFrequency: New data will be added annually.
+Band information: B02 (blue), B03 (green), B04 (red), B08 (NIR), B11 (SWIR), B12 (SWIR). The values are corresponding to digital numbers (DN), typically going from 0-10000.  
 Contact: https://forum.sentinel-hub.com  
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 Collabs:
@@ -26,12 +29,13 @@ Resources:
     Region: BYOC
     Type: eaa027cc-1d9b-40fc-a15c-9dc486caebd7
 DataAtWork:
-  Tools & Applications:
-    - Title: Sentinel Hub WMS/WMTS/WCS Service and Process API
-      URL: https://github.com/sentinel-hub/public-collections/blob/main/collections/sentinel-s2-l2a-mosaic-120.md
-      AuthorName: Sinergise
-      AuthorURL: http://www.sinergise.com/
-
+  Publications:
+    - Title: Digital Twin Sandbox Sentinel-2 collection available to everyone
+      URL: https://medium.com/sentinel-hub/digital-twin-sandbox-sentinel-2-collection-available-to-everyone-20f3b5de846e
+      AuthorName: Milcinski G., Lubej M.
+    - Title: How to Make the Perfect Time-Lapse of the Earth
+      URL: https://medium.com/sentinel-hub/how-to-make-the-perfect-time-lapse-of-the-earth-351f214527f6
+      AuthorName: Lubej M.
 
 RegistryEntryAdded: "2021-01-26"
 RegistryEntryLastModified: "2021-01-26"
