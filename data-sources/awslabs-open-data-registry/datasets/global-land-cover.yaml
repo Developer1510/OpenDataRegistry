@@ -9,14 +9,11 @@ BandInformation: Discrete_Classification_map, Discrete_Classification_proba, For
 Contact: "[Copernicus Land Monitoring Service Contact](https://land.copernicus.eu/contact)"
 Provider: "[European Commission Joint Research Centre (JRC)](https://land.copernicus.eu/global/about)"
 ManagedBy: "[Sentinel Hub](https://www.sentinel-hub.com/)"
-Collabs:
-  ASDI:
-    Tags:
-      - derived data
 Tags:
   - machine learning
   - land cover
   - CLMS
+  - derived data
 License: |
  free and open access policy as defined in the European Union’s Copernicus regulation ([details](https://land.copernicus.eu/global/about))
 Resources:
