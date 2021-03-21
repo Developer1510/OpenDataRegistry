@@ -5,7 +5,7 @@ Resolution: 120m
 GeographicalCoverage: Land surface area between 58 degrees South and 72 degrees North.
 TemporalAvailability: 2019 (2020 coming in April 2021, past years later on)
 UpdateFrequency: New data will be added annually.
-Band information: B02 (blue), B03 (green), B04 (red), B08 (NIR), B11 (SWIR), B12 (SWIR). The values are corresponding to digital numbers (DN), typically going from 0-10000.  
+BandInformation: B02 (blue), B03 (green), B04 (red), B08 (NIR), B11 (SWIR), B12 (SWIR). The values are corresponding to digital numbers (DN), typically going from 0-10000.  
 Contact: https://forum.sentinel-hub.com  
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 Collabs:
