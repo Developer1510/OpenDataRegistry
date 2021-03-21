@@ -9,7 +9,7 @@ Description: |
   region and globally since January 2017. 
 Documentation: Documentation is available [here](https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l1c/).
 Contact: https://forum.sentinel-hub.com
-ManagedBy : "[Sinergise](https://www.sinergise.com/)"
+ManagedBy : "[Sentinel Hub](https://www.sentinel-hub.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus Hub.
 Collabs:
   ASDI:
