@@ -21,7 +21,7 @@ License: |
  Full, open and free access, Copernicus license ([details](https://land.copernicus.eu/terms-of-use)).
 Resources:
   - EndPoint: creodias.sentinel-hub.com
-    Type: BYOC
+    Type: byoc-cbdba844-f86d-41dc-95ad-b3f7f12535e9
     CollectionId: cbdba844-f86d-41dc-95ad-b3f7f12535e9
 
 RegistryEntryAdded: "2021-03-21"
