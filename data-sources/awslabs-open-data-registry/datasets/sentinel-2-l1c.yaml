@@ -26,17 +26,17 @@ License: |
   [License](https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l1c/#attribution-and-use)
 Resources:
   - Description: Global since November 2015
-    ARN: services.sentinel-hub.com
-    Region: S2L1C
+    EndPoint: services.sentinel-hub.com
+    Type: S2L1C
   - Description: Global since November 2015
-    ARN: creodias.sentinel-hub.com
-    Region: S2L1C
+    EndPoint: creodias.sentinel-hub.com
+    Type: S2L1C
   - Description: Global since November 2015
-    ARN: code-de.sentinel-hub.com
-    Region: S2L1C
+    EndPoint: code-de.sentinel-hub.com
+    Type: S2L1C
   - Description: Europe coverage since July 2015. Rolling policy of 12 months for World.
     ARN: shservices.mundiwebservices.com
-    Region: S2L1C
+    Type: S2L1C
 Custom scripts:
   - Title: Collection of Sentinel-2 custom scripts
     URL: https://custom-scripts.sentinel-hub.com/#sentinel-2
