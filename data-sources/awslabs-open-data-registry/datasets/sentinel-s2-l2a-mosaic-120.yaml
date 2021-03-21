@@ -29,13 +29,20 @@ Resources:
     Region: BYOC
     Type: eaa027cc-1d9b-40fc-a15c-9dc486caebd7
 DataAtWork:
+  Tutorials:
+    - Title: How to Make the Perfect Time-Lapse of the Earth
+      URL: https://medium.com/sentinel-hub/how-to-make-the-perfect-time-lapse-of-the-earth-351f214527f6
+      AuthorName: Lubej M.
+      AuthorURL: https://medium.com/@lubej.matic
+  Tools & Applications:
+    - Title: Digital Twin Sandbox
+      URL: https://apps.sentinel-hub.com/digital_twin_sandbox
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
   Publications:
     - Title: Digital Twin Sandbox Sentinel-2 collection available to everyone
       URL: https://medium.com/sentinel-hub/digital-twin-sandbox-sentinel-2-collection-available-to-everyone-20f3b5de846e
       AuthorName: Milcinski G., Lubej M.
-    - Title: How to Make the Perfect Time-Lapse of the Earth
-      URL: https://medium.com/sentinel-hub/how-to-make-the-perfect-time-lapse-of-the-earth-351f214527f6
-      AuthorName: Lubej M.
 
-RegistryEntryAdded: "2021-01-26"
-RegistryEntryLastModified: "2021-01-26"
+RegistryEntryAdded: "2021-03-21"
+RegistryEntryLastModified: "2021-03-21"
