@@ -100,8 +100,6 @@
         {{#each Resources}}
         <li>
           <dl class="resource-list">
-            <dt class="resource-description">Description</dt>
-            <dd class="resource-description">{{{md Description}}}</dd>
             {{#if EndPoint}}
             <dt class="resource-arn">End point</dt>
             <dd><code>{{EndPoint}}</code></dd>
@@ -115,8 +113,8 @@
             <dd><code>{{CollectionId}}</code></dd>
             {{/if}}
             {{#if Notes}}
-            <dt class="resource-arn">Notes</dt>
-            <dd><code>{{Notes}}</code></dd>
+            <dt class="resource-description">Notes</dt>
+            <dd class="resource-description">{{{md Notes}}}</dd>
             {{/if}}            
             {{#isEqual Type 'S3 Bucket'}}
             {{#unless ControlledAccess}}
