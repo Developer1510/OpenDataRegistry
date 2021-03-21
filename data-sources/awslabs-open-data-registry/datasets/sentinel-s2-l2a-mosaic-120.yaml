@@ -7,7 +7,7 @@ TemporalAvailability: 2019 (2020 coming in April 2021, past years later on)
 UpdateFrequency: New data will be added annually.
 BandInformation: B02 (blue), B03 (green), B04 (red), B08 (NIR), B11 (SWIR), B12 (SWIR). The values are corresponding to digital numbers (DN), typically going from 0-10000.  
 Contact: https://forum.sentinel-hub.com  
-ManagedBy: "[Sinergise](https://www.sinergise.com/)"
+ManagedBy: "[Sentinel Hub](https://www.sentinel-hub.com/)"
 Collabs:
   ASDI:
     Tags:
@@ -37,8 +37,8 @@ DataAtWork:
   Tools & Applications:
     - Title: Digital Twin Sandbox
       URL: https://apps.sentinel-hub.com/digital_twin_sandbox
-      AuthorName: Sinergise
-      AuthorURL: http://www.sinergise.com/
+      AuthorName: Sentinel Hub
+      AuthorURL: http://www.sentinel-hub.com/
   Publications:
     - Title: Digital Twin Sandbox Sentinel-2 collection available to everyone
       URL: https://medium.com/sentinel-hub/digital-twin-sandbox-sentinel-2-collection-available-to-everyone-20f3b5de846e
