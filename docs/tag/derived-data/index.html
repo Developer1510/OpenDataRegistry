@@ -51,7 +51,7 @@
             <h3>About</h3>
             <p>This registry exists to help people discover and share datasets that are available via AWS resources. <a href="https://opendata.aws">Learn more about sharing data on AWS</a>.</p>
     
-            <p>See <a href="https://developer1510.github.io/OpenDataRegistry/tag/satellite-imagery/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>satellite imagery</strong>.</p>
+            <p>See <a href="https://developer1510.github.io/OpenDataRegistry/tag/derived-data/usage-examples">all usage examples for datasets listed in this registry</a> tagged with <strong>derived data</strong>.</p>
     
         <hr>
     
@@ -61,7 +61,7 @@
             <input type="text" id="search-box" class="form-control" placeholder="Search datasets" spellcheck="false" autocorrect="off">
           </div>
         </form>
-        <p>You are currently viewing a subset of data tagged with <strong>satellite imagery</strong>.</p>
+        <p>You are currently viewing a subset of data tagged with <strong>derived data</strong>.</p>
     
         <hr>
     
@@ -73,36 +73,17 @@
     </div>
     <div class="col-md-6 col-md-offset-1 datasets">
       <div class="row">
-        <div id="sentinel-s2-l2a-mosaic-120" class="dataset">
-          <h3><a href="https://developer1510.github.io/OpenDataRegistry/sentinel-s2-l2a-mosaic-120/">Sentinel-2 L2A 120m Mosaic</a></h3>
-          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">machine learning</span><span class="label label-info tag link-tag">multi spectral imagery</span><span class="label label-info tag link-tag">satellite imagery</span></p>
-          <p>Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As there are some parts of the world, which have lengthy cloudy periods, clouds might be remaining in some parts. The actual modelling script is available <a href="https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/">here</a>.</p>
-          <p><a href="https://developer1510.github.io/OpenDataRegistry/sentinel-s2-l2a-mosaic-120/">Details &rarr;</a></p>
-          <h4>Usage examples</h4>
-          <ul class="dataatwork-list">
-          <li>
-            <a href="https://medium.com/sentinel-hub/how-to-make-the-perfect-time-lapse-of-the-earth-351f214527f6" class="" target="_none">How to Make the Perfect Time-Lapse of the Earth</a> by <a href="https://medium.com/@lubej.matic" target="_none">Lubej M.</a></li></a>
-          </li>
-          <li>
-            <a href="https://medium.com/sentinel-hub/digital-twin-sandbox-sentinel-2-collection-available-to-everyone-20f3b5de846e" class="" target="_none">Digital Twin Sandbox Sentinel-2 collection available to everyone</a> by Milcinski G., Lubej M.</li></a>
-          </li>
-          <li>
-            <a href="https://apps.sentinel-hub.com/digital_twin_sandbox" class="" target="_none">Digital Twin Sandbox</a> by <a href="http://www.sentinel-hub.com/" target="_none">Sentinel Hub</a></li></a>
-          </li>
-        </ul>
-        <p><a href="https://developer1510.github.io/OpenDataRegistry/sentinel-s2-l2a-mosaic-120/#usageexamples">See 3 usage examples &rarr;</a></p>
+        <div id="corine-land-cover" class="dataset">
+          <h3><a href="https://developer1510.github.io/OpenDataRegistry/corine-land-cover/">CORINE Land Cover</a></h3>
+          <p><span class="label label-info tag link-tag">CLMS</span><span class="label label-info tag link-tag">derived data</span><span class="label label-info tag link-tag">land cover</span><span class="label label-info tag link-tag">machine learning</span></p>
+          <p>The CORINE Land Cover (CLC) inventory consists of 44 land cover and land use classes derived from a series of satellite missions since it was first established.</p>
+          <p><a href="https://developer1510.github.io/OpenDataRegistry/corine-land-cover/">Details &rarr;</a></p>
         </div>
-        <div id="sentinel-2-l1c" class="dataset">
-          <h3><a href="https://developer1510.github.io/OpenDataRegistry/sentinel-2-l1c/">Sentinel-2 L1C</a></h3>
-          <p><span class="label label-info tag link-tag">agriculture</span><span class="label label-info tag link-tag">core collection</span><span class="label label-info tag link-tag">disaster response</span><span class="label label-info tag link-tag">multi spectral imagery</span><span class="label label-info tag link-tag">natural resource</span><span class="label label-info tag link-tag">satellite imagery</span></p>
-          <p>The <a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2">Sentinel-2 mission</a> is
-a land monitoring constellation of two satellites that provide high resolution
-optical imagery and provide continuity for the current SPOT and Landsat missions.
-The mission provides a global coverage of the Earth&#39;s land surface every 5 days,
-making the data of great use in on-going studies. L1C data are available from
-June 2015 globally. L2A data are available from September 2016 over wider Europe
-region and globally since January 2017. </p>
-          <p><a href="https://developer1510.github.io/OpenDataRegistry/sentinel-2-l1c/">Details &rarr;</a></p>
+        <div id="global-land-cover" class="dataset">
+          <h3><a href="https://developer1510.github.io/OpenDataRegistry/global-land-cover/">Global Land Cover</a></h3>
+          <p><span class="label label-info tag link-tag">CLMS</span><span class="label label-info tag link-tag">derived data</span><span class="label label-info tag link-tag">land cover</span><span class="label label-info tag link-tag">machine learning</span></p>
+          <p>Global Land Cover products at 100 m resolution are delivered annually by the <a href="https://land.copernicus.eu/global/products/lc">global component of the Copernicus Land Service</a>. The most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from the PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets with global coverage. These Land Cover products provide a main discrete land cover classification map according to UN-FAO Land Cover Classification System <a href="https://land.copernicus.eu/global/products/lc">LCCS</a>. Additional continuous fractional layers for all basic land cover classes which give the percentage of a 1...</p>
+          <p><a href="https://developer1510.github.io/OpenDataRegistry/global-land-cover/">Details &rarr;</a></p>
         </div>
       </div>
     </div>

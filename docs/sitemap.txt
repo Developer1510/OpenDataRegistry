@@ -11,6 +11,8 @@ tag/satellite-imagery/usage-examples/
 corine-land-cover/
 tag/CLMS/
 tag/CLMS/usage-examples/
+tag/derived-data/
+tag/derived-data/usage-examples/
 tag/land-cover/
 tag/land-cover/usage-examples/
 tag/machine-learning/
@@ -18,6 +20,8 @@ tag/machine-learning/usage-examples/
 global-land-cover/
 tag/CLMS/
 tag/CLMS/usage-examples/
+tag/derived-data/
+tag/derived-data/usage-examples/
 tag/land-cover/
 tag/land-cover/usage-examples/
 tag/machine-learning/

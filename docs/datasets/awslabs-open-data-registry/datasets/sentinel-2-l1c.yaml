@@ -16,10 +16,6 @@ BandInformation: Information about [bands and data](https://docs.sentinel-hub.co
 Contact: https://forum.sentinel-hub.com
 Provider: "[Copernicus](https://copernicus.eu/)"
 ManagedBy: "[Sentinel Hub](https://www.sentinel-hub.com/)"
-Collabs:
-  ASDI:
-    Tags:
-      - satellite imagery
 Tags:
   - core collection
   - satellite imagery
