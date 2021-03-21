@@ -33,6 +33,11 @@
       <h4>License</h4>
       <p>{{{md License}}}</p>
 
+      {{#if Provider}}
+      <h4>Provider</h4>
+      <p>{{{managedByRenderer Provider}}}</p>
+      {{/if}}
+
       {{#if ManagedBy}}
       <h4>Managed By</h4>
       <p>{{{managedByRenderer ManagedBy}}}</p>
