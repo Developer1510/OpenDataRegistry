@@ -21,12 +21,10 @@ Tags:
 License: |
  CC-BY 4.0, Credit: Contains modified Copernicus data [year] processed by Sentinel Hub
 Resources:
-  - Description: Global for year 2019
-    EndPoint: services.sentinel-hub.com
+  - EndPoint: services.sentinel-hub.com
     Type: BYOC
     CollectionId: 0074520d-bcf5-4811-8f6f-afd946e77695
-  - Description: Global for year 2019
-    EndPoint: creodias.sentinel-hub.com
+  - EndPoint: creodias.sentinel-hub.com
     Type: BYOC
     CollectionId: eaa027cc-1d9b-40fc-a15c-9dc486caebd7
 DataAtWork:
