@@ -39,8 +39,4 @@ tag/natural-resource/
 tag/natural-resource/usage-examples/
 tag/satellite-imagery/
 tag/satellite-imagery/usage-examples/
-collab/facebook/
-collab/nasa/
-collab/nih/
-collab/noaa/
-collab/stsci/
+collab/readme.md/

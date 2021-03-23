@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Registry of Open Data on AWS</title>
-    <link>https://registry.opendata.aws</link>
-    <description>Recent datasets listed on the Registry of Open Data on AWS</description>
+    <title>Sentinel Hub Public Collections</title>
+    <link>https://apps.sentinel-hubl.com/PublicCollections</link>
+    <description>Public collections available within Sentinel Hub</description>
     <language>en-us</language>
-    <managingEditor>opendata@amazon.com</managingEditor>
-    <lastBuildDate>Sun, 21 Mar 2021 17:49:31 GMT</lastBuildDate>
+    <managingEditor>info@sentinel-hub.com</managingEditor>
+    <lastBuildDate>Tue, 23 Mar 2021 12:18:48 GMT</lastBuildDate>
     <item>
       <title>Sentinel-2 L2A 120m Mosaic</title>
       <link>https://developer1510.github.io/OpenDataRegistry/sentinel-s2-l2a-mosaic-120</link>
