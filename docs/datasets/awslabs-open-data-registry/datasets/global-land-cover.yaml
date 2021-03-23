@@ -3,7 +3,7 @@ Description: Global Land Cover products at 100 m resolution are delivered annual
 AdditionalInfo: "[Additional info](corine-land-cover/README.MD)"
 Resolution: 100m
 GeographicalCoverage: Global coverage of land surface area with longitude from 180°W to 180°E and latitude from 78.25°N to 60°S.
-TemporalAvailability: 2015 - ongoing
+TemporalAvailability: 2015 - ongoing 
 UpdateFrequency: Annualy.
 BandInformation: Discrete_Classification_map, Discrete_Classification_proba, Forest_Type_layer, Bare_CoverFraction_layer, Crops_CoverFraction_layer, Grass_CoverFraction_layer, MossLichen_CoverFraction_layer, Shrub_CoverFraction_layer, Snow_CoverFraction_layer, Tree_CoverFraction_layer, BuiltUp_CoverFraction_layer, PermanentWater_CoverFraction_layer, SeasonalWater_CoverFraction_layer, DataDensityIndicator, Change_Confidence_layer
 Contact: "[Copernicus Land Monitoring Service Contact](https://land.copernicus.eu/contact)"
