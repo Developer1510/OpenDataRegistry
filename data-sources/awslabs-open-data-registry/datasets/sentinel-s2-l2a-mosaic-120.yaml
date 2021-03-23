@@ -6,6 +6,21 @@ GeographicalCoverage: Land surface area between 58 degrees South and 72 degrees 
 TemporalAvailability: 2019 (2020 coming in April 2021, past years later on)
 UpdateFrequency: New data will be added annually.
 BandInformation: B02 (blue), B03 (green), B04 (red), B08 (NIR), B11 (SWIR), B12 (SWIR). The values are corresponding to digital numbers (DN), typically going from 0-10000.  
+TabelaricData:
+  - Title: Band information
+    Data:
+      Columns:
+        - Name: Name
+          Title: Name
+        - Name: Description
+          Title: Description
+      Rows:
+        - Name: B02 (blue)
+          Description: 123
+        - Name: B03
+          Description: Lorem ipsum
+        - Name: B04
+          Description: Dolor sit amet
 Contact: https://forum.sentinel-hub.com  
 Provider: "[Sentinel Hub](https://www.sentinel-hub.com/)"
 ManagedBy: "[Sentinel Hub](https://www.sentinel-hub.com/)"

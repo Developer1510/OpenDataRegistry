@@ -34,8 +34,14 @@
       <h4>Update Frequency</h4>
       <p>{{UpdateFrequency}}</p>
 
+      {{#if BandInformation}}
       <h4>Band Information</h4>
       <p>{{BandInformation}}</p>
+      {{/if}}
+
+      {{#if TabelaricData}}
+      {{{tabelaricRenderer TabelaricData}}}
+      {{/if}}
 
       <h4>License</h4>
       <p>{{{md License}}}</p>

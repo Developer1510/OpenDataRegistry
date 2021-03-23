@@ -290,6 +290,45 @@ const hbsHelpers = {
     // No logo if we're here, just render markdown
     return marked(str, {renderer: renderer});
   },
+  tabelaricRenderer: function (tabelaricData) {
+    if (!tabelaricData) {
+      return "";
+    }
+    
+    var html = "";
+    for (var tableDataIndex in tabelaricData) {
+    	var tableData = tabelaricData[tableDataIndex];
+    	if (tableData.Title && tableData.Data) {
+    		html += "<h4>" + tableData.Title + "</h4>\n";
+    		html += "<table><thead><tr>";
+    		
+    		var cols = [];
+    		for (var colIndex in tableData.Data.Columns) {
+    			var colData = tableData.Data.Columns[colIndex];
+    			console.log(colData);
+    			cols.push(colData.Name);
+    			html += "<th>" + colData.Title + "</th>";
+    		}
+    		
+    		html += "</tr></thead><tbody>";
+    		
+    		for (var rowIndex in tableData.Data.Rows) {
+    			html += "<tr>";
+    			var rowData = tableData.Data.Rows[rowIndex];
+    			console.log(rowData);
+    			for (var colIndex in cols) {
+    				var colName = cols[colIndex];
+    				html += "<td>" + rowData[colName] + "</td>";
+    			}
+    			html += "</tr>";
+    		}
+    		
+    		html += "</tbody></table>\n";
+    	}
+    }
+
+    return html;
+  },
   toType: function (str) {
     return str ? str.toLowerCase().replace(/\s/g, '-') : str;
   },
@@ -761,7 +800,7 @@ function htmlDetail () {
       if (templateData.Tags) {
         templateData.Tags.sort((a, b) => a.localeCompare(b))
       }
-
+      
       // Generate slug
       const slug = generateSlug(file.path);
 
@@ -772,7 +811,7 @@ function htmlDetail () {
         if (/\[(.*)\]\((.*)\)/.test(templateData.ManagedBy)) {
           managedByName = /\[(.*)\]/.exec(templateData.ManagedBy)[1];
         }
-        templateData.managedByLink = `${process.env.BASE_URL}?search=managedBy:${managedByName.toLowerCase()}`;
+        templateData.managedByLink = `${process.env.ROOT_URL}?search=managedBy:${managedByName.toLowerCase()}`;
         templateData.managedByName = managedByName;
 
         // Check to see if we have a collab page for this dataset
