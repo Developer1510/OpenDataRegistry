@@ -605,13 +605,15 @@ function htmlOverview () {
 
   // Grab collab data
   let collabData = [];
-  fs.readdirSync('./src/collabs').forEach((c) => {
+  /*fs.readdirSync('./src/collabs').forEach((c) => {
     const file = fs.readFileSync(`./src/collabs/${c}`, 'utf8')
     const json = jsyaml.parse(file);
-    collabData.push({
-      title: json.Title,
-      slug: path.basename(c, '.yaml')
-    });
+	if (json) {
+		collabData.push({
+		  title: json.Title,
+		  slug: path.basename(c, '.yaml')
+		});
+	}
   });
 
   fs.readdirSync('./src/asdi').forEach((c) => {
@@ -621,7 +623,7 @@ function htmlOverview () {
       title: json.Title,
       slug: path.basename(c, '.yaml')
     });
-  });
+  });*/
 
   // Do some work to alter the datasets data for display
   datasets.map((d) => {
@@ -774,13 +776,13 @@ function htmlDetail () {
         templateData.managedByName = managedByName;
 
         // Check to see if we have a collab page for this dataset
-        fs.readdirSync('./src/collabs').forEach((c) => {
+        /*fs.readdirSync('./src/collabs').forEach((c) => {
           const file = fs.readFileSync(`./src/collabs/${c}`, 'utf8')
           const json = jsyaml.parse(file);
           if (json.Datasets.includes(slug)) {
             templateData.managedByLink = `${process.env.BASE_URL}/collab/${path.basename(c, '.yaml')}`;
           }
-        });
+        });*/
       }
 
       // Render
