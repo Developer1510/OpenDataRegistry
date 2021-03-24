@@ -290,41 +290,54 @@ const hbsHelpers = {
     // No logo if we're here, just render markdown
     return marked(str, {renderer: renderer});
   },
+  urlListRenderer: function (urlListData) {
+	  if (!urlListData) {
+		  return "";
+	  }
+	  
+	  var html = "<ul>";
+	  for (var urlIndex in urlListData) {
+		  var urlData = urlListData[urlIndex];
+		  html += "<li><a href=\"" + urlData.URL + "\">" + urlData.Title + "</a></li>";
+	  }
+	  html += "</ul>\n";
+	  
+	  return html;
+  },
   tabelaricRenderer: function (tabelaricData) {
     if (!tabelaricData) {
       return "";
     }
     
-    var html = "";
-    for (var tableDataIndex in tabelaricData) {
-    	var tableData = tabelaricData[tableDataIndex];
-    	if (tableData.Title && tableData.Data) {
-    		html += "<h4>" + tableData.Title + "</h4>\n";
-    		html += "<table><thead><tr>";
-    		
-    		var cols = [];
-    		for (var colIndex in tableData.Data.Columns) {
-    			var colData = tableData.Data.Columns[colIndex];
-    			cols.push(colData.Name);
-    			html += "<th>" + colData.Title + "</th>";
-    		}
-    		
-    		html += "</tr></thead><tbody>";
-    		
-    		for (var rowIndex in tableData.Data.Rows) {
-    			html += "<tr>";
-    			var rowData = tableData.Data.Rows[rowIndex];
-    			for (var colIndex in cols) {
-    				var colName = cols[colIndex];
-    				html += "<td>" + rowData[colName] + "</td>";
-    			}
-    			html += "</tr>";
-    		}
-    		
-    		html += "</tbody></table>\n";
-    	}
+    if (!tabelaricData.Table) {
+    	return "<p>" + tabelaricData + "</p>"; // was a simple non-tabelaric string
     }
-
+    
+    var html = "";
+	var tableData = tabelaricData.Table;
+	html += "<table><thead><tr>";
+	
+	var cols = [];
+	for (var colIndex in tableData.Columns) {
+		var colData = tableData.Columns[colIndex];
+		cols.push(colData.Name);
+		html += "<th>" + colData.Title + "</th>";
+	}
+	
+	html += "</tr></thead><tbody>";
+	
+	for (var rowIndex in tableData.Rows) {
+		html += "<tr>";
+		var rowData = tableData.Rows[rowIndex];
+		for (var colIndex in cols) {
+			var colName = cols[colIndex];
+			html += "<td>" + rowData[colName] + "</td>";
+		}
+		html += "</tr>";
+	}
+		
+	html += "</tbody></table>\n";
+    
     return html;
   },
   toType: function (str) {

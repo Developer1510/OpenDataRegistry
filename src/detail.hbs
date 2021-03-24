@@ -36,11 +36,12 @@
 
       {{#if BandInformation}}
       <h4>Band Information</h4>
-      <p>{{BandInformation}}</p>
+      {{{tabelaricRenderer BandInformation}}}
       {{/if}}
-
-      {{#if TabelaricData}}
-      {{{tabelaricRenderer TabelaricData}}}
+      
+      {{#if CustomScripts}}
+      <h4>Custom scripts</h4>
+      {{{urlListRenderer CustomScripts}}}
       {{/if}}
 
       <h4>License</h4>

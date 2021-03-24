@@ -38,7 +38,7 @@ Resources:
   - EndPoint: shservices.mundiwebservices.com
     Type: S2L1C
     Notes: Europe coverage since July 2015. Rolling policy of 12 months for World.
-Custom scripts:
+CustomScripts:
   - Title: Collection of Sentinel-2 custom scripts
     URL: https://custom-scripts.sentinel-hub.com/#sentinel-2
 

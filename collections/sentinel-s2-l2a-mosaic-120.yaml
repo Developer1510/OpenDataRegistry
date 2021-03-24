@@ -5,9 +5,8 @@ Resolution: 120m
 GeographicalCoverage: Land surface area between 58 degrees South and 72 degrees North.
 TemporalAvailability: 2019 (2020 coming in April 2021, past years later on)
 UpdateFrequency: New data will be added annually.
-TabelaricData:
-  - Title: Band information
-    Data:
+BandInformation:
+  Table:
       Columns:
         - Name: Name
           Title: Name
