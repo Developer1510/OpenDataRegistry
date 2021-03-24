@@ -288,6 +288,19 @@ const hbsHelpers = {
     
     var mdContent = fs.readFileSync(path.join(dataSourcesDirectory, mdFile), "utf-8");
     var htmlContent = marked(mdContent, {renderer: renderer});
+    
+    var templateData = {
+      baseURL: process.env.BASE_URL,
+      buildDate: new Date().toUTCString(),
+      rootUrl: process.env.ROOT_URL,
+      githubRepo: process.env.GIT_HUB_REPO,
+      githubBranch: process.env.GIT_HUB_BRANCH
+    };
+    var htmlHeader = handlebars.compile(fs.readFileSync('./src/partials/header.hbs', 'utf-8'))(templateData);
+    var htmlFooter = handlebars.compile(fs.readFileSync('./src/partials/footer.hbs', 'utf-8'))(templateData);
+    
+    htmlContent = htmlHeader + htmlContent + htmlFooter;
+    
     fs.writeFileSync("./docs/" + dir + "/" + htmlFile, htmlContent);
 
     return "<a href=\"" + process.env.ROOT_URL + dir + "/" + htmlFile + "\">" + data.Title + "</a>";
