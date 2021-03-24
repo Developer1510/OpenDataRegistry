@@ -295,6 +295,10 @@ const hbsHelpers = {
 		  return "";
 	  }
 	  
+	  if (urlListData.Title) { // was a single resource, not a list
+		  return "<p><a href=\"" + urlListData.URL + "\">" + urlListData.Title + "</a></li></p>";
+	  }
+	  
 	  var html = "<ul>";
 	  for (var urlIndex in urlListData) {
 		  var urlData = urlListData[urlIndex];
