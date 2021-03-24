@@ -9,10 +9,8 @@ phases:
       - npm install
   build:
     commands:
-      - bash _scripts/build.sh
-      - bash _scripts/deploy.sh
-      - rm -rf docs
-      - mv dist docs
+      - npm run build
+      - echo TODO deploy to S3
       - git config user.email "codebuild@aws.amazon.com"
       - git config user.name "AWS CodeBuild"
       - git remote set-url origin https://$GIT_HUB_AUTH_USER:$GIT_HUB_AUTH_TOKEN@github.com/$GIT_HUB_REPO

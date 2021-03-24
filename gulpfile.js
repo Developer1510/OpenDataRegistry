@@ -34,10 +34,10 @@ var ndjson = require('ndjson');
 let allDatasets;
 
 // The directory to look in for datasets, will be overridden for testing purposes
-const dataDirectory = (process.env.NODE_ENV === 'test') ? './tests/test-data-input/**/*.yaml' : './data-sources/**/*.yaml';
+const dataDirectory = './collections/*.yaml';
 
 // The directory containing all of the data sources
-const dataSourcesDirectory = (process.env.NODE_ENV === 'test') ? './tests/test-data-input/' : './data-sources/';
+const dataSourcesDirectory = './collections/';
 
 // Overriding MD renderer to remove outside <p> tags
 renderer.paragraph = function (text, level) {
@@ -68,7 +68,7 @@ const getDatasets = function (ignoreRank=false) {
     return allDatasets;
   }
 
-  var datasets = requireDir('./tmp/data/datasets');
+  var datasets = requireDir('./tmp');
   var arr = [];
   for (var k in datasets) {
     // Handle deprecated datasets
@@ -305,7 +305,6 @@ const hbsHelpers = {
     		var cols = [];
     		for (var colIndex in tableData.Data.Columns) {
     			var colData = tableData.Data.Columns[colIndex];
-    			console.log(colData);
     			cols.push(colData.Name);
     			html += "<th>" + colData.Title + "</th>";
     		}
@@ -315,7 +314,6 @@ const hbsHelpers = {
     		for (var rowIndex in tableData.Data.Rows) {
     			html += "<tr>";
     			var rowData = tableData.Data.Rows[rowIndex];
-    			console.log(rowData);
     			for (var colIndex in cols) {
     				var colName = cols[colIndex];
     				html += "<td>" + rowData[colName] + "</td>";
@@ -408,66 +406,31 @@ const hbsHelpers = {
 };
 exports.hbsHelpers = hbsHelpers; // exporting for testing purposes
 
-// Clean dist directory
+// Clean docs directory
 function clean () {
-  return del(['./dist/**/*', './tmp/**/*']);
+  return del(['./docs/**/*', './tmp/**/*']);
 };
 
 // Convert YAML to JSON
 function yamlConvert () {
-  return gulp.src(dataDirectory)
-    .pipe(yaml())
-    .pipe(gulp.dest('./tmp/data/unmerged/'));
-};
-
-// Merge JSON
-function jsonMerge (cb) {
-  // Make sure destination parent directory exists
-  if (!fs.existsSync('./tmp/data/datasets/')) {
-    fs.mkdirSync('./tmp/data/datasets/');
+  if (!fs.existsSync('./tmp/')) {
+    fs.mkdirSync('./tmp/');
+  }
+	
+  var datasetFiles = fs.readdirSync(dataSourcesDirectory).filter(function(file) {
+    return path.extname(file).toLowerCase() === '.yaml';
+  });
+  
+  for (var i in datasetFiles) {
+	  var dataset = jsyaml.parse(fs.readFileSync(path.join(dataSourcesDirectory, datasetFiles[i]), 'utf8'));
+      var datasetName = path.basename(datasetFiles[i], '.yaml').toLowerCase();
+	  fs.writeFileSync(`./tmp/${datasetName}.json`, JSON.stringify(dataset));
   }
 
-  let repos = fs.readdirSync(dataSourcesDirectory).filter(function(file) {
-    return fs.statSync(path.join(dataSourcesDirectory, file)).isDirectory();
-  });
-
-  // Loop over datasets and conflate Metadata
-  let top = {};
-  repos.forEach(function (repo) {
-    // Pretty dir name for finding datasets
-    var datasets = requireDir(`./tmp/data/unmerged/${repo}/datasets`);
-    for (var k in datasets) {
-      var dataset = datasets[k];
-      const slug = generateSlug(k);
-      dataset.Slug = slug;
-      // If dataset (slug) already exists, only thing we're
-      // copying over is Metadata
-      if (top[slug]) {
-        if (top[slug]['Metadata']) {
-          for (var l in dataset.Metadata) {
-            top[slug]['Metadata'][l] = dataset.Metadata[l];
-          }
-        } else {
-          top[slug]['Metadata'] = dataset.Metadata;
-        }
-        top[slug]['Sources'].push(repo);
-      } else {
-        top[slug] = dataset;
-        top[slug]['Sources'] = [repo];
-      }
-    }
-  });
-
-  // Loop over datasets and write out
-  for (var k in top) {
-    const dataset = top[k];
-    fs.writeFileSync(`./tmp/data/datasets/${dataset.Slug}.json`, JSON.stringify(dataset));
-  }
-
-  return cb();
+  return gulp.src('./tmp/');
 };
 
-// Compile the top level ndjson and move to dist
+// Compile the top level ndjson and move to docs
 function jsonOverview (cb) {
   // Loop over each dataset JSON and save to in-memory string
   const serialize = ndjson.serialize();
@@ -475,85 +438,25 @@ function jsonOverview (cb) {
   serialize.on('data', function(line) {
     json += line;
   });
-  const datasets = requireDir('./tmp/data/datasets');
+  const datasets = requireDir('./tmp');
   for (var k in datasets) {
     serialize.write(datasets[k]);
   }
   serialize.end();
 
   // Save string to file
-  fs.writeFileSync('./dist/index.ndjson', json);
+  fs.writeFileSync('./docs/index.ndjson', json);
 
   return cb();
 };
 
-// Copy CSS files to dist
+// Copy CSS files to docs
 function css () {
   return gulp.src('./src/css/**/*.css')
-    .pipe(gulp.dest('./dist/css/'));
+    .pipe(gulp.dest('./docs/css/'));
 };
 
-// Copy the datasets yaml files to dist
-function yamlCopy () {
-  return gulp.src(dataDirectory)
-    .pipe(gulp.dest('./dist/datasets/'));
-};
-
-// Compile the top level yaml and move to dist
-function yamlOverview () {
-  var templateData = {
-    datasets: getDatasets(),
-    baseURL: process.env.BASE_URL,
-    rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO,
-    githubBranch: process.env.GIT_HUB_BRANCH
-  };
-
-  return gulp.src('./src/datasets.hbs')
-    .pipe(hb({data: templateData, handlebars: handlebars}))
-    .pipe(rename('datasets.yaml'))
-    .pipe(gulp.dest('./dist/'));
-};
-
-// Copy the overview YAML to a new file
-function yamlOverviewCopy (cb) {
-  fs.createReadStream('./dist/datasets.yaml').pipe(fs.createWriteStream('./dist/index.yaml'));
-
-  return cb();
-};
-
-// Compile the tag level yaml and move to dist
-function yamlTag (cb) {
-  const datasets = getDatasets();
-
-  // Build up list of unique tags
-  const tags = getUniqueTags(datasets);
-
-  // Loop over each tag and build the page
-  tags.forEach((t) => {
-    // Filter out datasets without a matching tag
-    let filteredDatasets = datasets.filter((d) => {
-      return d.Tags.includes(t);
-    });
-
-    var templateData = {
-      datasets: filteredDatasets,
-      baseURL: process.env.BASE_URL,
-      rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO,
-      githubBranch: process.env.GIT_HUB_BRANCH
-    };
-
-    return gulp.src('./src/datasets.hbs')
-      .pipe(hb({data: templateData, handlebars: handlebars}))
-      .pipe(rename(`tag/${t.replace(/ /g, '-')}/datasets.yaml`))
-      .pipe(gulp.dest('./dist/'));
-  });
-
-  return cb();
-};
-
-// Compile the RSS feed and move to dist
+// Compile the RSS feed and move to docs
 function rss () {
   var templateData = {
     datasets: getDatasets(),
@@ -567,22 +470,22 @@ function rss () {
   return gulp.src('./src/rss.xml.hbs')
     .pipe(hb({data: templateData, helpers: hbsHelpers, handlebars: handlebars}))
     .pipe(rename('rss.xml'))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
 };
 
-// Copy font files to dist
+// Copy font files to docs
 function fonts () {
   return gulp.src('./src/fonts/**/*')
-    .pipe(gulp.dest('./dist/fonts/'));
+    .pipe(gulp.dest('./docs/fonts/'));
 };
 
-// Copy images to dist
+// Copy images to docs
 function img () {
   return gulp.src('./src/img/**/*')
-    .pipe(gulp.dest('./dist/img/'));
+    .pipe(gulp.dest('./docs/img/'));
 };
 
-// Compile the sitemap and move to dist
+// Compile the sitemap and move to docs
 function htmlSitemap () {
   // Build up sitemap items
   let slugs = [];
@@ -600,12 +503,6 @@ function htmlSitemap () {
     });
   });
 
-  // Collab pages
-  fs.readdirSync('./src/collabs').forEach((c) => {
-    // Strip off the file extension and add to slugs
-    slugs.push(`collab/${path.basename(c, '.yaml')}`);
-  });
-
   var templateData = {
     slugs: slugs,
     baseURL: process.env.BASE_URL,
@@ -617,10 +514,10 @@ function htmlSitemap () {
   return gulp.src('./src/sitemap.hbs')
     .pipe(hb({data: templateData, handlebars: handlebars}))
     .pipe(rename('sitemap.txt'))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
 };
 
-// Compile JS and move to dist
+// Compile JS and move to docs
 function js () {
   // HBS templating
   var templateData = {
@@ -635,34 +532,12 @@ function js () {
 
   return gulp.src('./src/**/*.js')
     .pipe(hb({data: templateData, helpers: hbsHelpers, handlebars: handlebars}))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
 };
 
-// Compile overview page and move to dist
+// Compile overview page and move to docs
 function htmlOverview () {
   const datasets = getDatasets();
-
-  // Grab collab data
-  let collabData = [];
-  /*fs.readdirSync('./src/collabs').forEach((c) => {
-    const file = fs.readFileSync(`./src/collabs/${c}`, 'utf8')
-    const json = jsyaml.parse(file);
-	if (json) {
-		collabData.push({
-		  title: json.Title,
-		  slug: path.basename(c, '.yaml')
-		});
-	}
-  });
-
-  fs.readdirSync('./src/asdi').forEach((c) => {
-    const file = fs.readFileSync(`./src/asdi/${c}`, 'utf8')
-    const json = jsyaml.parse(file);
-    collabData.push({
-      title: json.Title,
-      slug: path.basename(c, '.yaml')
-    });
-  });*/
 
   // Do some work to alter the datasets data for display
   datasets.map((d) => {
@@ -673,7 +548,6 @@ function htmlOverview () {
 
   // HBS templating
   var templateData = {
-    collabData: collabData,
     datasets: datasets,
     isHome: true,
     rootUrl: process.env.ROOT_URL,
@@ -684,10 +558,10 @@ function htmlOverview () {
   return gulp.src('./src/index.hbs')
     .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
 };
 
-// Compile redirect pages and move to dist
+// Compile redirect pages and move to docs
 function htmlRedirects (cb) {
   const file = fs.readFileSync('./src/config.yaml', 'utf8');
   const config = jsyaml.parse(file);
@@ -709,13 +583,13 @@ function htmlRedirects (cb) {
     return gulp.src('./src/redirect.hbs')
       .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
       .pipe(rename(`${r.source}`))
-      .pipe(gulp.dest('./dist/'));
+      .pipe(gulp.dest('./docs/'));
   });
 
   return cb();
 };
 
-// Compile the usage examples page and move to dist
+// Compile the usage examples page and move to docs
 function htmlExamples () {
   const templateData = {
     datasets: getDatasets(),
@@ -736,10 +610,10 @@ function htmlExamples () {
   return gulp.src('./src/examples.hbs')
     .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest('./dist/usage-examples/'));
+    .pipe(gulp.dest('./docs/usage-examples/'));
 };
 
-// Compile tag usage examples pages and move to dist
+// Compile tag usage examples pages and move to docs
 function htmlTagUsage (cb) {
   const datasets = getDatasets();
 
@@ -766,15 +640,15 @@ function htmlTagUsage (cb) {
     return gulp.src('./src/examples.hbs')
       .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
       .pipe(rename(`tag/${t.replace(/ /g, '-')}/usage-examples/index.html`))
-      .pipe(gulp.dest('./dist/'));
+      .pipe(gulp.dest('./docs/'));
   });
 
   return cb();
 };
 
-// Compile detail pages and move to dist
+// Compile detail pages and move to docs
 function htmlDetail () {
-  return gulp.src('./tmp/data/datasets/*.json')
+  return gulp.src('./tmp/*.json')
     .pipe(flatmap(function (stream, file) {
       var templateData = JSON.parse(file.contents.toString('utf8'));
       templateData.rootUrl = process.env.ROOT_URL;
@@ -813,26 +687,17 @@ function htmlDetail () {
         }
         templateData.managedByLink = `${process.env.ROOT_URL}?search=managedBy:${managedByName.toLowerCase()}`;
         templateData.managedByName = managedByName;
-
-        // Check to see if we have a collab page for this dataset
-        /*fs.readdirSync('./src/collabs').forEach((c) => {
-          const file = fs.readFileSync(`./src/collabs/${c}`, 'utf8')
-          const json = jsyaml.parse(file);
-          if (json.Datasets.includes(slug)) {
-            templateData.managedByLink = `${process.env.BASE_URL}/collab/${path.basename(c, '.yaml')}`;
-          }
-        });*/
       }
 
       // Render
       return gulp.src('./src/detail.hbs')
         .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
         .pipe(rename(`${slug}/index.html`))
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./docs/'));
     }));
 };
 
-// Compile tag pages and move to dist
+// Compile tag pages and move to docs
 function htmlTag (cb) {
   const datasets = getDatasets();
 
@@ -860,90 +725,12 @@ function htmlTag (cb) {
     return gulp.src('./src/index.hbs')
       .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
       .pipe(rename(`tag/${t.replace(/ /g, '-')}/index.html`))
-      .pipe(gulp.dest('./dist/'));
+      .pipe(gulp.dest('./docs/'));
   });
 
   return cb();
 };
 
-// Compile collab pages and move to dist
-function htmlCollab (cb) {
-  const datasets = getDatasets();
-
-  return gulp.src('./src/collabs/*.yaml')
-    .pipe(yaml())
-    .pipe(flatmap(function (stream, file) {
-      const collabData = JSON.parse(file.contents.toString('utf8'));
-      const slug = generateSlug(file.path);
-
-      // Filter out datasets to only the ones in the collab
-      const filteredDatasets = datasets.filter((d) => {
-        return collabData.Datasets.includes(d.Slug);
-      });
-
-      // HBS templating
-      var templateData = {
-        datasets: filteredDatasets,
-        isHome: false,
-        collabTitle: collabData.Title,
-        collabDescription: collabData.Description,
-        collabLogo: collabData.Logo,
-        rootUrl: process.env.ROOT_URL,
-        githubRepo: process.env.GIT_HUB_REPO,
-        githubBranch: process.env.GIT_HUB_BRANCH
-      };
-
-      return gulp.src('./src/index.hbs')
-        .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
-        .pipe(rename(`collab/${slug}/index.html`))
-        .pipe(gulp.dest('./dist/'));
-    }));
-};
-
-// Compile ASDI page and move to dist
-function htmlASDI (cb) {
-  const datasets = getDatasets(true);
-
-  return gulp.src('./src/asdi/*.yaml')
-    .pipe(yaml())
-    .pipe(flatmap(function (stream, file) {
-      const asdiData = JSON.parse(file.contents.toString('utf8'));
-
-      var filteredDatasets = {};
-      reduce(asdiData.Collab.Tags, function(acc, key) {
-        // Filter out datasets without a matching tag
-        acc[key] = datasets.filter((d) => {
-          return d.Collabs && asdiData.Collab.Name in d.Collabs && d.Collabs[asdiData.Collab.Name].Tags && d.Collabs[asdiData.Collab.Name].Tags.includes(key);
-        });
-        return acc;
-      }, filteredDatasets);
-
-      // HBS templating
-      var templateData = {
-        datasets: filteredDatasets,
-        isHome: false,
-        collabTitle: asdiData.Title,
-        collabDescription: asdiData.Description,
-        collabLogo: asdiData.Logo,
-        rootUrl: process.env.ROOT_URL,
-        githubRepo: process.env.GIT_HUB_REPO,
-        githubBranch: process.env.GIT_HUB_BRANCH
-      };
-
-      templateData.collabDescription += "<br><br> Categories: ";
-
-      asdiData.Collab.Tags.forEach((t) => {
-        templateData.collabDescription += "[" + t + "](#" + t.replace(/ /g, '-') + "), ";
-      });
-
-      templateData.collabDescription = templateData.collabDescription.slice(0, -2);
-
-      return gulp.src('./src/asdiindex.hbs')
-        .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
-        .pipe(rename(`collab/asdi/index.html`))
-        .pipe(gulp.dest('./dist/'));
-    }));
-};
 
 // Compile page for when datasets were added
 function htmlAdditions (cb) {
@@ -973,10 +760,10 @@ function htmlAdditions (cb) {
   return gulp.src('./src/changelogindex.hbs')
     .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
     .pipe(rename(`change-log/index.html`))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
 };
 
-// Compile providers page and move to dist
+// Compile providers page and move to docs
 function htmlProviders (cb) {
   const logos = fs.readdirSync('./src/img/logos').map((c) => {
     return `img/logos/${c}`;
@@ -993,23 +780,23 @@ function htmlProviders (cb) {
   return gulp.src('./src/providers.hbs')
     .pipe(hb({data: templateData, helpers: hbsHelpers, partials: ['./src/partials/*'], handlebars: handlebars}))
     .pipe(rename(`/providers.html`))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
 };
 
 // Server with live reload
-exports.serve = gulp.series(clean, gulp.parallel(css, fonts, img, yamlConvert, yamlCopy), jsonMerge, gulp.parallel(yamlOverview, jsonOverview), yamlOverviewCopy, yamlTag, js, rss, gulp.parallel(htmlAdditions, htmlASDI, htmlCollab, htmlDetail, htmlOverview, htmlSitemap, htmlExamples, htmlTag, htmlTagUsage, htmlProviders), htmlRedirects, function () {
+exports.serve = gulp.series(clean, gulp.parallel(css, fonts, img, yamlConvert), jsonOverview, js, rss, gulp.parallel(htmlAdditions, htmlDetail, htmlOverview, htmlSitemap, htmlExamples, htmlTag, htmlTagUsage, htmlProviders), htmlRedirects, function () {
 
   browserSync({
     port: 3000,
     server: {
-      baseDir: ['dist']
+      baseDir: ['docs']
     }
   });
 
-  // watch for changes and add a debounce for dist changes
+  // watch for changes and add a debounce for docs changes
   var timer;
   gulp.watch([
-    'dist/**/*'
+    'docs/**/*'
   ]).on('change', function () {
     clearTimeout(timer);
     timer = setTimeout(function () {
@@ -1020,6 +807,6 @@ exports.serve = gulp.series(clean, gulp.parallel(css, fonts, img, yamlConvert, y
   gulp.watch('src/**/*', gulp.series('default'));
 });
 
-exports.build = gulp.series(clean, gulp.parallel(css, fonts, img, yamlConvert, yamlCopy), jsonMerge, gulp.parallel(yamlOverview, jsonOverview), yamlOverviewCopy, yamlTag, js, rss, gulp.parallel(htmlAdditions, htmlASDI, htmlCollab, htmlDetail, htmlOverview, htmlSitemap, htmlExamples, htmlTag, htmlTagUsage, htmlProviders), htmlRedirects);
+exports.build = gulp.series(clean, gulp.parallel(css, fonts, img, yamlConvert), jsonOverview, js, rss, gulp.parallel(htmlAdditions, htmlDetail, htmlOverview, htmlSitemap, htmlExamples, htmlTag, htmlTagUsage, htmlProviders), htmlRedirects);
 exports.default = exports.build;
 

@@ -4,8 +4,6 @@
   "description": "Browser for https://github.com/awslabs/open-data-registry.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "NODE_ENV=test BASE_URL=https://registry.opendata.aws jest",
-    "copy-data": "./_scripts/copy-data.sh",
     "build": "./node_modules/gulp-cli/bin/gulp.js",
     "serve": "./node_modules/gulp-cli/bin/gulp.js serve"
   },
