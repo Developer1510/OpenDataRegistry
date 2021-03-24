@@ -1,4 +1,4 @@
-https://registry.opendata.aws
+
 sentinel-s2-l2a-mosaic-120/
 tag/agriculture/
 tag/agriculture/usage-examples/
@@ -39,4 +39,3 @@ tag/natural-resource/
 tag/natural-resource/usage-examples/
 tag/satellite-imagery/
 tag/satellite-imagery/usage-examples/
-collab/readme.md/
