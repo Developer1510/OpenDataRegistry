@@ -33,16 +33,14 @@ var reduce = require('object.reduce');
 var ndjson = require('ndjson');
 let allDatasets;
 
-// The directory to look in for datasets, will be overridden for testing purposes
-const dataDirectory = './collections/*.yaml';
-
-// The directory containing all of the data sources
 const dataSourcesDirectory = './collections/';
 
 // Overriding MD renderer to remove outside <p> tags
 renderer.paragraph = function (text, level) {
   return text;
 };
+
+var externalPages = [];
 
 // Helper function to alpha sort DataAtWork sections
 const sortDataAtWork = function (dataAtWork) {
@@ -258,6 +256,41 @@ const hbsHelpers = {
       res = res.replace(/\"/g, '\\\"');
     }
     return res;
+  },
+  mdExternal: function (data, escapeStr=false) {
+    // Keep from exiting if we have an undefined string
+    if (!data || !data.Title || !data.Path) {
+      return data;
+    }
+    
+    var mdFile = data.Path;
+    var htmlFile = path.basename(path.basename(mdFile, '.md'), '.MD').toLowerCase();
+    if (htmlFile === "index") {
+    	htmlFile = "index1";
+    }
+    htmlFile += ".html";
+    
+    var dir = path.dirname(mdFile);
+    var dirAbsolute = path.join(dataSourcesDirectory, dir);
+    
+    if (!fs.existsSync('./docs/' + dir)) {
+      fs.mkdirSync('./docs/' + dir);
+    }
+    
+    var extraFiles = fs.readdirSync(dirAbsolute).filter(function(file) {
+      return path.extname(file).toLowerCase() !== '.md';
+    });
+      
+    for (var i in extraFiles) {
+	  var file = extraFiles[i];
+	  fs.writeFileSync("./docs/" + dir + "/" + file, fs.readFileSync(path.join(dirAbsolute, file)));
+    }
+    
+    var mdContent = fs.readFileSync(path.join(dataSourcesDirectory, mdFile), "utf-8");
+    var htmlContent = marked(mdContent, {renderer: renderer});
+    fs.writeFileSync("./docs/" + dir + "/" + htmlFile, htmlContent);
+
+    return "<a href=\"" + process.env.ROOT_URL + dir + "/" + htmlFile + "\">" + data.Title + "</a>";
   },
   escapeTag: function (str) {
     // Keep from exiting if we have an undefined string
