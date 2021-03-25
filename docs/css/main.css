@@ -1,3 +1,81 @@
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../font/roboto-v20-latin-100.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../font/roboto-v20-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/roboto-v20-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/roboto-v20-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('../font/roboto-v20-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/roboto-v20-latin-100.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/roboto-v20-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../font/roboto-v20-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/roboto-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/roboto-v20-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../font/roboto-v20-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/roboto-v20-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font/roboto-v20-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../font/roboto-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/roboto-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/roboto-v20-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../font/roboto-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/roboto-v20-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../font/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font/roboto-v20-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../font/roboto-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/roboto-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/roboto-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../font/roboto-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/roboto-v20-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../font/roboto-v20-latin-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../font/roboto-v20-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/roboto-v20-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/roboto-v20-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../font/roboto-v20-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/roboto-v20-latin-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
 a { color:#a2b228; }
 
 a:hover {
@@ -235,18 +313,18 @@ code {
   color: #585d2e;
   background-color: #f3f5e2;
 }
-.table th {
-  border: 1px solid hsl(0, 0%, 86%);
-  padding: 0 5px;
-  text-align: left;
+table th {
+  border: 1px solid hsl(0, 0%, 86%)!important;
+  padding: 0 5px!important;
+  text-align: left!important;
 }
-.table tr:nth-child(even) {
-  background: none repeat scroll 0 0 hsl(0, 0%, 96%);
+table tr:nth-child(even) {
+  background: none repeat scroll 0 0 hsl(0, 0%, 96%)!important;
 }
-.table tr, .table td {
-  border: 1px solid #dcdcdc;
-  padding: 5px;
-  vertical-align: top;
+table tr, table td {
+  border: 1px solid #dcdcdc!important;
+  padding: 5px!important;
+  vertical-align: top!important;
 }
 table > thead > tr {
   background-color:rgb(245, 245, 245)!important;
@@ -258,3 +336,24 @@ table > thead > tr {
  box-shadow: rgb(175 158 232 / 40%) -1px 0px 4px 1px;
  height:80px;
 }
+
+table{
+  width:100%;
+  max-width:100%;
+  margin-bottom:20px
+}
+
+table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th {
+  padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd
+}
+
+table>thead>tr>th {
+    vertical-align:bottom;border-bottom:2px solid #ddd
+  }
+table>caption+thead>tr:first-child>td,.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>td,.table>thead:first-child>tr:first-child>th{
+    border-top:0
+  }
+table>tbody+tbody{
+    border-top:2px solid #ddd;
+  }
+
