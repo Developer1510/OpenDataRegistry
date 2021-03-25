@@ -538,8 +538,8 @@ function rss () {
 
 // Copy font files to docs
 function fonts () {
-  return gulp.src('./src/fonts/**/*')
-    .pipe(gulp.dest('./docs/fonts/'));
+  return gulp.src('./src/font/**/*')
+    .pipe(gulp.dest('./docs/font/'));
 };
 
 // Copy images to docs
