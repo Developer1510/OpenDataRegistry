@@ -1,27 +1,13 @@
-@font-face {
-    font-family: 'AmazonEmberLight';
-    src: url('https://assets.opendata.aws/fonts/amazon-ember/AmazonEmber_W_Lt.woff2') format('woff2'), url('https://assets.opendata.aws/fonts/amazon-ember/AmazonEmber_W_Lt.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'AmazonEmber';
-    src: url('https://assets.opendata.aws/fonts/amazon-ember/AmazonEmber_W_Rg.woff2') format('woff2'), url('https://assets.opendata.aws/fonts/amazon-ember/AmazonEmber_W_Rg.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'AmazonEmberBold';
-    src: url('https://assets.opendata.aws/fonts/amazon-ember/AmazonEmber_W_Bd.woff2') format('woff2'), url('https://assets.opendata.aws/fonts/amazon-ember/AmazonEmber_W_Bd.woff') format('woff');
-}
-
-a { color:#007dbc; }
+a { color:#a2b228; }
 
 a:hover {
   text-decoration: underline;
-  color: #eb5f07;
+  color:#a2b228;
 }
 
-body { padding: 70px 0 30px 0;
-  font-family: AmazonEmber, Helvetica Neue, Helvetica, Arial, sans-serif;
+body { padding: 85px 0 30px 0;
+  font-family: 'Roboto';
+  font-size: 16px;
 }
 
 .tag {
@@ -40,31 +26,35 @@ body { padding: 70px 0 30px 0;
 }
 
 .navbar-default {
-  background-color: #232F3E;
+  background-color: white;
 }
 
 .roda-header h1, .roda-header h2 {
   font-size: 24px;
   color: #FFF;
   float:left;
-  margin: 20px 0 10px 0;
+  margin: 26px 0 10px 0;
 }
 
 .roda-header h2 a {
-  color:#FFF;
+  color:black;
 }
 
 h1, h2, h3, h4, .dataset h3 a {
-  font-family: AmazonEmberBold, Helvetica Neue Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto';
   color:#232F3E;
+  font-weight: 700;
+}
+h3 {
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+h4 {
+  margin-top: 20px;
 }
 
 .dataset h3 a:hover {
   color:#eb5f07;
-}
-
-.datasets h2 {
-  font-variant: small-caps;
 }
 
 .datasets {
@@ -88,16 +78,16 @@ h1, h2, h3, h4, .dataset h3 a {
 }
 
 .lede {
-  font-family: AmazonEmberLight, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto';
   font-size: 1.28em;
   font-weight: 200;
   line-height: 1.6em;
 }
 
 #aws_header_logo {
-  max-width: 59px;
+  max-width: 120px;
   float:right;
-  padding:16px 0 16px 0 ;
+  padding: 20px 0 16px 0 ;
 }
 
 .label {
@@ -105,11 +95,11 @@ h1, h2, h3, h4, .dataset h3 a {
 }
 
 .label-info {
-  background-color: #007dbc;
+  background-color: #a2b228;
 }
 
 .label-info:hover {
-  background-color: #eb5f07;
+  background-color: #c0d049;
 }
 
 .label-info-sustainability {
@@ -222,4 +212,49 @@ img.providers {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+p {
+  line-height: 1.625;
+}
+
+.label {
+  padding: .6em .8em .6em;
+}
+
+input#search-box {
+  background-color:rgb(241, 247, 231);
+}
+
+.form-control {
+  border: none;
+  -webkit-box-shadow: none;
+  height: 40px;
+}
+code {
+  color: #585d2e;
+  background-color: #f3f5e2;
+}
+.table th {
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 0 5px;
+  text-align: left;
+}
+.table tr:nth-child(even) {
+  background: none repeat scroll 0 0 hsl(0, 0%, 96%);
+}
+.table tr, .table td {
+  border: 1px solid #dcdcdc;
+  padding: 5px;
+  vertical-align: top;
+}
+table > thead > tr {
+  background-color:rgb(245, 245, 245)!important;
+}
+.h2_addition {
+  margin-left: -15px;
+}
+.navbar {
+ box-shadow: rgb(175 158 232 / 40%) -1px 0px 4px 1px;
+ height:80px;
 }
