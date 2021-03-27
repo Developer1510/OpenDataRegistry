@@ -1,4 +1,4 @@
-# Public Collections
+# Sentinel Hub Public Collections
 
 A repository of publicly available collections that are available for access through [Sentinel Hub](https://www.sentinel-hub.com/). Note that collections in this registry are available via Sentinel Hub, but owned and maintained by different providers.
 
@@ -24,3 +24,7 @@ You can add logos to the `src/img/logos` directory for use in the **detail**  pa
 
 ## Redirects
 By using the redirects map in `src/config.yaml` you can set up simple HTML redirects from `source` to `target`. This does not copy any content, simply creates a new HTML page. This function runs after other HTML content is generated so it can be used to create new or overwrite existing HTML pages.
+
+## Attribution
+This application is based on [Open Data Registry](https://github.com/awslabs/open-data-registry) by AWS Open Data team. 
+
