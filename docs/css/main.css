@@ -162,7 +162,7 @@ h4 {
   line-height: 1.6em;
 }
 
-#aws_header_logo {
+#header_logo {
   max-width: 120px;
   float:right;
   padding: 20px 0 16px 0 ;
@@ -214,22 +214,6 @@ dt {
   margin-top: .6em;
 }
 
-a.aws-link::before {
-  content: "AWS";
-  display: inline;
-  padding: .1em .4em .2em;
-  margin-right: .3em;
-  font-size: 75%;
-  font-weight: 400;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-  background-color: #eb5f07;
-}
-
 .section-row {
   border-color: #232F3E;
 }
@@ -237,12 +221,11 @@ a.aws-link::before {
 @media (max-width:768px) {
   .roda-header h1, .roda-header h2 {
     font-size: 18px;
-    color: #FFF;
+    color: black;
     float:left;
     margin: 20px 0 20px 0;
   }
-  #aws_header_logo {
-    max-width: 40px;
+  #header_logo {
     float:right;
     padding:16px 0 16px 0 ;
   }
