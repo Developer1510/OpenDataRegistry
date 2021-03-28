@@ -218,34 +218,6 @@ const hbsHelpers = {
     }
     return options.inverse(this);
   },
-  isAWSURL: function (link, options) {
-    // AWS blog
-    if (/https?:\/\/aws.amazon.com.*/.test(link)) {
-      return options.fn(this);
-    }
-
-    // Docs site
-    if (/https?:\/\/docs.opendata.aws.*/.test(link)) {
-      return options.fn(this);
-    }
-
-    // AWS GitHub repos
-    if (/https?:\/\/github.com\/(awslabs|aws-samples)\/.*/.test(link)) {
-      return options.fn(this);
-    }
-
-    // AWS GitHub repos viewed through NBViewer
-    if (/https?:\/\/nbviewer.jupyter.org\/github\/(awslabs|aws-samples)\/.*/.test(link)) {
-      return options.fn(this);
-    }
-    
-    // go.aws shortener
-    if (/https?:\/\/go.aws.*/.test(link)) {
-      return options.fn(this);
-    }    
-
-    return options.inverse(this);
-  },
   md: function (str, escapeStr=false) {
     // Keep from exiting if we have an undefined string
     if (!str) {
