@@ -9,11 +9,6 @@ phases:
       - npm install
   build:
     commands:
+      - git clone $GIT_HUB_COLLECTIONS_REPO data
       - npm run build
-      - echo TODO deploy to S3
-      - git config user.email "codebuild@aws.amazon.com"
-      - git config user.name "AWS CodeBuild"
-      - git remote set-url origin https://$GIT_HUB_AUTH_USER:$GIT_HUB_AUTH_TOKEN@github.com/$GIT_HUB_REPO
-      - git add docs
-      - git commit -m [CodeBuild]
-      - git push origin HEAD:master
+      - aws s3 sync docs/ s3://collections.sentinel-hub.com/ --delete --acl=bucket-owner-full-control

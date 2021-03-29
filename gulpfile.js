@@ -33,7 +33,7 @@ var reduce = require('object.reduce');
 var ndjson = require('ndjson');
 let allDatasets;
 
-const dataSourcesDirectory = './collections/';
+const dataSourcesDirectory = './data/collections/';
 
 // Overriding MD renderer to remove outside <p> tags
 renderer.paragraph = function (text, level) {
@@ -88,9 +88,9 @@ const getDatasets = function (ignoreRank=false) {
 
     var dataset = datasets[k];
     dataset.Slug = generateSlug(k);
-    dataset.rootUrl = process.env.ROOT_URL;
-    dataset.githubRepo = process.env.GIT_HUB_REPO;
-    dataset.githubBranch = process.env.GIT_HUB_BRANCH;
+    dataset.rootUrl = process.env.COLLECTIONS_BROWSER_ROOT_URL;
+    dataset.githubRepo = process.env.GIT_HUB_COLLECTIONS_REPO;
+    dataset.githubBranch = process.env.GIT_HUB_COLLECTIONS_BRANCH;
     arr.push(datasets[k]);
   }
 
@@ -264,9 +264,9 @@ const hbsHelpers = {
     var templateData = {
       baseURL: process.env.BASE_URL,
       buildDate: new Date().toUTCString(),
-      rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO,
-      githubBranch: process.env.GIT_HUB_BRANCH
+      rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+      githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+      githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
     };
     var htmlHeader = handlebars.compile(fs.readFileSync('./src/partials/header.hbs', 'utf-8'))(templateData);
     var htmlFooter = handlebars.compile(fs.readFileSync('./src/partials/footer.hbs', 'utf-8'))(templateData);
@@ -275,7 +275,7 @@ const hbsHelpers = {
     
     fs.writeFileSync("./docs/" + dir + "/" + htmlFile, htmlContent);
 
-    return "<a href=\"" + process.env.ROOT_URL + dir + "/" + htmlFile + "\">" + data.Title + "</a>";
+    return "<a href=\"" + process.env.COLLECTIONS_BROWSER_ROOT_URL + dir + "/" + htmlFile + "\">" + data.Title + "</a>";
   },
   escapeTag: function (str) {
     // Keep from exiting if we have an undefined string
@@ -497,9 +497,9 @@ function rss () {
     datasets: getDatasets(),
     baseURL: process.env.BASE_URL,
     buildDate: new Date().toUTCString(),
-    rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO,
-    githubBranch: process.env.GIT_HUB_BRANCH
+    rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+    githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+    githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
   };
 
   return gulp.src('./src/rss.xml.hbs')
@@ -541,9 +541,9 @@ function htmlSitemap () {
   var templateData = {
     slugs: slugs,
     baseURL: process.env.BASE_URL,
-    rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO,
-    githubBranch: process.env.GIT_HUB_BRANCH
+    rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+    githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+    githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
   };
 
   return gulp.src('./src/sitemap.hbs')
@@ -557,9 +557,9 @@ function js () {
   // HBS templating
   var templateData = {
     datasets: getDatasets(),
-    rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO,
-    githubBranch: process.env.GIT_HUB_BRANCH
+    rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+    githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+    githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
   };
   const options = {
     helpers: hbsHelpers
@@ -585,9 +585,9 @@ function htmlOverview () {
   var templateData = {
     datasets: datasets,
     isHome: true,
-    rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO,
-    githubBranch: process.env.GIT_HUB_BRANCH
+    rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+    githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+    githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
   };
 
   return gulp.src('./src/index.hbs')
@@ -610,9 +610,9 @@ function htmlRedirects (cb) {
     // HBS templating
     const templateData = {
       target: r.target,
-      rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO,
-      githubBranch: process.env.GIT_HUB_BRANCH
+      rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+      githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+      githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
     };
 
     return gulp.src('./src/redirect.hbs')
@@ -629,9 +629,9 @@ function htmlExamples () {
   const templateData = {
     datasets: getDatasets(),
     isHome: false,
-    rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO,
-    githubBranch: process.env.GIT_HUB_BRANCH
+    rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+    githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+    githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
   };
 
   // Handle pretty name for data at work field
@@ -667,9 +667,9 @@ function htmlTagUsage (cb) {
       datasets: filteredDatasets,
       isHome: false,
       tag: t,
-      rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO,
-      githubBranch: process.env.GIT_HUB_BRANCH
+      rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+      githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+      githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
     };
 
     return gulp.src('./src/examples.hbs')
@@ -686,9 +686,9 @@ function htmlDetail () {
   return gulp.src('./tmp/*.json')
     .pipe(flatmap(function (stream, file) {
       var templateData = JSON.parse(file.contents.toString('utf8'));
-      templateData.rootUrl = process.env.ROOT_URL;
-      templateData.githubRepo = process.env.GIT_HUB_REPO;
-      templateData.githubBranch = process.env.GIT_HUB_BRANCH;
+      templateData.rootUrl = process.env.COLLECTIONS_BROWSER_ROOT_URL;
+      templateData.githubRepo = process.env.GIT_HUB_COLLECTIONS_REPO;
+      templateData.githubBranch = process.env.GIT_HUB_COLLECTIONS_BRANCH;
       // If we have no DataAtWork, remove it
       if (!templateData.DataAtWork || (templateData.DataAtWork && _.compact(_.flatMap(templateData.DataAtWork)).length === 0)) {
         delete templateData.DataAtWork;
@@ -712,6 +712,7 @@ function htmlDetail () {
       
       // Generate slug
       const slug = generateSlug(file.path);
+      templateData.Slug = slug;
 
       // Add link to other datasets managed by dataset owner, default to search
       if (templateData.ManagedBy) {
@@ -720,7 +721,7 @@ function htmlDetail () {
         if (/\[(.*)\]\((.*)\)/.test(templateData.ManagedBy)) {
           managedByName = /\[(.*)\]/.exec(templateData.ManagedBy)[1];
         }
-        templateData.managedByLink = `${process.env.ROOT_URL}?search=managedBy:${managedByName.toLowerCase()}`;
+        templateData.managedByLink = `${process.env.COLLECTIONS_BROWSER_ROOT_URL}?search=managedBy:${managedByName.toLowerCase()}`;
         templateData.managedByName = managedByName;
       }
 
@@ -752,9 +753,9 @@ function htmlTag (cb) {
       isHome: false,
       tag: t,
       tagURL: t.replace(/ /g, '-'),
-      rootUrl: process.env.ROOT_URL,
-      githubRepo: process.env.GIT_HUB_REPO,
-      githubBranch: process.env.GIT_HUB_BRANCH
+      rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+      githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+      githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
     };
 
     return gulp.src('./src/index.hbs')
@@ -787,9 +788,9 @@ function htmlAdditions (cb) {
   var templateData = {
     datasets: filteredDatasets,
     isHome: false,
-    rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO,
-    githubBranch: process.env.GIT_HUB_BRANCH
+    rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+    githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+    githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
   };
 
   return gulp.src('./src/changelogindex.hbs')
@@ -807,9 +808,9 @@ function htmlProviders (cb) {
   // HBS templating
   const templateData = {
     Providers: logos,
-    rootUrl: process.env.ROOT_URL,
-    githubRepo: process.env.GIT_HUB_REPO,
-    githubBranch: process.env.GIT_HUB_BRANCH
+    rootUrl: process.env.COLLECTIONS_BROWSER_ROOT_URL,
+    githubRepo: process.env.GIT_HUB_COLLECTIONS_REPO,
+    githubBranch: process.env.GIT_HUB_COLLECTIONS_BRANCH
   };
 
   return gulp.src('./src/providers.hbs')
