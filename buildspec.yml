@@ -11,4 +11,4 @@ phases:
     commands:
       - git clone https://github.com/$GIT_HUB_COLLECTIONS_REPO data
       - npm run build
-      - aws s3 sync docs/ s3://collections.sentinel-hub.com/ --delete --acl=bucket-owner-full-control
+      - aws s3 sync docs/ $COLLECTIONS_BROWSER_S3_BUCKET --delete --acl=bucket-owner-full-control
