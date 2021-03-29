@@ -9,6 +9,6 @@ phases:
       - npm install
   build:
     commands:
-      - git clone $GIT_HUB_COLLECTIONS_REPO data
+      - git clone https://github.com/$GIT_HUB_COLLECTIONS_REPO data
       - npm run build
       - aws s3 sync docs/ s3://collections.sentinel-hub.com/ --delete --acl=bucket-owner-full-control
